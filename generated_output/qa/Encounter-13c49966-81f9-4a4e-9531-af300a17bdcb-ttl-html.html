@@ -1,0 +1,70 @@
+﻿<html>
+<head>
+  <title>Encounter-13c49966-81f9-4a4e-9531-af300a17bdcb-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Encounter;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/encounter.html#Encounter.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;13c49966-81f9-4a4e-9531-af300a17bdcb&quot;];
+  <a href="http://build.fhir.org/encounter.html#Encounter.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 13c49966-81f9-4a4e-9531-af300a17bdcb&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: ambulatory (Details: [not stated] code ambulatory = 'ambulatory', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Encounter for symptom &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '185345009' = 'Encounter for symptom', given as 'Encounter for symptom'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-1cca06b4-7d1f-4bfe-9d1d-83e7dd6ba83b.html\&quot;&gt;Generated Summary: id: 1cca06b4-7d1f-4bfe-9d1d-83e7dd6ba83b; 7143def2-16b9-4d5a-bcfe-7624eb496c3d, Medical Record Number = 7143def2-16b9-4d5a-bcfe-7624eb496c3d, Social Security Number = 999-10-9993; Monte325 McClure239 (OFFICIAL); ph: 555-292-6906(HOME); gender: male; birthDate: Jan 31, 1975; deceased: Aug 13, 1978, 2:23:24 AM; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;Never Married&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-cd11b6b2-d516-408b-aac0-dad86a4cedaa.html\&quot;&gt;Generated Summary: id: cd11b6b2-d516-408b-aac0-dad86a4cedaa; 260; active; Peggie783 Bradtke547 ; gender: female&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: Jun 10, 1976, 2:23:24 AM --&amp;gt; Jun 10, 1976, 2:53:24 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: Acute viral pharyngitis (disorder) &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '195662009' = 'Acute viral pharyngitis', given as 'Acute viral pharyngitis (disorder)'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-fd328395-ab1d-35c6-a2d0-d05a9a79cf11.html\&quot;&gt;Generated Summary: id: fd328395-ab1d-35c6-a2d0-d05a9a79cf11; fd328395-ab1d-35c6-a2d0-d05a9a79cf11; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\&quot;&gt;Healthcare Provider&lt;/span&gt;; name: MERCY MEDICAL CTR; ph: 4137489000&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.status">fhir:Encounter.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;finished&quot;];
+  <a href="http://build.fhir.org/encounter.html#Encounter.class">fhir:Encounter.class</a> [
+     <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;ambulatory&quot; ]
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.type">fhir:Encounter.type</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:185345009;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;185345009&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter for symptom&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter for symptom&quot; ]
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.subject">fhir:Encounter.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/1cca06b4-7d1f-4bfe-9d1d-83e7dd6ba83b&quot; ]
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.participant">fhir:Encounter.participant</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/encounter.html#Encounter.participant.individual">fhir:Encounter.participant.individual</a> [
+       <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Practitioner/cd11b6b2-d516-408b-aac0-dad86a4cedaa&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.period">fhir:Encounter.period</a> [
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;1976-06-10T02:23:24-07:00&quot;^^xsd:dateTime ];
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;1976-06-10T02:53:24-07:00&quot;^^xsd:dateTime ]
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.reasonCode">fhir:Encounter.reasonCode</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:195662009;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;195662009&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Acute viral pharyngitis (disorder)&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.serviceProvider">fhir:Encounter.serviceProvider</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/fd328395-ab1d-35c6-a2d0-d05a9a79cf11&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

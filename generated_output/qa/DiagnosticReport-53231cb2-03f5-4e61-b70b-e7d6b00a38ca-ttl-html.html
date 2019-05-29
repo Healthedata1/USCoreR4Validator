@@ -1,0 +1,83 @@
+﻿<html>
+<head>
+  <title>DiagnosticReport-53231cb2-03f5-4e61-b70b-e7d6b00a38ca-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix loinc: &lt;http://loinc.org/rdf#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:DiagnosticReport;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;53231cb2-03f5-4e61-b70b-e7d6b00a38ca&quot;];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 53231cb2-03f5-4e61-b70b-e7d6b00a38ca&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Basic Metabolic Panel &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '51990-0' = 'Basic metabolic panel - Blood', given as 'Basic Metabolic Panel'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-97b1b290-9385-444a-aacd-fae750c36ee2.html\&quot;&gt;Generated Summary: id: 97b1b290-9385-444a-aacd-fae750c36ee2; e73761a2-2400-4224-80d4-29a2757805aa, Medical Record Number = e73761a2-2400-4224-80d4-29a2757805aa, Social Security Number = 999-45-5838, Driver's License = S99923701, Passport Number = X18110898X; Elouise806 Adams676 (OFFICIAL); ph: 555-225-9561(HOME); gender: female; birthDate: May 24, 1966; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;S&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-62be3454-bc6c-462f-9f8f-2cbe93a592c0.html\&quot;&gt;Generated Summary: id: 62be3454-bc6c-462f-9f8f-2cbe93a592c0; status: finished; &lt;span title=\&quot;{null wellness}\&quot;&gt;wellness&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185349003}\&quot;&gt;Encounter for check up (procedure)&lt;/span&gt;; period: Jun 17, 2014, 4:41:15 PM --&amp;gt; Jun 17, 2014, 5:11:15 PM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Jun 17, 2014, 4:41:15 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Jun 17, 2014, 4:41:15 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;result&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;Observation-00cb7072-ec36-4b6e-a341-5b0897083556.html\&quot;&gt;Glucose. Generated Summary: id: 00cb7072-ec36-4b6e-a341-5b0897083556; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 2339-0}\&quot;&gt;Glucose&lt;/span&gt;; effective: Jun 17, 2014, 4:41:15 PM; issued: Jun 17, 2014, 4:41:15 PM; 72.64956221930329 mg/dL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-13e3a08b-4b49-44d7-a687-c9a2a98fb2e5.html\&quot;&gt;Urea Nitrogen. Generated Summary: id: 13e3a08b-4b49-44d7-a687-c9a2a98fb2e5; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 6299-2}\&quot;&gt;Urea Nitrogen&lt;/span&gt;; effective: Jun 17, 2014, 4:41:15 PM; issued: Jun 17, 2014, 4:41:15 PM; 18.783329700046494 mg/dL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-e2eb882a-711f-4409-b42d-805e78875ec7.html\&quot;&gt;Creatinine. Generated Summary: id: e2eb882a-711f-4409-b42d-805e78875ec7; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 38483-4}\&quot;&gt;Creatinine&lt;/span&gt;; effective: Jun 17, 2014, 4:41:15 PM; issued: Jun 17, 2014, 4:41:15 PM; 1.1797571254854802 mg/dL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-a53b8686-b4f1-4f4b-95bb-b5dde8881412.html\&quot;&gt;Calcium. Generated Summary: id: a53b8686-b4f1-4f4b-95bb-b5dde8881412; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 49765-1}\&quot;&gt;Calcium&lt;/span&gt;; effective: Jun 17, 2014, 4:41:15 PM; issued: Jun 17, 2014, 4:41:15 PM; 9.15561085050593 mg/dL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-3e5b853e-6892-4b4b-8083-4b746bc51a1e.html\&quot;&gt;Sodium. Generated Summary: id: 3e5b853e-6892-4b4b-8083-4b746bc51a1e; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 2947-0}\&quot;&gt;Sodium&lt;/span&gt;; effective: Jun 17, 2014, 4:41:15 PM; issued: Jun 17, 2014, 4:41:15 PM; 138.17142629335956 mmol/L&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-14456075-0b59-49b0-b9d9-374023abc6ea.html\&quot;&gt;Potassium. Generated Summary: id: 14456075-0b59-49b0-b9d9-374023abc6ea; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 6298-4}\&quot;&gt;Potassium&lt;/span&gt;; effective: Jun 17, 2014, 4:41:15 PM; issued: Jun 17, 2014, 4:41:15 PM; 5.1370822268294 mmol/L&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-77f0808d-a66f-4d96-b9be-be59e44112ed.html\&quot;&gt;Chloride. Generated Summary: id: 77f0808d-a66f-4d96-b9be-be59e44112ed; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 2069-3}\&quot;&gt;Chloride&lt;/span&gt;; effective: Jun 17, 2014, 4:41:15 PM; issued: Jun 17, 2014, 4:41:15 PM; 109.66941108312706 mmol/L&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-c8ad6631-1c57-43db-810d-1fba7dbe5511.html\&quot;&gt;Carbon Dioxide. Generated Summary: id: c8ad6631-1c57-43db-810d-1fba7dbe5511; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 20565-8}\&quot;&gt;Carbon Dioxide&lt;/span&gt;; effective: Jun 17, 2014, 4:41:15 PM; issued: Jun 17, 2014, 4:41:15 PM; 22.984123723617724 mmol/L&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.status">fhir:DiagnosticReport.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;final&quot;];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.code">fhir:DiagnosticReport.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a loinc:51990-0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;51990-0&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Basic Metabolic Panel&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Basic Metabolic Panel&quot; ]
+  ];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.subject">fhir:DiagnosticReport.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/97b1b290-9385-444a-aacd-fae750c36ee2&quot; ]
+  ];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.encounter">fhir:DiagnosticReport.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/62be3454-bc6c-462f-9f8f-2cbe93a592c0&quot; ]
+  ];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.effective[x]">fhir:DiagnosticReport.effectiveDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2014-06-17T16:41:15-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.issued">fhir:DiagnosticReport.issued</a> [ <a href="http://build.fhir.org/datatypes.html#instant">fhir:value</a> &quot;2014-06-17T16:41:15.931-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.result">fhir:DiagnosticReport.result</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/00cb7072-ec36-4b6e-a341-5b0897083556&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Glucose&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/13e3a08b-4b49-44d7-a687-c9a2a98fb2e5&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Urea Nitrogen&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/e2eb882a-711f-4409-b42d-805e78875ec7&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Creatinine&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/a53b8686-b4f1-4f4b-95bb-b5dde8881412&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Calcium&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/3e5b853e-6892-4b4b-8083-4b746bc51a1e&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sodium&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/14456075-0b59-49b0-b9d9-374023abc6ea&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Potassium&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/77f0808d-a66f-4d96-b9be-be59e44112ed&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Chloride&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/c8ad6631-1c57-43db-810d-1fba7dbe5511&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Carbon Dioxide&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

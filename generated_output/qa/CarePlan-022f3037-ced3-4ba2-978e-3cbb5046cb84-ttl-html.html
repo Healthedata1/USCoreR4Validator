@@ -1,0 +1,83 @@
+﻿<html>
+<head>
+  <title>CarePlan-022f3037-ced3-4ba2-978e-3cbb5046cb84-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CarePlan;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/careplan.html#CarePlan.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;022f3037-ced3-4ba2-978e-3cbb5046cb84&quot;];
+  <a href="http://build.fhir.org/careplan.html#CarePlan.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 022f3037-ced3-4ba2-978e-3cbb5046cb84&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Respiratory therapy &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '53950000' = 'Respiratory care', given as 'Respiratory therapy'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-979e84fd-056b-4630-8e0b-62e9bba6c277.html\&quot;&gt;Generated Summary: id: 979e84fd-056b-4630-8e0b-62e9bba6c277; 6c633357-6589-4e08-bc5f-2ff2e293390f, Medical Record Number = 6c633357-6589-4e08-bc5f-2ff2e293390f, Social Security Number = 999-83-9359, Driver's License = S99923492, Passport Number = X40923246X; Renay451 Koss676 (OFFICIAL); ph: 555-233-7286(HOME); gender: female; birthDate: Jul 6, 1958; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;S&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-165f602f-1247-4bee-b920-094f59ded796.html\&quot;&gt;Generated Summary: id: 165f602f-1247-4bee-b920-094f59ded796; status: finished; &lt;span title=\&quot;{null ambulatory}\&quot;&gt;ambulatory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185345009}\&quot;&gt;Encounter for symptom&lt;/span&gt;; period: Nov 1, 2009, 5:20:33 PM --&amp;gt; Nov 1, 2009, 5:44:33 PM; &lt;span title=\&quot;Codes: {http://snomed.info/sct 10509002}\&quot;&gt;Acute bronchitis (disorder)&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: Nov 1, 2009, 5:20:33 PM --&amp;gt; Jan 10, 2010, 5:20:33 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;addresses&lt;/b&gt;: &lt;a href=\&quot;Condition-3b98a85d-6d65-4ac1-8309-6de3016e8ada.html\&quot;&gt;Generated Summary: id: 3b98a85d-6d65-4ac1-8309-6de3016e8ada; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\&quot;&gt;Resolved&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\&quot;&gt;Confirmed&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 10509002}\&quot;&gt;Acute bronchitis (disorder)&lt;/span&gt;; onset: Nov 1, 2009, 5:20:33 PM; abatement: Nov 8, 2009, 5:20:33 PM; recordedDate: Nov 1, 2009, 5:20:33 PM&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Recommendation to avoid exercise &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '304510005' = 'Recommendation to avoid exercise (procedure)', given as 'Recommendation to avoid exercise'})&lt;/span&gt;&lt;/td&gt;&lt;td&gt;completed&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;activity&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Deep breathing and coughing exercises &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '371605008' = 'Deep breathing and coughing exercises', given as 'Deep breathing and coughing exercises'})&lt;/span&gt;&lt;/td&gt;&lt;td&gt;completed&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/careplan.html#CarePlan.status">fhir:CarePlan.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;completed&quot;];
+  <a href="http://build.fhir.org/careplan.html#CarePlan.intent">fhir:CarePlan.intent</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;order&quot;];
+  <a href="http://build.fhir.org/careplan.html#CarePlan.category">fhir:CarePlan.category</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:53950000;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;53950000&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Respiratory therapy&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Respiratory therapy&quot; ]
+  ];
+  <a href="http://build.fhir.org/careplan.html#CarePlan.subject">fhir:CarePlan.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/979e84fd-056b-4630-8e0b-62e9bba6c277&quot; ]
+  ];
+  <a href="http://build.fhir.org/careplan.html#CarePlan.encounter">fhir:CarePlan.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/165f602f-1247-4bee-b920-094f59ded796&quot; ]
+  ];
+  <a href="http://build.fhir.org/careplan.html#CarePlan.period">fhir:CarePlan.period</a> [
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2009-11-01T17:20:33-08:00&quot;^^xsd:dateTime ];
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2010-01-10T17:20:33-08:00&quot;^^xsd:dateTime ]
+  ];
+  <a href="http://build.fhir.org/careplan.html#CarePlan.addresses">fhir:CarePlan.addresses</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Condition/3b98a85d-6d65-4ac1-8309-6de3016e8ada&quot; ]
+  ];
+  <a href="http://build.fhir.org/careplan.html#CarePlan.activity">fhir:CarePlan.activity</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/careplan.html#CarePlan.activity.detail">fhir:CarePlan.activity.detail</a> [
+       <a href="http://build.fhir.org/careplan.html#CarePlan.activity.detail.code">fhir:CarePlan.activity.detail.code</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           a sct:304510005;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;304510005&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Recommendation to avoid exercise&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Recommendation to avoid exercise&quot; ]       ];
+       <a href="http://build.fhir.org/careplan.html#CarePlan.activity.detail.status">fhir:CarePlan.activity.detail.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;completed&quot; ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://build.fhir.org/careplan.html#CarePlan.activity.detail">fhir:CarePlan.activity.detail</a> [
+       <a href="http://build.fhir.org/careplan.html#CarePlan.activity.detail.code">fhir:CarePlan.activity.detail.code</a> [
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           a sct:371605008;
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;371605008&quot; ];
+           <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Deep breathing and coughing exercises&quot; ]         ];
+         <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Deep breathing and coughing exercises&quot; ]       ];
+       <a href="http://build.fhir.org/careplan.html#CarePlan.activity.detail.status">fhir:CarePlan.activity.detail.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;completed&quot; ]     ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

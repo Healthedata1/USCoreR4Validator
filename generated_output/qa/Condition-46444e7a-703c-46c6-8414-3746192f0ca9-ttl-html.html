@@ -1,0 +1,61 @@
+﻿<html>
+<head>
+  <title>Condition-46444e7a-703c-46c6-8414-3746192f0ca9-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Condition;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/condition.html#Condition.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;46444e7a-703c-46c6-8414-3746192f0ca9&quot;];
+  <a href="http://build.fhir.org/condition.html#Condition.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 46444e7a-703c-46c6-8414-3746192f0ca9&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/condition-clinical code 'active' = 'Active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: Confirmed &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/condition-ver-status code 'confirmed' = 'Confirmed)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Drug overdose &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '55680006' = 'OD - Overdose of drug', given as 'Drug overdose'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-0543fb93-12a8-43a5-840d-c26e4c917b64.html\&quot;&gt;Generated Summary: id: 0543fb93-12a8-43a5-840d-c26e4c917b64; 8bccc7b5-fdeb-4354-be72-b172518643a9, Medical Record Number = 8bccc7b5-fdeb-4354-be72-b172518643a9, Social Security Number = 999-17-7832, Driver's License = S99912370, Passport Number = X24528798X; Monserrate4 Hamill307 (OFFICIAL), Monserrate4 Zboncak558 (MAIDEN); ph: 555-884-7513(HOME); gender: female; birthDate: Jun 13, 1915; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-85663ba3-6412-491d-9c63-0d93fc505c1f.html\&quot;&gt;Generated Summary: id: 85663ba3-6412-491d-9c63-0d93fc505c1f; status: finished; &lt;span title=\&quot;{null emergency}\&quot;&gt;emergency&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 50849002}\&quot;&gt;Emergency Room Admission&lt;/span&gt;; period: Sep 18, 2011, 5:18:01 AM --&amp;gt; Sep 18, 2011, 6:18:01 AM; &lt;span title=\&quot;Codes: {http://snomed.info/sct 55680006}\&quot;&gt;Drug overdose&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Sep 18, 2011, 5:18:01 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: Sep 18, 2011, 5:18:01 AM&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.clinicalStatus">fhir:Condition.clinicalStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.verificationStatus">fhir:Condition.verificationStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/condition-ver-status&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;confirmed&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.code">fhir:Condition.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:55680006;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;55680006&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Drug overdose&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Drug overdose&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.subject">fhir:Condition.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/0543fb93-12a8-43a5-840d-c26e4c917b64&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.encounter">fhir:Condition.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/85663ba3-6412-491d-9c63-0d93fc505c1f&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.onset[x]">fhir:Condition.onsetDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2011-09-18T05:18:01-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/condition.html#Condition.recordedDate">fhir:Condition.recordedDate</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2011-09-18T05:18:01-07:00&quot;^^xsd:dateTime].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

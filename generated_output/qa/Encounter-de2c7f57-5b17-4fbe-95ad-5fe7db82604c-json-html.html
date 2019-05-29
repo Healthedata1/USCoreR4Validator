@@ -1,0 +1,50 @@
+﻿<html>
+<head>
+  <title>Encounter-de2c7f57-5b17-4fbe-95ad-5fe7db82604c-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/encounter.html#Encounter">resourceType</a>" : "Encounter",
+  "<a href="http://build.fhir.org/encounter.html#Encounter.id">id</a>" : "de2c7f57-5b17-4fbe-95ad-5fe7db82604c",
+  "<a href="http://build.fhir.org/encounter.html#Encounter.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: de2c7f57-5b17-4fbe-95ad-5fe7db82604c&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: outpatient (Details: [not stated] code outpatient = 'outpatient', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Consultation for treatment &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '698314001' = 'Consultation for treatment', given as 'Consultation for treatment'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-3bf76a75-8007-4272-a7f1-5f436f480201.html\&quot;&gt;Generated Summary: id: 3bf76a75-8007-4272-a7f1-5f436f480201; 1ff2cdab-544f-4d13-aa84-878922c7ac56, Medical Record Number = 1ff2cdab-544f-4d13-aa84-878922c7ac56, Social Security Number = 999-20-9744, Driver's License = S99917703, Passport Number = X87852078X; Keisha459 Kshlerin58 (OFFICIAL), Keisha459 Hayes766 (MAIDEN); ph: 555-332-5138(HOME); gender: female; birthDate: Jun 11, 1990; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-270f41e7-012a-45e0-9928-7da22d73433e.html\&quot;&gt;Generated Summary: id: 270f41e7-012a-45e0-9928-7da22d73433e; 470; active; Georgann131 Beer512 ; gender: female&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: May 17, 2010, 8:49:44 PM --&amp;gt; May 17, 2010, 9:04:44 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-b7175ab4-bde5-3848-891b-579bccb77c7c.html\&quot;&gt;Generated Summary: id: b7175ab4-bde5-3848-891b-579bccb77c7c; b7175ab4-bde5-3848-891b-579bccb77c7c; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\&quot;&gt;Healthcare Provider&lt;/span&gt;; name: TUFTS MEDICAL CENTER; ph: 6176365000&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/encounter.html#Encounter.status">status</a>" : "finished",
+  "<a href="http://build.fhir.org/encounter.html#Encounter.class">class</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "outpatient"
+  },
+  "<a href="http://build.fhir.org/encounter.html#Encounter.type">type</a>" : [
+    {
+      "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "698314001",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Consultation for treatment"
+        }
+      ],
+      "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Consultation for treatment"
+    }
+  ],
+  "<a href="http://build.fhir.org/encounter.html#Encounter.subject">subject</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/3bf76a75-8007-4272-a7f1-5f436f480201"
+  },
+  "<a href="http://build.fhir.org/encounter.html#Encounter.participant">participant</a>" : [
+    {
+      "<a href="http://build.fhir.org/encounter.html#Encounter.participant.individual">individual</a>" : {
+        "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Practitioner/270f41e7-012a-45e0-9928-7da22d73433e"
+      }
+    }
+  ],
+  "<a href="http://build.fhir.org/encounter.html#Encounter.period">period</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Period#Period.start">start</a>" : "2010-05-17T20:49:44-07:00",
+    "<a href="http://build.fhir.org/datatypes.html#Period#Period.end">end</a>" : "2010-05-17T21:04:44-07:00"
+  },
+  "<a href="http://build.fhir.org/encounter.html#Encounter.serviceProvider">serviceProvider</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Organization/b7175ab4-bde5-3848-891b-579bccb77c7c"
+  }
+}</pre>
+</body>
+</html>

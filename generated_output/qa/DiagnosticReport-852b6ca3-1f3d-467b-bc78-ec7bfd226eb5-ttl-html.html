@@ -1,0 +1,67 @@
+﻿<html>
+<head>
+  <title>DiagnosticReport-852b6ca3-1f3d-467b-bc78-ec7bfd226eb5-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix loinc: &lt;http://loinc.org/rdf#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:DiagnosticReport;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;852b6ca3-1f3d-467b-bc78-ec7bfd226eb5&quot;];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 852b6ca3-1f3d-467b-bc78-ec7bfd226eb5&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Lipid Panel &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '57698-3' = 'Lipid panel with direct LDL - Serum or Plasma', given as 'Lipid Panel'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-e7ce9a70-8208-4d48-9257-31962e4eb5fd.html\&quot;&gt;Generated Summary: id: e7ce9a70-8208-4d48-9257-31962e4eb5fd; 529e248d-9fac-475f-96be-0ef3b26ec93f, Medical Record Number = 529e248d-9fac-475f-96be-0ef3b26ec93f, Social Security Number = 999-98-3422, Driver's License = S99962096, Passport Number = X73359038X; Johnny786 Kassulke119 (OFFICIAL); ph: 555-495-4687(HOME); gender: male; birthDate: Jan 2, 1966; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-bcdd1619-d1c6-47b8-98a3-02936d8e0d3d.html\&quot;&gt;Generated Summary: id: bcdd1619-d1c6-47b8-98a3-02936d8e0d3d; status: finished; &lt;span title=\&quot;{null wellness}\&quot;&gt;wellness&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185349003}\&quot;&gt;Encounter for check up (procedure)&lt;/span&gt;; period: Apr 22, 2018, 9:35:01 PM --&amp;gt; Apr 22, 2018, 10:05:01 PM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Apr 22, 2018, 9:35:01 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Apr 22, 2018, 9:35:01 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;result&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;Observation-3620ae94-d3a4-457b-98c7-fb2302ebe046.html\&quot;&gt;Total Cholesterol. Generated Summary: id: 3620ae94-d3a4-457b-98c7-fb2302ebe046; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 2093-3}\&quot;&gt;Total Cholesterol&lt;/span&gt;; effective: Apr 22, 2018, 9:35:01 PM; issued: Apr 22, 2018, 9:35:01 PM; 172.73987416456836 mg/dL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-bd05eddd-9f57-4257-8b1d-4f689fe0bec4.html\&quot;&gt;Triglycerides. Generated Summary: id: bd05eddd-9f57-4257-8b1d-4f689fe0bec4; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 2571-8}\&quot;&gt;Triglycerides&lt;/span&gt;; effective: Apr 22, 2018, 9:35:01 PM; issued: Apr 22, 2018, 9:35:01 PM; 140.16759329676466 mg/dL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-84a2d8cf-df34-44aa-8b27-0bc1232f9a5a.html\&quot;&gt;Low Density Lipoprotein Cholesterol. Generated Summary: id: 84a2d8cf-df34-44aa-8b27-0bc1232f9a5a; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 18262-6}\&quot;&gt;Low Density Lipoprotein Cholesterol&lt;/span&gt;; effective: Apr 22, 2018, 9:35:01 PM; issued: Apr 22, 2018, 9:35:01 PM; 71.77301008246623 mg/dL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-28d8189f-14df-476e-84aa-29426aebb9eb.html\&quot;&gt;High Density Lipoprotein Cholesterol. Generated Summary: id: 28d8189f-14df-476e-84aa-29426aebb9eb; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 2085-9}\&quot;&gt;High Density Lipoprotein Cholesterol&lt;/span&gt;; effective: Apr 22, 2018, 9:35:01 PM; issued: Apr 22, 2018, 9:35:01 PM; 72.9333454227492 mg/dL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.status">fhir:DiagnosticReport.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;final&quot;];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.code">fhir:DiagnosticReport.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a loinc:57698-3;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;57698-3&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Lipid Panel&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Lipid Panel&quot; ]
+  ];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.subject">fhir:DiagnosticReport.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/e7ce9a70-8208-4d48-9257-31962e4eb5fd&quot; ]
+  ];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.encounter">fhir:DiagnosticReport.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/bcdd1619-d1c6-47b8-98a3-02936d8e0d3d&quot; ]
+  ];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.effective[x]">fhir:DiagnosticReport.effectiveDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2018-04-22T21:35:01-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.issued">fhir:DiagnosticReport.issued</a> [ <a href="http://build.fhir.org/datatypes.html#instant">fhir:value</a> &quot;2018-04-22T21:35:01.139-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.result">fhir:DiagnosticReport.result</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/3620ae94-d3a4-457b-98c7-fb2302ebe046&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Total Cholesterol&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/bd05eddd-9f57-4257-8b1d-4f689fe0bec4&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Triglycerides&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/84a2d8cf-df34-44aa-8b27-0bc1232f9a5a&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Low Density Lipoprotein Cholesterol&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/28d8189f-14df-476e-84aa-29426aebb9eb&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;High Density Lipoprotein Cholesterol&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

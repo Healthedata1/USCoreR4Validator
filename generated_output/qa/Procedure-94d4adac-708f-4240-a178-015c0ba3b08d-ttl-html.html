@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+  <title>Procedure-94d4adac-708f-4240-a178-015c0ba3b08d-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Procedure;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/procedure.html#Procedure.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;94d4adac-708f-4240-a178-015c0ba3b08d&quot;];
+  <a href="http://build.fhir.org/procedure.html#Procedure.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 94d4adac-708f-4240-a178-015c0ba3b08d&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Intramuscular injection &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '76601001' = 'IM - Intramuscular injection', given as 'Intramuscular injection'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-17163d67-bd1d-446d-8c26-d461b7f5392e.html\&quot;&gt;Generated Summary: id: 17163d67-bd1d-446d-8c26-d461b7f5392e; cd5c5c29-54d3-4445-8172-606fdcf2fb68, Medical Record Number = cd5c5c29-54d3-4445-8172-606fdcf2fb68, Social Security Number = 999-85-6440, Driver's License = S99920070, Passport Number = X67634789X; Marquita692 Haley279 (OFFICIAL); ph: 555-525-6801(HOME); gender: female; birthDate: Oct 25, 1984; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;S&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-df2d89c9-b0ab-46cc-8b11-4d3190fd2270.html\&quot;&gt;Generated Summary: id: df2d89c9-b0ab-46cc-8b11-4d3190fd2270; status: finished; &lt;span title=\&quot;{null outpatient}\&quot;&gt;outpatient&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 308335008}\&quot;&gt;Patient encounter procedure&lt;/span&gt;; period: Nov 8, 2012, 12:44:40 AM --&amp;gt; Nov 8, 2012, 1:10:40 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: Nov 8, 2012, 12:44:40 AM --&amp;gt; Nov 8, 2012, 12:55:40 AM&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.status">fhir:Procedure.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;completed&quot;];
+  <a href="http://build.fhir.org/procedure.html#Procedure.code">fhir:Procedure.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:76601001;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;76601001&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Intramuscular injection&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Intramuscular injection&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.subject">fhir:Procedure.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/17163d67-bd1d-446d-8c26-d461b7f5392e&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.encounter">fhir:Procedure.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/df2d89c9-b0ab-46cc-8b11-4d3190fd2270&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.performed[x]">fhir:Procedure.performedPeriod</a> [
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2012-11-08T00:44:40-08:00&quot;^^xsd:dateTime ];
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2012-11-08T00:55:40-08:00&quot;^^xsd:dateTime ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+  <title>Procedure-1b0e3e6b-7307-4353-b857-924e75a58f74-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Procedure;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/procedure.html#Procedure.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;1b0e3e6b-7307-4353-b857-924e75a58f74&quot;];
+  <a href="http://build.fhir.org/procedure.html#Procedure.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 1b0e3e6b-7307-4353-b857-924e75a58f74&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Colonoscopy &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '73761001' = 'Colonoscopy', given as 'Colonoscopy'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-0eeb4203-9c61-421f-9026-2c1ba16d3c78.html\&quot;&gt;Generated Summary: id: 0eeb4203-9c61-421f-9026-2c1ba16d3c78; fe180a7f-7ad0-46ab-8745-35f153e6414b, Medical Record Number = fe180a7f-7ad0-46ab-8745-35f153e6414b, Social Security Number = 999-69-3582, Driver's License = S99983840, Passport Number = X5956377X; Luther918 Sanford861 (OFFICIAL); ph: 555-908-3141(HOME); gender: male; birthDate: Dec 15, 1967; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-28f01ce4-55b5-4222-ae5b-190e74fcafe6.html\&quot;&gt;Generated Summary: id: 28f01ce4-55b5-4222-ae5b-190e74fcafe6; status: finished; &lt;span title=\&quot;{null ambulatory}\&quot;&gt;ambulatory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185349003}\&quot;&gt;Encounter for 'check-up'&lt;/span&gt;; period: Dec 15, 2017, 8:41:14 AM --&amp;gt; Dec 15, 2017, 9:23:14 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: Dec 15, 2017, 8:41:14 AM --&amp;gt; Dec 15, 2017, 9:08:14 AM&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.status">fhir:Procedure.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;completed&quot;];
+  <a href="http://build.fhir.org/procedure.html#Procedure.code">fhir:Procedure.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:73761001;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;73761001&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Colonoscopy&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Colonoscopy&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.subject">fhir:Procedure.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/0eeb4203-9c61-421f-9026-2c1ba16d3c78&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.encounter">fhir:Procedure.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/28f01ce4-55b5-4222-ae5b-190e74fcafe6&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.performed[x]">fhir:Procedure.performedPeriod</a> [
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2017-12-15T08:41:14-08:00&quot;^^xsd:dateTime ];
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2017-12-15T09:08:14-08:00&quot;^^xsd:dateTime ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

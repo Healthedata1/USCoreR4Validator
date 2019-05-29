@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+  <title>Goal-95cca40b-55c0-4737-aacd-09652c286e1f-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Goal;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/goal.html#Goal.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;95cca40b-55c0-4737-aacd-09652c286e1f&quot;];
+  <a href="http://build.fhir.org/goal.html#Goal.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 95cca40b-55c0-4737-aacd-09652c286e1f&lt;/p&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: accepted&lt;/p&gt;&lt;p&gt;&lt;b&gt;achievementStatus&lt;/b&gt;: In Progress &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/goal-achievement code 'in-progress' = 'In Progress)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Address patient knowledge deficit on diabetic self-care &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details )&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-7f961d6f-a693-405e-9044-7928a66da002.html\&quot;&gt;Generated Summary: id: 7f961d6f-a693-405e-9044-7928a66da002; 6ee1f79f-0745-4eb9-9d03-7df6fbbbd5a5, Medical Record Number = 6ee1f79f-0745-4eb9-9d03-7df6fbbbd5a5, Social Security Number = 999-10-2971, Driver's License = S99956334, Passport Number = X81583152X; Sean831 Luettgen772 (OFFICIAL); ph: 555-639-3016(HOME); gender: male; birthDate: Sep 20, 1987; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/goal.html#Goal.lifecycleStatus">fhir:Goal.lifecycleStatus</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;accepted&quot;];
+  <a href="http://build.fhir.org/goal.html#Goal.achievementStatus">fhir:Goal.achievementStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/goal-achievement&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;in-progress&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/goal.html#Goal.description">fhir:Goal.description</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Address patient knowledge deficit on diabetic self-care&quot; ]
+  ];
+  <a href="http://build.fhir.org/goal.html#Goal.subject">fhir:Goal.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/7f961d6f-a693-405e-9044-7928a66da002&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

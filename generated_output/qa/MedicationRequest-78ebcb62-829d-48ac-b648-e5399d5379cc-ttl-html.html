@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+  <title>MedicationRequest-78ebcb62-829d-48ac-b648-e5399d5379cc-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:MedicationRequest;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;78ebcb62-829d-48ac-b648-e5399d5379cc&quot;];
+  <a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 78ebcb62-829d-48ac-b648-e5399d5379cc&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: stopped&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: Ortho Tri-Cyclen 28 Day Pack &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {RxNorm code '749785' = 'ORTHO TRI-CYCLEN 28 Day Pack', given as 'Ortho Tri-Cyclen 28 Day Pack'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-63995f51-5ee0-47ef-b46b-f65b0e56bcfe.html\&quot;&gt;Generated Summary: id: 63995f51-5ee0-47ef-b46b-f65b0e56bcfe; 0d9c2ffd-1a13-4e9a-8e3a-11461241ad09, Medical Record Number = 0d9c2ffd-1a13-4e9a-8e3a-11461241ad09, Social Security Number = 999-19-8260, Driver's License = S99987603, Passport Number = X78918728X; Alaina222 Gleichner915 (OFFICIAL), Alaina222 Keeling57 (MAIDEN); ph: 555-175-2835(HOME); gender: female; birthDate: Apr 22, 1950; deceased: Oct 14, 2000, 2:20:16 PM; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-ea83e25a-7083-422b-a8e0-7e1ae5ed219e.html\&quot;&gt;Generated Summary: id: ea83e25a-7083-422b-a8e0-7e1ae5ed219e; status: finished; &lt;span title=\&quot;{null outpatient}\&quot;&gt;outpatient&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 698314001}\&quot;&gt;Consultation for treatment&lt;/span&gt;; period: Apr 25, 1998, 2:20:16 PM --&amp;gt; Apr 25, 1998, 2:35:16 PM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: Apr 25, 1998, 2:20:16 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;a href=\&quot;Practitioner-02fd0c2d-8896-45ed-a60c-f2df7b92fba8.html\&quot;&gt;Generated Summary: id: 02fd0c2d-8896-45ed-a60c-f2df7b92fba8; 490; active; Monica757 Kshlerin58 ; gender: female&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.status">fhir:MedicationRequest.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;stopped&quot;];
+  <a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.intent">fhir:MedicationRequest.intent</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;order&quot;];
+  <a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.medication[x]">fhir:MedicationRequest.medicationCodeableConcept</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://www.nlm.nih.gov/research/umls/rxnorm&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;749785&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Ortho Tri-Cyclen 28 Day Pack&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Ortho Tri-Cyclen 28 Day Pack&quot; ]
+  ];
+  <a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.subject">fhir:MedicationRequest.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/63995f51-5ee0-47ef-b46b-f65b0e56bcfe&quot; ]
+  ];
+  <a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.encounter">fhir:MedicationRequest.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/ea83e25a-7083-422b-a8e0-7e1ae5ed219e&quot; ]
+  ];
+  <a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.authoredOn">fhir:MedicationRequest.authoredOn</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;1998-04-25T14:20:16-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.requester">fhir:MedicationRequest.requester</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Practitioner/02fd0c2d-8896-45ed-a60c-f2df7b92fba8&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

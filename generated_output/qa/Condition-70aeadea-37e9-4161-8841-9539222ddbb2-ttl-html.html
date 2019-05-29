@@ -1,0 +1,62 @@
+﻿<html>
+<head>
+  <title>Condition-70aeadea-37e9-4161-8841-9539222ddbb2-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Condition;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/condition.html#Condition.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;70aeadea-37e9-4161-8841-9539222ddbb2&quot;];
+  <a href="http://build.fhir.org/condition.html#Condition.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 70aeadea-37e9-4161-8841-9539222ddbb2&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Resolved &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/condition-clinical code 'resolved' = 'Resolved)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: Confirmed &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/condition-ver-status code 'confirmed' = 'Confirmed)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Viral sinusitis (disorder) &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '444814009' = 'Viral sinusitis (disorder)', given as 'Viral sinusitis (disorder)'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-73940273-26e5-47af-a400-366881064ca4.html\&quot;&gt;Generated Summary: id: 73940273-26e5-47af-a400-366881064ca4; 7fca8af6-1003-4306-826c-8ae979837978, Medical Record Number = 7fca8af6-1003-4306-826c-8ae979837978, Social Security Number = 999-36-6335, Driver's License = S99954268, Passport Number = X3208110X; Verla696 Senger904 (OFFICIAL), Verla696 Kautzer186 (MAIDEN); ph: 555-140-4494(HOME); gender: female; birthDate: Oct 9, 1977; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-4766bc14-8d2a-4a3f-8775-c7c9efb6ab8c.html\&quot;&gt;Generated Summary: id: 4766bc14-8d2a-4a3f-8775-c7c9efb6ab8c; status: finished; &lt;span title=\&quot;{null ambulatory}\&quot;&gt;ambulatory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185345009}\&quot;&gt;Encounter for symptom&lt;/span&gt;; period: Jul 29, 2009, 1:03:16 AM --&amp;gt; Jul 29, 2009, 1:18:16 AM; &lt;span title=\&quot;Codes: {http://snomed.info/sct 444814009}\&quot;&gt;Viral sinusitis (disorder)&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Jul 29, 2009, 1:03:16 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;abatement&lt;/b&gt;: Aug 19, 2009, 1:03:16 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: Jul 29, 2009, 1:03:16 AM&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.clinicalStatus">fhir:Condition.clinicalStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;resolved&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.verificationStatus">fhir:Condition.verificationStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/condition-ver-status&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;confirmed&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.code">fhir:Condition.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:444814009;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;444814009&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Viral sinusitis (disorder)&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Viral sinusitis (disorder)&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.subject">fhir:Condition.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/73940273-26e5-47af-a400-366881064ca4&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.encounter">fhir:Condition.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/4766bc14-8d2a-4a3f-8775-c7c9efb6ab8c&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.onset[x]">fhir:Condition.onsetDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2009-07-29T01:03:16-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/condition.html#Condition.abatement[x]">fhir:Condition.abatementDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2009-08-19T01:03:16-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/condition.html#Condition.recordedDate">fhir:Condition.recordedDate</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2009-07-29T01:03:16-07:00&quot;^^xsd:dateTime].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

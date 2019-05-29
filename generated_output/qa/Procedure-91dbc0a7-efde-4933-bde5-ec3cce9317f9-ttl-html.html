@@ -1,0 +1,57 @@
+﻿<html>
+<head>
+  <title>Procedure-91dbc0a7-efde-4933-bde5-ec3cce9317f9-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Procedure;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/procedure.html#Procedure.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;91dbc0a7-efde-4933-bde5-ec3cce9317f9&quot;];
+  <a href="http://build.fhir.org/procedure.html#Procedure.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 91dbc0a7-efde-4933-bde5-ec3cce9317f9&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Suture open wound &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '288086009' = 'Suture open wound', given as 'Suture open wound'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-499ca834-9d50-43da-b239-c586a89f375b.html\&quot;&gt;Generated Summary: id: 499ca834-9d50-43da-b239-c586a89f375b; bdba782d-6766-48d6-b807-63f6876ddf78, Medical Record Number = bdba782d-6766-48d6-b807-63f6876ddf78, Social Security Number = 999-32-2576; Myron933 Waelchi213 (OFFICIAL); ph: 555-832-8480(HOME); gender: male; birthDate: Nov 29, 2003; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;Never Married&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-621bb707-f1f6-4ab5-a1a9-98e03ede491e.html\&quot;&gt;Generated Summary: id: 621bb707-f1f6-4ab5-a1a9-98e03ede491e; status: finished; &lt;span title=\&quot;{null emergency}\&quot;&gt;emergency&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 50849002}\&quot;&gt;Emergency room admission (procedure)&lt;/span&gt;; period: Sep 28, 2009, 7:46:49 AM --&amp;gt; Sep 28, 2009, 9:06:49 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: Sep 28, 2009, 7:46:49 AM --&amp;gt; Sep 28, 2009, 8:06:49 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;a href=\&quot;Condition-5fda3f9b-ef89-48c2-9556-430ed038ad57.html\&quot;&gt;Laceration of foot. Generated Summary: id: 5fda3f9b-ef89-48c2-9556-430ed038ad57; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\&quot;&gt;Resolved&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\&quot;&gt;Confirmed&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 284551006}\&quot;&gt;Laceration of foot&lt;/span&gt;; onset: Sep 28, 2009, 7:46:49 AM; abatement: Oct 12, 2009, 7:46:49 AM; recordedDate: Sep 28, 2009, 7:46:49 AM&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.status">fhir:Procedure.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;completed&quot;];
+  <a href="http://build.fhir.org/procedure.html#Procedure.code">fhir:Procedure.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:288086009;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;288086009&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Suture open wound&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Suture open wound&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.subject">fhir:Procedure.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/499ca834-9d50-43da-b239-c586a89f375b&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.encounter">fhir:Procedure.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/621bb707-f1f6-4ab5-a1a9-98e03ede491e&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.performed[x]">fhir:Procedure.performedPeriod</a> [
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2009-09-28T07:46:49-07:00&quot;^^xsd:dateTime ];
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2009-09-28T08:06:49-07:00&quot;^^xsd:dateTime ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.reasonReference">fhir:Procedure.reasonReference</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Condition/5fda3f9b-ef89-48c2-9556-430ed038ad57&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Laceration of foot&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

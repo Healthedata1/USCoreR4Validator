@@ -1,0 +1,54 @@
+{
+    "resourceType": "Encounter",
+    "id": "eiSX3g2gt4tJIs7-6h7nJjA3",
+    "status": "in-progress",
+    "identifier": [
+        {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+            "value": "27383"
+        }
+    ],
+    "class": {
+        "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+        "code": "13",
+        "display": "Support OP Encounter"
+    },
+    "type": [
+        {
+            "text": "Ancillary Orders",
+            "coding": [
+                {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30",
+                    "code": "117",
+                    "display": "Ancillary Orders"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/eroCd17NbCffM3E3WXi7eOQ3",
+        "display": "Jason Argonaut"
+    },
+    "participant": [
+        {
+            "individual": {
+                "reference": "Practitioner/e7D.u41Zv3VPrLmUp-mWnrQ3",
+                "display": "Physician Champion, MD"
+            }
+        }
+    ],
+    "location": [
+        {
+            "location": {
+                "reference": "Location/e4W4rmGe9QzuGm2Dy4NBqVc0KDe6yGld6HW95UuN-Qd03",
+                "display": "EMC Family Medicine"
+            }
+        }
+    ],
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+        ]
+    }
+}

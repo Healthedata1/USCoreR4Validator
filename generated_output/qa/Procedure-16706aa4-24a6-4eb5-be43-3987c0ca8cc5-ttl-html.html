@@ -1,0 +1,57 @@
+﻿<html>
+<head>
+  <title>Procedure-16706aa4-24a6-4eb5-be43-3987c0ca8cc5-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Procedure;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/procedure.html#Procedure.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;16706aa4-24a6-4eb5-be43-3987c0ca8cc5&quot;];
+  <a href="http://build.fhir.org/procedure.html#Procedure.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 16706aa4-24a6-4eb5-be43-3987c0ca8cc5&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Auscultation of the fetal heart &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '225158009' = 'Auscultation of the foetal heart', given as 'Auscultation of the fetal heart'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-25f4df24-f472-4d12-b15b-73002562e305.html\&quot;&gt;Generated Summary: id: 25f4df24-f472-4d12-b15b-73002562e305; 688db1dd-9cb5-4c98-acd2-fdce2abeec2a, Medical Record Number = 688db1dd-9cb5-4c98-acd2-fdce2abeec2a, Social Security Number = 999-94-2070, Driver's License = S99970741, Passport Number = X51119672X; Dusti191 Osinski784 (OFFICIAL); ph: 555-268-8035(HOME); gender: female; birthDate: Aug 7, 1996; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;Never Married&lt;/span&gt;; 2&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-44556a61-401f-4fe1-b51a-8f99d012b459.html\&quot;&gt;Generated Summary: id: 44556a61-401f-4fe1-b51a-8f99d012b459; status: finished; &lt;span title=\&quot;{null ambulatory}\&quot;&gt;ambulatory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 424441002}\&quot;&gt;Prenatal initial visit&lt;/span&gt;; period: Aug 29, 2018, 8:13:55 AM --&amp;gt; Aug 29, 2018, 1:28:55 PM; &lt;span title=\&quot;Codes: {http://snomed.info/sct 72892002}\&quot;&gt;Normal pregnancy&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: Aug 29, 2018, 8:13:55 AM --&amp;gt; Aug 29, 2018, 8:28:55 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;a href=\&quot;Condition-7395f8e9-3c35-4fb0-9f4c-7d63ebdb2b96.html\&quot;&gt;Normal pregnancy. Generated Summary: id: 7395f8e9-3c35-4fb0-9f4c-7d63ebdb2b96; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\&quot;&gt;Active&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\&quot;&gt;Confirmed&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 72892002}\&quot;&gt;Normal pregnancy&lt;/span&gt;; onset: Aug 29, 2018, 8:13:55 AM; recordedDate: Aug 29, 2018, 8:13:55 AM&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.status">fhir:Procedure.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;completed&quot;];
+  <a href="http://build.fhir.org/procedure.html#Procedure.code">fhir:Procedure.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:225158009;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;225158009&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Auscultation of the fetal heart&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Auscultation of the fetal heart&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.subject">fhir:Procedure.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/25f4df24-f472-4d12-b15b-73002562e305&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.encounter">fhir:Procedure.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/44556a61-401f-4fe1-b51a-8f99d012b459&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.performed[x]">fhir:Procedure.performedPeriod</a> [
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2018-08-29T08:13:55-07:00&quot;^^xsd:dateTime ];
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2018-08-29T08:28:55-07:00&quot;^^xsd:dateTime ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.reasonReference">fhir:Procedure.reasonReference</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Condition/7395f8e9-3c35-4fb0-9f4c-7d63ebdb2b96&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Normal pregnancy&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

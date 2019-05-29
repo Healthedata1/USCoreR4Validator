@@ -1,0 +1,95 @@
+﻿<html>
+<head>
+  <title>DiagnosticReport-fecc9c37-660b-4374-94e4-de592e7a4c58-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix loinc: &lt;http://loinc.org/rdf#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:DiagnosticReport;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;fecc9c37-660b-4374-94e4-de592e7a4c58&quot;];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: fecc9c37-660b-4374-94e4-de592e7a4c58&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Complete blood count (hemogram) panel - Blood by Automated count &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '58410-2' = 'Complete blood count (hemogram) panel - Blood by Automated count', given as 'Complete blood count (hemogram) panel - Blood by Automated count'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-bc1eed9f-dd29-44c9-b83b-8c0a47202fb3.html\&quot;&gt;Generated Summary: id: bc1eed9f-dd29-44c9-b83b-8c0a47202fb3; 3bcb074f-557b-4c23-ae08-b01eb8143942, Medical Record Number = 3bcb074f-557b-4c23-ae08-b01eb8143942, Social Security Number = 999-51-1482, Driver's License = S99955724, Passport Number = X84257919X; Darrel772 Breitenberg711 (OFFICIAL); ph: 555-186-8848(HOME); gender: male; birthDate: Dec 4, 1982; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-e8eecbf8-17b1-4d18-8da6-cf0ab53cbc3f.html\&quot;&gt;Generated Summary: id: e8eecbf8-17b1-4d18-8da6-cf0ab53cbc3f; status: finished; &lt;span title=\&quot;{null wellness}\&quot;&gt;wellness&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185349003}\&quot;&gt;Encounter for check up (procedure)&lt;/span&gt;; period: Feb 11, 2017, 10:10:49 PM --&amp;gt; Feb 11, 2017, 10:25:49 PM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Feb 11, 2017, 10:10:49 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Feb 11, 2017, 10:10:49 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;result&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;Observation-8039ff08-6da2-4a94-8794-c35ab99dfc12.html\&quot;&gt;Leukocytes [#/volume] in Blood by Automated count. Generated Summary: id: 8039ff08-6da2-4a94-8794-c35ab99dfc12; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 6690-2}\&quot;&gt;Leukocytes [#/volume] in Blood by Automated count&lt;/span&gt;; effective: Feb 11, 2017, 10:10:49 PM; issued: Feb 11, 2017, 10:10:49 PM; 9.650714524420959 10*3/uL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-2dcac20f-84bf-4b04-b475-3df879e8aa46.html\&quot;&gt;Erythrocytes [#/volume] in Blood by Automated count. Generated Summary: id: 2dcac20f-84bf-4b04-b475-3df879e8aa46; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 789-8}\&quot;&gt;Erythrocytes [#/volume] in Blood by Automated count&lt;/span&gt;; effective: Feb 11, 2017, 10:10:49 PM; issued: Feb 11, 2017, 10:10:49 PM; 5.42863131208906 10*6/uL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-c5b9bbc5-883a-45a8-a345-890467df0979.html\&quot;&gt;Hemoglobin [Mass/volume] in Blood. Generated Summary: id: c5b9bbc5-883a-45a8-a345-890467df0979; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 718-7}\&quot;&gt;Hemoglobin [Mass/volume] in Blood&lt;/span&gt;; effective: Feb 11, 2017, 10:10:49 PM; issued: Feb 11, 2017, 10:10:49 PM; 15.233179033679788 g/dL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-50c67679-5f0c-43c4-a4f5-0370f87fc763.html\&quot;&gt;Hematocrit [Volume Fraction] of Blood by Automated count. Generated Summary: id: 50c67679-5f0c-43c4-a4f5-0370f87fc763; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 4544-3}\&quot;&gt;Hematocrit [Volume Fraction] of Blood by Automated count&lt;/span&gt;; effective: Feb 11, 2017, 10:10:49 PM; issued: Feb 11, 2017, 10:10:49 PM; 49.32907590348722 %&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-f3d78834-562b-4611-b1af-7fa7af72bc66.html\&quot;&gt;MCV [Entitic volume] by Automated count. Generated Summary: id: f3d78834-562b-4611-b1af-7fa7af72bc66; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 787-2}\&quot;&gt;MCV [Entitic volume] by Automated count&lt;/span&gt;; effective: Feb 11, 2017, 10:10:49 PM; issued: Feb 11, 2017, 10:10:49 PM; 87.47112022544333 fL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-d1139f72-be31-4d64-8bb4-a0042f5e1169.html\&quot;&gt;MCH [Entitic mass] by Automated count. Generated Summary: id: d1139f72-be31-4d64-8bb4-a0042f5e1169; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 785-6}\&quot;&gt;MCH [Entitic mass] by Automated count&lt;/span&gt;; effective: Feb 11, 2017, 10:10:49 PM; issued: Feb 11, 2017, 10:10:49 PM; 28.793217770426498 pg&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-5c8f3437-7a25-4896-85f4-6eea6976eb9e.html\&quot;&gt;MCHC [Mass/volume] by Automated count. Generated Summary: id: 5c8f3437-7a25-4896-85f4-6eea6976eb9e; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 786-4}\&quot;&gt;MCHC [Mass/volume] by Automated count&lt;/span&gt;; effective: Feb 11, 2017, 10:10:49 PM; issued: Feb 11, 2017, 10:10:49 PM; 33.725397699377446 g/dL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-23ea1c93-2dc0-42ca-81bd-f042a788071e.html\&quot;&gt;Erythrocyte distribution width [Entitic volume] by Automated count. Generated Summary: id: 23ea1c93-2dc0-42ca-81bd-f042a788071e; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 21000-5}\&quot;&gt;Erythrocyte distribution width [Entitic volume] by Automated count&lt;/span&gt;; effective: Feb 11, 2017, 10:10:49 PM; issued: Feb 11, 2017, 10:10:49 PM; 45.77039062703594 fL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-1bed385b-e10e-48e8-ab31-e8b5c1861998.html\&quot;&gt;Platelets [#/volume] in Blood by Automated count. Generated Summary: id: 1bed385b-e10e-48e8-ab31-e8b5c1861998; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 777-3}\&quot;&gt;Platelets [#/volume] in Blood by Automated count&lt;/span&gt;; effective: Feb 11, 2017, 10:10:49 PM; issued: Feb 11, 2017, 10:10:49 PM; 223.3006711643642 10*3/uL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-ec021575-0d29-47b3-8a59-c6b835905642.html\&quot;&gt;Platelet distribution width [Entitic volume] in Blood by Automated count. Generated Summary: id: ec021575-0d29-47b3-8a59-c6b835905642; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 32207-3}\&quot;&gt;Platelet distribution width [Entitic volume] in Blood by Automated count&lt;/span&gt;; effective: Feb 11, 2017, 10:10:49 PM; issued: Feb 11, 2017, 10:10:49 PM; 424.57199512480025 fL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Observation-50203137-d027-4cd0-bcb5-f8f0dc40cc88.html\&quot;&gt;Platelet mean volume [Entitic volume] in Blood by Automated count. Generated Summary: id: 50203137-d027-4cd0-bcb5-f8f0dc40cc88; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\&quot;&gt;laboratory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://loinc.org 32623-1}\&quot;&gt;Platelet mean volume [Entitic volume] in Blood by Automated count&lt;/span&gt;; effective: Feb 11, 2017, 10:10:49 PM; issued: Feb 11, 2017, 10:10:49 PM; 11.016450788776533 fL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.status">fhir:DiagnosticReport.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;final&quot;];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.code">fhir:DiagnosticReport.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a loinc:58410-2;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;58410-2&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Complete blood count (hemogram) panel - Blood by Automated count&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Complete blood count (hemogram) panel - Blood by Automated count&quot; ]
+  ];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.subject">fhir:DiagnosticReport.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/bc1eed9f-dd29-44c9-b83b-8c0a47202fb3&quot; ]
+  ];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.encounter">fhir:DiagnosticReport.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/e8eecbf8-17b1-4d18-8da6-cf0ab53cbc3f&quot; ]
+  ];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.effective[x]">fhir:DiagnosticReport.effectiveDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2017-02-11T22:10:49-08:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.issued">fhir:DiagnosticReport.issued</a> [ <a href="http://build.fhir.org/datatypes.html#instant">fhir:value</a> &quot;2017-02-11T22:10:49.708-08:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/diagnosticreport.html#DiagnosticReport.result">fhir:DiagnosticReport.result</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/8039ff08-6da2-4a94-8794-c35ab99dfc12&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Leukocytes [#/volume] in Blood by Automated count&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/2dcac20f-84bf-4b04-b475-3df879e8aa46&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Erythrocytes [#/volume] in Blood by Automated count&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/c5b9bbc5-883a-45a8-a345-890467df0979&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Hemoglobin [Mass/volume] in Blood&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/50c67679-5f0c-43c4-a4f5-0370f87fc763&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Hematocrit [Volume Fraction] of Blood by Automated count&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/f3d78834-562b-4611-b1af-7fa7af72bc66&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;MCV [Entitic volume] by Automated count&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/d1139f72-be31-4d64-8bb4-a0042f5e1169&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;MCH [Entitic mass] by Automated count&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/5c8f3437-7a25-4896-85f4-6eea6976eb9e&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;MCHC [Mass/volume] by Automated count&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/23ea1c93-2dc0-42ca-81bd-f042a788071e&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Erythrocyte distribution width [Entitic volume] by Automated count&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/1bed385b-e10e-48e8-ab31-e8b5c1861998&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Platelets [#/volume] in Blood by Automated count&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/ec021575-0d29-47b3-8a59-c6b835905642&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Platelet distribution width [Entitic volume] in Blood by Automated count&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 10;
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Observation/50203137-d027-4cd0-bcb5-f8f0dc40cc88&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Platelet mean volume [Entitic volume] in Blood by Automated count&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

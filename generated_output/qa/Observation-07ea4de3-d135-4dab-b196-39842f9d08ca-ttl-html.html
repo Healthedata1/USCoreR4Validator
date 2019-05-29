@@ -1,0 +1,64 @@
+﻿<html>
+<head>
+  <title>Observation-07ea4de3-d135-4dab-b196-39842f9d08ca-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix loinc: &lt;http://loinc.org/rdf#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Observation;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/observation.html#Observation.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;07ea4de3-d135-4dab-b196-39842f9d08ca&quot;];
+  <a href="http://build.fhir.org/observation.html#Observation.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 07ea4de3-d135-4dab-b196-39842f9d08ca&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: laboratory &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory', given as 'laboratory'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Hemoglobin [Mass/volume] in Blood &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '718-7' = 'Hemoglobin [Mass/volume] in Blood', given as 'Hemoglobin [Mass/volume] in Blood'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-3bf76a75-8007-4272-a7f1-5f436f480201.html\&quot;&gt;Generated Summary: id: 3bf76a75-8007-4272-a7f1-5f436f480201; 1ff2cdab-544f-4d13-aa84-878922c7ac56, Medical Record Number = 1ff2cdab-544f-4d13-aa84-878922c7ac56, Social Security Number = 999-20-9744, Driver's License = S99917703, Passport Number = X87852078X; Keisha459 Kshlerin58 (OFFICIAL), Keisha459 Hayes766 (MAIDEN); ph: 555-332-5138(HOME); gender: female; birthDate: Jun 11, 1990; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-b59aa7ed-8942-481f-a141-4047a49c69a4.html\&quot;&gt;Generated Summary: id: b59aa7ed-8942-481f-a141-4047a49c69a4; status: finished; &lt;span title=\&quot;{null wellness}\&quot;&gt;wellness&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185349003}\&quot;&gt;Encounter for check up (procedure)&lt;/span&gt;; period: Aug 13, 2012, 8:49:44 PM --&amp;gt; Aug 13, 2012, 9:19:44 PM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Aug 13, 2012, 8:49:44 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Aug 13, 2012, 8:49:44 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 12.727995335049208 g/dL&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM code g/dL = 'g/dL')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/observation.html#Observation.status">fhir:Observation.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;final&quot;];
+  <a href="http://build.fhir.org/observation.html#Observation.category">fhir:Observation.category</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;laboratory&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;laboratory&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/observation.html#Observation.code">fhir:Observation.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a loinc:718-7;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;718-7&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Hemoglobin [Mass/volume] in Blood&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Hemoglobin [Mass/volume] in Blood&quot; ]
+  ];
+  <a href="http://build.fhir.org/observation.html#Observation.subject">fhir:Observation.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/3bf76a75-8007-4272-a7f1-5f436f480201&quot; ]
+  ];
+  <a href="http://build.fhir.org/observation.html#Observation.encounter">fhir:Observation.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/b59aa7ed-8942-481f-a141-4047a49c69a4&quot; ]
+  ];
+  <a href="http://build.fhir.org/observation.html#Observation.effective[x]">fhir:Observation.effectiveDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2012-08-13T20:49:44-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/observation.html#Observation.issued">fhir:Observation.issued</a> [ <a href="http://build.fhir.org/datatypes.html#instant">fhir:value</a> &quot;2012-08-13T20:49:44.894-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/observation.html#Observation.value[x]">fhir:Observation.valueQuantity</a> [
+     <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://build.fhir.org/datatypes.html#decimal">fhir:value</a> &quot;12.727995335049208&quot;^^xsd:decimal ];
+     <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;g/dL&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://unitsofmeasure.org&quot; ];
+     <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;g/dL&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

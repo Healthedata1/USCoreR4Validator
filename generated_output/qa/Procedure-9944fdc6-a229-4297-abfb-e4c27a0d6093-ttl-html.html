@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+  <title>Procedure-9944fdc6-a229-4297-abfb-e4c27a0d6093-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Procedure;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/procedure.html#Procedure.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;9944fdc6-a229-4297-abfb-e4c27a0d6093&quot;];
+  <a href="http://build.fhir.org/procedure.html#Procedure.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 9944fdc6-a229-4297-abfb-e4c27a0d6093&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Replacement of contraceptive intrauterine device &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '46706006' = 'Change of intrauterine contraceptive device', given as 'Replacement of contraceptive intrauterine device'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-5a36c71e-0994-4d63-9e3f-8947fac4dbde.html\&quot;&gt;Generated Summary: id: 5a36c71e-0994-4d63-9e3f-8947fac4dbde; 77c3bf35-2fb7-4321-ac18-75f8cb32fb97, Medical Record Number = 77c3bf35-2fb7-4321-ac18-75f8cb32fb97, Social Security Number = 999-53-2372, Driver's License = S99942300, Passport Number = X30840426X; Sanda877 Wolff180 (OFFICIAL); ph: 555-349-7702(HOME); gender: female; birthDate: Mar 21, 1957; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;S&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-0370cb3b-da95-44a2-ba57-0200d62d593a.html\&quot;&gt;Generated Summary: id: 0370cb3b-da95-44a2-ba57-0200d62d593a; status: finished; &lt;span title=\&quot;{null outpatient}\&quot;&gt;outpatient&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 308335008}\&quot;&gt;Patient encounter procedure&lt;/span&gt;; period: Apr 16, 2009, 5:19:41 PM --&amp;gt; Apr 16, 2009, 6:15:41 PM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: Apr 16, 2009, 5:19:41 PM --&amp;gt; Apr 16, 2009, 6:00:41 PM&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.status">fhir:Procedure.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;completed&quot;];
+  <a href="http://build.fhir.org/procedure.html#Procedure.code">fhir:Procedure.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:46706006;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;46706006&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Replacement of contraceptive intrauterine device&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Replacement of contraceptive intrauterine device&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.subject">fhir:Procedure.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/5a36c71e-0994-4d63-9e3f-8947fac4dbde&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.encounter">fhir:Procedure.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/0370cb3b-da95-44a2-ba57-0200d62d593a&quot; ]
+  ];
+  <a href="http://build.fhir.org/procedure.html#Procedure.performed[x]">fhir:Procedure.performedPeriod</a> [
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2009-04-16T17:19:41-07:00&quot;^^xsd:dateTime ];
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2009-04-16T18:00:41-07:00&quot;^^xsd:dateTime ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

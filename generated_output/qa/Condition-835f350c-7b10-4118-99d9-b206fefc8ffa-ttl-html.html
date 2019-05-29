@@ -1,0 +1,62 @@
+﻿<html>
+<head>
+  <title>Condition-835f350c-7b10-4118-99d9-b206fefc8ffa-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Condition;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/condition.html#Condition.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;835f350c-7b10-4118-99d9-b206fefc8ffa&quot;];
+  <a href="http://build.fhir.org/condition.html#Condition.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 835f350c-7b10-4118-99d9-b206fefc8ffa&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Resolved &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/condition-clinical code 'resolved' = 'Resolved)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: Confirmed &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/condition-ver-status code 'confirmed' = 'Confirmed)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Sprain of ankle &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '44465007' = 'Sprain of ankle joint', given as 'Sprain of ankle'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-a34986ff-de7f-426a-84f5-dd885e1cae09.html\&quot;&gt;Generated Summary: id: a34986ff-de7f-426a-84f5-dd885e1cae09; e760e08d-a0ff-4cd7-83c0-36b27dae6ec3, Medical Record Number = e760e08d-a0ff-4cd7-83c0-36b27dae6ec3, Social Security Number = 999-11-2099, Driver's License = S99955357, Passport Number = X80966708X; Denisse335 Stracke611 (OFFICIAL); ph: 555-588-5915(HOME); gender: female; birthDate: Jun 16, 1997; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;Never Married&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-0ebde3b6-beae-4fee-819c-7f13d6049342.html\&quot;&gt;Generated Summary: id: 0ebde3b6-beae-4fee-819c-7f13d6049342; status: finished; &lt;span title=\&quot;{null emergency}\&quot;&gt;emergency&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 50849002}\&quot;&gt;Emergency room admission (procedure)&lt;/span&gt;; period: May 23, 2013, 6:27:51 AM --&amp;gt; May 23, 2013, 7:27:51 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: May 23, 2013, 6:27:51 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;abatement&lt;/b&gt;: Jun 27, 2013, 6:27:51 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: May 23, 2013, 6:27:51 AM&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.clinicalStatus">fhir:Condition.clinicalStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;resolved&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.verificationStatus">fhir:Condition.verificationStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/condition-ver-status&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;confirmed&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.code">fhir:Condition.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:44465007;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;44465007&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sprain of ankle&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Sprain of ankle&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.subject">fhir:Condition.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/a34986ff-de7f-426a-84f5-dd885e1cae09&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.encounter">fhir:Condition.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/0ebde3b6-beae-4fee-819c-7f13d6049342&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.onset[x]">fhir:Condition.onsetDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2013-05-23T06:27:51-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/condition.html#Condition.abatement[x]">fhir:Condition.abatementDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2013-06-27T06:27:51-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/condition.html#Condition.recordedDate">fhir:Condition.recordedDate</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2013-05-23T06:27:51-07:00&quot;^^xsd:dateTime].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

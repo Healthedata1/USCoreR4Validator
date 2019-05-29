@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:2.16.840.1.113883.3.26.1.5",
+  "code" : "N0000006627"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:2.16.840.1.113883.3.26.1.5\" is not known; The code provided (urn:oid:2.16.840.1.113883.3.26.1.5#N0000006627) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

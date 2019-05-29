@@ -1,0 +1,50 @@
+﻿<html>
+<head>
+  <title>Encounter-84e1fa5a-107a-4f05-af50-663e354413fa-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/encounter.html#Encounter">resourceType</a>" : "Encounter",
+  "<a href="http://build.fhir.org/encounter.html#Encounter.id">id</a>" : "84e1fa5a-107a-4f05-af50-663e354413fa",
+  "<a href="http://build.fhir.org/encounter.html#Encounter.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 84e1fa5a-107a-4f05-af50-663e354413fa&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: emergency (Details: [not stated] code emergency = 'emergency', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Emergency room admission (procedure) &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '50849002' = 'Admission to accident and emergency department', given as 'Emergency room admission (procedure)'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-e9d8d933-f424-45c3-afdd-5ad00ee5b62a.html\&quot;&gt;Generated Summary: id: e9d8d933-f424-45c3-afdd-5ad00ee5b62a; 0ed507b5-6d6b-4433-9cc0-338da9a13799, Medical Record Number = 0ed507b5-6d6b-4433-9cc0-338da9a13799, Social Security Number = 999-48-9913; Geraldo282 Reilly981 (OFFICIAL); ph: 555-880-6945(HOME); gender: male; birthDate: Apr 30, 2006; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;Never Married&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-cd11b6b2-d516-408b-aac0-dad86a4cedaa.html\&quot;&gt;Generated Summary: id: cd11b6b2-d516-408b-aac0-dad86a4cedaa; 260; active; Peggie783 Bradtke547 ; gender: female&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: Jun 8, 2014, 10:23:52 AM --&amp;gt; Jun 8, 2014, 12:53:52 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-fd328395-ab1d-35c6-a2d0-d05a9a79cf11.html\&quot;&gt;Generated Summary: id: fd328395-ab1d-35c6-a2d0-d05a9a79cf11; fd328395-ab1d-35c6-a2d0-d05a9a79cf11; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\&quot;&gt;Healthcare Provider&lt;/span&gt;; name: MERCY MEDICAL CTR; ph: 4137489000&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/encounter.html#Encounter.status">status</a>" : "finished",
+  "<a href="http://build.fhir.org/encounter.html#Encounter.class">class</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "emergency"
+  },
+  "<a href="http://build.fhir.org/encounter.html#Encounter.type">type</a>" : [
+    {
+      "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "50849002",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Emergency room admission (procedure)"
+        }
+      ],
+      "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Emergency room admission (procedure)"
+    }
+  ],
+  "<a href="http://build.fhir.org/encounter.html#Encounter.subject">subject</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/e9d8d933-f424-45c3-afdd-5ad00ee5b62a"
+  },
+  "<a href="http://build.fhir.org/encounter.html#Encounter.participant">participant</a>" : [
+    {
+      "<a href="http://build.fhir.org/encounter.html#Encounter.participant.individual">individual</a>" : {
+        "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Practitioner/cd11b6b2-d516-408b-aac0-dad86a4cedaa"
+      }
+    }
+  ],
+  "<a href="http://build.fhir.org/encounter.html#Encounter.period">period</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Period#Period.start">start</a>" : "2014-06-08T10:23:52-07:00",
+    "<a href="http://build.fhir.org/datatypes.html#Period#Period.end">end</a>" : "2014-06-08T12:53:52-07:00"
+  },
+  "<a href="http://build.fhir.org/encounter.html#Encounter.serviceProvider">serviceProvider</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Organization/fd328395-ab1d-35c6-a2d0-d05a9a79cf11"
+  }
+}</pre>
+</body>
+</html>

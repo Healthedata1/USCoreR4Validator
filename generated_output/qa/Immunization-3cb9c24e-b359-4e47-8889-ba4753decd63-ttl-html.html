@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+  <title>Immunization-3cb9c24e-b359-4e47-8889-ba4753decd63-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Immunization;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/immunization.html#Immunization.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;3cb9c24e-b359-4e47-8889-ba4753decd63&quot;];
+  <a href="http://build.fhir.org/immunization.html#Immunization.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 3cb9c24e-b359-4e47-8889-ba4753decd63&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;vaccineCode&lt;/b&gt;: Pneumococcal conjugate PCV 13 &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://hl7.org/fhir/sid/cvx code '133' = 'Pneumococcal conjugate PCV 13', given as 'Pneumococcal conjugate PCV 13'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-0b34e8f6-6b95-4ca2-a6fb-622901f3ff64.html\&quot;&gt;Generated Summary: id: 0b34e8f6-6b95-4ca2-a6fb-622901f3ff64; d430c58e-86f0-4f49-856e-a518e9f802c4, Medical Record Number = d430c58e-86f0-4f49-856e-a518e9f802c4, Social Security Number = 999-16-7847; Ronnie7 Graham902 (OFFICIAL); ph: 555-217-7883(HOME); gender: male; birthDate: Dec 4, 2014; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;Never Married&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-85245df1-e09b-415b-a873-8aff32b74637.html\&quot;&gt;Generated Summary: id: 85245df1-e09b-415b-a873-8aff32b74637; status: finished; &lt;span title=\&quot;{null wellness}\&quot;&gt;wellness&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185349003}\&quot;&gt;Encounter for check up (procedure)&lt;/span&gt;; period: Aug 13, 2015, 6:47:05 PM --&amp;gt; Aug 13, 2015, 7:17:05 PM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: Aug 13, 2015, 6:47:05 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;primarySource&lt;/b&gt;: true&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/immunization.html#Immunization.status">fhir:Immunization.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;completed&quot;];
+  <a href="http://build.fhir.org/immunization.html#Immunization.vaccineCode">fhir:Immunization.vaccineCode</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/sid/cvx&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;133&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Pneumococcal conjugate PCV 13&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Pneumococcal conjugate PCV 13&quot; ]
+  ];
+  <a href="http://build.fhir.org/immunization.html#Immunization.patient">fhir:Immunization.patient</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/0b34e8f6-6b95-4ca2-a6fb-622901f3ff64&quot; ]
+  ];
+  <a href="http://build.fhir.org/immunization.html#Immunization.encounter">fhir:Immunization.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/85245df1-e09b-415b-a873-8aff32b74637&quot; ]
+  ];
+  <a href="http://build.fhir.org/immunization.html#Immunization.occurrence[x]">fhir:Immunization.occurrenceDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2015-08-13T18:47:05-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/immunization.html#Immunization.primarySource">fhir:Immunization.primarySource</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

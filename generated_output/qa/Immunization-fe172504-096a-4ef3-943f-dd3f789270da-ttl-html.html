@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+  <title>Immunization-fe172504-096a-4ef3-943f-dd3f789270da-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Immunization;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/immunization.html#Immunization.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;fe172504-096a-4ef3-943f-dd3f789270da&quot;];
+  <a href="http://build.fhir.org/immunization.html#Immunization.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: fe172504-096a-4ef3-943f-dd3f789270da&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;vaccineCode&lt;/b&gt;: Hep B, adult &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://hl7.org/fhir/sid/cvx code '43' = 'Hep B, adult', given as 'Hep B, adult'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-edba3916-9622-463e-aa6a-d9622fd399a1.html\&quot;&gt;Generated Summary: id: edba3916-9622-463e-aa6a-d9622fd399a1; 3cbabe9b-025b-4e3c-9a57-8b2ac594c79a, Medical Record Number = 3cbabe9b-025b-4e3c-9a57-8b2ac594c79a, Social Security Number = 999-98-8986, Driver's License = S99913433, Passport Number = X7839146X; Miles206 Gutkowski940 (OFFICIAL); ph: 555-627-6863(HOME); gender: male; birthDate: Oct 21, 1960; deceased: Aug 25, 1992, 8:31:04 AM; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-5c56fc98-9f8a-4c7e-8192-9e75c7862ab1.html\&quot;&gt;Generated Summary: id: 5c56fc98-9f8a-4c7e-8192-9e75c7862ab1; status: finished; &lt;span title=\&quot;{null wellness}\&quot;&gt;wellness&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185349003}\&quot;&gt;Encounter for check up (procedure)&lt;/span&gt;; period: Dec 31, 1982, 7:31:04 AM --&amp;gt; Dec 31, 1982, 7:46:04 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: Dec 31, 1982, 7:31:04 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;primarySource&lt;/b&gt;: true&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/immunization.html#Immunization.status">fhir:Immunization.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;completed&quot;];
+  <a href="http://build.fhir.org/immunization.html#Immunization.vaccineCode">fhir:Immunization.vaccineCode</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/sid/cvx&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;43&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Hep B, adult&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Hep B, adult&quot; ]
+  ];
+  <a href="http://build.fhir.org/immunization.html#Immunization.patient">fhir:Immunization.patient</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/edba3916-9622-463e-aa6a-d9622fd399a1&quot; ]
+  ];
+  <a href="http://build.fhir.org/immunization.html#Immunization.encounter">fhir:Immunization.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/5c56fc98-9f8a-4c7e-8192-9e75c7862ab1&quot; ]
+  ];
+  <a href="http://build.fhir.org/immunization.html#Immunization.occurrence[x]">fhir:Immunization.occurrenceDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;1982-12-31T07:31:04-08:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/immunization.html#Immunization.primarySource">fhir:Immunization.primarySource</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

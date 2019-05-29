@@ -1,0 +1,62 @@
+﻿<html>
+<head>
+  <title>Condition-42760412-ed78-43bf-b791-7be9b6a4fbc5-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Condition;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/condition.html#Condition.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;42760412-ed78-43bf-b791-7be9b6a4fbc5&quot;];
+  <a href="http://build.fhir.org/condition.html#Condition.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 42760412-ed78-43bf-b791-7be9b6a4fbc5&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Resolved &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/condition-clinical code 'resolved' = 'Resolved)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: Confirmed &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/condition-ver-status code 'confirmed' = 'Confirmed)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Acute viral pharyngitis (disorder) &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '195662009' = 'Acute viral pharyngitis', given as 'Acute viral pharyngitis (disorder)'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-25e78014-cd68-42c2-ad5e-36156830c931.html\&quot;&gt;Generated Summary: id: 25e78014-cd68-42c2-ad5e-36156830c931; ce31b152-cf02-4c9b-b32a-eab84faefb29, Medical Record Number = ce31b152-cf02-4c9b-b32a-eab84faefb29, Social Security Number = 999-11-9809, Driver's License = S99934081, Passport Number = X81772443X; Paula289 Kuhlman484 (OFFICIAL); ph: 555-166-8586(HOME); gender: female; birthDate: Oct 8, 1992; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;Never Married&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-f1f97f75-8f64-4600-b2aa-196567530892.html\&quot;&gt;Generated Summary: id: f1f97f75-8f64-4600-b2aa-196567530892; status: finished; &lt;span title=\&quot;{null ambulatory}\&quot;&gt;ambulatory&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185345009}\&quot;&gt;Encounter for symptom&lt;/span&gt;; period: Sep 19, 2015, 10:47:11 AM --&amp;gt; Sep 19, 2015, 11:17:11 AM; &lt;span title=\&quot;Codes: {http://snomed.info/sct 195662009}\&quot;&gt;Acute viral pharyngitis (disorder)&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Sep 19, 2015, 10:47:11 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;abatement&lt;/b&gt;: Oct 2, 2015, 10:47:11 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: Sep 19, 2015, 10:47:11 AM&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.clinicalStatus">fhir:Condition.clinicalStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;resolved&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.verificationStatus">fhir:Condition.verificationStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/condition-ver-status&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;confirmed&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.code">fhir:Condition.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:195662009;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;195662009&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Acute viral pharyngitis (disorder)&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Acute viral pharyngitis (disorder)&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.subject">fhir:Condition.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/25e78014-cd68-42c2-ad5e-36156830c931&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.encounter">fhir:Condition.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/f1f97f75-8f64-4600-b2aa-196567530892&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.onset[x]">fhir:Condition.onsetDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2015-09-19T10:47:11-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/condition.html#Condition.abatement[x]">fhir:Condition.abatementDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2015-10-02T10:47:11-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/condition.html#Condition.recordedDate">fhir:Condition.recordedDate</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2015-09-19T10:47:11-07:00&quot;^^xsd:dateTime].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

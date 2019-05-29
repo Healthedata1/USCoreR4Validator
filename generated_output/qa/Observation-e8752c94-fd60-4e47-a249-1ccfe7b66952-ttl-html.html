@@ -1,0 +1,89 @@
+﻿<html>
+<head>
+  <title>Observation-e8752c94-fd60-4e47-a249-1ccfe7b66952-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix loinc: &lt;http://loinc.org/rdf#&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Observation;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/observation.html#Observation.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;e8752c94-fd60-4e47-a249-1ccfe7b66952&quot;];
+  <a href="http://build.fhir.org/observation.html#Observation.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: e8752c94-fd60-4e47-a249-1ccfe7b66952&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: vital-signs &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'vital-signs'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Blood Pressure &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '55284-4' = 'Blood pressure systolic and diastolic', given as 'Blood Pressure'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-29d5d7d5-8fb8-49e2-bcc9-11a9f4b615e9.html\&quot;&gt;Generated Summary: id: 29d5d7d5-8fb8-49e2-bcc9-11a9f4b615e9; c30588b4-517d-4e33-8a41-4119e4ff3ee1, Medical Record Number = c30588b4-517d-4e33-8a41-4119e4ff3ee1, Social Security Number = 999-11-3551; Harlan808 Murazik203 (OFFICIAL); ph: 555-554-6735(HOME); gender: male; birthDate: Jul 8, 2008; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;Never Married&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-b5caab2f-ab81-4a72-9062-7f8c9b042729.html\&quot;&gt;Generated Summary: id: b5caab2f-ab81-4a72-9062-7f8c9b042729; status: finished; &lt;span title=\&quot;{null wellness}\&quot;&gt;wellness&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185349003}\&quot;&gt;Encounter for check up (procedure)&lt;/span&gt;; period: Jun 16, 2009, 5:12:44 AM --&amp;gt; Jun 16, 2009, 5:42:44 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Jun 16, 2009, 5:12:44 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Jun 16, 2009, 5:12:44 AM&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diastolic Blood Pressure &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '8462-4' = 'Diastolic blood pressure', given as 'Diastolic Blood Pressure'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 79.66078294240897 mm[Hg]&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM code mm[Hg] = 'mm[Hg]')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Systolic Blood Pressure &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '8480-6' = 'Systolic blood pressure', given as 'Systolic Blood Pressure'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 109.55054981918093 mm[Hg]&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM code mm[Hg] = 'mm[Hg]')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/observation.html#Observation.status">fhir:Observation.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;final&quot;];
+  <a href="http://build.fhir.org/observation.html#Observation.category">fhir:Observation.category</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;vital-signs&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;vital-signs&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/observation.html#Observation.code">fhir:Observation.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a loinc:55284-4;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;55284-4&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Blood Pressure&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Blood Pressure&quot; ]
+  ];
+  <a href="http://build.fhir.org/observation.html#Observation.subject">fhir:Observation.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/29d5d7d5-8fb8-49e2-bcc9-11a9f4b615e9&quot; ]
+  ];
+  <a href="http://build.fhir.org/observation.html#Observation.encounter">fhir:Observation.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/b5caab2f-ab81-4a72-9062-7f8c9b042729&quot; ]
+  ];
+  <a href="http://build.fhir.org/observation.html#Observation.effective[x]">fhir:Observation.effectiveDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2009-06-16T05:12:44-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/observation.html#Observation.issued">fhir:Observation.issued</a> [ <a href="http://build.fhir.org/datatypes.html#instant">fhir:value</a> &quot;2009-06-16T05:12:44.305-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/observation.html#Observation.component">fhir:Observation.component</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/observation.html#Observation.component.code">fhir:Observation.component.code</a> [
+       <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         a loinc:8462-4;
+         <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;8462-4&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Diastolic Blood Pressure&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Diastolic Blood Pressure&quot; ]     ];
+     <a href="http://build.fhir.org/observation.html#Observation.component.value[x]">fhir:Observation.component.valueQuantity</a> [
+       <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://build.fhir.org/datatypes.html#decimal">fhir:value</a> &quot;79.66078294240897&quot;^^xsd:decimal ];
+       <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;mm[Hg]&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://unitsofmeasure.org&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;mm[Hg]&quot; ]     ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://build.fhir.org/observation.html#Observation.component.code">fhir:Observation.component.code</a> [
+       <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         a loinc:8480-6;
+         <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://loinc.org&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;8480-6&quot; ];
+         <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Systolic Blood Pressure&quot; ]       ];
+       <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Systolic Blood Pressure&quot; ]     ];
+     <a href="http://build.fhir.org/observation.html#Observation.component.value[x]">fhir:Observation.component.valueQuantity</a> [
+       <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">fhir:Quantity.value</a> [ <a href="http://build.fhir.org/datatypes.html#decimal">fhir:value</a> &quot;109.55054981918093&quot;^^xsd:decimal ];
+       <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">fhir:Quantity.unit</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;mm[Hg]&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.system">fhir:Quantity.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://unitsofmeasure.org&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.code">fhir:Quantity.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;mm[Hg]&quot; ]     ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

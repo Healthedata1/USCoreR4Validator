@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30",
+  "code" : "76"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30\" is not known; The code provided (urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30#76) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30",
+  "code" : "70"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30\" is not known; The code provided (urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30#70) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30",
+  "code" : "117"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30\" is not known; The code provided (urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30#117) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30",
+  "code" : "210"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30\" is not known; The code provided (urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30#210) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30",
+  "code" : "107"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30\" is not known; The code provided (urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30#107) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

@@ -1,0 +1,50 @@
+﻿<html>
+<head>
+  <title>Encounter-431c0cc5-21b3-43ec-8a3f-e4cde3d2e385-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/encounter.html#Encounter">resourceType</a>" : "Encounter",
+  "<a href="http://build.fhir.org/encounter.html#Encounter.id">id</a>" : "431c0cc5-21b3-43ec-8a3f-e4cde3d2e385",
+  "<a href="http://build.fhir.org/encounter.html#Encounter.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 431c0cc5-21b3-43ec-8a3f-e4cde3d2e385&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: wellness (Details: [not stated] code wellness = 'wellness', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Encounter for check up (procedure) &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '185349003' = 'Encounter for check up (procedure)', given as 'Encounter for check up (procedure)'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-0b34e8f6-6b95-4ca2-a6fb-622901f3ff64.html\&quot;&gt;Generated Summary: id: 0b34e8f6-6b95-4ca2-a6fb-622901f3ff64; d430c58e-86f0-4f49-856e-a518e9f802c4, Medical Record Number = d430c58e-86f0-4f49-856e-a518e9f802c4, Social Security Number = 999-16-7847; Ronnie7 Graham902 (OFFICIAL); ph: 555-217-7883(HOME); gender: male; birthDate: Dec 4, 2014; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;Never Married&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-8b05ed7b-4326-4467-8735-989d95fc2d5e.html\&quot;&gt;Generated Summary: id: 8b05ed7b-4326-4467-8735-989d95fc2d5e; 200; active; Barry322 Nicolas769 ; gender: male&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: Apr 27, 2017, 6:47:05 PM --&amp;gt; Apr 27, 2017, 7:17:05 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-c44f361c-2efb-3050-8f97-0354a12e2920.html\&quot;&gt;Generated Summary: id: c44f361c-2efb-3050-8f97-0354a12e2920; c44f361c-2efb-3050-8f97-0354a12e2920; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\&quot;&gt;Healthcare Provider&lt;/span&gt;; name: SIGNATURE HEALTHCARE BROCKTON HOSPITAL; ph: 5089417000&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/encounter.html#Encounter.status">status</a>" : "finished",
+  "<a href="http://build.fhir.org/encounter.html#Encounter.class">class</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "wellness"
+  },
+  "<a href="http://build.fhir.org/encounter.html#Encounter.type">type</a>" : [
+    {
+      "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "185349003",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Encounter for check up (procedure)"
+        }
+      ],
+      "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Encounter for check up (procedure)"
+    }
+  ],
+  "<a href="http://build.fhir.org/encounter.html#Encounter.subject">subject</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/0b34e8f6-6b95-4ca2-a6fb-622901f3ff64"
+  },
+  "<a href="http://build.fhir.org/encounter.html#Encounter.participant">participant</a>" : [
+    {
+      "<a href="http://build.fhir.org/encounter.html#Encounter.participant.individual">individual</a>" : {
+        "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Practitioner/8b05ed7b-4326-4467-8735-989d95fc2d5e"
+      }
+    }
+  ],
+  "<a href="http://build.fhir.org/encounter.html#Encounter.period">period</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Period#Period.start">start</a>" : "2017-04-27T18:47:05-07:00",
+    "<a href="http://build.fhir.org/datatypes.html#Period#Period.end">end</a>" : "2017-04-27T19:17:05-07:00"
+  },
+  "<a href="http://build.fhir.org/encounter.html#Encounter.serviceProvider">serviceProvider</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Organization/c44f361c-2efb-3050-8f97-0354a12e2920"
+  }
+}</pre>
+</body>
+</html>

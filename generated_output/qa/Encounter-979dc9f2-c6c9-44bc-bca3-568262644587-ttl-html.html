@@ -1,0 +1,61 @@
+﻿<html>
+<head>
+  <title>Encounter-979dc9f2-c6c9-44bc-bca3-568262644587-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Encounter;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/encounter.html#Encounter.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;979dc9f2-c6c9-44bc-bca3-568262644587&quot;];
+  <a href="http://build.fhir.org/encounter.html#Encounter.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 979dc9f2-c6c9-44bc-bca3-568262644587&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: ambulatory (Details: [not stated] code ambulatory = 'ambulatory', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Encounter for 'check-up' &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '185349003' = 'Encounter for check up (procedure)', given as 'Encounter for 'check-up''})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-2c8cdca6-5f4a-41ff-8b8a-f24787b212b8.html\&quot;&gt;Generated Summary: id: 2c8cdca6-5f4a-41ff-8b8a-f24787b212b8; d6e8d6dd-cddd-4e3a-8ae1-6686abaeb4e5, Medical Record Number = d6e8d6dd-cddd-4e3a-8ae1-6686abaeb4e5, Social Security Number = 999-58-6881, Driver's License = S99922426, Passport Number = X28165233X; Cameron381 Beatty507 (OFFICIAL); ph: 555-300-3282(HOME); gender: male; birthDate: Mar 14, 1953; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;S&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-f9c5a38d-cee9-446c-94d2-3ce17790a098.html\&quot;&gt;Generated Summary: id: f9c5a38d-cee9-446c-94d2-3ce17790a098; 80; active; Felicitas300 Kub800 ; gender: female&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: Jun 6, 2009, 11:37:13 AM --&amp;gt; Jun 6, 2009, 12:31:13 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviceProvider&lt;/b&gt;: &lt;a href=\&quot;Organization-8b58cdd1-3d79-3126-8fe0-da2c54d6805c.html\&quot;&gt;Generated Summary: id: 8b58cdd1-3d79-3126-8fe0-da2c54d6805c; 8b58cdd1-3d79-3126-8fe0-da2c54d6805c; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\&quot;&gt;Healthcare Provider&lt;/span&gt;; name: CARNEY HOSPITAL; ph: 6175062000&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.status">fhir:Encounter.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;finished&quot;];
+  <a href="http://build.fhir.org/encounter.html#Encounter.class">fhir:Encounter.class</a> [
+     <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;ambulatory&quot; ]
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.type">fhir:Encounter.type</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:185349003;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;185349003&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter for 'check-up'&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter for 'check-up'&quot; ]
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.subject">fhir:Encounter.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/2c8cdca6-5f4a-41ff-8b8a-f24787b212b8&quot; ]
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.participant">fhir:Encounter.participant</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/encounter.html#Encounter.participant.individual">fhir:Encounter.participant.individual</a> [
+       <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Practitioner/f9c5a38d-cee9-446c-94d2-3ce17790a098&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.period">fhir:Encounter.period</a> [
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2009-06-06T11:37:13-07:00&quot;^^xsd:dateTime ];
+     <a href="http://build.fhir.org/datatypes.html#Period#Period.end">fhir:Period.end</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2009-06-06T12:31:13-07:00&quot;^^xsd:dateTime ]
+  ];
+  <a href="http://build.fhir.org/encounter.html#Encounter.serviceProvider">fhir:Encounter.serviceProvider</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Organization/8b58cdd1-3d79-3126-8fe0-da2c54d6805c&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

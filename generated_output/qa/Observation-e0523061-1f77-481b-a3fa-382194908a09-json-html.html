@@ -1,0 +1,57 @@
+﻿<html>
+<head>
+  <title>Observation-e0523061-1f77-481b-a3fa-382194908a09-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/observation.html#Observation">resourceType</a>" : "Observation",
+  "<a href="http://build.fhir.org/observation.html#Observation.id">id</a>" : "e0523061-1f77-481b-a3fa-382194908a09",
+  "<a href="http://build.fhir.org/observation.html#Observation.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: e0523061-1f77-481b-a3fa-382194908a09&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: survey &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'survey' = 'Survey', given as 'survey'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Tobacco smoking status NHIS &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '72166-2' = 'Tobacco smoking status NHIS', given as 'Tobacco smoking status NHIS'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-8eb73bb0-c84e-41c9-9218-a327c6e92dca.html\&quot;&gt;Generated Summary: id: 8eb73bb0-c84e-41c9-9218-a327c6e92dca; 69c01a86-7d57-4ff1-96e4-73e09533616e, Medical Record Number = 69c01a86-7d57-4ff1-96e4-73e09533616e, Social Security Number = 999-75-1406, Driver's License = S99959454, Passport Number = X87579539X; Kermit56 Bogan287 (OFFICIAL); ph: 555-629-8053(HOME); gender: male; birthDate: Sep 28, 1969; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-d748e4c2-8cf1-4036-a7a2-414e6ef21a65.html\&quot;&gt;Generated Summary: id: d748e4c2-8cf1-4036-a7a2-414e6ef21a65; status: finished; &lt;span title=\&quot;{null wellness}\&quot;&gt;wellness&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185349003}\&quot;&gt;Encounter for check up (procedure)&lt;/span&gt;; period: Jul 25, 2010, 4:25:48 PM --&amp;gt; Jul 25, 2010, 4:40:48 PM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Jul 25, 2010, 4:25:48 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Jul 25, 2010, 4:25:48 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Former smoker &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '8517006' = 'Ex-smoker (finding)', given as 'Former smoker'})&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/observation.html#Observation.status">status</a>" : "final",
+  "<a href="http://build.fhir.org/observation.html#Observation.category">category</a>" : [
+    {
+      "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "survey",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "survey"
+        }
+      ]
+    }
+  ],
+  "<a href="http://build.fhir.org/observation.html#Observation.code">code</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "72166-2",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Tobacco smoking status NHIS"
+      }
+    ],
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Tobacco smoking status NHIS"
+  },
+  "<a href="http://build.fhir.org/observation.html#Observation.subject">subject</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/8eb73bb0-c84e-41c9-9218-a327c6e92dca"
+  },
+  "<a href="http://build.fhir.org/observation.html#Observation.encounter">encounter</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Encounter/d748e4c2-8cf1-4036-a7a2-414e6ef21a65"
+  },
+  "<a href="http://build.fhir.org/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2010-07-25T16:25:48-07:00",
+  "<a href="http://build.fhir.org/observation.html#Observation.issued">issued</a>" : "2010-07-25T16:25:48.661-07:00",
+  "<a href="http://build.fhir.org/observation.html#Observation.value[x]">valueCodeableConcept</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "8517006",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Former smoker"
+      }
+    ],
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Former smoker"
+  }
+}</pre>
+</body>
+</html>

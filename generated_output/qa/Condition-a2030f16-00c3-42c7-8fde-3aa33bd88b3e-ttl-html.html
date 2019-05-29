@@ -1,0 +1,61 @@
+﻿<html>
+<head>
+  <title>Condition-a2030f16-00c3-42c7-8fde-3aa33bd88b3e-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Condition;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/condition.html#Condition.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;a2030f16-00c3-42c7-8fde-3aa33bd88b3e&quot;];
+  <a href="http://build.fhir.org/condition.html#Condition.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: a2030f16-00c3-42c7-8fde-3aa33bd88b3e&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/condition-clinical code 'active' = 'Active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: Confirmed &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/condition-ver-status code 'confirmed' = 'Confirmed)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: History of single seizure (situation) &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '703151001' = 'History of single seizure', given as 'History of single seizure (situation)'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-bdab681a-0f9a-40d6-8318-37c1a53223c1.html\&quot;&gt;Generated Summary: id: bdab681a-0f9a-40d6-8318-37c1a53223c1; d3ada1e9-b5bc-4341-bb1b-555cb6aaed9d, Medical Record Number = d3ada1e9-b5bc-4341-bb1b-555cb6aaed9d, Social Security Number = 999-83-6585; Marco Antonio298 Hurtado459 (OFFICIAL); ph: 555-185-5373(HOME); gender: male; birthDate: Oct 24, 1982; deceased: Jul 13, 1997, 7:40:16 AM; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;Never Married&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-95f1f91b-7cd4-4d57-8372-794dfde3c00f.html\&quot;&gt;Generated Summary: id: 95f1f91b-7cd4-4d57-8372-794dfde3c00f; status: finished; &lt;span title=\&quot;{null emergency}\&quot;&gt;emergency&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 50849002}\&quot;&gt;Emergency Room Admission&lt;/span&gt;; period: Oct 24, 1982, 7:40:16 AM --&amp;gt; Oct 24, 1982, 10:47:16 AM; &lt;span title=\&quot;Codes: {http://snomed.info/sct 128613002}\&quot;&gt;Seizure disorder&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;onset&lt;/b&gt;: Oct 24, 1982, 7:40:16 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: Oct 24, 1982, 7:40:16 AM&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.clinicalStatus">fhir:Condition.clinicalStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.verificationStatus">fhir:Condition.verificationStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/condition-ver-status&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;confirmed&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.code">fhir:Condition.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:703151001;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;703151001&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;History of single seizure (situation)&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;History of single seizure (situation)&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.subject">fhir:Condition.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/bdab681a-0f9a-40d6-8318-37c1a53223c1&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.encounter">fhir:Condition.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/95f1f91b-7cd4-4d57-8372-794dfde3c00f&quot; ]
+  ];
+  <a href="http://build.fhir.org/condition.html#Condition.onset[x]">fhir:Condition.onsetDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;1982-10-24T07:40:16-07:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/condition.html#Condition.recordedDate">fhir:Condition.recordedDate</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;1982-10-24T07:40:16-07:00&quot;^^xsd:dateTime].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

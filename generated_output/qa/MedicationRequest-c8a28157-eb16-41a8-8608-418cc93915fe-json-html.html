@@ -1,0 +1,39 @@
+﻿<html>
+<head>
+  <title>MedicationRequest-c8a28157-eb16-41a8-8608-418cc93915fe-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/medicationrequest.html#MedicationRequest">resourceType</a>" : "MedicationRequest",
+  "<a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.id">id</a>" : "c8a28157-eb16-41a8-8608-418cc93915fe",
+  "<a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: c8a28157-eb16-41a8-8608-418cc93915fe&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: stopped&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: Errin 28 Day Pack &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {RxNorm code '831533' = 'Errin 28 Day Pack', given as 'Errin 28 Day Pack'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-22d36b05-6511-464a-954d-13fff7327a43.html\&quot;&gt;Generated Summary: id: 22d36b05-6511-464a-954d-13fff7327a43; f2231e42-7496-43cc-8be5-76f88817e37b, Medical Record Number = f2231e42-7496-43cc-8be5-76f88817e37b, Social Security Number = 999-17-5629, Driver's License = S99997316, Passport Number = X64858069X; Danuta945 Baumbach677 (OFFICIAL), Danuta945 Reynolds644 (MAIDEN); ph: 555-591-7291(HOME); gender: female; birthDate: Feb 17, 1992; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-b63d5288-1788-480f-851b-b82afae91895.html\&quot;&gt;Generated Summary: id: b63d5288-1788-480f-851b-b82afae91895; status: finished; &lt;span title=\&quot;{null outpatient}\&quot;&gt;outpatient&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 698314001}\&quot;&gt;Consultation for treatment&lt;/span&gt;; period: May 6, 2013, 5:49:50 PM --&amp;gt; May 6, 2013, 6:04:50 PM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: May 6, 2013, 5:49:50 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;a href=\&quot;Practitioner-6942ef19-5039-4035-bbab-3a89be5acae4.html\&quot;&gt;Generated Summary: id: 6942ef19-5039-4035-bbab-3a89be5acae4; 240; active; Ignacio928 Towne435 ; gender: male&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.status">status</a>" : "stopped",
+  "<a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.intent">intent</a>" : "order",
+  "<a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.medication[x]">medicationCodeableConcept</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "831533",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Errin 28 Day Pack"
+      }
+    ],
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Errin 28 Day Pack"
+  },
+  "<a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.subject">subject</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/22d36b05-6511-464a-954d-13fff7327a43"
+  },
+  "<a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.encounter">encounter</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Encounter/b63d5288-1788-480f-851b-b82afae91895"
+  },
+  "<a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.authoredOn">authoredOn</a>" : "2013-05-06T17:49:50-07:00",
+  "<a href="http://build.fhir.org/medicationrequest.html#MedicationRequest.requester">requester</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Practitioner/6942ef19-5039-4035-bbab-3a89be5acae4"
+  }
+}</pre>
+</body>
+</html>

@@ -1,0 +1,76 @@
+---
+# jekyll header
+level: 2
+template: base
+active: format
+layout: fhir-artifact
+type: ValueSet
+id: simple-language
+topofpage: True
+---
+
+<!-- ig template for many conformance resource html pages  ('base' in definitions file)  can not be used for conformance resources that have more that a single base template. e.g.,  sd since there are mapping and definitions templates for it as well  they need to be split out into 3 separate templates -->
+
+<!-- ============ CONTENT CONTENT=============== -->
+
+{% case 'ValueSet' %} <!-- content depends on type -->
+{% when 'ValueSet' %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+  {% include ValueSet-simple-language-summary.xhtml %}
+  {% include ValueSet-simple-language-xref.xhtml %}
+  {% include ValueSet-simple-language-cld.xhtml %}
+
+  <h3>Expansion</h3>
+
+  {% include ValueSet-simple-language-expansion.xhtml %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+{% when 'CodeSystem' %}
+<!-- ============CODESYSTEM CONTENT CONTENT=============== -->
+
+  {% include ValueSet-simple-language-summary.xhtml %}
+
+  {% include ValueSet-simple-language-html.xhtml %}
+
+  <!-- ============CODESYSTEM CONTENT CONTENT=============== -->
+
+{% when 'OperationDefinition' %}
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+  {% include ValueSet-simple-language-html.xhtml %}
+
+  {% capture my-include %}{% include simple-language-example.md %}{% endcapture %}{{ my-include | markdownify }}  <!--add inline examples here -->
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+
+{% when 'CapabilityStatement' %}
+<!-- ============CapabilityStatement CONTENT CONTENT=============== -->
+
+<p>
+Downloads:  CapabilityStatement: (<a href="ValueSet-simple-language.xml" download>XML</a>, <a href="ValueSet-simple-language.json" download>JSON</a>),<a href="simple-language.openapi.json">OpenAPI-Swagger Definition file</a>
+</p>
+
+  {% include ValueSet-simple-language-html.xhtml %}
+
+<!-- ============CapabilityStatement CONTENT CONTENT=============== -->
+
+{% else %}
+<!-- ============ConceptMap CapabilityStatement SearchParameter CONTENT CONTENT=============== -->
+
+
+  {% include ValueSet-simple-language-html.xhtml %}
+
+  <!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+{% endcase %}
+
+
+<!-- simple format links
+<p>
+Formats: <a href="ValueSet-simple-language.html">Narrative</a>, <a href="ValueSet-simple-language.xml.html">XML</a>, <a href="ValueSet-simple-language.json.html">JSON</a>, <a href="ValueSet-simple-language.ttl.html">Turtle</a>
+</p>
+-->
+
+
+  <!-- ==============END CONTENT END CONTENT=================== -->

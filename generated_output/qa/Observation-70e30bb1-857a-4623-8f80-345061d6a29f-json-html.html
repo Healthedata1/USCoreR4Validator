@@ -1,0 +1,53 @@
+﻿<html>
+<head>
+  <title>Observation-70e30bb1-857a-4623-8f80-345061d6a29f-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/observation.html#Observation">resourceType</a>" : "Observation",
+  "<a href="http://build.fhir.org/observation.html#Observation.id">id</a>" : "70e30bb1-857a-4623-8f80-345061d6a29f",
+  "<a href="http://build.fhir.org/observation.html#Observation.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 70e30bb1-857a-4623-8f80-345061d6a29f&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: vital-signs &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'vital-signs'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Body Weight &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '29463-7' = 'Body weight', given as 'Body Weight'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-70fb5f55-669d-4642-9532-1bee5729a08b.html\&quot;&gt;Generated Summary: id: 70fb5f55-669d-4642-9532-1bee5729a08b; abc5c08e-84b4-401e-b754-548352eec92b, Medical Record Number = abc5c08e-84b4-401e-b754-548352eec92b, Social Security Number = 999-90-5930, Driver's License = S99999253, Passport Number = X5794172X; Jennell254 Stamm704 (OFFICIAL); ph: 555-866-6334(HOME); gender: female; birthDate: Mar 16, 1939; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;S&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-c6d06d15-8e9e-4448-8479-9cbaf0185bb8.html\&quot;&gt;Generated Summary: id: c6d06d15-8e9e-4448-8479-9cbaf0185bb8; status: finished; &lt;span title=\&quot;{null wellness}\&quot;&gt;wellness&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185349003}\&quot;&gt;Encounter for check up (procedure)&lt;/span&gt;; period: Mar 27, 2014, 9:08:17 AM --&amp;gt; Mar 27, 2014, 9:23:17 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Mar 27, 2014, 9:08:17 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Mar 27, 2014, 9:08:17 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 59.62467107112383 kg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM code kg = 'kg')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/observation.html#Observation.status">status</a>" : "final",
+  "<a href="http://build.fhir.org/observation.html#Observation.category">category</a>" : [
+    {
+      "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "vital-signs",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "vital-signs"
+        }
+      ]
+    }
+  ],
+  "<a href="http://build.fhir.org/observation.html#Observation.code">code</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "29463-7",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Body Weight"
+      }
+    ],
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Body Weight"
+  },
+  "<a href="http://build.fhir.org/observation.html#Observation.subject">subject</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/70fb5f55-669d-4642-9532-1bee5729a08b"
+  },
+  "<a href="http://build.fhir.org/observation.html#Observation.encounter">encounter</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Encounter/c6d06d15-8e9e-4448-8479-9cbaf0185bb8"
+  },
+  "<a href="http://build.fhir.org/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2014-03-27T09:08:17-07:00",
+  "<a href="http://build.fhir.org/observation.html#Observation.issued">issued</a>" : "2014-03-27T09:08:17.417-07:00",
+  "<a href="http://build.fhir.org/observation.html#Observation.value[x]">valueQuantity</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">value</a>" : 59.62467107112383,
+    "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">unit</a>" : "kg",
+    "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+    "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.code">code</a>" : "kg"
+  }
+}</pre>
+</body>
+</html>

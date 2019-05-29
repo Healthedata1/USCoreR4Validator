@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+  <title>Procedure-a6ac9f68-7dc1-4973-a3e6-f231b2856d54-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/procedure.html#Procedure">resourceType</a>" : "Procedure",
+  "<a href="http://build.fhir.org/procedure.html#Procedure.id">id</a>" : "a6ac9f68-7dc1-4973-a3e6-f231b2856d54",
+  "<a href="http://build.fhir.org/procedure.html#Procedure.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: a6ac9f68-7dc1-4973-a3e6-f231b2856d54&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Electrical cardioversion &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '180325003' = 'Electrical cardioversion', given as 'Electrical cardioversion'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-e55eecbf-e454-4a4c-89f3-c246b06a9c1a.html\&quot;&gt;Generated Summary: id: e55eecbf-e454-4a4c-89f3-c246b06a9c1a; 5ec80030-5190-4443-80ab-4cf8cbb91839, Medical Record Number = 5ec80030-5190-4443-80ab-4cf8cbb91839, Social Security Number = 999-92-4475, Driver's License = S99998022, Passport Number = X11104132X; Jeffrey461 MacGyver246 (OFFICIAL); ph: 555-556-3405(HOME); gender: male; birthDate: Jan 23, 1959; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-3dfa650e-48ea-4047-b0de-96c33fe2ecde.html\&quot;&gt;Generated Summary: id: 3dfa650e-48ea-4047-b0de-96c33fe2ecde; status: finished; &lt;span title=\&quot;{null wellness}\&quot;&gt;wellness&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185349003}\&quot;&gt;Encounter for check up (procedure)&lt;/span&gt;; period: Jan 18, 2019, 9:08:48 AM --&amp;gt; Jan 18, 2019, 9:38:48 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: Jan 18, 2019, 9:08:48 AM --&amp;gt; Jan 18, 2019, 9:23:48 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;a href=\&quot;Condition-31974acf-d39f-48f3-af03-c24e7af57537.html\&quot;&gt;Atrial Fibrillation. Generated Summary: id: 31974acf-d39f-48f3-af03-c24e7af57537; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\&quot;&gt;Active&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\&quot;&gt;Confirmed&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 49436004}\&quot;&gt;Atrial Fibrillation&lt;/span&gt;; onset: Apr 15, 2016, 10:08:48 AM; recordedDate: Apr 15, 2016, 10:08:48 AM&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/procedure.html#Procedure.status">status</a>" : "completed",
+  "<a href="http://build.fhir.org/procedure.html#Procedure.code">code</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "180325003",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Electrical cardioversion"
+      }
+    ],
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Electrical cardioversion"
+  },
+  "<a href="http://build.fhir.org/procedure.html#Procedure.subject">subject</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/e55eecbf-e454-4a4c-89f3-c246b06a9c1a"
+  },
+  "<a href="http://build.fhir.org/procedure.html#Procedure.encounter">encounter</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Encounter/3dfa650e-48ea-4047-b0de-96c33fe2ecde"
+  },
+  "<a href="http://build.fhir.org/procedure.html#Procedure.performed[x]">performedPeriod</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Period#Period.start">start</a>" : "2019-01-18T09:08:48-08:00",
+    "<a href="http://build.fhir.org/datatypes.html#Period#Period.end">end</a>" : "2019-01-18T09:23:48-08:00"
+  },
+  "<a href="http://build.fhir.org/procedure.html#Procedure.reasonReference">reasonReference</a>" : [
+    {
+      "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Condition/31974acf-d39f-48f3-af03-c24e7af57537",
+      "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.display">display</a>" : "Atrial Fibrillation"
+    }
+  ]
+}</pre>
+</body>
+</html>

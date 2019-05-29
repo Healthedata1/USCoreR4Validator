@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="e7D.u41Zv3VPrLmUp-mWnrQ3"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e7D.u41Zv3VPrLmUp-mWnrQ3</p><p><b>meta</b>: </p><p><b>identifier</b>: PROVID = 1054 (USUAL), EPIC = 207Q00000X (USUAL), NPI = 1105499994 (USUAL), Epic = TEMP1054 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Physician Champion, MD</p><h3>Qualifications</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>MD <span style="background: LightGoldenRodYellow">(Details : {urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.6000 code '11' = '11', given as 'MD'})</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <text value="PROVID"/>
+    </type>
+    <system value="PROVID"/>
+    <value value="1054"/>
+  </identifier>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <text value="EPIC"/>
+    </type>
+    <system value="urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.7"/>
+    <value value="207Q00000X"/>
+  </identifier>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <text value="NPI"/>
+    </type>
+    <system value="urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.60"/>
+    <value value="1105499994"/>
+  </identifier>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <text value="Epic"/>
+    </type>
+    <system value="urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.63"/>
+    <value value="TEMP1054"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="usual"/>
+    <text value="Physician Champion, MD"/>
+    <family value="Champion"/>
+    <given value="Physician"/>
+  </name>
+  <qualification>
+    <code>
+      <coding>
+        <system value="urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.6000"/>
+        <code value="11"/>
+        <display value="MD"/>
+      </coding>
+      <text value="MD"/>
+    </code>
+  </qualification>
+</Practitioner>

@@ -1,0 +1,53 @@
+﻿<html>
+<head>
+  <title>Observation-9a6c6453-43d8-4f41-9784-8d634be21cf3-json-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="json">
+{
+  "<a href="http://build.fhir.org/observation.html#Observation">resourceType</a>" : "Observation",
+  "<a href="http://build.fhir.org/observation.html#Observation.id">id</a>" : "9a6c6453-43d8-4f41-9784-8d634be21cf3",
+  "<a href="http://build.fhir.org/observation.html#Observation.text">text</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 9a6c6453-43d8-4f41-9784-8d634be21cf3&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: laboratory &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory', given as 'laboratory'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Potassium &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {LOINC code '6298-4' = 'Potassium [Moles/volume] in Blood', given as 'Potassium'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-0ce018d2-84bb-4aa6-adab-a3262966a5be.html\&quot;&gt;Generated Summary: id: 0ce018d2-84bb-4aa6-adab-a3262966a5be; 76914b37-6678-425b-a2ec-ae3b8a192dcb, Medical Record Number = 76914b37-6678-425b-a2ec-ae3b8a192dcb, Social Security Number = 999-16-7505, Driver's License = S99925661, Passport Number = X14277106X; Melodi744 Lemke654 (OFFICIAL), Melodi744 Barton704 (MAIDEN); ph: 555-281-4025(HOME); gender: female; birthDate: May 3, 1957; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-1d997ee0-a89d-49e7-bece-580ed3b5bae6.html\&quot;&gt;Generated Summary: id: 1d997ee0-a89d-49e7-bece-580ed3b5bae6; status: finished; &lt;span title=\&quot;{null wellness}\&quot;&gt;wellness&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 185349003}\&quot;&gt;Encounter for check up (procedure)&lt;/span&gt;; period: Jun 19, 2015, 6:18:17 PM --&amp;gt; Jun 19, 2015, 6:33:17 PM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: Jun 19, 2015, 6:18:17 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: Jun 19, 2015, 6:18:17 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 4.599713227489651 mmol/L&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM code mmol/L = 'mmol/L')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://build.fhir.org/observation.html#Observation.status">status</a>" : "final",
+  "<a href="http://build.fhir.org/observation.html#Observation.category">category</a>" : [
+    {
+      "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "laboratory",
+          "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "laboratory"
+        }
+      ]
+    }
+  ],
+  "<a href="http://build.fhir.org/observation.html#Observation.code">code</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">code</a>" : "6298-4",
+        "<a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">display</a>" : "Potassium"
+      }
+    ],
+    "<a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Potassium"
+  },
+  "<a href="http://build.fhir.org/observation.html#Observation.subject">subject</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Patient/0ce018d2-84bb-4aa6-adab-a3262966a5be"
+  },
+  "<a href="http://build.fhir.org/observation.html#Observation.encounter">encounter</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">reference</a>" : "Encounter/1d997ee0-a89d-49e7-bece-580ed3b5bae6"
+  },
+  "<a href="http://build.fhir.org/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2015-06-19T18:18:17-07:00",
+  "<a href="http://build.fhir.org/observation.html#Observation.issued">issued</a>" : "2015-06-19T18:18:17.604-07:00",
+  "<a href="http://build.fhir.org/observation.html#Observation.value[x]">valueQuantity</a>" : {
+    "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.value">value</a>" : 4.599713227489651,
+    "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmol/L",
+    "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+    "<a href="http://build.fhir.org/datatypes.html#Quantity#Quantity.code">code</a>" : "mmol/L"
+  }
+}</pre>
+</body>
+</html>

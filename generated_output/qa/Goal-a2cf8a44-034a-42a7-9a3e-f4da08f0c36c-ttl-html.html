@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+  <title>Goal-a2cf8a44-034a-42a7-9a3e-f4da08f0c36c-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Goal;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/goal.html#Goal.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;a2cf8a44-034a-42a7-9a3e-f4da08f0c36c&quot;];
+  <a href="http://build.fhir.org/goal.html#Goal.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: a2cf8a44-034a-42a7-9a3e-f4da08f0c36c&lt;/p&gt;&lt;p&gt;&lt;b&gt;lifecycleStatus&lt;/b&gt;: accepted&lt;/p&gt;&lt;p&gt;&lt;b&gt;achievementStatus&lt;/b&gt;: In Progress &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/goal-achievement code 'in-progress' = 'In Progress)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Improve and maintenance of optimal foot health: aim at early detection of peripheral vascular problems and neuropathy presumed due to diabetes; and prevention of diabetic foot ulcer, gangrene &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details )&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-3bf76a75-8007-4272-a7f1-5f436f480201.html\&quot;&gt;Generated Summary: id: 3bf76a75-8007-4272-a7f1-5f436f480201; 1ff2cdab-544f-4d13-aa84-878922c7ac56, Medical Record Number = 1ff2cdab-544f-4d13-aa84-878922c7ac56, Social Security Number = 999-20-9744, Driver's License = S99917703, Passport Number = X87852078X; Keisha459 Kshlerin58 (OFFICIAL), Keisha459 Hayes766 (MAIDEN); ph: 555-332-5138(HOME); gender: female; birthDate: Jun 11, 1990; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/goal.html#Goal.lifecycleStatus">fhir:Goal.lifecycleStatus</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;accepted&quot;];
+  <a href="http://build.fhir.org/goal.html#Goal.achievementStatus">fhir:Goal.achievementStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/goal-achievement&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;in-progress&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/goal.html#Goal.description">fhir:Goal.description</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Improve and maintenance of optimal foot health: aim at early detection of peripheral vascular problems and neuropathy presumed due to diabetes; and prevention of diabetic foot ulcer, gangrene&quot; ]
+  ];
+  <a href="http://build.fhir.org/goal.html#Goal.subject">fhir:Goal.subject</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/3bf76a75-8007-4272-a7f1-5f436f480201&quot; ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

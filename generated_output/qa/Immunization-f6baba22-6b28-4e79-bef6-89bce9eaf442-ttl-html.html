@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+  <title>Immunization-f6baba22-6b28-4e79-bef6-89bce9eaf442-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Immunization;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/immunization.html#Immunization.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;f6baba22-6b28-4e79-bef6-89bce9eaf442&quot;];
+  <a href="http://build.fhir.org/immunization.html#Immunization.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: f6baba22-6b28-4e79-bef6-89bce9eaf442&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;vaccineCode&lt;/b&gt;: Influenza, seasonal, injectable, preservative free &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://hl7.org/fhir/sid/cvx code '140' = 'Influenza, seasonal, injectable, preservative free', given as 'Influenza, seasonal, injectable, preservative free'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-aa9d0748-9ce9-441c-8a77-a27fb2ef5f1d.html\&quot;&gt;Generated Summary: id: aa9d0748-9ce9-441c-8a77-a27fb2ef5f1d; 75e67049-7175-4a15-94b3-5dd2a886f064, Medical Record Number = 75e67049-7175-4a15-94b3-5dd2a886f064, Social Security Number = 999-17-9544, Driver's License = S99963669, Passport Number = X88722224X; Kimiko714 Cummerata161 (OFFICIAL), Kimiko714 Batz141 (MAIDEN); ph: 555-559-7867(HOME); gender: female; birthDate: Oct 3, 1987; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;M&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;Encounter-5d425e7f-e7ed-4b86-9d15-2add8cb9e9f3.html\&quot;&gt;Generated Summary: id: 5d425e7f-e7ed-4b86-9d15-2add8cb9e9f3; status: finished; &lt;span title=\&quot;{null urgentcare}\&quot;&gt;urgentcare&lt;/span&gt;; &lt;span title=\&quot;Codes: {http://snomed.info/sct 371883000}\&quot;&gt;Outpatient procedure (procedure)&lt;/span&gt;; period: Feb 21, 2015, 1:55:28 AM --&amp;gt; Feb 21, 2015, 2:10:28 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: Feb 21, 2015, 1:55:28 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;primarySource&lt;/b&gt;: true&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/immunization.html#Immunization.status">fhir:Immunization.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;completed&quot;];
+  <a href="http://build.fhir.org/immunization.html#Immunization.vaccineCode">fhir:Immunization.vaccineCode</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/sid/cvx&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;140&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Influenza, seasonal, injectable, preservative free&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Influenza, seasonal, injectable, preservative free&quot; ]
+  ];
+  <a href="http://build.fhir.org/immunization.html#Immunization.patient">fhir:Immunization.patient</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/aa9d0748-9ce9-441c-8a77-a27fb2ef5f1d&quot; ]
+  ];
+  <a href="http://build.fhir.org/immunization.html#Immunization.encounter">fhir:Immunization.encounter</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Encounter/5d425e7f-e7ed-4b86-9d15-2add8cb9e9f3&quot; ]
+  ];
+  <a href="http://build.fhir.org/immunization.html#Immunization.occurrence[x]">fhir:Immunization.occurrenceDateTime</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2015-02-21T01:55:28-08:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/immunization.html#Immunization.primarySource">fhir:Immunization.primarySource</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

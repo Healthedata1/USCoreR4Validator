@@ -1,0 +1,63 @@
+﻿<html>
+<head>
+  <title>AllergyIntolerance-8e2110ca-bcf5-4521-9f84-9b1a4d813f87-ttl-html</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<pre class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:AllergyIntolerance;
+  <a href="http://build.fhir.org/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.id">fhir:Resource.id</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;8e2110ca-bcf5-4521-9f84-9b1a4d813f87&quot;];
+  <a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.text">fhir:DomainResource.text</a> [
+     <a href="http://build.fhir.org/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: 8e2110ca-bcf5-4521-9f84-9b1a4d813f87&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: Confirmed &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: allergy&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: food&lt;/p&gt;&lt;p&gt;&lt;b&gt;criticality&lt;/b&gt;: low&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Shellfish allergy &lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt;(Details : {SNOMED CT code '300913006' = 'Shellfish allergy', given as 'Shellfish allergy'})&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-2e187824-5710-492b-b23b-e4abea36cbc2.html\&quot;&gt;Generated Summary: id: 2e187824-5710-492b-b23b-e4abea36cbc2; 7c8f50bb-f0b8-4cbd-b5da-594a4073c3d0, Medical Record Number = 7c8f50bb-f0b8-4cbd-b5da-594a4073c3d0, Social Security Number = 999-11-6600; Georgina806 Schiller186 (OFFICIAL); ph: 555-331-2189(HOME); gender: female; birthDate: Apr 16, 2008; &lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus S}\&quot;&gt;Never Married&lt;/span&gt;; &lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: Apr 28, 2009, 2:09:36 AM&lt;/p&gt;&lt;/div&gt;&quot;
+  ];
+  <a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.clinicalStatus">fhir:AllergyIntolerance.clinicalStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;active&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.verificationStatus">fhir:AllergyIntolerance.verificationStatus</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-verification&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;confirmed&quot; ]     ]
+  ];
+  <a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.type">fhir:AllergyIntolerance.type</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;allergy&quot;];
+  <a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.category">fhir:AllergyIntolerance.category</a> [
+     <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;food&quot;;
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0
+  ];
+  <a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.criticality">fhir:AllergyIntolerance.criticality</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;low&quot;];
+  <a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.code">fhir:AllergyIntolerance.code</a> [
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+       a sct:300913006;
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://snomed.info/sct&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;300913006&quot; ];
+       <a href="http://build.fhir.org/datatypes.html#Coding#Coding.display">fhir:Coding.display</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Shellfish allergy&quot; ]     ];
+     <a href="http://build.fhir.org/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Shellfish allergy&quot; ]
+  ];
+  <a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.patient">fhir:AllergyIntolerance.patient</a> [
+     <a href="http://build.fhir.org/datatypes.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Patient/2e187824-5710-492b-b23b-e4abea36cbc2&quot; ]
+  ];
+  <a href="http://build.fhir.org/allergyintolerance.html#AllergyIntolerance.recordedDate">fhir:AllergyIntolerance.recordedDate</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2009-04-28T02:09:36-07:00&quot;^^xsd:dateTime].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</pre>
+
+</body>
+</html>

@@ -50,12 +50,12 @@
         "history": "history",
         "pages": [
             "framework",
-            "../USCoreR4Validator/source/pages"
+            "source/pages"
         ],
         "specification": "http://hl7.org/fhir/R4",
         "resources": [
-            "../USCoreR4Validator/source/resources",
-            "../USCoreR4Validator/source/examples"
+            "source/resources",
+            "source/examples"
         ]
     },
     "pub_url": "ehaas@healthedatainc.com",

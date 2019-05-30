@@ -3,7 +3,7 @@
   "name": "USCoreR4Validator",
   "package-id": "hl7.fhir.us.core.r4validator",
   "ig-ver": "0.0.0",
-  "date": "Thu, 30 May, 2019 00:27:36 -0700",
+  "date": "Thu, 30 May, 2019 01:48:29 -0700",
   "errs": 44,
   "warnings": 22,
   "hints": 198,

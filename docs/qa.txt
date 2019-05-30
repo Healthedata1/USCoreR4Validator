@@ -2,7 +2,7 @@
 =========================================
 
 err = 44, warn = 22, info = 198
-Generated Thu May 30 00:29:18 PDT 2019. FHIR version 4.0.0 for hl7.fhir.us.core.r4validator#0.0.0 (canonical = http://hl7.org/fhir/us/core)
+Generated Thu May 30 01:50:51 PDT 2019. FHIR version 4.0.0 for hl7.fhir.us.core.r4validator#0.0.0 (canonical = http://hl7.org/fhir/us/core)
 
  Build Errors : 1167 / 0
  /Users/ehaas/Documents/FHIR/USCoreR4Validator/source/examples/epic-allergyintolerance-eyHIVsZwhzaZhX9XvFesx5A3 : 0 / 0
@@ -164,7 +164,7 @@ ERROR: /Users/ehaas/Documents/FHIR/USCoreR4Validator/docs/all-examples.html: Una
   var p_list = "epic-allergyintolerance-eyHIVsZwhzaZhX9XvFesx5A3|epic-encounter-e1Jw-ETrL1kZAPiXl3uSMWw3|epic-encounter-eZAjx5sRd6AgpTlKjDh4b5w3|epic-encounter-ehoN2kZnYuW5z0Di4Kkno5w3|epic-encounter-eiSX3g2gt4tJIs7-6h7nJjA3|epic-encounter-ejPvGuBUqYJkCweOPRabvYg3|epic-patient-eroCd17NbCffM3E3WXi7eOQ3|epic-practitioner-e7D.u41Zv3VPrLmUp-mWnrQ3|".split("|");
   var nodes = document.getElementsByClassName('qaLink');
   var len = nodes.length;
-  for (i = 0; i ' at line 65046 column 18
+  for (i = 0; i ' at line 65206 column 18
 ERROR: /Users/ehaas/Documents/FHIR/USCoreR4Validator/docs/AllergyIntolerance-eyHIVsZwhzaZhX9XvFesx5A3.html: The html source does not contain the header marker <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)
 ERROR: /Users/ehaas/Documents/FHIR/USCoreR4Validator/docs/AllergyIntolerance-eyHIVsZwhzaZhX9XvFesx5A3.html#/html/head/body/div/div/div/p/a at Line 229, column 7: The link 'http: mailtto:ehaas@healthedatainc.com' for "Health eData Inc" cannot be resolved
 ERROR: /Users/ehaas/Documents/FHIR/USCoreR4Validator/docs/AllergyIntolerance-eyHIVsZwhzaZhX9XvFesx5A3.html#/html/head/body/div/div/div/p/a at Line 230, column 15: The link 'toc.html' for "Table of Contents" cannot be resolved

@@ -15,3 +15,18 @@ This Guide is divided into several pages which are listed at the top of each pag
 - [Home](index.html): This page  home page provides the introduction and background for this IG: {{site.title}}.
 - [Examples](all-examples.html): List of links to all the examples and Validation results for all example in this IG.
 
+-----
+GitHub will automatically trigger a new build whenever you commit changes.
+
+*Note: a build takes 2-3 minutes to complete. You should see a notification at https://chat.fhir.org/#narrow/stream/142-committers.2Fnotification/topic/ig-build.
+*
+
+### Find your rendered IG automatically available at
+
+http://build.fhir.org/ig/HL7/USCoreR4Validator
+
+### For a build log see
+
+http://build.fhir.org/ig/HL7/USCoreR4Validator/build.log
+
+---

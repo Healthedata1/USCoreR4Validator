@@ -32,7 +32,6 @@
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/us/core/ValueSet/cdcrec"/>
   <hierarchyMeaning value="is-a"/>
   <content value="complete"/>
   <count value="966"/>

@@ -10,7 +10,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;us-core-server&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2 id=&quot;title&quot;&gt;US Core Server CapabilityStatement&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;FHIR Version: 4.0.0&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2019-05-14&lt;/li&gt;&lt;li&gt;Published by: HL7 International - US Realm Steering Committee&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;p&gt;This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ONC 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and and the latest proposed ONC [U.S. Core Data for Interoperability (USCDI)].  US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.&lt;/p&gt;&lt;p&gt;&lt;em&gt;NOTE&lt;/em&gt; : The &lt;a href=&quot;http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html&quot;&gt;capabilitystatement-expectation&lt;/a&gt; extension is used throughout this resource to formally express implementer expectations for the various elements.   This guide extends the usage context of this extension  to apply to these additional elements:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;CapabilityStatement.rest.resource&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/extension-capabilitystatement-search-parameter-combination.html&quot;&gt;capabilitystatement-search-parameter-combination&lt;/a&gt; extension&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;h3 id=&quot;behavior&quot;&gt;FHIR RESTful Capabilities&lt;/h3&gt;&lt;p&gt;The US Core Server &lt;strong&gt;SHALL&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support the US Core Patient resource profile.&lt;/li&gt;&lt;li&gt;Support at least one additional resource profile from the list of US Core Profiles.&lt;/li&gt;&lt;li&gt;Implement the RESTful behavior according to the FHIR specification.&lt;/li&gt;&lt;li&gt;Return the following response classes:
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;h2 id=&quot;title&quot;&gt;Us Core Server CapabilityStatement&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;FHIR Version: 4.0.0&lt;/li&gt;&lt;li&gt;Supported formats: xml, json&lt;/li&gt;&lt;li&gt;Published: 2019-05-28&lt;/li&gt;&lt;li&gt;Published by: HL7 International - US Realm Steering Committee&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;p&gt;This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ONC 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and and the latest proposed ONC [U.S. Core Data for Interoperability (USCDI)].  US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.&lt;/p&gt;&lt;/p&gt;&lt;h3 id=&quot;behavior&quot;&gt;FHIR RESTful Capabilities&lt;/h3&gt;&lt;p&gt;The US Core Server &lt;strong&gt;SHALL&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support the US Core Patient resource profile.&lt;/li&gt;&lt;li&gt;Support at least one additional resource profile from the list of US Core Profiles.&lt;/li&gt;&lt;li&gt;Implement the RESTful behavior according to the FHIR specification.&lt;/li&gt;&lt;li&gt;Return the following response classes:
 &lt;ul&gt;&lt;li&gt;(Status 400): invalid parameter&lt;/li&gt;&lt;li&gt;(Status 401/4xx): unauthorized request&lt;/li&gt;&lt;li&gt;(Status 403): insufficient scope&lt;/li&gt;&lt;li&gt;(Status 404): unknown resource&lt;/li&gt;&lt;li&gt;(Status 410): deleted resource.&lt;/li&gt;&lt;/ul&gt;
 &lt;/li&gt;&lt;li&gt;Support json source formats for all US Core interactions.&lt;/li&gt;&lt;li&gt;Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;The US Core Server &lt;strong&gt;SHOULD&lt;/strong&gt;:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Support xml source formats for all US Core interactions.&lt;/li&gt;&lt;li&gt;Identify the US Core profiles supported as part of the FHIR &lt;code&gt;meta.profile&lt;/code&gt; attribute for each instance.&lt;/li&gt;&lt;li&gt;Support xml resource formats for all Argonaut questionnaire interactions.&lt;/li&gt;&lt;/ol&gt;&lt;p id=&quot;security&quot;&gt;&lt;strong&gt;Security:&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;See the &lt;a href=&quot;security.html&quot;&gt;General Security Considerations&lt;/a&gt; section for requirements and recommendations.&lt;/li&gt;&lt;li&gt;A server &lt;strong&gt;SHALL&lt;/strong&gt; reject any unauthorized requests by returning an &lt;code&gt;HTTP 401&lt;/code&gt; unauthorized response code.&lt;/li&gt;&lt;/ol&gt;&lt;h3 id=&quot;resource--details&quot; class=&quot;no_toc&quot;&gt;RESTful Capabilities by Resource/Profile:&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Summary of Search Criteria&lt;/strong&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Supported Profiles&lt;/th&gt;&lt;th&gt;Supported Searches&lt;/th&gt;&lt;th&gt;Supported Includes&lt;/th&gt;&lt;th&gt;Supported Operations&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#allergyintolerance&quot;&gt;AllergyIntolerance&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-us-core-allergyintolerance.html&quot;&gt;US Core AllergyIntolerance Profile&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							
@@ -20,7 +20,7 @@
 						&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#careplan&quot;&gt;CarePlan&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-us-core-careplan.html&quot;&gt;US Core CarePlan Profile&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
-							, patient+category, patient+category+status, patient+category+status+date, patient+category+date
+							, patient+category+status+date, patient+category+status, patient+category+date, patient+category
 						&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;td&gt;
@@ -33,7 +33,7 @@
 							
 						&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#condition&quot;&gt;Condition&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-us-core-condition.html&quot;&gt;US Core Condition Profile&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							
-							patient, patient+onset-date, patient+category, patient+code, patient+clinical-status
+							patient, patient+code, patient+category, patient+clinical-status, patient+onset-date
 						&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;td&gt;
@@ -48,7 +48,7 @@
 						&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#diagnosticreport&quot;&gt;DiagnosticReport&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-us-core-diagnosticreport-note.html&quot;&gt;US Core DiagnosticReport Profile for Report and Note exchange&lt;/a&gt;, 
 
 						&lt;a href=&quot;StructureDefinition-us-core-diagnosticreport-lab.html&quot;&gt;US Core DiagnosticReport Profile for Laboratory Results Reporting&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
-							, patient+code+date, patient+code, patient+status, patient+category, patient+category+date, patient+category, patient+category+date
+							, patient+code, patient+category, patient+code+date, patient+category+date, patient+category+date, patient+category, patient+status
 						&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;td&gt;
@@ -56,7 +56,7 @@
 						&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#documentreference&quot;&gt;DocumentReference&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-us-core-documentreference.html&quot;&gt;US Core DocumentReference Profile&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							
 							_id, 
-							patient, patient+status, patient+category, patient+category+date, patient+type+period, patient+type
+							patient, patient+type, patient+category+date, patient+type+period, patient+category, patient+status
 						&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;td&gt;
@@ -66,7 +66,7 @@
 							
 							_id, 
 							identifier, 
-							patient, patient+status, class+patient, patient+type, date+patient
+							patient, class+patient, patient+type, date+patient, patient+status
 						&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;td&gt;
@@ -80,7 +80,7 @@
 							
 						&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#immunization&quot;&gt;Immunization&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-us-core-immunization.html&quot;&gt;US Core Immunization Profile&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							
-							patient, patient+date, patient+status
+							patient, patient+status, patient+date
 						&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;td&gt;
@@ -104,14 +104,14 @@
 							
 						&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#medicationrequest&quot;&gt;MedicationRequest&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-us-core-medicationrequest.html&quot;&gt;US Core MedicationRequest Profile&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							
-							patient, patient+authoredon, patient+status
+							patient, patient+status, patient+authoredon
 						&lt;/td&gt;&lt;td&gt;
 							MedicationRequest:medication
 						&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#medicationstatement&quot;&gt;MedicationStatement&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-us-core-medicationstatement.html&quot;&gt;US Core MedicationStatement Profile&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							
-							patient, patient+effective, patient+status
+							patient, patient+status, patient+effective
 						&lt;/td&gt;&lt;td&gt;
 							MedicationStatement:medication
 						&lt;/td&gt;&lt;td&gt;
@@ -123,7 +123,7 @@
 						&lt;a href=&quot;StructureDefinition-us-core-observation-lab.html&quot;&gt;US Core Laboratory Result Observation Profile&lt;/a&gt;, 
 
 						&lt;a href=&quot;StructureDefinition-pediatric-bmi-for-age.html&quot;&gt;US Core Pediatric BMI for Age Observation Profile&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
-							, patient+code+date, patient+code, patient+category, patient+category+date, patient+category+status
+							, patient+code, patient+category+status, patient+code+date, patient+category+date, patient+category
 						&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;td&gt;
@@ -140,7 +140,7 @@
 							
 							_id, 
 							identifier, 
-							name, birthdate+name, gender+name, family+gender, birthdate+family
+							name, birthdate+name, gender+name, birthdate+family, family+gender
 						&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;td&gt;
@@ -163,7 +163,7 @@
 							
 						&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;#procedure&quot;&gt;Procedure&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;StructureDefinition-us-core-procedure.html&quot;&gt;US Core Procedure Profile&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							
-							patient, patient+date, patient+code+date, patient+status
+							patient, patient+status, patient+date, patient+code+date
 						&lt;/td&gt;&lt;td&gt;
 							
 						&lt;/td&gt;&lt;td&gt;
@@ -216,15 +216,15 @@
 							reference
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/CarePlan?patient=[patient]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;MAY&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-us-core-careplan-status.html&quot;&gt;status&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/CarePlan?status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category
-						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/CarePlan?patient=[patient]&amp;amp;category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+status
-						&lt;/td&gt;&lt;td&gt;reference+token+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/CarePlan?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+status+date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/CarePlan?status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+status+date
 						&lt;/td&gt;&lt;td&gt;reference+token+token+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/CarePlan?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;status=[status]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/CarePlan?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;status=[status]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+status
+						&lt;/td&gt;&lt;td&gt;reference+token+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/CarePlan?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+date
 						&lt;/td&gt;&lt;td&gt;reference+token+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/CarePlan?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;careteam&quot; class=&quot;no_toc&quot;&gt;CareTeam&lt;/h4&gt;&lt;p&gt;Supported Profiles:
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/CarePlan?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category
+						&lt;/td&gt;&lt;td&gt;reference+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/CarePlan?patient=[patient]&amp;amp;category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;careteam&quot; class=&quot;no_toc&quot;&gt;CareTeam&lt;/h4&gt;&lt;p&gt;Supported Profiles:
 				
 											&lt;a href=&quot;StructureDefinition-us-core-careteam.html&quot;&gt;US Core CareTeam Profile&lt;/a&gt;
 				
@@ -274,15 +274,15 @@
 							date
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Condition?onset-date=[onset-date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;MAY&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-us-core-condition-code.html&quot;&gt;code&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Condition?code=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+onset-date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Condition?code=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+code
+						&lt;/td&gt;&lt;td&gt;reference+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Condition?patient=[patient]&amp;amp;code=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category
+						&lt;/td&gt;&lt;td&gt;reference+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Condition?patient=[patient]&amp;amp;category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+clinical-status
+						&lt;/td&gt;&lt;td&gt;reference+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Condition?patient=[patient]&amp;amp;clinical-status=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+onset-date
 						&lt;/td&gt;&lt;td&gt;reference+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Condition?patient=[patient]&amp;amp;onset-date=[onset-date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category
-						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Condition?patient=[patient]&amp;amp;category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+code
-						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Condition?patient=[patient]&amp;amp;code=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+clinical-status
-						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Condition?patient=[patient]&amp;amp;clinical-status=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;device&quot; class=&quot;no_toc&quot;&gt;Device&lt;/h4&gt;&lt;p&gt;Supported Profiles:
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Condition?patient=[patient]&amp;amp;onset-date=[onset-date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;device&quot; class=&quot;no_toc&quot;&gt;Device&lt;/h4&gt;&lt;p&gt;Supported Profiles:
 				
 											&lt;a href=&quot;StructureDefinition-us-core-device.html&quot;&gt;US Core Device Profile&lt;/a&gt;
 				
@@ -335,21 +335,21 @@
 							token
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?code=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;MAY&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-us-core-diagnosticreport-date.html&quot;&gt;date&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+code+date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+code
+						&lt;/td&gt;&lt;td&gt;reference+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;code=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category
+						&lt;/td&gt;&lt;td&gt;reference+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+code+date
 						&lt;/td&gt;&lt;td&gt;reference+token+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;code=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+code
-						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;code=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
-						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category
-						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;code=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+date
 						&lt;/td&gt;&lt;td&gt;reference+token+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category
-						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+date
 						&lt;/td&gt;&lt;td&gt;reference+token+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;documentreference&quot; class=&quot;no_toc&quot;&gt;DocumentReference&lt;/h4&gt;&lt;p&gt;Supported Profiles:
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category
+						&lt;/td&gt;&lt;td&gt;reference+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
+						&lt;/td&gt;&lt;td&gt;reference+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DiagnosticReport?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;documentreference&quot; class=&quot;no_toc&quot;&gt;DocumentReference&lt;/h4&gt;&lt;p&gt;Supported Profiles:
 				
 											&lt;a href=&quot;StructureDefinition-us-core-documentreference.html&quot;&gt;US Core DocumentReference Profile&lt;/a&gt;
 				
@@ -382,17 +382,17 @@
 							date
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DocumentReference?date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;MAY&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-us-core-documentreference-period.html&quot;&gt;period&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DocumentReference?period=[period]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DocumentReference?period=[period]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+type
 						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DocumentReference?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category
-						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DocumentReference?patient=[patient]&amp;amp;category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DocumentReference?patient=[patient]&amp;amp;type=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+date
 						&lt;/td&gt;&lt;td&gt;reference+token+date
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DocumentReference?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+type+period
 						&lt;/td&gt;&lt;td&gt;reference+token+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DocumentReference?patient=[patient]&amp;amp;type=[system]|[code]&amp;amp;period=[period]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+type
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DocumentReference?patient=[patient]&amp;amp;type=[system]|[code]&amp;amp;period=[period]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category
 						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DocumentReference?patient=[patient]&amp;amp;type=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;encounter&quot; class=&quot;no_toc&quot;&gt;Encounter&lt;/h4&gt;&lt;p&gt;Supported Profiles:
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DocumentReference?patient=[patient]&amp;amp;category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
+						&lt;/td&gt;&lt;td&gt;reference+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/DocumentReference?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;encounter&quot; class=&quot;no_toc&quot;&gt;Encounter&lt;/h4&gt;&lt;p&gt;Supported Profiles:
 				
 											&lt;a href=&quot;StructureDefinition-us-core-encounter.html&quot;&gt;US Core Encounter Profile&lt;/a&gt;
 				
@@ -423,15 +423,15 @@
 							token
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Encounter?status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;MAY&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-us-core-encounter-type.html&quot;&gt;type&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Encounter?type=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
-						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Encounter?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;class+patient
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Encounter?type=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;class+patient
 						&lt;/td&gt;&lt;td&gt;token+reference
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Encounter?class=[system]|[code]&amp;amp;patient=[patient]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+type
 						&lt;/td&gt;&lt;td&gt;reference+token
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Encounter?patient=[patient]&amp;amp;type=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;date+patient
 						&lt;/td&gt;&lt;td&gt;date+reference
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Encounter?date=[date]&amp;amp;patient=[patient]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;goal&quot; class=&quot;no_toc&quot;&gt;Goal&lt;/h4&gt;&lt;p&gt;Supported Profiles:
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Encounter?date=[date]&amp;amp;patient=[patient]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
+						&lt;/td&gt;&lt;td&gt;reference+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Encounter?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;goal&quot; class=&quot;no_toc&quot;&gt;Goal&lt;/h4&gt;&lt;p&gt;Supported Profiles:
 				
 											&lt;a href=&quot;StructureDefinition-us-core-goal.html&quot;&gt;US Core Goal Profile&lt;/a&gt;
 				
@@ -481,11 +481,11 @@
 							token
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Immunization?status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;MAY&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-us-core-immunization-date.html&quot;&gt;date&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Immunization?date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+date
-						&lt;/td&gt;&lt;td&gt;reference+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Immunization?patient=[patient]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Immunization?date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
 						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Immunization?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;location&quot; class=&quot;no_toc&quot;&gt;Location&lt;/h4&gt;&lt;p&gt;Supported Profiles:
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Immunization?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+date
+						&lt;/td&gt;&lt;td&gt;reference+date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Immunization?patient=[patient]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;location&quot; class=&quot;no_toc&quot;&gt;Location&lt;/h4&gt;&lt;p&gt;Supported Profiles:
 				
 											&lt;a href=&quot;StructureDefinition-us-core-location.html&quot;&gt;US Core Location Profile&lt;/a&gt;
 				
@@ -558,11 +558,11 @@
 							reference
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationRequest?patient=[patient]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;MAY&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-us-core-medicationrequest-authoredon.html&quot;&gt;authoredon&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationRequest?authoredon=[authoredon]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+authoredon
-						&lt;/td&gt;&lt;td&gt;reference+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationRequest?patient=[patient]&amp;amp;authoredon=[authoredon]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationRequest?authoredon=[authoredon]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
 						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationRequest?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;medicationstatement&quot; class=&quot;no_toc&quot;&gt;MedicationStatement&lt;/h4&gt;&lt;p&gt;Supported Profiles:
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationRequest?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+authoredon
+						&lt;/td&gt;&lt;td&gt;reference+date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationRequest?patient=[patient]&amp;amp;authoredon=[authoredon]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;medicationstatement&quot; class=&quot;no_toc&quot;&gt;MedicationStatement&lt;/h4&gt;&lt;p&gt;Supported Profiles:
 				
 											&lt;a href=&quot;StructureDefinition-us-core-medicationstatement.html&quot;&gt;US Core MedicationStatement Profile&lt;/a&gt;
 				
@@ -591,11 +591,11 @@
 							reference
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationStatement?patient=[patient]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;MAY&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-us-core-medicationstatement-effective.html&quot;&gt;effective&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationStatement?effective=[effective]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+effective
-						&lt;/td&gt;&lt;td&gt;reference+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationStatement?patient=[patient]&amp;amp;effective=[effective]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationStatement?effective=[effective]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
 						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationStatement?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;observation&quot; class=&quot;no_toc&quot;&gt;Observation&lt;/h4&gt;&lt;p&gt;Supported Profiles:
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationStatement?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+effective
+						&lt;/td&gt;&lt;td&gt;reference+date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/MedicationStatement?patient=[patient]&amp;amp;effective=[effective]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;observation&quot; class=&quot;no_toc&quot;&gt;Observation&lt;/h4&gt;&lt;p&gt;Supported Profiles:
 				
 											&lt;a href=&quot;StructureDefinition-us-core-smokingstatus.html&quot;&gt;US Core Smoking Status Observation Profile&lt;/a&gt;, 
 				
@@ -628,17 +628,17 @@
 							date
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;MAY&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-us-core-observation-patient.html&quot;&gt;patient&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							reference
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?patient=[patient]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+code+date
-						&lt;/td&gt;&lt;td&gt;reference+token+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?patient=[patient]&amp;amp;code=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+code
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?patient=[patient]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+code
 						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?patient=[patient]&amp;amp;code=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category
-						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?patient=[patient]&amp;amp;category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+date
-						&lt;/td&gt;&lt;td&gt;reference+token+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+status
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?patient=[patient]&amp;amp;code=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+status
 						&lt;/td&gt;&lt;td&gt;reference+token+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;organization&quot; class=&quot;no_toc&quot;&gt;Organization&lt;/h4&gt;&lt;p&gt;Supported Profiles:
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+code+date
+						&lt;/td&gt;&lt;td&gt;reference+token+date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?patient=[patient]&amp;amp;code=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category+date
+						&lt;/td&gt;&lt;td&gt;reference+token+date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?patient=[patient]&amp;amp;category=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+category
+						&lt;/td&gt;&lt;td&gt;reference+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Observation?patient=[patient]&amp;amp;category=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;organization&quot; class=&quot;no_toc&quot;&gt;Organization&lt;/h4&gt;&lt;p&gt;Supported Profiles:
 				
 											&lt;a href=&quot;StructureDefinition-us-core-organization.html&quot;&gt;US Core Organization Profile&lt;/a&gt;
 				
@@ -694,11 +694,11 @@
 						&lt;/td&gt;&lt;td&gt;date+string
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Patient?birthdate=[birthdate]&amp;amp;name=[name]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;gender+name
 						&lt;/td&gt;&lt;td&gt;token+string
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Patient?gender=[system]|[code]&amp;amp;name=[name]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;family+gender
-						&lt;/td&gt;&lt;td&gt;string+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Patient?family=[family]&amp;amp;gender=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;birthdate+family
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Patient?gender=[system]|[code]&amp;amp;name=[name]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;birthdate+family
 						&lt;/td&gt;&lt;td&gt;date+string
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Patient?birthdate=[birthdate]&amp;amp;family=[family]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;practitioner&quot; class=&quot;no_toc&quot;&gt;Practitioner&lt;/h4&gt;&lt;p&gt;Supported Profiles:
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Patient?birthdate=[birthdate]&amp;amp;family=[family]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;family+gender
+						&lt;/td&gt;&lt;td&gt;string+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Patient?family=[family]&amp;amp;gender=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;h4 id=&quot;practitioner&quot; class=&quot;no_toc&quot;&gt;Practitioner&lt;/h4&gt;&lt;p&gt;Supported Profiles:
 				
 											&lt;a href=&quot;StructureDefinition-us-core-practitioner.html&quot;&gt;US Core Practitioner Profile&lt;/a&gt;
 				
@@ -773,21 +773,21 @@
 							date
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Procedure?date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;MAY&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;SearchParameter-us-core-procedure-code.html&quot;&gt;code&lt;/a&gt;&lt;/td&gt;&lt;td&gt;
 							token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Procedure?code=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+date
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Procedure?code=[system]|[code]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;Search Parameter Combination Summary:&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Conformance&lt;/th&gt;&lt;th&gt;Parameter Combination&lt;/th&gt;&lt;th&gt;Types&lt;/th&gt;&lt;th&gt;Example&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
+						&lt;/td&gt;&lt;td&gt;reference+token
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Procedure?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHALL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+date
 						&lt;/td&gt;&lt;td&gt;reference+date
 						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Procedure?patient=[patient]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+code+date
 						&lt;/td&gt;&lt;td&gt;reference+token+date
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Procedure?patient=[patient]&amp;amp;code=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;SHOULD&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;patient+status
-						&lt;/td&gt;&lt;td&gt;reference+token
-						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Procedure?patient=[patient]&amp;amp;status=[status]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;br/&gt;&lt;/div&gt;
+						&lt;/td&gt;&lt;td&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GET [base]/Procedure?patient=[patient]&amp;amp;code=[system]|[code]&amp;amp;date=[date]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;hr/&gt;&lt;br/&gt;&lt;/div&gt;
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.0.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;UsCoreServerCapabilityStatement&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;US Core Server CapabilityStatement&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Us Core Server CapabilityStatement&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2019-05-14T00:00:00-07:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2019-05-28T00:00:00-07:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HL7 International - US Realm Steering Committee&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
@@ -796,12 +796,7 @@
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.description">description</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ONC 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and and the latest proposed ONC [U.S. Core Data for Interoperability (USCDI)].  US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.
-
-*NOTE* : The [capabilitystatement-expectation](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html) extension is used throughout this resource to formally express implementer expectations for the various elements.   This guide extends the usage context of this extension  to apply to these additional elements:
-
-- CapabilityStatement.rest.resource
-- [capabilitystatement-search-parameter-combination](http://hl7.org/fhir/R4/extension-capabilitystatement-search-parameter-combination.html) extension&quot;/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ONC 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and and the latest proposed ONC [U.S. Core Data for Interoperability (USCDI)].  US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.jurisdiction">jurisdiction</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:3166&quot;/&gt;
@@ -960,6 +955,57 @@ The US Core Server **SHOULD**:
                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
@@ -967,57 +1013,6 @@ The US Core Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CarePlan&quot;/&gt;
@@ -1251,7 +1246,7 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;onset-date&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;code&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
@@ -1277,7 +1272,7 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;code&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;clinical-status&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
@@ -1290,7 +1285,7 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;clinical-status&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;onset-date&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Condition&quot;/&gt;
@@ -1528,6 +1523,32 @@ The US Core Server **SHOULD**:
                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;code&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
@@ -1550,7 +1571,39 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;code&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
@@ -1564,64 +1617,6 @@ The US Core Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;DiagnosticReport&quot;/&gt;
@@ -1756,26 +1751,13 @@ The US Core Server **SHOULD**:
                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;type&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
@@ -1820,7 +1802,20 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;type&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;DocumentReference&quot;/&gt;
@@ -1989,19 +1984,6 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;class&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
@@ -2032,6 +2014,19 @@ The US Core Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Encounter&quot;/&gt;
@@ -2318,7 +2313,7 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
@@ -2331,7 +2326,7 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Immunization&quot;/&gt;
@@ -2642,19 +2637,6 @@ The US Core Server **SHOULD**:
                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;authoredon&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
@@ -2664,12 +2646,25 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;authoredon&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MedicationRequest&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.profile">profile</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/MedicationRequest&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
                         <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.documentation">documentation</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot; The MedicationStatement resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be [contained](http://hl7.org/fhir/R4/references.html#contained) or an external resource. The server application **MAY** choose any one way or more than one method, but if an external reference to Medication is used, the server **SHALL** support the _include` parameter for searching this element. The client application must support all methods.
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;The MedicationStatement resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be [contained](http://hl7.org/fhir/R4/references.html#contained) or an external resource. The server application **MAY** choose any one way or more than one method, but if an external reference to Medication is used, the server **SHALL** support the _include` parameter for searching this element. The client application must support all methods.
 
  For example, A server **SHALL** be capable of returning all medications for a patient using one of or both:
 
@@ -2787,7 +2782,7 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effective&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
@@ -2800,7 +2795,7 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effective&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MedicationStatement&quot;/&gt;
@@ -2809,7 +2804,7 @@ The US Core Server **SHOULD**:
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.supportedProfile">supportedProfile</a>
                         <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.documentation">documentation</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot; The MedicationStatement resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be [contained](http://hl7.org/fhir/R4/references.html#contained) or an external resource. The server application **MAY** choose any one way or more than one method, but if an external reference to Medication is used, the server **SHALL** support the _include` parameter for searching this element. The client application must support all methods.
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;The MedicationStatement resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be [contained](http://hl7.org/fhir/R4/references.html#contained) or an external resource. The server application **MAY** choose any one way or more than one method, but if an external reference to Medication is used, the server **SHALL** support the _include` parameter for searching this element. The client application must support all methods.
 
  For example, A server **SHALL** be capable of returning all medications for a patient using one of or both:
 
@@ -2921,22 +2916,6 @@ The US Core Server **SHOULD**:
                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;code&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
@@ -2944,35 +2923,6 @@ The US Core Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;code&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
@@ -2989,6 +2939,51 @@ The US Core Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;code&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;category&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Observation&quot;/&gt;
@@ -3248,10 +3243,10 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;family&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;birthdate&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;gender&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;family&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
@@ -3261,10 +3256,10 @@ The US Core Server **SHOULD**:
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;birthdate&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;family&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;family&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;gender&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Patient&quot;/&gt;
@@ -3605,6 +3600,19 @@ The US Core Server **SHOULD**:
                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
+        &lt;/extension&gt;
+      &lt;/extension&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHALL&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
@@ -3628,19 +3636,6 @@ The US Core Server **SHOULD**:
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;date&quot;/&gt;
-        &lt;/extension&gt;
-      &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SHOULD&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-        &lt;/extension&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">url</a>=&quot;required&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;status&quot;/&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.rest.resource.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Procedure&quot;/&gt;

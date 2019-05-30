@@ -3,21 +3,21 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.core.r4validator-0.0.0"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>USCoreR4</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core.r4validator-0.0.0</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>USCoreR4Validator</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core.r4validator-0.0.0</pre></div>
   </text>
   <url value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core.r4validator-0.0.0"/>
   <version value="0.0.0"/>
-  <name value="USCoreR4"/>
-  <title value="US Core R4"/>
+  <name value="USCoreR4Validator"/>
+  <title value="US Core R4 Validator"/>
   <status value="active"/>
-  <publisher value="HL7 International - Structured Documents Work Group"/>
+  <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/structure/index.cfm"/>
+      <value value="http: mailtto:ehaas@healthedatainc.com"/>
     </telecom>
   </contact>
-  <copyright value="Used by permission of HL7 International - Structured Documents Work Group, all rights reserved Creative Commons License"/>
+  <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
   <packageId value="hl7.fhir.us.core.r4validator"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.0"/>
@@ -1431,14 +1431,6 @@
         <reference value="ValueSet/detailed-race"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ImplementationGuide-hl7.fhir.us.core.r4validator-0.0.0.html"/>
-      </extension>
-      <reference>
-        <reference value="ImplementationGuide/hl7.fhir.us.core.r4validator-0.0.0"/>
-      </reference>
     </resource>
     <page>
       <nameUrl value="index.html"/>

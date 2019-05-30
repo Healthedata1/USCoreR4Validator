@@ -1,8 +1,8 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "US Core Client CapabilityStatement",
-    "description": "​The Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.\n\n*NOTE* : The [capabilitystatement-expectation](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html) extension is used throughout this resource to formally express implementer expectations for the various elements.   This guide extends the usage context of this extension  to apply to these additional elements:\n\n- CapabilityStatement.rest.resource\n- [capabilitystatement-search-parameter-combination](http://hl7.org/fhir/R4/extension-capabilitystatement-search-parameter-combination.html) extension",
+    "title": "Us Core Client CapabilityStatement",
+    "description": "​The Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
     "license": {
       "name": "Creative Commons Zero v1.0 Universal",
       "url": "http://spdx.org/licenses/CC0-1.0.html"

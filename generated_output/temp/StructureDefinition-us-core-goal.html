@@ -1,262 +1,76 @@
 ---
 # jekyll header
 level: 2
-active: profiles
-template: sd
+template: base
+active: format
 layout: fhir-artifact
 type: StructureDefinition
 id: us-core-goal
-topofpage: true
-mappings: false
+topofpage: True
 ---
-<!-- ============CONTENT CONTENT=============== -->
+
+<!-- ig template for many conformance resource html pages  ('base' in definitions file)  can not be used for conformance resources that have more that a single base template. e.g.,  sd since there are mapping and definitions templates for it as well  they need to be split out into 3 separate templates -->
+
+<!-- ============ CONTENT CONTENT=============== -->
+
+{% case 'StructureDefinition' %} <!-- content depends on type -->
+{% when 'ValueSet' %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+  {% include StructureDefinition-us-core-goal-summary.xhtml %}
+  {% include StructureDefinition-us-core-goal-xref.xhtml %}
+  {% include StructureDefinition-us-core-goal-cld.xhtml %}
+
+  <h3>Expansion</h3>
+
+  {% include StructureDefinition-us-core-goal-expansion.xhtml %}
+<!-- ============VAlUESET CONTENT CONTENT=============== -->
+
+{% when 'CodeSystem' %}
+<!-- ============CODESYSTEM CONTENT CONTENT=============== -->
+
+  {% include StructureDefinition-us-core-goal-summary.xhtml %}
+
+  {% include StructureDefinition-us-core-goal-html.xhtml %}
+
+  <!-- ============CODESYSTEM CONTENT CONTENT=============== -->
+
+{% when 'OperationDefinition' %}
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
+
+  {% include StructureDefinition-us-core-goal-html.xhtml %}
+
+  {% capture my-include %}{% include us-core-goal-example.md %}{% endcapture %}{{ my-include | markdownify }}  <!--add inline examples here -->
+<!-- ============OperationDefinition CONTENT CONTENT=============== -->
 
 
-<!--{% raw %}
-<ul class="nav nav-tabs">
-	<li class="active"><a href="#">Content</a></li>
-	<li><a href="StructureDefinition-us-core-goal-definitions.html">Detailed Descriptions</a></li>
-	<li><a href="StructureDefinition-us-core-goal-mappings.html">Mappings</a></li>
-	<li><a href="StructureDefinition-us-core-goal.xml.html">XML</a></li>
-	<li><a href="StructureDefinition-us-core-goal.json.html">JSON</a></li>
-	<li><a href="StructureDefinition-us-core-goal.ttl.html">Turtle</a></li>
-</ul>
-{% endraw %}-->
+{% when 'CapabilityStatement' %}
+<!-- ============CapabilityStatement CONTENT CONTENT=============== -->
 
-<!--{% raw %} simpler links to other pages
+<p>
+Downloads:  CapabilityStatement: (<a href="StructureDefinition-us-core-goal.xml" download>XML</a>, <a href="StructureDefinition-us-core-goal.json" download>JSON</a>),<a href="us-core-goal.openapi.json">OpenAPI-Swagger Definition file</a>
+</p>
+
+  {% include StructureDefinition-us-core-goal-html.xhtml %}
+
+<!-- ============CapabilityStatement CONTENT CONTENT=============== -->
+
+{% else %}
+<!-- ============ConceptMap CapabilityStatement SearchParameter CONTENT CONTENT=============== -->
+
+
+  {% include StructureDefinition-us-core-goal-html.xhtml %}
+
+  <!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+
+{% endcase %}
+
+
+<!-- simple format links
 <p>
 Formats: <a href="StructureDefinition-us-core-goal.html">Narrative</a>, <a href="StructureDefinition-us-core-goal.xml.html">XML</a>, <a href="StructureDefinition-us-core-goal.json.html">JSON</a>, <a href="StructureDefinition-us-core-goal.ttl.html">Turtle</a>
 </p>
-
-{% endraw %}-->
-
-<h2>StructureDefinition-us-core-goal</h2>
+-->
 
 
-<!-- introductiontext here-->
-<a name="introduction"> </a>
-
-
-{% capture my-include %}{% include us-core-goal-intro.md id="us-core-goal" %}{% endcapture %}{{ my-include | markdownify }}
-
-
-<!-- example here -->
-
-<!--{% raw %}
-<h5>Example: <a href="daf-{{page.code}}-{{page.example}}.html">{{page.tcode}} Example: {{page.example}}</a></h5>
-
-<h5>Example: <a href="USCoreGoalProfile.example.html">USCoreGoalProfile Example</a></h5>
-{% endraw %}-->
-
-
-<a name="profile"> </a>
-<h3>Formal Views of Profile Content</h3>
-
-<p>
-<a href="{{site.data.fhir.path}}profiling.html#representation">Description of Profiles, Differentials, and Snapshots</a>.
-</p>
-
-<p>
-The official URL for this profile is:
-<code>{{site.data.structuredefinitions.us-core-goal.url}}</code><button id="copy-button" class="btn-default btn-sm" data-clipboard-text="{{site.data.structuredefinitions.us-core-goal.url}}">Copy</button>
-</p>
-
-<p>
-Published on {{site.data.structuredefinitions.us-core-goal.date}} as {{site.data.structuredefinitions.us-core-goal.status}} by the {{site.data.structuredefinitions.us-core-goal.publisher | default: site.data.fhir.ig.publisher }}.
-</p>
-
-<p><strong>
-This profile builds on <a href= "{{site.data.structuredefinitions.us-core-goal.basepath}}">{{site.data.structuredefinitions.us-core-goal.basename}}</a>
-</strong></p>
-
-<!--{% raw %}
-{% include StructureDefinition-us-core-goal-header.xhtml %}
-{% endraw %}-->
-
-
-<hr>
-
-<!--  ********remove the tabs editing purposes if status draft ********* -->
-
-{% if site.data.structuredefinitions.us-core-goal.status == "active" %}
-
-<div id="tabs">
-
-<!--  this could be a customizable include -->
- <ul>
-  {% unless "us-core-goal" contains "extension" %}<li><a href="#tabs-summ">Text Summary</a></li>{% endunless %}
-  <li><a href="#tabs-diff">Differential View</a></li>
-  <li><a href="#tabs-snap">Full View</a></li>
-  {% if site.showPsuedoXML %}<li><a href="#tabs-xml">XML Template</a></li>{% endif %}
-  {% if site.showPsuedoJson %}<li><a href="#tabs-json">JSON Template</a></li>{% endif %}
-  <li><a href="#tabs-all">All Views</a></li>
-
- </ul>
-{% unless "us-core-goal" contains "extension" %}
- <div id="tabs-summ">
-  <div id="tbl-summ">
-   <div id="tbl-diff-inner">
-     <a name="summary"> </a>
-{% if site.summaries %}
-  {% capture my-include %}{% include us-core-goal-summary.md id="us-core-goal" %}{% endcapture %}{{ my-include | markdownify }}
-{% else %}
-  {% include StructureDefinition-us-core-goal-summary.xhtml %}
-{% endif%}
-   </div>
-  </div>
- </div>
-{% endunless %}
-
- <div id="tabs-diff">
-  <div id="tbl-diff">
-   <div id="tbl-diff-inner">
-  {% include StructureDefinition-us-core-goal-diff.xhtml %}
-   </div>
-  </div>
- </div>
-
- <div id="tabs-snap">
-  <div id="tbl-snap">
-   <div id="tbl-snap-inner">
-{% include StructureDefinition-us-core-goal-snapshot.xhtml %}
-   </div>
-  </div>
- </div>
-
-<!-- =======XML and JSON ======== -->
-{% if site.showPsuedoXML%}
- <div id="tabs-xml">
-  <div id="xml">
-   <div id="xml-inner">
-{% include StructureDefinition-us-core-goal-pseudo-xml.xhtml %}
-   </div>
-  </div>
- </div>
-{% endif %}
-
-
-{% if site.showPsuedoJson%}
- <div id="tabs-json">
-  <div id="json">
-   <div id="json-inner">
-     <pre class="spec">
-      {% include StructureDefinition-us-core-goal-pseudo-json.xhtml %}
-     </pre>
-   </div>
-  </div>
- </div>
-{% endif %}
-
-{% endif %}
-
-
- <div id="tabs-all"  class = "no-external">
-<!-- =======Summary======== -->
-{% unless "us-core-goal" contains "extension"%}
-  <div id="all-tbl-summ">
-    <div id="all-tbl-summ-inner">
-     <a name="summary"> </a>
-   {% if site.summaries %}
-     {% capture my-include %}{% include us-core-goal-summary.md id="us-core-goal" %}{% endcapture %}{{ my-include | markdownify }}
-   {% else %}
-     {% include StructureDefinition-us-core-goal-summary.xhtml %}
-   {% endif%}
-<!--{% raw %}
-{% include us-core-goal-summary.md id="us-core-goal" %}
-{% endraw %}-->
-   </div>
-  </div>
-{% endunless %}
-<!-- =======Differential level 1======== -->
- <div id="all-tbl-diff">
-   <p><b>Differential View</b></p>
-   <div id="all-tbl-diff-inner">
-     {% include StructureDefinition-us-core-goal-diff.xhtml %}
-   </div>
-   <!-- =======Differential level 2 ( if want to show an intermediate diff if profiling a profile) ========= -->
-{% if site.diff2 %}
-      <div id="all-tbl-diff2-inner">
-        {% include us-core-goal-diff2.md type="StructureDefinition" id="us-core-goal" %}
-      </div>
-{% endif %}
-</div>
-<!-- =======Snapshot======== -->
-{% unless site.data.structuredefinitions.us-core-goal.kind == "logical" %}
-  <div id="all-tbl-snap">
-   <p><b>Snapshot View</b></p>
-   <div id="all-tbl-snap-inner">
-     {% include StructureDefinition-us-core-goal-snapshot.xhtml %}
-   </div>
-  </div>
-{% endunless %}
-<!-- =======XML and JSON ======== -->
-
-
-    {% if showPsuedoJson %}
-        <div id="all-xml">
-         <p><b>XML Template</b></p>
-         <div id="all-xml-inner">
-      {% include StructureDefinition-us-core-goal-pseudo-xml.xhtml %}
-         </div>
-        </div>
-    {% endif %}
-
-    {% if showPsuedoXML %}
-        <div id="all-json">
-         <p><b>JSON Template</b></p>
-         <div id="all-json-inner">
-            <pre class="spec">
-             {% include StructureDefinition-us-core-goal-pseudo-json.xhtml %}
-            </pre>
-        </div>
-      </div>
-    {% endif %}
-
-
- </div>
-</div>
-
-<br />
-
-{% if site.data.structuredefinitions.us-core-goal.kind == "resource" %}
-
-<a name="downloads"> </a>
-<p>Downloads: StructureDefinition: (<a href="StructureDefinition-us-core-goal.xml" download>XML</a>, <a href="StructureDefinition-us-core-goal.json" download>JSON</a>), Schema:  <a href="us-core-goal.sch" download>XML Schematron</a></p>
-
-<br />
-
-
-
-
-  <!-- search text here-->
-  <a name="search"> </a>
-  <h3>Quick Start</h3>
-  <p>Below is an overview of the required set of RESTful FHIR interactions - for example, search and read operations - for this profile.  See the <a href="capstatements.html">Conformance requirements</a> for a complete list of supported RESTful interactions for this IG.</p>
-
-
-  {% capture my-include %}{% include us-core-goal-search.md id="us-core-goal" %}{% endcapture %}{{ my-include | markdownify }}
-
-
-{% elsif site.data.structuredefinitions.us-core-goal.kind == "logical" %}
-
-<br />
-
-
-  <a name="mapping-tables"> </a>
-  <h3>Mappings</h3>
-  <p>Below are mappings for this model. These mappings are informative and are provided to help implementers of this specification understand the content and use it correctly.</p>
-
-  <div markdown='0'>
-      <!--reduce the header size -->
-  {% capture mapping %}{% include StructureDefinition-{{id}}-maps.xhtml %}{% endcapture %}
-  {{ mapping| replace: 'h3', 'b' }}
-  </div>
-  <br />
-{% else %}
-
-  <hr/>
-
-   See the <a href="capstatements.html">Conformance requirements</a> for a complete list of supported RESTful interactions for this IG.</p>
-
-{% endif %}
   <!-- ==============END CONTENT END CONTENT=================== -->

@@ -18,7 +18,7 @@ logging,progress
 mappings,FALSE
 no-inactive-codes,FALSE
 npm-name,hl7.fhir.us.core.r4validator
-paths.output,docs
+paths.output,output
 paths.pages,framework|source/pages
 paths.qa,generated_output/qa
 paths.resources,source/resources|source/examples
@@ -26,7 +26,7 @@ paths.specification,http://hl7.org/fhir/R4
 paths.temp,generated_output/temp
 paths.txCache,generated_output/txCache
 publisher,Health eData Inc
-contact.system,url:
+contact.system,url
 contact.value,http: mailtto:ehaas@healthedatainc.com
 sct-edition,http://snomed.info/sct/731000124108
 searches,

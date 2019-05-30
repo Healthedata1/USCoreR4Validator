@@ -3,35 +3,33 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="us-core-condition-patient"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SearchParameter: USCoreConditionPatient</h2><p><b> description</b> : Who has the condition?<br></br>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>SearchParameter: USCoreConditionPatient</h2><p><b> description</b> : Who has the condition?<br/>
 <em>NOTE</em>: This US Core SearchParameter definition extends the usage context of
 <a href="http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html">capabilitystatement-expectation</a>
- extension to formally express implementer expectations for these elements:<br></br>
- - multipleAnd<br></br>
- - multipleOr<br></br>
- - modifier<br></br>
- - comparator<br></br>
- - chain<br></br>
- </p><br></br><p><b> id</b> us-core-condition-patient</p><p><b> url</b> : <b> http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient</b>
+ extension to formally express implementer expectations for these elements:<br/>
+ - multipleAnd<br/>
+ - multipleOr<br/>
+ - modifier<br/>
+ - comparator<br/>
+ - chain<br/>
+ </p><br/><p><b> id</b> us-core-condition-patient</p><p><b> url</b> : <b> http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient</b>
 			</p><p><b> version</b> : 4.1.0</p><p><b> name</b> : USCoreConditionPatient</p><p><b> derivedFrom</b> : http://hl7.org/fhir/SearchParameter/clinical-patient
 			</p><p><b> status</b> : active</p><p><b> experimental</b>  False</p><p><b> date</b> : 2019-05-15</p><p><b> publisher</b> : HL7 International - US Realm Steering Committee</p><p><b> contact</b> : http://www.hl7.org/Special/committees/usrealm/index.cfm</p><p><b> useContext</b> : </p><p><b> jurisdiction</b> : United States of America (the) <span> (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United
            States of America (the)'})</span>
-			</p><!--
-	<p>
+			</p>  <!-- <p>
 		<b> purpose</b> : Need to search by identifier for various infrastructural cases - mainly retrieving packages,
-         and matching as part of a chain</p>
-  --><p><b> code</b> : <code>patient</code>
+         and matching as part of a chain</p> --><p><b> code</b> : <code>patient</code>
 			</p><p><b> base</b> :Condition</p><p><b> type</b> : reference</p><p><b> expression</b> : <code>Condition.subject.where(resolve() is Patient)</code>
 			</p><p><b> xpath</b> : <code>f:Condition/f:subject</code>
 			</p><p><b> xpathUsage</b> : normal</p><p><b> mulitpleOr</b> : True   (Conformance Expectation = MAY)</p><p><b> mulitpleAnd</b> : True  ( Conformance Expectation = MAY)</p><p><b> modifier</b> : <code>missing</code>  (Conformance Expectation =  MAY)</p><p><b> modifier</b> : <code>type</code>  (Conformance Expectation =  MAY)</p><p><b> modifier</b> : <code>identifier</code>  (Conformance Expectation =  MAY)</p></div>
   </text>
   <url value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient"/>
-  <version value="4.1.0"/>
+  <version value="0.0.0"/>
   <name value="USCoreConditionPatient"/>
   <derivedFrom value="http://hl7.org/fhir/SearchParameter/clinical-patient"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2019-05-15T23:49:03.040949Z"/>
+  <date value="2019-05-15T16:49:03-07:00"/>
   <publisher value="HL7 International - US Realm Steering Committee"/>
   <contact>
     <telecom>
@@ -40,6 +38,13 @@
     </telecom>
   </contact>
   <description value="Who has the condition?&lt;br /&gt;&#xA;&lt;em&gt;NOTE&lt;/em&gt;: This US Core SearchParameter definition extends the usage context of&#xA;&lt;a href=&quot;http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html&quot;&gt;capabilitystatement-expectation&lt;/a&gt;&#xA; extension to formally express implementer expectations for these elements:&lt;br /&gt;&#xA; - multipleAnd&lt;br /&gt;&#xA; - multipleOr&lt;br /&gt;&#xA; - modifier&lt;br /&gt;&#xA; - comparator&lt;br /&gt;&#xA; - chain&lt;br /&gt;&#xA; "/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
   <code value="patient"/>
   <base value="Condition"/>
   <type value="reference"/>
@@ -58,19 +63,7 @@
       <valueCode value="MAY"/>
     </extension>
   </multipleAnd>
-  <modifier value="missing">
-    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-      <valueCode value="MAY"/>
-    </extension>
-  </modifier>
-  <modifier value="type">
-    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-      <valueCode value="MAY"/>
-    </extension>
-  </modifier>
-  <modifier value="identifier">
-    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-      <valueCode value="MAY"/>
-    </extension>
-  </modifier>
+  <modifier value="missing"/>
+  <modifier value="type"/>
+  <modifier value="identifier"/>
 </SearchParameter>

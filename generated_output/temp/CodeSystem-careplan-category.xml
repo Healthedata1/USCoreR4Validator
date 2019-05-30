@@ -11,7 +11,7 @@
   <name value="USCoreCarePlanCategoryExtensionCodes"/>
   <title value="US Core CarePlan Category Extension Codes"/>
   <status value="active"/>
-  <date value="2019-05-26T17:29:47-07:00"/>
+  <date value="2019-05-29T22:57:24-07:00"/>
   <publisher value="HL7 US Realm Steering Committee"/>
   <description value="Set of codes that are needed for implementation of the US-Core profiles. These codes are used as extensions to the FHIR and US Core value sets.&#xA;"/>
   <jurisdiction>
@@ -22,7 +22,6 @@
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/us/core/ValueSet/careplan-category"/>
   <content value="complete"/>
   <concept>
     <code value="assess-plan"/>

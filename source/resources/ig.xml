@@ -12,7 +12,7 @@
 
 <contact><!-- 0..* ContactDetail Contact details for the publisher -->
     <telecom>
-      <system value="url:"/>
+      <system value="url"/>
       <value value="http: mailtto:ehaas@healthedatainc.com"/>
     </telecom>
   </contact>

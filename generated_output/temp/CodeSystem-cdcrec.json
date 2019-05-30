@@ -41,7 +41,6 @@
     }
   ],
   "caseSensitive": true,
-  "valueSet": "http://hl7.org/fhir/us/core/ValueSet/cdcrec",
   "hierarchyMeaning": "is-a",
   "content": "complete",
   "count": 966,

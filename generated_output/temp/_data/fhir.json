@@ -2,10 +2,10 @@
   "path": "http://hl7.org/fhir/R4/",
   "canonical": "http://hl7.org/fhir/us/core",
   "igId": "hl7.fhir.us.core.r4validator-0.0.0",
-  "igName": "USCoreR4",
+  "igName": "USCoreR4Validator",
   "packageId": "hl7.fhir.us.core.r4validator",
   "igVer": "0.0.0",
-  "errorCount": 292,
+  "errorCount": 1201,
   "version": "4.0.0",
   "revision": "a53ec6ee1b",
   "versionFull": "4.0.0-a53ec6ee1b",
@@ -13,25 +13,26 @@
   "toolingRevision": "3",
   "toolingVersionFull": "4.1.0 (3)",
   "totalFiles": 150,
-  "processedFiles": 353,
-  "genDate": "Sun, May 26, 2019 17:29-0700",
-  "genDay": "26/05/2019",
+  "processedFiles": 127,
+  "genDate": "Wed, May 29, 2019 22:56-0700",
+  "genDay": "29/05/2019",
   "ig": {
     "id": "hl7.fhir.us.core.r4validator-0.0.0",
-    "name": "USCoreR4",
+    "name": "USCoreR4Validator",
+    "title": "US Core R4 Validator",
     "url": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core.r4validator-0.0.0",
     "version": "0.0.0",
     "status": "active",
     "experimental": false,
-    "publisher": "HL7 International - Structured Documents Work Group",
+    "publisher": "Health eData Inc",
     "contact": [
       {
         "telecom": [
-          "http://www.hl7.org/Special/committees/structure/index.cfm"
+          "http: mailtto:ehaas@healthedatainc.com"
         ]
       }
     ],
-    "copyright": "Used by permission of HL7 International - Structured Documents Work Group, all rights reserved Creative Commons License",
+    "copyright": "Used by permission of Health eData Inc, all rights reserved Creative Commons License",
     "fhirVersion": "4.0.0"
   }
 }

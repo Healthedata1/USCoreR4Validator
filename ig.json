@@ -1,28 +1,4 @@
 {
-    "source": "ig.xml",
-    "special-urls": [
-        "urn:oid:2.16.840.1.113883.6.238",
-        "urn:oid:2.16.840.1.113762.1.4.1021.24"
-    ],
-    "paths": {
-        "history": "history",
-        "pages": [
-            "framework",
-            "source/pages"
-        ],
-        "qa": "generated_output/qa",
-        "resources": [
-            "source/resources",
-            "source/examples"
-        ],
-        "output": "output",
-        "temp": "generated_output/temp",
-        "specification": "http://hl7.org/fhir/R4",
-        "txCache": "generated_output/txCache"
-    },
-    "working-dir": "/Users/ehaas/Documents/FHIR/USCoreR4Validator",
-    "pub_url": "ehaas@healthedatainc.com",
-    "status": "active",
     "contact": [
         {
             "value": "http: mailtto:ehaas@healthedatainc.com",
@@ -30,650 +6,16 @@
         }
     ],
     "name": "USCoreR4Validator",
-    "swagger": [
-        {
-            "capabilities": "server",
-            "mode": "single"
-        }
+    "extraTemplates": [
+        "mappings"
     ],
-    "mappings": "false",
-    "version": "4.0.0",
-    "allviews": "False",
-    "fixed-business-version": "0.0.0",
-    "resources": {
-        "SearchParameter/us-core-condition-patient": {
-            "base": "SearchParameter-us-core-condition-patient.html",
-            "source": "searchparameter-us-core-condition-patient.json"
-        },
-        "OperationDefinition/docref": {
-            "base": "OperationDefinition-docref.html",
-            "source": "operationdefinition-docref.xml"
-        },
-        "SearchParameter/us-core-device-patient": {
-            "base": "SearchParameter-us-core-device-patient.html",
-            "source": "searchparameter-us-core-device-patient.json"
-        },
-        "SearchParameter/us-core-careplan-status": {
-            "base": "SearchParameter-us-core-careplan-status.html",
-            "source": "searchparameter-us-core-careplan-status.json"
-        },
-        "SearchParameter/us-core-immunization-date": {
-            "base": "SearchParameter-us-core-immunization-date.html",
-            "source": "searchparameter-us-core-immunization-date.json"
-        },
-        "ValueSet/us-core-observation-smoking-status-status": {
-            "base": "ValueSet-us-core-observation-smoking-status-status.html",
-            "source": "valueset-us-core-observation-status-smoking-status.xml"
-        },
-        "ValueSet/us-core-procedure-icd10pcs": {
-            "base": "ValueSet-us-core-procedure-icd10pcs.html",
-            "source": "valueset-us-core-procedure-icd10pcs.xml"
-        },
-        "SearchParameter/us-core-goal-target-date": {
-            "base": "SearchParameter-us-core-goal-target-date.html",
-            "source": "searchparameter-us-core-goal-target-date.json"
-        },
-        "SearchParameter/us-core-practitioner-identifier": {
-            "base": "SearchParameter-us-core-practitioner-identifier.html",
-            "source": "searchparameter-us-core-practitioner-identifier.json"
-        },
-        "StructureDefinition/us-core-careplan": {
-            "base": "StructureDefinition-us-core-careplan.html",
-            "defns": "StructureDefinition-us-core-careplan-definitions.html"
-        },
-        "StructureDefinition/us-core-allergyintolerance": {
-            "base": "StructureDefinition-us-core-allergyintolerance.html",
-            "defns": "StructureDefinition-us-core-allergyintolerance-definitions.html"
-        },
-        "StructureDefinition/us-core-diagnosticreport-lab": {
-            "base": "StructureDefinition-us-core-diagnosticreport-lab.html",
-            "source": "structuredefinition-us-core-diagnosticreport-lab.xml",
-            "defns": "StructureDefinition-us-core-diagnosticreport-lab-definitions.html"
-        },
-        "ValueSet/detailed-ethnicity": {
-            "base": "ValueSet-detailed-ethnicity.html",
-            "source": "valueset-detailed-ethnicity.xml"
-        },
-        "StructureDefinition/us-core-location": {
-            "base": "StructureDefinition-us-core-location.html",
-            "defns": "StructureDefinition-us-core-location-definitions.html"
-        },
-        "Encounter/eZAjx5sRd6AgpTlKjDh4b5w3": {
-            "base": "Encounter-eZAjx5sRd6AgpTlKjDh4b5w3.html",
-            "source": "epic-encounter-eZAjx5sRd6AgpTlKjDh4b5w3.json"
-        },
-        "ValueSet/us-core-provider-role": {
-            "base": "ValueSet-us-core-provider-role.html",
-            "source": "valueset-us-core-provider-role.xml"
-        },
-        "SearchParameter/us-core-practitioner-name": {
-            "base": "SearchParameter-us-core-practitioner-name.html",
-            "source": "searchparameter-us-core-practitioner-name.json"
-        },
-        "SearchParameter/us-core-diagnosticreport-date": {
-            "base": "SearchParameter-us-core-diagnosticreport-date.html",
-            "source": "searchparameter-us-core-diagnosticreport-date.json"
-        },
-        "SearchParameter/us-core-patient-id": {
-            "base": "SearchParameter-us-core-patient-id.html",
-            "source": "searchparameter-us-core-patient-id.json"
-        },
-        "SearchParameter/us-core-encounter-class": {
-            "base": "SearchParameter-us-core-encounter-class.html",
-            "source": "searchparameter-us-core-encounter-class.json"
-        },
-        "SearchParameter/us-core-encounter-date": {
-            "base": "SearchParameter-us-core-encounter-date.html",
-            "source": "searchparameter-us-core-encounter-date.json"
-        },
-        "SearchParameter/us-core-careplan-category": {
-            "base": "SearchParameter-us-core-careplan-category.html",
-            "source": "searchparameter-us-core-careplan-category.json"
-        },
-        "SearchParameter/us-core-patient-gender": {
-            "base": "SearchParameter-us-core-patient-gender.html",
-            "source": "searchparameter-us-core-patient-gender.json"
-        },
-        "CodeSystem/cdcrec": {
-            "base": "CodeSystem-cdcrec.html",
-            "source": "codesystem-cdcrec.xml"
-        },
-        "SearchParameter/us-core-patient-birthdate": {
-            "base": "SearchParameter-us-core-patient-birthdate.html",
-            "source": "searchparameter-us-core-patient-birthdate.json"
-        },
-        "ValueSet/us-core-observation-value-codes": {
-            "base": "ValueSet-us-core-observation-value-codes.html",
-            "source": "valueset-us-core-observation-value-codes.xml"
-        },
-        "ValueSet/us-core-medication-codes": {
-            "base": "ValueSet-us-core-medication-codes.html",
-            "source": "valueset-us-core-medication-codes.xml"
-        },
-        "SearchParameter/us-core-medicationrequest-patient": {
-            "base": "SearchParameter-us-core-medicationrequest-patient.html",
-            "source": "searchparameter-us-core-medicationrequest-patient.json"
-        },
-        "Encounter/eiSX3g2gt4tJIs7-6h7nJjA3": {
-            "base": "Encounter-eiSX3g2gt4tJIs7-6h7nJjA3.html",
-            "source": "epic-encounter-eiSX3g2gt4tJIs7-6h7nJjA3.json"
-        },
-        "ValueSet/us-core-narrative-status": {
-            "base": "ValueSet-us-core-narrative-status.html",
-            "source": "valueset-us-core-narrative-status.xml"
-        },
-        "SearchParameter/us-core-procedure-patient": {
-            "base": "SearchParameter-us-core-procedure-patient.html",
-            "source": "searchparameter-us-core-procedure-patient.json"
-        },
-        "SearchParameter/us-core-medicationstatement-status": {
-            "base": "SearchParameter-us-core-medicationstatement-status.html",
-            "source": "searchparameter-us-core-medicationstatement-status.json"
-        },
-        "SearchParameter/us-core-immunization-status": {
-            "base": "SearchParameter-us-core-immunization-status.html",
-            "source": "searchparameter-us-core-immunization-status.json"
-        },
-        "ValueSet/detailed-race": {
-            "base": "ValueSet-detailed-race.html",
-            "source": "valueset-detailed-race.xml"
-        },
-        "StructureDefinition/us-core-practitionerrole": {
-            "base": "StructureDefinition-us-core-practitionerrole.html",
-            "defns": "StructureDefinition-us-core-practitionerrole-definitions.html"
-        },
-        "SearchParameter/us-core-practitionerrole-specialty": {
-            "base": "SearchParameter-us-core-practitionerrole-specialty.html",
-            "source": "searchparameter-us-core-practitionerrole-specialty.json"
-        },
-        "Encounter/ehoN2kZnYuW5z0Di4Kkno5w3": {
-            "base": "Encounter-ehoN2kZnYuW5z0Di4Kkno5w3.html",
-            "source": "epic-encounter-ehoN2kZnYuW5z0Di4Kkno5w3.json"
-        },
-        "SearchParameter/us-core-observation-category": {
-            "base": "SearchParameter-us-core-observation-category.html",
-            "source": "searchparameter-us-core-observation-category.json"
-        },
-        "SearchParameter/us-core-ethnicity": {
-            "base": "SearchParameter-us-core-ethnicity.html",
-            "source": "searchparameter-us-core-ethnicity.xml"
-        },
-        "SearchParameter/us-core-medicationrequest-authoredon": {
-            "base": "SearchParameter-us-core-medicationrequest-authoredon.html",
-            "source": "searchparameter-us-core-medicationrequest-authoredon.json"
-        },
-        "ValueSet/us-core-procedure-code": {
-            "base": "ValueSet-us-core-procedure-code.html",
-            "source": "valueset-us-core-procedure-code.xml"
-        },
-        "StructureDefinition/us-core-smokingstatus": {
-            "base": "StructureDefinition-us-core-smokingstatus.html",
-            "defns": "StructureDefinition-us-core-smokingstatus-definitions.html"
-        },
-        "SearchParameter/us-core-patient-given": {
-            "base": "SearchParameter-us-core-patient-given.html",
-            "source": "searchparameter-us-core-patient-given.json"
-        },
-        "StructureDefinition/us-core-condition": {
-            "base": "StructureDefinition-us-core-condition.html",
-            "defns": "StructureDefinition-us-core-condition-definitions.html"
-        },
-        "StructureDefinition/us-core-practitioner": {
-            "base": "StructureDefinition-us-core-practitioner.html",
-            "defns": "StructureDefinition-us-core-practitioner-definitions.html"
-        },
-        "StructureDefinition/us-core-organization": {
-            "base": "StructureDefinition-us-core-organization.html",
-            "defns": "StructureDefinition-us-core-organization-definitions.html"
-        },
-        "ValueSet/us-core-allergy-substance": {
-            "base": "ValueSet-us-core-allergy-substance.html",
-            "source": "valueset-us-core-allergy-substance.xml"
-        },
-        "ValueSet/simple-language": {
-            "base": "ValueSet-simple-language.html",
-            "source": "valueset-simple-language.xml"
-        },
-        "SearchParameter/us-core-diagnosticreport-status": {
-            "base": "SearchParameter-us-core-diagnosticreport-status.html",
-            "source": "searchparameter-us-core-diagnosticreport-status.json"
-        },
-        "CodeSystem/us-core-documentreference-category": {
-            "base": "CodeSystem-us-core-documentreference-category.html",
-            "source": "codesystem-us-core-documentreference-category.xml"
-        },
-        "SearchParameter/us-core-careplan-date": {
-            "base": "SearchParameter-us-core-careplan-date.html",
-            "source": "searchparameter-us-core-careplan-date.json"
-        },
-        "SearchParameter/us-core-encounter-status": {
-            "base": "SearchParameter-us-core-encounter-status.html",
-            "source": "searchparameter-us-core-encounter-status.json"
-        },
-        "SearchParameter/us-core-patient-identifier": {
-            "base": "SearchParameter-us-core-patient-identifier.html",
-            "source": "searchparameter-us-core-patient-identifier.json"
-        },
-        "SearchParameter/us-core-careteam-status": {
-            "base": "SearchParameter-us-core-careteam-status.html",
-            "source": "searchparameter-us-core-careteam-status.json"
-        },
-        "SearchParameter/us-core-procedure-code": {
-            "base": "SearchParameter-us-core-procedure-code.html",
-            "source": "searchparameter-us-core-procedure-code.json"
-        },
-        "StructureDefinition/us-core-documentreference": {
-            "base": "StructureDefinition-us-core-documentreference.html",
-            "defns": "StructureDefinition-us-core-documentreference-definitions.html"
-        },
-        "StructureDefinition/us-core-medicationrequest": {
-            "base": "StructureDefinition-us-core-medicationrequest.html",
-            "defns": "StructureDefinition-us-core-medicationrequest-definitions.html"
-        },
-        "SearchParameter/us-core-organization-address": {
-            "base": "SearchParameter-us-core-organization-address.html",
-            "source": "searchparameter-us-core-organization-address.json"
-        },
-        "ValueSet/us-core-clinical-note-type": {
-            "base": "ValueSet-us-core-clinical-note-type.html",
-            "source": "valueset-us-core-clinical-note-type.xml"
-        },
-        "SearchParameter/us-core-organization-name": {
-            "base": "SearchParameter-us-core-organization-name.html",
-            "source": "searchparameter-us-core-organization-name.json"
-        },
-        "StructureDefinition/us-core-medication": {
-            "base": "StructureDefinition-us-core-medication.html",
-            "defns": "StructureDefinition-us-core-medication-definitions.html"
-        },
-        "ValueSet/us-core-condition-category": {
-            "base": "ValueSet-us-core-condition-category.html",
-            "source": "valueset-us-core-condition-category.xml"
-        },
-        "SearchParameter/us-core-careplan-patient": {
-            "base": "SearchParameter-us-core-careplan-patient.html",
-            "source": "searchparameter-us-core-careplan-patient.json"
-        },
-        "ValueSet/us-core-vaccines-cvx": {
-            "base": "ValueSet-us-core-vaccines-cvx.html",
-            "source": "valueset-us-core-cvx.xml"
-        },
-        "SearchParameter/us-core-allergyintolerance-patient": {
-            "base": "SearchParameter-us-core-allergyintolerance-patient.html",
-            "source": "searchparameter-us-core-allergyintolerance-patient.json"
-        },
-        "SearchParameter/us-core-documentreference-status": {
-            "base": "SearchParameter-us-core-documentreference-status.html",
-            "source": "searchparameter-us-core-documentreference-status.json"
-        },
-        "SearchParameter/us-core-encounter-patient": {
-            "base": "SearchParameter-us-core-encounter-patient.html",
-            "source": "searchparameter-us-core-encounter-patient.json"
-        },
-        "StructureDefinition/us-core-birthsex": {
-            "base": "StructureDefinition-us-core-birthsex.html",
-            "source": "structuredefinition-us-core-birthsex.xml",
-            "defns": "StructureDefinition-us-core-birthsex-definitions.html"
-        },
-        "CodeSystem/careplan-category": {
-            "base": "CodeSystem-careplan-category.html",
-            "source": "codesystem-careplan-category.xml"
-        },
-        "SearchParameter/us-core-location-address-postalcode": {
-            "base": "SearchParameter-us-core-location-address-postalcode.html",
-            "source": "searchparameter-us-core-location-address-postalcode.json"
-        },
-        "ValueSet/us-core-problem": {
-            "base": "ValueSet-us-core-problem.html",
-            "source": "valueset-us-core-problem.xml"
-        },
-        "SearchParameter/us-core-location-address": {
-            "base": "SearchParameter-us-core-location-address.html",
-            "source": "searchparameter-us-core-location-address.json"
-        },
-        "SearchParameter/us-core-device-type": {
-            "base": "SearchParameter-us-core-device-type.html",
-            "source": "searchparameter-us-core-device-type.json"
-        },
-        "SearchParameter/us-core-immunization-patient": {
-            "base": "SearchParameter-us-core-immunization-patient.html",
-            "source": "searchparameter-us-core-immunization-patient.json"
-        },
-        "SearchParameter/us-core-documentreference-date": {
-            "base": "SearchParameter-us-core-documentreference-date.html",
-            "source": "searchparameter-us-core-documentreference-date.json"
-        },
-        "SearchParameter/us-core-medicationstatement-effective": {
-            "base": "SearchParameter-us-core-medicationstatement-effective.html",
-            "source": "searchparameter-us-core-medicationstatement-effective.json"
-        },
-        "SearchParameter/us-core-patient-family": {
-            "base": "SearchParameter-us-core-patient-family.html",
-            "source": "searchparameter-us-core-patient-family.json"
-        },
-        "SearchParameter/us-core-location-name": {
-            "base": "SearchParameter-us-core-location-name.html",
-            "source": "searchparameter-us-core-location-name.json"
-        },
-        "SearchParameter/us-core-location-address-city": {
-            "base": "SearchParameter-us-core-location-address-city.html",
-            "source": "searchparameter-us-core-location-address-city.json"
-        },
-        "CodeSystem/condition-category": {
-            "base": "CodeSystem-condition-category.html",
-            "source": "codesystem-condition-category.xml"
-        },
-        "SearchParameter/us-core-documentreference-patient": {
-            "base": "SearchParameter-us-core-documentreference-patient.html",
-            "source": "searchparameter-us-core-documentreference-patient.json"
-        },
-        "ValueSet/us-core-diagnosticreport-category": {
-            "base": "ValueSet-us-core-diagnosticreport-category.html",
-            "source": "valueset-us-core-diagnosticreport-category.xml"
-        },
-        "StructureDefinition/us-core-observation-lab": {
-            "base": "StructureDefinition-us-core-observation-lab.html",
-            "defns": "StructureDefinition-us-core-observation-lab-definitions.html"
-        },
-        "SearchParameter/us-core-medicationrequest-status": {
-            "base": "SearchParameter-us-core-medicationrequest-status.html",
-            "source": "searchparameter-us-core-medicationrequest-status.json"
-        },
-        "SearchParameter/us-core-documentreference-category": {
-            "base": "SearchParameter-us-core-documentreference-category.html",
-            "source": "searchparameter-us-core-documentreference-category.json"
-        },
-        "SearchParameter/us-core-documentreference-type": {
-            "base": "SearchParameter-us-core-documentreference-type.html",
-            "source": "searchparameter-us-core-documentreference-type.json"
-        },
-        "StructureDefinition/us-core-encounter": {
-            "base": "StructureDefinition-us-core-encounter.html",
-            "defns": "StructureDefinition-us-core-encounter-definitions.html"
-        },
-        "SearchParameter/us-core-encounter-identifier": {
-            "base": "SearchParameter-us-core-encounter-identifier.html",
-            "source": "searchparameter-us-core-encounter-identifier.json"
-        },
-        "SearchParameter/us-core-procedure-status": {
-            "base": "SearchParameter-us-core-procedure-status.html",
-            "source": "searchparameter-us-core-procedure-status.json"
-        },
-        "ValueSet/us-core-observation-smokingstatus": {
-            "base": "ValueSet-us-core-observation-smokingstatus.html",
-            "source": "valueset-us-core-observation-ccdasmokingstatus.xml"
-        },
-        "SearchParameter/us-core-diagnosticreport-patient": {
-            "base": "SearchParameter-us-core-diagnosticreport-patient.html",
-            "source": "searchparameter-us-core-diagnosticreport-patient.json"
-        },
-        "ValueSet/us-core-smoking-status-observation-codes": {
-            "base": "ValueSet-us-core-smoking-status-observation-codes.html",
-            "source": "valueset-us-core-smoking-status-observation-codes.xml"
-        },
-        "SearchParameter/us-core-diagnosticreport-category": {
-            "base": "SearchParameter-us-core-diagnosticreport-category.html",
-            "source": "searchparameter-us-core-diagnosticreport-category.json"
-        },
-        "ValueSet/us-core-diagnosticreport-lab-codes": {
-            "base": "ValueSet-us-core-diagnosticreport-lab-codes.html",
-            "source": "valueset-us-core-diagnosticreport-lab-codes.xml"
-        },
-        "SearchParameter/us-core-goal-patient": {
-            "base": "SearchParameter-us-core-goal-patient.html",
-            "source": "searchparameter-us-core-goal-patient.json"
-        },
-        "StructureDefinition/us-core-diagnosticreport-note": {
-            "base": "StructureDefinition-us-core-diagnosticreport-note.html",
-            "source": "structuredefinition-us-core-diagnosticreport-note.xml",
-            "defns": "StructureDefinition-us-core-diagnosticreport-note-definitions.html"
-        },
-        "SearchParameter/us-core-observation-patient": {
-            "base": "SearchParameter-us-core-observation-patient.html",
-            "source": "searchparameter-us-core-observation-patient.json"
-        },
-        "CapabilityStatement/us-core-server": {
-            "base": "CapabilityStatement-us-core-server.html",
-            "source": "capabilitystatement-us-core-server.json"
-        },
-        "ValueSet/us-core-provider-specialty": {
-            "base": "ValueSet-us-core-provider-specialty.html",
-            "source": "valueset-us-core-provider-specialty.xml"
-        },
-        "SearchParameter/us-core-location-address-state": {
-            "base": "SearchParameter-us-core-location-address-state.html",
-            "source": "searchparameter-us-core-location-address-state.json"
-        },
-        "SearchParameter/us-core-condition-category": {
-            "base": "SearchParameter-us-core-condition-category.html",
-            "source": "searchparameter-us-core-condition-category.json"
-        },
-        "ValueSet/omb-ethnicity-category": {
-            "base": "ValueSet-omb-ethnicity-category.html",
-            "source": "valueset-omb-ethnicity.xml"
-        },
-        "SearchParameter/us-core-observation-status": {
-            "base": "SearchParameter-us-core-observation-status.html",
-            "source": "searchparameter-us-core-observation-status.json"
-        },
-        "SearchParameter/us-core-practitionerrole-practitioner": {
-            "base": "SearchParameter-us-core-practitionerrole-practitioner.html",
-            "source": "searchparameter-us-core-practitionerrole-practitioner.json"
-        },
-        "SearchParameter/us-core-documentreference-id": {
-            "base": "SearchParameter-us-core-documentreference-id.html",
-            "source": "searchparameter-us-core-documentreference-id.json"
-        },
-        "Encounter/ejPvGuBUqYJkCweOPRabvYg3": {
-            "base": "Encounter-ejPvGuBUqYJkCweOPRabvYg3.html",
-            "source": "epic-encounter-ejPvGuBUqYJkCweOPRabvYg3.json"
-        },
-        "SearchParameter/us-core-observation-code": {
-            "base": "SearchParameter-us-core-observation-code.html",
-            "source": "searchparameter-us-core-observation-code.json"
-        },
-        "StructureDefinition/us-core-goal": {
-            "base": "StructureDefinition-us-core-goal.html",
-            "defns": "StructureDefinition-us-core-goal-definitions.html"
-        },
-        "StructureDefinition/us-core-race": {
-            "base": "StructureDefinition-us-core-race.html",
-            "source": "structuredefinition-us-core-race.xml",
-            "defns": "StructureDefinition-us-core-race-definitions.html"
-        },
-        "ValueSet/us-core-documentreference-category": {
-            "base": "ValueSet-us-core-documentreference-category.html",
-            "source": "valueset-us-core-documentreference-categories.xml"
-        },
-        "StructureDefinition/us-core-ethnicity": {
-            "base": "StructureDefinition-us-core-ethnicity.html",
-            "source": "structuredefinition-us-core-ethnicity.xml",
-            "defns": "StructureDefinition-us-core-ethnicity-definitions.html"
-        },
-        "AllergyIntolerance/eyHIVsZwhzaZhX9XvFesx5A3": {
-            "base": "AllergyIntolerance-eyHIVsZwhzaZhX9XvFesx5A3.html",
-            "source": "epic-allergyintolerance-eyHIVsZwhzaZhX9XvFesx5A3.json"
-        },
-        "StructureDefinition/pediatric-weight-for-height": {
-            "base": "StructureDefinition-pediatric-weight-for-height.html",
-            "defns": "StructureDefinition-pediatric-weight-for-height-definitions.html"
-        },
-        "StructureDefinition/us-core-immunization": {
-            "base": "StructureDefinition-us-core-immunization.html",
-            "defns": "StructureDefinition-us-core-immunization-definitions.html"
-        },
-        "StructureDefinition/us-core-medicationstatement": {
-            "base": "StructureDefinition-us-core-medicationstatement.html",
-            "defns": "StructureDefinition-us-core-medicationstatement-definitions.html"
-        },
-        "SearchParameter/us-core-observation-date": {
-            "base": "SearchParameter-us-core-observation-date.html",
-            "source": "searchparameter-us-core-observation-date.json"
-        },
-        "StructureDefinition/pediatric-bmi-for-age": {
-            "base": "StructureDefinition-pediatric-bmi-for-age.html",
-            "defns": "StructureDefinition-pediatric-bmi-for-age-definitions.html"
-        },
-        "StructureDefinition/us-core-patient": {
-            "base": "StructureDefinition-us-core-patient.html",
-            "defns": "StructureDefinition-us-core-patient-definitions.html"
-        },
-        "SearchParameter/us-core-medicationstatement-patient": {
-            "base": "SearchParameter-us-core-medicationstatement-patient.html",
-            "source": "searchparameter-us-core-medicationstatement-patient.json"
-        },
-        "ValueSet/omb-race-category": {
-            "base": "ValueSet-omb-race-category.html",
-            "source": "valueset-omb-race.xml"
-        },
-        "Patient/eroCd17NbCffM3E3WXi7eOQ3": {
-            "base": "Patient-eroCd17NbCffM3E3WXi7eOQ3.html",
-            "source": "epic-patient-eroCd17NbCffM3E3WXi7eOQ3.json"
-        },
-        "SearchParameter/us-core-careteam-patient": {
-            "base": "SearchParameter-us-core-careteam-patient.html",
-            "source": "searchparameter-us-core-careteam-patient.json"
-        },
-        "SearchParameter/us-core-procedure-date": {
-            "base": "SearchParameter-us-core-procedure-date.html",
-            "source": "searchparameter-us-core-procedure-date.json"
-        },
-        "ValueSet/us-core-encounter-type": {
-            "base": "ValueSet-us-core-encounter-type.html",
-            "source": "valueset-us-core-encounter-type.xml"
-        },
-        "ValueSet/us-core-diagnosticreport-report-and-note-codes": {
-            "base": "ValueSet-us-core-diagnosticreport-report-and-note-codes.html",
-            "source": "valueset-us-core-diagnosticreport-report-and-note-codes.xml"
-        },
-        "SearchParameter/us-core-encounter-id": {
-            "base": "SearchParameter-us-core-encounter-id.html",
-            "source": "searchparameter-us-core-encounter-id.json"
-        },
-        "ValueSet/us-core-ndc-vaccine-codes": {
-            "base": "ValueSet-us-core-ndc-vaccine-codes.html",
-            "source": "valueset-us-core-ndc-vaccine-codes.xml"
-        },
-        "ValueSet/birthsex": {
-            "base": "ValueSet-birthsex.html",
-            "source": "valueset-us-core-birthsex.xml"
-        },
-        "Practitioner/e7D.u41Zv3VPrLmUp-mWnrQ3": {
-            "base": "Practitioner-e7D.u41Zv3VPrLmUp-mWnrQ3.html",
-            "source": "epic-practitioner-e7D.u41Zv3VPrLmUp-mWnrQ3.json"
-        },
-        "SearchParameter/us-core-documentreference-period": {
-            "base": "SearchParameter-us-core-documentreference-period.html",
-            "source": "searchparameter-us-core-documentreference-period.json"
-        },
-        "ConceptMap/ndc-cvx": {
-            "base": "ConceptMap-ndc-cvx.html",
-            "source": "conceptmap-ndc-cvx.xml"
-        },
-        "CapabilityStatement/us-core-client": {
-            "base": "CapabilityStatement-us-core-client.html",
-            "source": "capabilitystatement-us-core-client.json"
-        },
-        "ValueSet/us-core-usps-state": {
-            "base": "ValueSet-us-core-usps-state.html",
-            "source": "valueset-us-core-usps-state.xml"
-        },
-        "StructureDefinition/us-core-careteam": {
-            "base": "StructureDefinition-us-core-careteam.html",
-            "defns": "StructureDefinition-us-core-careteam-definitions.html"
-        },
-        "ValueSet/us-core-careteam-provider-roles": {
-            "base": "ValueSet-us-core-careteam-provider-roles.html",
-            "source": "valueset-us-core-careteam-provider-roles.xml"
-        },
-        "SearchParameter/us-core-goal-lifecycle-status": {
-            "base": "SearchParameter-us-core-goal-lifecycle-status.html",
-            "source": "searchparameter-us-core-goal-lifecycle-status.json"
-        },
-        "Encounter/e1Jw-ETrL1kZAPiXl3uSMWw3": {
-            "base": "Encounter-e1Jw-ETrL1kZAPiXl3uSMWw3.html",
-            "source": "epic-encounter-e1Jw-ETrL1kZAPiXl3uSMWw3.json"
-        },
-        "SearchParameter/us-core-condition-onset-date": {
-            "base": "SearchParameter-us-core-condition-onset-date.html",
-            "source": "searchparameter-us-core-condition-onset-date.json"
-        },
-        "SearchParameter/us-core-diagnosticreport-code": {
-            "base": "SearchParameter-us-core-diagnosticreport-code.html",
-            "source": "searchparameter-us-core-diagnosticreport-code.json"
-        },
-        "SearchParameter/us-core-encounter-type": {
-            "base": "SearchParameter-us-core-encounter-type.html",
-            "source": "searchparameter-us-core-encounter-type.json"
-        },
-        "SearchParameter/us-core-condition-clinical-status": {
-            "base": "SearchParameter-us-core-condition-clinical-status.html",
-            "source": "searchparameter-us-core-condition-clinical-status.json"
-        },
-        "StructureDefinition/us-core-device": {
-            "base": "StructureDefinition-us-core-device.html",
-            "defns": "StructureDefinition-us-core-device-definitions.html"
-        },
-        "StructureDefinition/us-core-direct": {
-            "base": "StructureDefinition-us-core-direct.html",
-            "source": "structuredefinition-us-core-direct.xml",
-            "defns": "StructureDefinition-us-core-direct-definitions.html"
-        },
-        "StructureDefinition/us-core-procedure": {
-            "base": "StructureDefinition-us-core-procedure.html",
-            "defns": "StructureDefinition-us-core-procedure-definitions.html"
-        },
-        "SearchParameter/us-core-condition-code": {
-            "base": "SearchParameter-us-core-condition-code.html",
-            "source": "searchparameter-us-core-condition-code.json"
-        },
-        "SearchParameter/us-core-patient-name": {
-            "base": "SearchParameter-us-core-patient-name.html",
-            "source": "searchparameter-us-core-patient-name.json"
-        },
-        "SearchParameter/us-core-allergyintolerance-clinical-status": {
-            "base": "SearchParameter-us-core-allergyintolerance-clinical-status.html",
-            "source": "searchparameter-us-core-allergyintolerance-clinical-status.json"
-        },
-        "ValueSet/us-core-documentreference-type": {
-            "base": "ValueSet-us-core-documentreference-type.html",
-            "source": "valueset-us-core-documentreference-type.xml"
-        },
-        "SearchParameter/us-core-race": {
-            "base": "SearchParameter-us-core-race.html",
-            "source": "searchparameter-us-core-race.xml"
-        }
-    },
-    "gen-examples": "false",
+    "npm-name": "hl7.fhir.us.core.r4validator",
     "broken-links": "warning",
-    "logging": [
-        "progress"
-    ],
-    "topofpage": "true",
+    "source": "ig.xml",
+    "canonicalBase": "http://hl7.org/fhir/us/core",
+    "pub_url": "ehaas@healthedatainc.com",
+    "tool": "jekyll",
     "sct-edition": "http://snomed.info/sct/731000124108",
-    "title": "US Core R4 Validator",
-    "defaults": {
-        "Practitioner": {
-            "template-base": "ex.html"
-        },
-        "AllergyIntolerance": {
-            "template-base": "ex.html"
-        },
-        "Encounter": {
-            "template-base": "ex.html"
-        },
-        "Any": {
-            "template-format": "format.html",
-            "template-base": "base.html",
-            "ttl": false,
-            "xml": false,
-            "swagger": "true"
-        },
-        "Patient": {
-            "template-base": "ex.html"
-        }
-    },
-    "jurisdiction": "US",
     "spreadsheets": [
         "medicationrequest-us-core-profile-spreadsheet.xml",
         "goal-us-core-profile-spreadsheet.xml",
@@ -698,15 +40,673 @@
         "practitionerrole-us-core-profile-spreadsheet.xml",
         "immunization-us-core-profile-spreadsheet.xml"
     ],
-    "npm-name": "hl7.fhir.us.core.r4validator",
+    "paths": {
+        "temp": "generated_output/temp",
+        "specification": "http://hl7.org/fhir/R4",
+        "qa": "generated_output/qa",
+        "history": "history",
+        "txCache": "generated_output/txCache",
+        "pages": [
+            "framework",
+            "source/pages"
+        ],
+        "output": "docs",
+        "resources": [
+            "source/resources",
+            "source/examples"
+        ]
+    },
     "do-transforms": "false",
-    "license": "CC0-1.0",
-    "extraTemplates": [
-        "mappings"
+    "allviews": "False",
+    "swagger": [
+        {
+            "mode": "single",
+            "capabilities": "server"
+        }
+    ],
+    "version": "4.0.0",
+    "fixed-business-version": "0.0.0",
+    "status": "active",
+    "logging": [
+        "progress"
     ],
     "igtemplate-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/",
-    "canonicalBase": "http://hl7.org/fhir/us/core",
+    "resources": {
+        "OperationDefinition/docref": {
+            "source": "operationdefinition-docref.xml",
+            "base": "OperationDefinition-docref.html"
+        },
+        "SearchParameter/us-core-location-address": {
+            "source": "searchparameter-us-core-location-address.json",
+            "base": "SearchParameter-us-core-location-address.html"
+        },
+        "SearchParameter/us-core-medicationrequest-patient": {
+            "source": "searchparameter-us-core-medicationrequest-patient.json",
+            "base": "SearchParameter-us-core-medicationrequest-patient.html"
+        },
+        "ValueSet/us-core-careteam-provider-roles": {
+            "source": "valueset-us-core-careteam-provider-roles.xml",
+            "base": "ValueSet-us-core-careteam-provider-roles.html"
+        },
+        "SearchParameter/us-core-location-address-postalcode": {
+            "source": "searchparameter-us-core-location-address-postalcode.json",
+            "base": "SearchParameter-us-core-location-address-postalcode.html"
+        },
+        "StructureDefinition/us-core-medicationstatement": {
+            "defns": "StructureDefinition-us-core-medicationstatement-definitions.html",
+            "base": "StructureDefinition-us-core-medicationstatement.html"
+        },
+        "CodeSystem/condition-category": {
+            "source": "codesystem-condition-category.xml",
+            "base": "CodeSystem-condition-category.html"
+        },
+        "StructureDefinition/us-core-medication": {
+            "defns": "StructureDefinition-us-core-medication-definitions.html",
+            "base": "StructureDefinition-us-core-medication.html"
+        },
+        "SearchParameter/us-core-patient-id": {
+            "source": "searchparameter-us-core-patient-id.json",
+            "base": "SearchParameter-us-core-patient-id.html"
+        },
+        "StructureDefinition/us-core-location": {
+            "defns": "StructureDefinition-us-core-location-definitions.html",
+            "base": "StructureDefinition-us-core-location.html"
+        },
+        "Encounter/eiSX3g2gt4tJIs7-6h7nJjA3": {
+            "source": "epic-encounter-eiSX3g2gt4tJIs7-6h7nJjA3.json",
+            "base": "Encounter-eiSX3g2gt4tJIs7-6h7nJjA3.html"
+        },
+        "SearchParameter/us-core-condition-clinical-status": {
+            "source": "searchparameter-us-core-condition-clinical-status.json",
+            "base": "SearchParameter-us-core-condition-clinical-status.html"
+        },
+        "StructureDefinition/us-core-observation-lab": {
+            "defns": "StructureDefinition-us-core-observation-lab-definitions.html",
+            "base": "StructureDefinition-us-core-observation-lab.html"
+        },
+        "SearchParameter/us-core-immunization-status": {
+            "source": "searchparameter-us-core-immunization-status.json",
+            "base": "SearchParameter-us-core-immunization-status.html"
+        },
+        "StructureDefinition/us-core-documentreference": {
+            "defns": "StructureDefinition-us-core-documentreference-definitions.html",
+            "base": "StructureDefinition-us-core-documentreference.html"
+        },
+        "ValueSet/us-core-procedure-code": {
+            "source": "valueset-us-core-procedure-code.xml",
+            "base": "ValueSet-us-core-procedure-code.html"
+        },
+        "AllergyIntolerance/eyHIVsZwhzaZhX9XvFesx5A3": {
+            "source": "epic-allergyintolerance-eyHIVsZwhzaZhX9XvFesx5A3.json",
+            "base": "AllergyIntolerance-eyHIVsZwhzaZhX9XvFesx5A3.html"
+        },
+        "SearchParameter/us-core-observation-status": {
+            "source": "searchparameter-us-core-observation-status.json",
+            "base": "SearchParameter-us-core-observation-status.html"
+        },
+        "SearchParameter/us-core-observation-patient": {
+            "source": "searchparameter-us-core-observation-patient.json",
+            "base": "SearchParameter-us-core-observation-patient.html"
+        },
+        "SearchParameter/us-core-diagnosticreport-patient": {
+            "source": "searchparameter-us-core-diagnosticreport-patient.json",
+            "base": "SearchParameter-us-core-diagnosticreport-patient.html"
+        },
+        "SearchParameter/us-core-condition-code": {
+            "source": "searchparameter-us-core-condition-code.json",
+            "base": "SearchParameter-us-core-condition-code.html"
+        },
+        "StructureDefinition/us-core-medicationrequest": {
+            "defns": "StructureDefinition-us-core-medicationrequest-definitions.html",
+            "base": "StructureDefinition-us-core-medicationrequest.html"
+        },
+        "StructureDefinition/us-core-device": {
+            "defns": "StructureDefinition-us-core-device-definitions.html",
+            "base": "StructureDefinition-us-core-device.html"
+        },
+        "ValueSet/us-core-diagnosticreport-report-and-note-codes": {
+            "source": "valueset-us-core-diagnosticreport-report-and-note-codes.xml",
+            "base": "ValueSet-us-core-diagnosticreport-report-and-note-codes.html"
+        },
+        "SearchParameter/us-core-diagnosticreport-code": {
+            "source": "searchparameter-us-core-diagnosticreport-code.json",
+            "base": "SearchParameter-us-core-diagnosticreport-code.html"
+        },
+        "SearchParameter/us-core-procedure-date": {
+            "source": "searchparameter-us-core-procedure-date.json",
+            "base": "SearchParameter-us-core-procedure-date.html"
+        },
+        "SearchParameter/us-core-practitioner-name": {
+            "source": "searchparameter-us-core-practitioner-name.json",
+            "base": "SearchParameter-us-core-practitioner-name.html"
+        },
+        "StructureDefinition/us-core-procedure": {
+            "defns": "StructureDefinition-us-core-procedure-definitions.html",
+            "base": "StructureDefinition-us-core-procedure.html"
+        },
+        "ValueSet/us-core-encounter-type": {
+            "source": "valueset-us-core-encounter-type.xml",
+            "base": "ValueSet-us-core-encounter-type.html"
+        },
+        "StructureDefinition/us-core-diagnosticreport-note": {
+            "source": "structuredefinition-us-core-diagnosticreport-note.xml",
+            "defns": "StructureDefinition-us-core-diagnosticreport-note-definitions.html",
+            "base": "StructureDefinition-us-core-diagnosticreport-note.html"
+        },
+        "SearchParameter/us-core-careplan-status": {
+            "source": "searchparameter-us-core-careplan-status.json",
+            "base": "SearchParameter-us-core-careplan-status.html"
+        },
+        "StructureDefinition/us-core-diagnosticreport-lab": {
+            "source": "structuredefinition-us-core-diagnosticreport-lab.xml",
+            "defns": "StructureDefinition-us-core-diagnosticreport-lab-definitions.html",
+            "base": "StructureDefinition-us-core-diagnosticreport-lab.html"
+        },
+        "CodeSystem/us-core-documentreference-category": {
+            "source": "codesystem-us-core-documentreference-category.xml",
+            "base": "CodeSystem-us-core-documentreference-category.html"
+        },
+        "SearchParameter/us-core-observation-category": {
+            "source": "searchparameter-us-core-observation-category.json",
+            "base": "SearchParameter-us-core-observation-category.html"
+        },
+        "SearchParameter/us-core-encounter-class": {
+            "source": "searchparameter-us-core-encounter-class.json",
+            "base": "SearchParameter-us-core-encounter-class.html"
+        },
+        "SearchParameter/us-core-careteam-patient": {
+            "source": "searchparameter-us-core-careteam-patient.json",
+            "base": "SearchParameter-us-core-careteam-patient.html"
+        },
+        "ValueSet/us-core-provider-role": {
+            "source": "valueset-us-core-provider-role.xml",
+            "base": "ValueSet-us-core-provider-role.html"
+        },
+        "StructureDefinition/us-core-birthsex": {
+            "source": "structuredefinition-us-core-birthsex.xml",
+            "defns": "StructureDefinition-us-core-birthsex-definitions.html",
+            "base": "StructureDefinition-us-core-birthsex.html"
+        },
+        "Patient/eroCd17NbCffM3E3WXi7eOQ3": {
+            "source": "epic-patient-eroCd17NbCffM3E3WXi7eOQ3.json",
+            "base": "Patient-eroCd17NbCffM3E3WXi7eOQ3.html"
+        },
+        "StructureDefinition/us-core-practitionerrole": {
+            "defns": "StructureDefinition-us-core-practitionerrole-definitions.html",
+            "base": "StructureDefinition-us-core-practitionerrole.html"
+        },
+        "SearchParameter/us-core-patient-gender": {
+            "source": "searchparameter-us-core-patient-gender.json",
+            "base": "SearchParameter-us-core-patient-gender.html"
+        },
+        "SearchParameter/us-core-practitioner-identifier": {
+            "source": "searchparameter-us-core-practitioner-identifier.json",
+            "base": "SearchParameter-us-core-practitioner-identifier.html"
+        },
+        "SearchParameter/us-core-patient-birthdate": {
+            "source": "searchparameter-us-core-patient-birthdate.json",
+            "base": "SearchParameter-us-core-patient-birthdate.html"
+        },
+        "ValueSet/us-core-vaccines-cvx": {
+            "source": "valueset-us-core-cvx.xml",
+            "base": "ValueSet-us-core-vaccines-cvx.html"
+        },
+        "SearchParameter/us-core-procedure-code": {
+            "source": "searchparameter-us-core-procedure-code.json",
+            "base": "SearchParameter-us-core-procedure-code.html"
+        },
+        "ValueSet/us-core-clinical-note-type": {
+            "source": "valueset-us-core-clinical-note-type.xml",
+            "base": "ValueSet-us-core-clinical-note-type.html"
+        },
+        "ValueSet/us-core-provider-specialty": {
+            "source": "valueset-us-core-provider-specialty.xml",
+            "base": "ValueSet-us-core-provider-specialty.html"
+        },
+        "ValueSet/us-core-procedure-icd10pcs": {
+            "source": "valueset-us-core-procedure-icd10pcs.xml",
+            "base": "ValueSet-us-core-procedure-icd10pcs.html"
+        },
+        "StructureDefinition/us-core-careplan": {
+            "defns": "StructureDefinition-us-core-careplan-definitions.html",
+            "base": "StructureDefinition-us-core-careplan.html"
+        },
+        "SearchParameter/us-core-careplan-date": {
+            "source": "searchparameter-us-core-careplan-date.json",
+            "base": "SearchParameter-us-core-careplan-date.html"
+        },
+        "SearchParameter/us-core-documentreference-category": {
+            "source": "searchparameter-us-core-documentreference-category.json",
+            "base": "SearchParameter-us-core-documentreference-category.html"
+        },
+        "ValueSet/us-core-documentreference-type": {
+            "source": "valueset-us-core-documentreference-type.xml",
+            "base": "ValueSet-us-core-documentreference-type.html"
+        },
+        "SearchParameter/us-core-procedure-status": {
+            "source": "searchparameter-us-core-procedure-status.json",
+            "base": "SearchParameter-us-core-procedure-status.html"
+        },
+        "ValueSet/us-core-condition-category": {
+            "source": "valueset-us-core-condition-category.xml",
+            "base": "ValueSet-us-core-condition-category.html"
+        },
+        "StructureDefinition/us-core-race": {
+            "source": "structuredefinition-us-core-race.xml",
+            "defns": "StructureDefinition-us-core-race-definitions.html",
+            "base": "StructureDefinition-us-core-race.html"
+        },
+        "SearchParameter/us-core-patient-given": {
+            "source": "searchparameter-us-core-patient-given.json",
+            "base": "SearchParameter-us-core-patient-given.html"
+        },
+        "ValueSet/us-core-narrative-status": {
+            "source": "valueset-us-core-narrative-status.xml",
+            "base": "ValueSet-us-core-narrative-status.html"
+        },
+        "SearchParameter/us-core-immunization-patient": {
+            "source": "searchparameter-us-core-immunization-patient.json",
+            "base": "SearchParameter-us-core-immunization-patient.html"
+        },
+        "StructureDefinition/us-core-ethnicity": {
+            "source": "structuredefinition-us-core-ethnicity.xml",
+            "defns": "StructureDefinition-us-core-ethnicity-definitions.html",
+            "base": "StructureDefinition-us-core-ethnicity.html"
+        },
+        "SearchParameter/us-core-immunization-date": {
+            "source": "searchparameter-us-core-immunization-date.json",
+            "base": "SearchParameter-us-core-immunization-date.html"
+        },
+        "ValueSet/us-core-medication-codes": {
+            "source": "valueset-us-core-medication-codes.xml",
+            "base": "ValueSet-us-core-medication-codes.html"
+        },
+        "StructureDefinition/us-core-careteam": {
+            "defns": "StructureDefinition-us-core-careteam-definitions.html",
+            "base": "StructureDefinition-us-core-careteam.html"
+        },
+        "SearchParameter/us-core-encounter-status": {
+            "source": "searchparameter-us-core-encounter-status.json",
+            "base": "SearchParameter-us-core-encounter-status.html"
+        },
+        "StructureDefinition/us-core-goal": {
+            "defns": "StructureDefinition-us-core-goal-definitions.html",
+            "base": "StructureDefinition-us-core-goal.html"
+        },
+        "ValueSet/birthsex": {
+            "source": "valueset-us-core-birthsex.xml",
+            "base": "ValueSet-birthsex.html"
+        },
+        "CapabilityStatement/us-core-server": {
+            "source": "capabilitystatement-us-core-server.json",
+            "base": "CapabilityStatement-us-core-server.html"
+        },
+        "SearchParameter/us-core-documentreference-id": {
+            "source": "searchparameter-us-core-documentreference-id.json",
+            "base": "SearchParameter-us-core-documentreference-id.html"
+        },
+        "SearchParameter/us-core-documentreference-patient": {
+            "source": "searchparameter-us-core-documentreference-patient.json",
+            "base": "SearchParameter-us-core-documentreference-patient.html"
+        },
+        "ValueSet/us-core-allergy-substance": {
+            "source": "valueset-us-core-allergy-substance.xml",
+            "base": "ValueSet-us-core-allergy-substance.html"
+        },
+        "SearchParameter/us-core-medicationstatement-patient": {
+            "source": "searchparameter-us-core-medicationstatement-patient.json",
+            "base": "SearchParameter-us-core-medicationstatement-patient.html"
+        },
+        "SearchParameter/us-core-condition-patient": {
+            "source": "searchparameter-us-core-condition-patient.json",
+            "base": "SearchParameter-us-core-condition-patient.html"
+        },
+        "ValueSet/us-core-usps-state": {
+            "source": "valueset-us-core-usps-state.xml",
+            "base": "ValueSet-us-core-usps-state.html"
+        },
+        "ValueSet/detailed-ethnicity": {
+            "source": "valueset-detailed-ethnicity.xml",
+            "base": "ValueSet-detailed-ethnicity.html"
+        },
+        "SearchParameter/us-core-practitionerrole-practitioner": {
+            "source": "searchparameter-us-core-practitionerrole-practitioner.json",
+            "base": "SearchParameter-us-core-practitionerrole-practitioner.html"
+        },
+        "SearchParameter/us-core-medicationstatement-effective": {
+            "source": "searchparameter-us-core-medicationstatement-effective.json",
+            "base": "SearchParameter-us-core-medicationstatement-effective.html"
+        },
+        "SearchParameter/us-core-ethnicity": {
+            "source": "searchparameter-us-core-ethnicity.xml",
+            "base": "SearchParameter-us-core-ethnicity.html"
+        },
+        "SearchParameter/us-core-goal-target-date": {
+            "source": "searchparameter-us-core-goal-target-date.json",
+            "base": "SearchParameter-us-core-goal-target-date.html"
+        },
+        "StructureDefinition/us-core-condition": {
+            "defns": "StructureDefinition-us-core-condition-definitions.html",
+            "base": "StructureDefinition-us-core-condition.html"
+        },
+        "StructureDefinition/us-core-practitioner": {
+            "defns": "StructureDefinition-us-core-practitioner-definitions.html",
+            "base": "StructureDefinition-us-core-practitioner.html"
+        },
+        "ValueSet/omb-race-category": {
+            "source": "valueset-omb-race.xml",
+            "base": "ValueSet-omb-race-category.html"
+        },
+        "SearchParameter/us-core-medicationrequest-status": {
+            "source": "searchparameter-us-core-medicationrequest-status.json",
+            "base": "SearchParameter-us-core-medicationrequest-status.html"
+        },
+        "SearchParameter/us-core-documentreference-status": {
+            "source": "searchparameter-us-core-documentreference-status.json",
+            "base": "SearchParameter-us-core-documentreference-status.html"
+        },
+        "SearchParameter/us-core-medicationrequest-authoredon": {
+            "source": "searchparameter-us-core-medicationrequest-authoredon.json",
+            "base": "SearchParameter-us-core-medicationrequest-authoredon.html"
+        },
+        "Encounter/ehoN2kZnYuW5z0Di4Kkno5w3": {
+            "source": "epic-encounter-ehoN2kZnYuW5z0Di4Kkno5w3.json",
+            "base": "Encounter-ehoN2kZnYuW5z0Di4Kkno5w3.html"
+        },
+        "SearchParameter/us-core-practitionerrole-specialty": {
+            "source": "searchparameter-us-core-practitionerrole-specialty.json",
+            "base": "SearchParameter-us-core-practitionerrole-specialty.html"
+        },
+        "SearchParameter/us-core-goal-patient": {
+            "source": "searchparameter-us-core-goal-patient.json",
+            "base": "SearchParameter-us-core-goal-patient.html"
+        },
+        "ValueSet/us-core-documentreference-category": {
+            "source": "valueset-us-core-documentreference-categories.xml",
+            "base": "ValueSet-us-core-documentreference-category.html"
+        },
+        "SearchParameter/us-core-encounter-type": {
+            "source": "searchparameter-us-core-encounter-type.json",
+            "base": "SearchParameter-us-core-encounter-type.html"
+        },
+        "SearchParameter/us-core-diagnosticreport-date": {
+            "source": "searchparameter-us-core-diagnosticreport-date.json",
+            "base": "SearchParameter-us-core-diagnosticreport-date.html"
+        },
+        "ValueSet/detailed-race": {
+            "source": "valueset-detailed-race.xml",
+            "base": "ValueSet-detailed-race.html"
+        },
+        "SearchParameter/us-core-location-name": {
+            "source": "searchparameter-us-core-location-name.json",
+            "base": "SearchParameter-us-core-location-name.html"
+        },
+        "SearchParameter/us-core-careplan-category": {
+            "source": "searchparameter-us-core-careplan-category.json",
+            "base": "SearchParameter-us-core-careplan-category.html"
+        },
+        "SearchParameter/us-core-patient-name": {
+            "source": "searchparameter-us-core-patient-name.json",
+            "base": "SearchParameter-us-core-patient-name.html"
+        },
+        "SearchParameter/us-core-allergyintolerance-patient": {
+            "source": "searchparameter-us-core-allergyintolerance-patient.json",
+            "base": "SearchParameter-us-core-allergyintolerance-patient.html"
+        },
+        "SearchParameter/us-core-encounter-patient": {
+            "source": "searchparameter-us-core-encounter-patient.json",
+            "base": "SearchParameter-us-core-encounter-patient.html"
+        },
+        "StructureDefinition/us-core-direct": {
+            "source": "structuredefinition-us-core-direct.xml",
+            "defns": "StructureDefinition-us-core-direct-definitions.html",
+            "base": "StructureDefinition-us-core-direct.html"
+        },
+        "ValueSet/omb-ethnicity-category": {
+            "source": "valueset-omb-ethnicity.xml",
+            "base": "ValueSet-omb-ethnicity-category.html"
+        },
+        "ConceptMap/ndc-cvx": {
+            "source": "conceptmap-ndc-cvx.xml",
+            "base": "ConceptMap-ndc-cvx.html"
+        },
+        "SearchParameter/us-core-careteam-status": {
+            "source": "searchparameter-us-core-careteam-status.json",
+            "base": "SearchParameter-us-core-careteam-status.html"
+        },
+        "ValueSet/us-core-diagnosticreport-lab-codes": {
+            "source": "valueset-us-core-diagnosticreport-lab-codes.xml",
+            "base": "ValueSet-us-core-diagnosticreport-lab-codes.html"
+        },
+        "Encounter/e1Jw-ETrL1kZAPiXl3uSMWw3": {
+            "source": "epic-encounter-e1Jw-ETrL1kZAPiXl3uSMWw3.json",
+            "base": "Encounter-e1Jw-ETrL1kZAPiXl3uSMWw3.html"
+        },
+        "CodeSystem/careplan-category": {
+            "source": "codesystem-careplan-category.xml",
+            "base": "CodeSystem-careplan-category.html"
+        },
+        "SearchParameter/us-core-condition-category": {
+            "source": "searchparameter-us-core-condition-category.json",
+            "base": "SearchParameter-us-core-condition-category.html"
+        },
+        "ValueSet/us-core-observation-smokingstatus": {
+            "source": "valueset-us-core-observation-ccdasmokingstatus.xml",
+            "base": "ValueSet-us-core-observation-smokingstatus.html"
+        },
+        "SearchParameter/us-core-careplan-patient": {
+            "source": "searchparameter-us-core-careplan-patient.json",
+            "base": "SearchParameter-us-core-careplan-patient.html"
+        },
+        "SearchParameter/us-core-patient-family": {
+            "source": "searchparameter-us-core-patient-family.json",
+            "base": "SearchParameter-us-core-patient-family.html"
+        },
+        "SearchParameter/us-core-condition-onset-date": {
+            "source": "searchparameter-us-core-condition-onset-date.json",
+            "base": "SearchParameter-us-core-condition-onset-date.html"
+        },
+        "SearchParameter/us-core-encounter-date": {
+            "source": "searchparameter-us-core-encounter-date.json",
+            "base": "SearchParameter-us-core-encounter-date.html"
+        },
+        "Encounter/eZAjx5sRd6AgpTlKjDh4b5w3": {
+            "source": "epic-encounter-eZAjx5sRd6AgpTlKjDh4b5w3.json",
+            "base": "Encounter-eZAjx5sRd6AgpTlKjDh4b5w3.html"
+        },
+        "SearchParameter/us-core-diagnosticreport-status": {
+            "source": "searchparameter-us-core-diagnosticreport-status.json",
+            "base": "SearchParameter-us-core-diagnosticreport-status.html"
+        },
+        "StructureDefinition/pediatric-weight-for-height": {
+            "defns": "StructureDefinition-pediatric-weight-for-height-definitions.html",
+            "base": "StructureDefinition-pediatric-weight-for-height.html"
+        },
+        "StructureDefinition/us-core-allergyintolerance": {
+            "defns": "StructureDefinition-us-core-allergyintolerance-definitions.html",
+            "base": "StructureDefinition-us-core-allergyintolerance.html"
+        },
+        "ValueSet/us-core-observation-value-codes": {
+            "source": "valueset-us-core-observation-value-codes.xml",
+            "base": "ValueSet-us-core-observation-value-codes.html"
+        },
+        "ValueSet/us-core-diagnosticreport-category": {
+            "source": "valueset-us-core-diagnosticreport-category.xml",
+            "base": "ValueSet-us-core-diagnosticreport-category.html"
+        },
+        "SearchParameter/us-core-goal-lifecycle-status": {
+            "source": "searchparameter-us-core-goal-lifecycle-status.json",
+            "base": "SearchParameter-us-core-goal-lifecycle-status.html"
+        },
+        "SearchParameter/us-core-procedure-patient": {
+            "source": "searchparameter-us-core-procedure-patient.json",
+            "base": "SearchParameter-us-core-procedure-patient.html"
+        },
+        "Practitioner/e7D.u41Zv3VPrLmUp-mWnrQ3": {
+            "source": "epic-practitioner-e7D.u41Zv3VPrLmUp-mWnrQ3.json",
+            "base": "Practitioner-e7D.u41Zv3VPrLmUp-mWnrQ3.html"
+        },
+        "SearchParameter/us-core-documentreference-type": {
+            "source": "searchparameter-us-core-documentreference-type.json",
+            "base": "SearchParameter-us-core-documentreference-type.html"
+        },
+        "SearchParameter/us-core-documentreference-date": {
+            "source": "searchparameter-us-core-documentreference-date.json",
+            "base": "SearchParameter-us-core-documentreference-date.html"
+        },
+        "CapabilityStatement/us-core-client": {
+            "source": "capabilitystatement-us-core-client.json",
+            "base": "CapabilityStatement-us-core-client.html"
+        },
+        "ValueSet/us-core-observation-smoking-status-status": {
+            "source": "valueset-us-core-observation-status-smoking-status.xml",
+            "base": "ValueSet-us-core-observation-smoking-status-status.html"
+        },
+        "StructureDefinition/us-core-encounter": {
+            "defns": "StructureDefinition-us-core-encounter-definitions.html",
+            "base": "StructureDefinition-us-core-encounter.html"
+        },
+        "StructureDefinition/us-core-patient": {
+            "defns": "StructureDefinition-us-core-patient-definitions.html",
+            "base": "StructureDefinition-us-core-patient.html"
+        },
+        "SearchParameter/us-core-race": {
+            "source": "searchparameter-us-core-race.xml",
+            "base": "SearchParameter-us-core-race.html"
+        },
+        "SearchParameter/us-core-organization-name": {
+            "source": "searchparameter-us-core-organization-name.json",
+            "base": "SearchParameter-us-core-organization-name.html"
+        },
+        "SearchParameter/us-core-location-address-city": {
+            "source": "searchparameter-us-core-location-address-city.json",
+            "base": "SearchParameter-us-core-location-address-city.html"
+        },
+        "ValueSet/simple-language": {
+            "source": "valueset-simple-language.xml",
+            "base": "ValueSet-simple-language.html"
+        },
+        "SearchParameter/us-core-allergyintolerance-clinical-status": {
+            "source": "searchparameter-us-core-allergyintolerance-clinical-status.json",
+            "base": "SearchParameter-us-core-allergyintolerance-clinical-status.html"
+        },
+        "SearchParameter/us-core-device-type": {
+            "source": "searchparameter-us-core-device-type.json",
+            "base": "SearchParameter-us-core-device-type.html"
+        },
+        "SearchParameter/us-core-diagnosticreport-category": {
+            "source": "searchparameter-us-core-diagnosticreport-category.json",
+            "base": "SearchParameter-us-core-diagnosticreport-category.html"
+        },
+        "SearchParameter/us-core-medicationstatement-status": {
+            "source": "searchparameter-us-core-medicationstatement-status.json",
+            "base": "SearchParameter-us-core-medicationstatement-status.html"
+        },
+        "StructureDefinition/us-core-organization": {
+            "defns": "StructureDefinition-us-core-organization-definitions.html",
+            "base": "StructureDefinition-us-core-organization.html"
+        },
+        "ValueSet/us-core-ndc-vaccine-codes": {
+            "source": "valueset-us-core-ndc-vaccine-codes.xml",
+            "base": "ValueSet-us-core-ndc-vaccine-codes.html"
+        },
+        "CodeSystem/cdcrec": {
+            "source": "codesystem-cdcrec.xml",
+            "base": "CodeSystem-cdcrec.html"
+        },
+        "StructureDefinition/us-core-smokingstatus": {
+            "defns": "StructureDefinition-us-core-smokingstatus-definitions.html",
+            "base": "StructureDefinition-us-core-smokingstatus.html"
+        },
+        "Encounter/ejPvGuBUqYJkCweOPRabvYg3": {
+            "source": "epic-encounter-ejPvGuBUqYJkCweOPRabvYg3.json",
+            "base": "Encounter-ejPvGuBUqYJkCweOPRabvYg3.html"
+        },
+        "ValueSet/us-core-problem": {
+            "source": "valueset-us-core-problem.xml",
+            "base": "ValueSet-us-core-problem.html"
+        },
+        "SearchParameter/us-core-encounter-id": {
+            "source": "searchparameter-us-core-encounter-id.json",
+            "base": "SearchParameter-us-core-encounter-id.html"
+        },
+        "ValueSet/us-core-smoking-status-observation-codes": {
+            "source": "valueset-us-core-smoking-status-observation-codes.xml",
+            "base": "ValueSet-us-core-smoking-status-observation-codes.html"
+        },
+        "SearchParameter/us-core-organization-address": {
+            "source": "searchparameter-us-core-organization-address.json",
+            "base": "SearchParameter-us-core-organization-address.html"
+        },
+        "SearchParameter/us-core-observation-date": {
+            "source": "searchparameter-us-core-observation-date.json",
+            "base": "SearchParameter-us-core-observation-date.html"
+        },
+        "StructureDefinition/us-core-immunization": {
+            "defns": "StructureDefinition-us-core-immunization-definitions.html",
+            "base": "StructureDefinition-us-core-immunization.html"
+        },
+        "StructureDefinition/pediatric-bmi-for-age": {
+            "defns": "StructureDefinition-pediatric-bmi-for-age-definitions.html",
+            "base": "StructureDefinition-pediatric-bmi-for-age.html"
+        },
+        "SearchParameter/us-core-patient-identifier": {
+            "source": "searchparameter-us-core-patient-identifier.json",
+            "base": "SearchParameter-us-core-patient-identifier.html"
+        },
+        "SearchParameter/us-core-device-patient": {
+            "source": "searchparameter-us-core-device-patient.json",
+            "base": "SearchParameter-us-core-device-patient.html"
+        },
+        "SearchParameter/us-core-location-address-state": {
+            "source": "searchparameter-us-core-location-address-state.json",
+            "base": "SearchParameter-us-core-location-address-state.html"
+        },
+        "SearchParameter/us-core-documentreference-period": {
+            "source": "searchparameter-us-core-documentreference-period.json",
+            "base": "SearchParameter-us-core-documentreference-period.html"
+        },
+        "SearchParameter/us-core-observation-code": {
+            "source": "searchparameter-us-core-observation-code.json",
+            "base": "SearchParameter-us-core-observation-code.html"
+        },
+        "SearchParameter/us-core-encounter-identifier": {
+            "source": "searchparameter-us-core-encounter-identifier.json",
+            "base": "SearchParameter-us-core-encounter-identifier.html"
+        }
+    },
+    "working-dir": "/Users/ehaas/Documents/FHIR/USCoreR4Validator",
     "publisher": "Health eData Inc",
+    "special-urls": [
+        "urn:oid:2.16.840.1.113883.6.238",
+        "urn:oid:2.16.840.1.113762.1.4.1021.24"
+    ],
+    "topofpage": "true",
     "no-inactive-codes": "false",
-    "tool": "jekyll"
+    "license": "CC0-1.0",
+    "defaults": {
+        "Practitioner": {
+            "template-base": "ex.html"
+        },
+        "Encounter": {
+            "template-base": "ex.html"
+        },
+        "AllergyIntolerance": {
+            "template-base": "ex.html"
+        },
+        "Any": {
+            "swagger": "true",
+            "ttl": false,
+            "template-base": "base.html",
+            "xml": false,
+            "template-format": "format.html"
+        },
+        "Patient": {
+            "template-base": "ex.html"
+        }
+    },
+    "title": "US Core R4 Validator",
+    "jurisdiction": "US",
+    "mappings": "false",
+    "gen-examples": "false"
 }

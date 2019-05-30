@@ -1,0 +1,12 @@
+﻿{
+  "url": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core.r4validator-0.0.0",
+  "name": "USCoreR4Validator",
+  "package-id": "hl7.fhir.us.core.r4validator",
+  "ig-ver": "0.0.0",
+  "date": "Thu, 30 May, 2019 10:51:20 -0700",
+  "errs": 44,
+  "warnings": 22,
+  "hints": 198,
+  "version": "4.0.0",
+  "tool": "4.1.0 (3)"
+}

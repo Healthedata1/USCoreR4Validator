@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="us-core-diagnosticreport-lab-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>US Core Diagnostic Report Laboratory Codes</h2><div><p>The Document Type value set includes all LOINC  values whose CLASSTYPE is LABORATORY in the LOINC database</p>
+</div><p><b>Copyright Statement:</b> This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from <a href="http://loinc.org"><code>http://loinc.org</code></a> where CLASSTYPE  =  1</li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/core/ValueSet/us-core-diagnosticreport-lab-codes"/>
+  <version value="0.0.0"/>
+  <name value="USCoreDiagnosticReportLabCodes"/>
+  <title value="US Core Diagnostic Report Laboratory Codes"/>
+  <status value="active"/>
+  <date value="2019-05-21T00:00:00-07:00"/>
+  <publisher value="HL7 US Realm Steering Committee"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="The Document Type value set includes all LOINC  values whose CLASSTYPE is LABORATORY in the LOINC database"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This content from LOINC&#xAE; is copyright &#xA9; 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <filter>
+        <property value="CLASSTYPE"/>
+        <op value="="/>
+        <value value="1"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

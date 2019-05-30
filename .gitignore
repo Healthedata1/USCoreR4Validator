@@ -46,7 +46,7 @@ Thumbs.db
 generated_output/qa
 generated_output/temp
 output
-docs
+#docs
 archived
 validation
 validateme

@@ -1,0 +1,152 @@
+{
+  "resourceType": "Patient",
+  "id": "eroCd17NbCffM3E3WXi7eOQ3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: eroCd17NbCffM3E3WXi7eOQ3</p><p><b>meta</b>: </p><p><b>identifier</b>: EPIC = E3948 (USUAL), EXTERNAL = Z6073 (USUAL), ?? (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Jason Argonaut</p><p><b>telecom</b>: ph: 608-623-5250(HOME), ph: 608-777-7777(WORK), ph: 608-623-5250(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: Dec 11, 1978</p><p><b>deceased</b>: false</p><p><b>address</b>: 2197 State Rd 89 Mt Horeb WI 53572 US (HOME)</p><h3>Communications</h3><table class=\"grid\"><tr><td>-</td><td><b>Language</b></td><td><b>Preferred</b></td></tr><tr><td>*</td><td>English <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/ValueSet/languages code 'en' = 'en', given as 'English'})</span></td><td>true</td></tr></table><p><b>generalPractitioner</b>: <a href=\"Practitioner-e7D.u41Zv3VPrLmUp-mWnrQ3.html\">Physician Champion, MD. Generated Summary: id: e7D.u41Zv3VPrLmUp-mWnrQ3; PROVID = 1054 (USUAL), EPIC = 207Q00000X (USUAL), NPI = 1105499994 (USUAL), Epic = TEMP1054 (USUAL); active; Physician Champion, MD</a></p><p><b>managingOrganization</b>: <a href=\"Organization/enRyWnSP963FYDpoks4NHOA3\">Epic Hospital System</a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+      "valueCode": "M"
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/us/core/ValueSet/omb-race-category",
+            "code": "2028-9",
+            "display": "Asian"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Asian"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category",
+            "code": "UNK",
+            "display": "Unknown"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Unknown"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "text": "EPIC"
+      },
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.0",
+      "value": "E3948"
+    },
+    {
+      "use": "usual",
+      "type": {
+        "text": "EXTERNAL"
+      },
+      "value": "Z6073"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/rendered-value",
+          "valueString": "xxx-xx-3601"
+        }
+      ],
+      "use": "usual",
+      "system": "urn:oid:2.16.840.1.113883.4.1"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "usual",
+      "text": "Jason Argonaut",
+      "family": "Argonaut",
+      "given": [
+        "Jason"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "608-623-5250",
+      "use": "home"
+    },
+    {
+      "system": "phone",
+      "value": "608-777-7777",
+      "use": "work"
+    },
+    {
+      "system": "phone",
+      "value": "608-623-5250",
+      "use": "mobile"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1978-12-11",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "2197 State Rd 89"
+      ],
+      "city": "Mt Horeb",
+      "district": "DANE",
+      "state": "WI",
+      "postalCode": "53572",
+      "country": "US",
+      "period": {
+        "start": "2008-10-29"
+      }
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ValueSet/languages",
+            "code": "en",
+            "display": "English"
+          }
+        ],
+        "text": "English"
+      },
+      "preferred": true
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "reference": "Practitioner/e7D.u41Zv3VPrLmUp-mWnrQ3",
+      "display": "Physician Champion, MD"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/enRyWnSP963FYDpoks4NHOA3",
+    "display": "Epic Hospital System"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "resourceType": "Encounter",
+  "id": "ejPvGuBUqYJkCweOPRabvYg3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ejPvGuBUqYJkCweOPRabvYg3</p><p><b>meta</b>: </p><p><b>identifier</b>: 27379 (USUAL)</p><p><b>status</b>: finished</p><p><b>class</b>: Support OP Encounter (Details: urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260 code 13 = '13', stated as 'Support OP Encounter')</p><p><b>type</b>: Treatment <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30 code '210' = '210', given as 'Treatment'})</span></p><p><b>subject</b>: <a href=\"Patient-eroCd17NbCffM3E3WXi7eOQ3.html\">Jason Argonaut. Generated Summary: id: eroCd17NbCffM3E3WXi7eOQ3; EPIC = E3948 (USUAL), EXTERNAL = Z6073 (USUAL), ?? (USUAL); active; Jason Argonaut; ph: 608-623-5250(HOME), ph: 608-777-7777(WORK), ph: 608-623-5250(MOBILE); gender: male; birthDate: Dec 11, 1978; </a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-e7D.u41Zv3VPrLmUp-mWnrQ3.html\">Physician Champion, MD. Generated Summary: id: e7D.u41Zv3VPrLmUp-mWnrQ3; PROVID = 1054 (USUAL), EPIC = 207Q00000X (USUAL), NPI = 1105499994 (USUAL), Epic = TEMP1054 (USUAL); active; Physician Champion, MD</a></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"Location/e4W4rmGe9QzuGm2Dy4NBqVc0KDe6yGld6HW95UuN-Qd03\">EMC Family Medicine</a></td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+      "value": "27379"
+    }
+  ],
+  "status": "finished",
+  "class": {
+    "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+    "code": "13",
+    "display": "Support OP Encounter"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30",
+          "code": "210",
+          "display": "Treatment"
+        }
+      ],
+      "text": "Treatment"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/eroCd17NbCffM3E3WXi7eOQ3",
+    "display": "Jason Argonaut"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "Practitioner/e7D.u41Zv3VPrLmUp-mWnrQ3",
+        "display": "Physician Champion, MD"
+      }
+    }
+  ],
+  "location": [
+    {
+      "location": {
+        "reference": "Location/e4W4rmGe9QzuGm2Dy4NBqVc0KDe6yGld6HW95UuN-Qd03",
+        "display": "EMC Family Medicine"
+      }
+    }
+  ]
+}

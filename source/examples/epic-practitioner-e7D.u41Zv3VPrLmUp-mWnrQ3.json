@@ -34,6 +34,20 @@
             "type": {
                 "text": "Epic"
             }
+        },
+        {
+            "use": "usual",
+            "value": "   E1054",
+            "type": {
+                "text": "INTERNAL"
+            }
+        },
+        {
+            "use": "usual",
+            "value": "E1054",
+            "type": {
+                "text": "EXTERNAL"
+            }
         }
     ],
     "name": [

@@ -66,8 +66,34 @@
     ]
   },
   "modifier": [
-    "missing",
-    "type",
-    "identifier"
+    "?",
+    "?",
+    "?"
+  ],
+  "_modifier": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    }
   ]
 }

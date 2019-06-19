@@ -1,0 +1,52 @@
+{
+    "resourceType": "Location",
+    "id": "e4W4rmGe9QzuGm2Dy4NBqVc0KDe6yGld6HW95UuN-Qd03",
+    "name": "EMC Family Medicine",
+    "mode": "instance",
+    "extension": [
+        {
+            "url": "https://open.epic.com/fhir/extensions/specialty",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.686980.110",
+                        "code": "9",
+                        "display": "Family Medicine"
+                    }
+                ]
+            }
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "555-555-5555"
+        },
+        {
+            "system": "fax",
+            "value": "555-555-5555"
+        }
+    ],
+    "address": {
+        "line": [
+            "123 Anywhere Street"
+        ],
+        "city": "VERONA",
+        "state": "Wisconsin",
+        "postalCode": "53593-9179",
+        "country": "United States of America"
+    },
+    "managingOrganization": {
+        "reference": "Organization/e8wMbBzuMGvZrYASWBHiL8w3",
+        "display": "EHS Clinic"
+    },
+    "partOf": {
+        "reference": "Location/eJMrCj-ZhPORf9uxBLaR4kw3",
+        "display": "EHS Clinic"
+    },
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+        ]
+    }
+}

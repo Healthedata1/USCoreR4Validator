@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="e4W4rmGe9QzuGm2Dy4NBqVc0KDe6yGld6HW95UuN-Qd03"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e4W4rmGe9QzuGm2Dy4NBqVc0KDe6yGld6HW95UuN-Qd03</p><p><b>meta</b>: </p><p><b>name</b>: EMC Family Medicine</p><p><b>mode</b>: instance</p><p><b>telecom</b>: ph: 555-555-5555, fax: 555-555-5555</p><p><b>address</b>: 123 Anywhere Street VERONA Wisconsin 53593-9179 United States of America </p><p><b>managingOrganization</b>: <a href="Organization/e8wMbBzuMGvZrYASWBHiL8w3">EHS Clinic</a></p><p><b>partOf</b>: <a href="Location/eJMrCj-ZhPORf9uxBLaR4kw3">EHS Clinic</a></p></div>
+  </text>
+  <extension url="https://open.epic.com/fhir/extensions/specialty">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:1.2.840.114350.1.13.0.1.7.10.686980.110"/>
+        <code value="9"/>
+        <display value="Family Medicine"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <name value="EMC Family Medicine"/>
+  <mode value="instance"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="555-555-5555"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="555-555-5555"/>
+  </telecom>
+  <address>
+    <line value="123 Anywhere Street"/>
+    <city value="VERONA"/>
+    <state value="Wisconsin"/>
+    <postalCode value="53593-9179"/>
+    <country value="United States of America"/>
+  </address>
+  <managingOrganization>
+    <reference value="Organization/e8wMbBzuMGvZrYASWBHiL8w3"/>
+    <display value="EHS Clinic"/>
+  </managingOrganization>
+  <partOf>
+    <reference value="Location/eJMrCj-ZhPORf9uxBLaR4kw3"/>
+    <display value="EHS Clinic"/>
+  </partOf>
+</Location>

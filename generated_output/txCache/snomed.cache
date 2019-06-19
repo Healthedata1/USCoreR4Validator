@@ -26273,3 +26273,33 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "125676002"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Person",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "394730007"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Healthcare related organization",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "71388002"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Procedure",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

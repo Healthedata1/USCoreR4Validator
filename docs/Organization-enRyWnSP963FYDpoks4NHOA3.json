@@ -1,0 +1,25 @@
+{
+  "resourceType": "Organization",
+  "id": "enRyWnSP963FYDpoks4NHOA3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: enRyWnSP963FYDpoks4NHOA3</p><p><b>meta</b>: </p><p><b>active</b>: true</p><p><b>name</b>: Epic Hospital System</p><p><b>address</b>: 123 Anywhere St. VERONA Wisconsin 53593 </p></div>"
+  },
+  "active": true,
+  "name": "Epic Hospital System",
+  "address": [
+    {
+      "line": [
+        "123 Anywhere St."
+      ],
+      "city": "VERONA",
+      "state": "Wisconsin",
+      "postalCode": "53593"
+    }
+  ]
+}

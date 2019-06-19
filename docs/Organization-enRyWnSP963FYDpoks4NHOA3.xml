@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="enRyWnSP963FYDpoks4NHOA3"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: enRyWnSP963FYDpoks4NHOA3</p><p><b>meta</b>: </p><p><b>active</b>: true</p><p><b>name</b>: Epic Hospital System</p><p><b>address</b>: 123 Anywhere St. VERONA Wisconsin 53593 </p></div>
+  </text>
+  <active value="true"/>
+  <name value="Epic Hospital System"/>
+  <address>
+    <line value="123 Anywhere St."/>
+    <city value="VERONA"/>
+    <state value="Wisconsin"/>
+    <postalCode value="53593"/>
+  </address>
+</Organization>

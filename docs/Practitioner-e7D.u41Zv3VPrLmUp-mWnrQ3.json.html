@@ -196,7 +196,7 @@
   },
   "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: e7D.u41Zv3VPrLmUp-mWnrQ3&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: PROVID = 1054 (USUAL), EPIC = 207Q00000X (USUAL), NPI = 1105499994 (USUAL), Epic = TEMP1054 (USUAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Physician Champion, MD&lt;/p&gt;&lt;h3&gt;Qualifications&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;MD &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.6000 code '11' = '11', given as 'MD'})&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: e7D.u41Zv3VPrLmUp-mWnrQ3&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: PROVID = 1054 (USUAL), EPIC = 207Q00000X (USUAL), NPI = 1105499994 (USUAL), Epic = TEMP1054 (USUAL), INTERNAL =    E1054 (USUAL), EXTERNAL = E1054 (USUAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Physician Champion, MD&lt;/p&gt;&lt;h3&gt;Qualifications&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;MD &lt;span style=\"background: LightGoldenRodYellow\"&gt;(Details : {urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.6000 code '11' = '11', given as 'MD'})&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">identifier</a>" : [
     {
@@ -230,6 +230,20 @@
       },
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.63",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "TEMP1054"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a>" : "usual",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "INTERNAL"
+      },
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "   E1054"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a>" : "usual",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "EXTERNAL"
+      },
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "E1054"
     }
   ],
   "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.active">active</a>" : true,
@@ -305,8 +319,8 @@ Formats: <a href="Practitioner-e7D.u41Zv3VPrLmUp-mWnrQ3.html">Narrative</a>, <a 
 <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
-    <p><a name="fbd64747-5a39-4d50-9558-ab78c8e06e2a">​</a>
-     <a href="http: mailtto:ehaas@healthedatainc.com">Health eData Inc </a> hl7.fhir.us.core.r4validator#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Thu, May 30, 2019 10:51-0700">2019-05-30</span>. <br/>
+    <p><a name="7d0a4176-d107-44c6-bd52-c225a544246d">​</a>
+     <a href="http: mailtto:ehaas@healthedatainc.com">Health eData Inc </a> hl7.fhir.us.core.r4validator#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Wed, Jun 19, 2019 09:17-0700">2019-06-19</span>. <br/>
       Links:   <!-- <a style="color: #81BEF7" href="toc.html">Table of Contents</a> -->
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
         <!-- | <a style="color: #81BEF7" href="#">Version History</a> -->

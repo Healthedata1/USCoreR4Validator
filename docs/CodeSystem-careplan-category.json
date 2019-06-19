@@ -10,7 +10,7 @@
   "name": "USCoreCarePlanCategoryExtensionCodes",
   "title": "US Core CarePlan Category Extension Codes",
   "status": "active",
-  "date": "2019-05-30T10:51:20-07:00",
+  "date": "2019-06-19T09:17:55-07:00",
   "publisher": "HL7 US Realm Steering Committee",
   "description": "Set of codes that are needed for implementation of the US-Core profiles. These codes are used as extensions to the FHIR and US Core value sets.\n",
   "jurisdiction": [

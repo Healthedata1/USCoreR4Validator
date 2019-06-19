@@ -63,6 +63,27 @@
         },
         {
             "use": "usual",
+            "value": "Ti5Vqh2hlXOtozNNgwIRe.Q7mNV1Vs4b090CS3.Frl54B",
+            "type": {
+                "text": "FHIR"
+            }
+        },
+        {
+            "use": "usual",
+            "value": "eroCd17NbCffM3E3WXi7eOQ3",
+            "type": {
+                "text": "FHIR STU3"
+            }
+        },
+        {
+            "use": "usual",
+            "value": "     Z6073",
+            "type": {
+                "text": "INTERNAL"
+            }
+        },
+        {
+            "use": "usual",
             "system": "urn:oid:2.16.840.1.113883.4.1",
             "extension": [
                 {
@@ -115,6 +136,9 @@
             }
         }
     ],
+    "maritalStatus": {
+        "text": "Married"
+    },
     "communication": [
         {
             "preferred": true,

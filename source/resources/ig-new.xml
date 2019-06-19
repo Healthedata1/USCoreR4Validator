@@ -61,6 +61,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Organization/enRyWnSP963FYDpoks4NHOA3"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Encounter/eiSX3g2gt4tJIs7-6h7nJjA3"/>
       </reference>
       <exampleBoolean value="true"/>
@@ -80,6 +86,12 @@
     <resource>
       <reference>
         <reference value="Encounter/eZAjx5sRd6AgpTlKjDh4b5w3"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Location/e4W4rmGe9QzuGm2Dy4NBqVc0KDe6yGld6HW95UuN-Qd03"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>

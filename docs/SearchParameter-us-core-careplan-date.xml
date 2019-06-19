@@ -69,5 +69,9 @@
   <comparator value="sa"/>
   <comparator value="eb"/>
   <comparator value="ap"/>
-  <modifier value="missing"/>
+  <modifier value="?">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </modifier>
 </SearchParameter>

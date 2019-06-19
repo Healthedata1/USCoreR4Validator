@@ -72,6 +72,16 @@
     "ap"
   ],
   "modifier": [
-    "missing"
+    "?"
+  ],
+  "_modifier": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    }
   ]
 }

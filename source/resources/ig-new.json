@@ -64,6 +64,12 @@
     },
     {
       "reference" : {
+        "reference" : "Organization/enRyWnSP963FYDpoks4NHOA3"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "Encounter/eiSX3g2gt4tJIs7-6h7nJjA3"
       },
       "exampleBoolean" : true
@@ -83,6 +89,12 @@
     {
       "reference" : {
         "reference" : "Encounter/eZAjx5sRd6AgpTlKjDh4b5w3"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Location/e4W4rmGe9QzuGm2Dy4NBqVc0KDe6yGld6HW95UuN-Qd03"
       },
       "exampleBoolean" : true
     },

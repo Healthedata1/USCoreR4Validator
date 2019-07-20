@@ -16,7 +16,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "http: mailtto:ehaas@healthedatainc.com"
+          "value": "mailto::ehaas@healthedatainc.com"
         }
       ]
     }

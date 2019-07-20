@@ -26,7 +26,7 @@ paths.temp,generated_output/temp
 paths.txCache,generated_output/txCache
 publisher,Health eData Inc
 contact.system,url
-contact.value,http: mailtto:ehaas@healthedatainc.com
+contact.value,mailto::ehaas@healthedatainc.com
 sct-edition,http://snomed.info/sct/731000124108
 searches,
 source,ig.xml

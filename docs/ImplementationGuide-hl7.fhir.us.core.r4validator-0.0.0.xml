@@ -14,7 +14,7 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http: mailtto:ehaas@healthedatainc.com"/>
+      <value value="mailto::ehaas@healthedatainc.com"/>
     </telecom>
   </contact>
   <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>

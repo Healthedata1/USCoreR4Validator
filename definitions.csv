@@ -15,7 +15,6 @@ igtemplate-dir,/Users/ehaas/Documents/FHIR/IG-Template2/
 jurisdiction,US
 license,
 logging,progress
-mappings,FALSE
 no-inactive-codes,FALSE
 npm-name,hl7.fhir.us.core.r4validator
 paths.output,docs

@@ -1,0 +1,79 @@
+{
+    "resourceType": "AllergyIntolerance",
+    "id": "6267785",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: SMART, NANCY</p><p><b>Allergy</b>: Food</p><p><b>Verification Status</b>: Unconfirmed</p><p><b>Clinical Status</b>: Active</p><p><b>Criticality</b>: High Risk</p><p><b>Category</b>: Food</p><p><b>Onset</b>: Aug  8, 2017</p><p><b>Note</b>:  -  - sdsdsd - 2017-07-27T07:51:09.000Z - Portal, Portal -  -  - text - 2017-07-27T07:49:18.000Z - Portal, Portal</p></div>"
+    },
+    "clinicalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+                "code": "active",
+                "display": "Active",
+                "userSelected": false
+            }
+        ],
+        "text": "Proposed"
+    },
+    "verificationStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+                "code": "unconfirmed",
+                "display": "Unconfirmed",
+                "userSelected": false
+            }
+        ],
+        "text": "Proposed"
+    },
+    "type": "intolerance",
+    "category": [
+        "food"
+    ],
+    "criticality": "high",
+    "code": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "723",
+                "display": "Amoxicillin",
+                "userSelected": false
+            }
+        ],
+        "text": "amoxicillin"
+    },
+    "patient": {
+        "reference": "Patient/4342009",
+        "display": "SMART, NANCY"
+    },
+    "onsetDateTime": "2017-08-08",
+    "recordedDate": "2017-07-27T02:51:07.000-05:00",
+    "recorder": {
+        "reference": "Practitioner/4464007",
+        "display": "Portal, Portal"
+    },
+    "note": [
+        {
+            "authorReference": {
+                "reference": "Practitioner",
+                "display": "Portal, Portal"
+            },
+            "time": "2017-07-27T07:51:09.000Z",
+            "text": " -  - sdsdsd"
+        },
+        {
+            "authorReference": {
+                "reference": "Practitioner",
+                "display": "Portal, Portal"
+            },
+            "time": "2017-07-27T07:49:18.000Z",
+            "text": " -  - text"
+        }
+    ]
+}

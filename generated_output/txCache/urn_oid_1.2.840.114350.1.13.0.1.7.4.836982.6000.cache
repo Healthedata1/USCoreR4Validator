@@ -2,20 +2,10 @@
 {"code" : {
   "system" : "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.6000",
   "code" : "11"
-}, "valueSet" :null}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code system \"urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.6000\" is not known; The code provided (urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.6000#11) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.6000",
-  "code" : "11"
 }, "valueSet" :null, "lang":"null"}####
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "The code system \"urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.6000\" is not known; The code provided (urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.6000#11) is not  valid in the value set All codes known to the system"
+  "error" : "The code system \"urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.6000\" is not known for the code \"11\"; The code provided (urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.6000#11) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------

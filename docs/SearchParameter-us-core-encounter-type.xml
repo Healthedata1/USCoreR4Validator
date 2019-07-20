@@ -61,42 +61,42 @@
       <valueCode value="MAY"/>
     </extension>
   </multipleAnd>
-  <modifier value="?">
+  <modifier value="missing">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
       <valueCode value="MAY"/>
     </extension>
   </modifier>
-  <modifier value="?">
+  <modifier value="text">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
       <valueCode value="MAY"/>
     </extension>
   </modifier>
-  <modifier value="?">
+  <modifier value="not">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
       <valueCode value="MAY"/>
     </extension>
   </modifier>
-  <modifier value="?">
+  <modifier value="in">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
       <valueCode value="MAY"/>
     </extension>
   </modifier>
-  <modifier value="?">
+  <modifier value="not-in">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
       <valueCode value="MAY"/>
     </extension>
   </modifier>
-  <modifier value="?">
+  <modifier value="below">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
       <valueCode value="MAY"/>
     </extension>
   </modifier>
-  <modifier value="?">
+  <modifier value="above">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
       <valueCode value="MAY"/>
     </extension>
   </modifier>
-  <modifier value="?">
+  <modifier value="ofType">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
       <valueCode value="MAY"/>
     </extension>

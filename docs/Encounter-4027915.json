@@ -1,0 +1,170 @@
+{
+  "resourceType": "Encounter",
+  "id": "4027915",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Encounter</b></p><p><b>Location</b>: Baseline East Medical Center, Medical Pavilion, Laboratory</p><p><b>Type</b>: Outpatient</p><p><b>Class</b>: ambulatory</p><p><b>Status</b>: In Progress</p><p><b>Period Start Date</b>: Oct 16, 2018  3:30 P.M. UTC</p><p><b>Reason For Visit</b>: Left ankle pain</p><p><b>Attending Physician</b>: Thirukonda Surendran, Koushic Babu</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/319",
+            "code": "1077",
+            "display": "FIN NBR",
+            "userSelected": true
+          }
+        ],
+        "text": "FIN NBR"
+      },
+      "system": "urn:oid:3.3.3.3.3.3",
+      "value": "20003411",
+      "period": {
+        "start": "2016-06-22T20:51:35.000Z"
+      }
+    }
+  ],
+  "status": "in-progress",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "AMB",
+    "display": "ambulatory",
+    "userSelected": false
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/71",
+          "code": "309309",
+          "display": "Outpatient",
+          "userSelected": true
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0004",
+          "code": "O",
+          "display": "Outpatient",
+          "userSelected": false
+        }
+      ],
+      "text": "Outpatient"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/4342009",
+    "display": "SMART, NANCY"
+  },
+  "participant": [
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/333",
+              "code": "1116",
+              "display": "Admitting Physician",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "ADM",
+              "display": "admitter",
+              "userSelected": false
+            }
+          ],
+          "text": "Admitting Physician"
+        }
+      ],
+      "period": {
+        "start": "2018-11-20T16:27:00.000Z"
+      },
+      "individual": {
+        "reference": "Practitioner/4272008",
+        "display": "Eichhorn, Benjamin"
+      }
+    },
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/333",
+              "code": "1119",
+              "display": "Attending Physician",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "ATND",
+              "display": "attender",
+              "userSelected": false
+            }
+          ],
+          "text": "Attending Physician"
+        }
+      ],
+      "period": {
+        "start": "2017-07-24T19:12:18.000Z"
+      },
+      "individual": {
+        "reference": "Practitioner/1502022",
+        "display": "Thirukonda Surendran, Koushic Babu"
+      }
+    },
+    {
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/333",
+              "code": "1123",
+              "display": "Ordering Physician",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+              "code": "PPRF",
+              "display": "primary performer",
+              "userSelected": false
+            }
+          ],
+          "text": "Ordering Physician"
+        }
+      ],
+      "period": {
+        "start": "2018-03-01T16:51:35.000Z"
+      },
+      "individual": {
+        "reference": "Practitioner/1502022",
+        "display": "Thirukonda Surendran, Koushic Babu"
+      }
+    }
+  ],
+  "period": {
+    "start": "2018-10-16T15:30:00.000Z"
+  },
+  "reasonCode": [
+    {
+      "text": "Left ankle pain"
+    }
+  ],
+  "location": [
+    {
+      "location": {
+        "reference": "Location/4048303",
+        "display": "Baseline East Medical Center, Medical Pavilion, Laboratory"
+      },
+      "status": "active"
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/619848"
+  }
+}

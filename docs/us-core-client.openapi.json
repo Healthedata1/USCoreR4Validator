@@ -1,7 +1,7 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "Us Core Client CapabilityStatement",
+    "title": "US Core Client CapabilityStatement",
     "description": "​The Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
     "license": {
       "name": "Creative Commons Zero v1.0 Universal",

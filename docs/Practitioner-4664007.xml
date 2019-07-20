@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="4664007"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div><p><b>Practitioner</b></p><p><b>Name</b>: Hopper, Grace</p><p><b>Identifiers</b>: NPI: 8723y5i7yw3iy, DOCDEA: lsnidf98h9h2in4f</p><p><b>Gender</b>: Female</p><p><b>Status</b>: Active</p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="NPI"/>
+        <display value="National provider identifier"/>
+      </coding>
+      <text value="National Provider Identifier"/>
+    </type>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="8723y5i7yw3iy"/>
+    <period>
+      <start value="2018-09-29T00:00:00.000-05:00"/>
+    </period>
+  </identifier>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="DEA"/>
+        <display value="Drug Enforcement Administration registration number"/>
+      </coding>
+      <text value="DOCDEA"/>
+    </type>
+    <system>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="unknown"/>
+      </extension>
+    </system>
+    <value value="lsnidf98h9h2in4f"/>
+    <period>
+      <start value="2018-09-28T00:00:00.000-05:00"/>
+    </period>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="usual"/>
+    <text value="Hopper, Grace"/>
+    <family value="Hopper"/>
+    <given value="Grace"/>
+    <period>
+      <start value="2017-05-04T05:14:35.000-05:00"/>
+    </period>
+  </name>
+  <gender value="female"/>
+</Practitioner>

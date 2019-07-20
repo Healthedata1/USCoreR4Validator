@@ -65,9 +65,9 @@
     ]
   },
   "modifier": [
-    "?",
-    "?",
-    "?"
+    "missing",
+    "type",
+    "identifier"
   ],
   "_modifier": [
     {

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="4342009"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div><p><b>Patient</b></p><p><b>Status</b>: Active</p><p><b>Name</b>: SMART, NANCY</p><p><b>DOB</b>: Aug 11, 1980</p><p><b>Administrative Gender</b>: Female</p><p><b>Marital Status</b>: Married</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2106-3"/>
+        <display value="White"/>
+        <userSelected value="false"/>
+      </valueCoding>
+    </extension>
+    <extension url="text">
+      <valueString value="White"/>
+    </extension>
+  </extension>
+  <identifier id="CI-6810232-0">
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/4"/>
+        <code value="10"/>
+        <display value="MRN"/>
+        <userSelected value="true"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+        <display value="Medical record number"/>
+        <userSelected value="false"/>
+      </coding>
+      <text value="MRN"/>
+    </type>
+    <system value="urn:oid:1.1.1.1.1.1"/>
+    <value value="10002701"/>
+    <period>
+      <start value="2016-06-22T20:43:05.000Z"/>
+    </period>
+  </identifier>
+  <identifier id="CI-8934209-2">
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/4"/>
+        <code value="670843"/>
+        <display value="Messaging"/>
+        <userSelected value="true"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="U"/>
+        <display value="Unspecified identifier"/>
+        <userSelected value="false"/>
+      </coding>
+      <text value="Messaging"/>
+    </type>
+    <system value="urn:oid:2.16.840.1.113883.3.13.8"/>
+    <value value="B3F1E729F3804CE78EE48A077965FA15"/>
+    <period>
+      <start value="2018-09-13T16:39:25.000Z"/>
+    </period>
+  </identifier>
+  <identifier id="CI-7754298-3">
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/4"/>
+        <code value="36322657"/>
+        <display value="Federated Person Principal"/>
+        <userSelected value="true"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="AN"/>
+        <display value="Account number"/>
+        <userSelected value="false"/>
+      </coding>
+      <text value="Federated Person Principal"/>
+    </type>
+    <system value="urn:oid:2.16.840.1.113883.3.13.6"/>
+    <value value="URN:CERNER:IDENTITY-FEDERATION:REALM:0B8A0111-E8E6-4C26-A91C-5069CBC6B1CA:PRINCIPAL:ABC123"/>
+    <period>
+      <start value="2017-09-26T05:00:00.000Z"/>
+      <end value="2019-01-02T05:00:00.000Z"/>
+    </period>
+  </identifier>
+  <identifier id="CI-7476206-4">
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/4"/>
+        <code value="36322657"/>
+        <display value="Federated Person Principal"/>
+        <userSelected value="true"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="AN"/>
+        <display value="Account number"/>
+        <userSelected value="false"/>
+      </coding>
+      <text value="Federated Person Principal"/>
+    </type>
+    <system value="urn:oid:2.16.840.1.113883.3.13.6"/>
+    <value value="URN:CERNER:IDENTITY-FEDERATION:REALM:687F29DD-69DD-4DE5-ACB1-FD8A2241EF3A:PRINCIPAL:YP2QT7JS2SA"/>
+    <period>
+      <start value="2016-11-01T10:00:00.000Z"/>
+    </period>
+  </identifier>
+  <identifier id="CI-7476207-5">
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/4"/>
+        <code value="36322657"/>
+        <display value="Federated Person Principal"/>
+        <userSelected value="true"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="AN"/>
+        <display value="Account number"/>
+        <userSelected value="false"/>
+      </coding>
+      <text value="Federated Person Principal"/>
+    </type>
+    <system value="urn:oid:2.16.840.1.113883.3.13.6"/>
+    <value value="urn:cerner:identity-federation:realm:687f29dd-69dd-4de5-acb1-fd8a2241ef3a:principal:YP2qT7jS2sa"/>
+    <period>
+      <start value="2016-11-01T10:00:00.000Z"/>
+    </period>
+  </identifier>
+  <active value="true"/>
+  <name id="CI-4342009-0">
+    <use value="official"/>
+    <text value="SMART, NANCY"/>
+    <family value="SMART"/>
+    <given value="NANCY"/>
+    <period>
+      <start value="2016-06-22T20:43:05.000Z"/>
+    </period>
+  </name>
+  <telecom id="CI-EM-2399938-0">
+    <system value="email"/>
+    <value value="kathy.pickering@cerner.com"/>
+    <use value="home"/>
+    <period>
+      <start value="2018-09-13T16:37:32.000Z"/>
+    </period>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1980-08-11"/>
+  <maritalStatus>
+    <coding>
+      <system value="https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/38"/>
+      <code value="309237"/>
+      <display value="Married"/>
+      <userSelected value="true"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+      <code value="M"/>
+      <display value="Married"/>
+      <userSelected value="false"/>
+    </coding>
+    <text value="Married"/>
+  </maritalStatus>
+  <contact>
+    <relationship>
+      <coding>
+        <system value="https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/351"/>
+        <code value="36327661"/>
+        <display value="Authorized Representative"/>
+        <userSelected value="true"/>
+      </coding>
+      <text value="Authorized Representative"/>
+    </relationship>
+    <name id="CI-4342010-0">
+      <use value="official"/>
+      <text value="SMART, JOE"/>
+      <family value="SMART"/>
+      <given value="JOE"/>
+      <period>
+        <start value="2016-06-22T21:06:59.000Z"/>
+      </period>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="9139898765"/>
+      <use value="home"/>
+      <period>
+        <start value="2017-06-27T21:47:16.000Z"/>
+      </period>
+    </telecom>
+    <telecom>
+      <system value="phone"/>
+      <value value="9137876555"/>
+      <use value="mobile"/>
+      <period>
+        <start value="2017-06-27T21:47:16.000Z"/>
+      </period>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="kathy.pickering@cerner.com"/>
+      <use value="home"/>
+      <period>
+        <start value="2018-09-13T16:43:28.000Z"/>
+      </period>
+    </telecom>
+    <address>
+      <use value="home"/>
+      <text value="1234 Blvd&#xA;Overland Park, KS 66213&#xA;USA"/>
+      <line value="1234 Blvd"/>
+      <city value="Overland Park"/>
+      <district value="Johnson"/>
+      <state value="KS"/>
+      <postalCode value="66213"/>
+      <country value="USA"/>
+      <period>
+        <start value="2017-06-27T21:47:16.000Z"/>
+      </period>
+    </address>
+    <gender value="male"/>
+    <period>
+      <start value="2017-07-07T18:28:24.000Z"/>
+      <end value="2017-09-20T15:18:54.000Z"/>
+    </period>
+  </contact>
+  <contact>
+    <relationship>
+      <coding>
+        <system value="https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/351"/>
+        <code value="36327661"/>
+        <display value="Authorized Representative"/>
+        <userSelected value="true"/>
+      </coding>
+      <text value="Authorized Representative"/>
+    </relationship>
+    <name id="CI-4342010-0">
+      <use value="official"/>
+      <text value="SMART, JOE"/>
+      <family value="SMART"/>
+      <given value="JOE"/>
+      <period>
+        <start value="2016-06-22T21:06:59.000Z"/>
+      </period>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="9139898765"/>
+      <use value="home"/>
+      <period>
+        <start value="2017-06-27T21:47:16.000Z"/>
+      </period>
+    </telecom>
+    <telecom>
+      <system value="phone"/>
+      <value value="9137876555"/>
+      <use value="mobile"/>
+      <period>
+        <start value="2017-06-27T21:47:16.000Z"/>
+      </period>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="kathy.pickering@cerner.com"/>
+      <use value="home"/>
+      <period>
+        <start value="2018-09-13T16:43:28.000Z"/>
+      </period>
+    </telecom>
+    <address>
+      <use value="home"/>
+      <text value="1234 Blvd&#xA;Overland Park, KS 66213&#xA;USA"/>
+      <line value="1234 Blvd"/>
+      <city value="Overland Park"/>
+      <district value="Johnson"/>
+      <state value="KS"/>
+      <postalCode value="66213"/>
+      <country value="USA"/>
+      <period>
+        <start value="2017-06-27T21:47:16.000Z"/>
+      </period>
+    </address>
+    <gender value="male"/>
+    <period>
+      <start value="2017-06-09T13:46:54.000Z"/>
+      <end value="2017-06-20T15:28:11.000Z"/>
+    </period>
+  </contact>
+  <generalPractitioner id="CI-6810238-1">
+    <reference value="Practitioner/1912007"/>
+    <display value="McCurdy, Michael"/>
+  </generalPractitioner>
+</Patient>

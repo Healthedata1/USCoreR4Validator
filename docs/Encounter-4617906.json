@@ -1,0 +1,79 @@
+{
+  "resourceType": "Encounter",
+  "id": "4617906",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Encounter</b></p><p><b>Location</b>: Baseline East Medical Center</p><p><b>Type</b>: Outpatient</p><p><b>Class</b>: ambulatory</p><p><b>Status</b>: In Progress</p><p><b>Period Start Date</b>: Apr  1, 2019  1:00 P.M. UTC</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/319",
+            "code": "1077",
+            "display": "FIN NBR",
+            "userSelected": true
+          }
+        ],
+        "text": "FIN NBR"
+      },
+      "system": "urn:oid:3.3.3.3.3.3",
+      "value": "20003768",
+      "period": {
+        "start": "2019-04-08T22:54:04.000Z"
+      }
+    }
+  ],
+  "status": "in-progress",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "AMB",
+    "display": "ambulatory",
+    "userSelected": false
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/71",
+          "code": "309309",
+          "display": "Outpatient",
+          "userSelected": true
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0004",
+          "code": "O",
+          "display": "Outpatient",
+          "userSelected": false
+        }
+      ],
+      "text": "Outpatient"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/4342009",
+    "display": "SMART, NANCY"
+  },
+  "period": {
+    "start": "2019-04-01T13:00:00.000Z"
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/4048128",
+        "display": "Baseline East Medical Center"
+      },
+      "status": "active"
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/619848"
+  }
+}

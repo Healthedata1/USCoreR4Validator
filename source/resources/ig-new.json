@@ -3,19 +3,19 @@
   "id" : "hl7.fhir.us.core.r4validator-0.0.0",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/ehaas/Documents/FHIR/USCoreR4Validator/source/resources"
+    "valueString" : "/Users/ehaas/Documents/FHIR/ArgoR4Validator/source/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/ehaas/Documents/FHIR/USCoreR4Validator/source/examples"
+    "valueString" : "/Users/ehaas/Documents/FHIR/ArgoR4Validator/source/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/ehaas/Documents/FHIR/USCoreR4Validator/framework"
+    "valueString" : "/Users/ehaas/Documents/FHIR/ArgoR4Validator/framework"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/ehaas/Documents/FHIR/USCoreR4Validator/source/pages"
+    "valueString" : "/Users/ehaas/Documents/FHIR/ArgoR4Validator/source/pages"
   }],
   "url" : "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core.r4validator-0.0.0",
   "version" : "0.0.0",
@@ -46,6 +46,60 @@
     }],
     "resource" : [{
       "reference" : {
+        "reference" : "AllergyIntolerance/7167733"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/6267775"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/6851733"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/6171733"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/6267831"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/4464007"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/1502022"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/6499769"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/7639733"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "Practitioner/e7D.u41Zv3VPrLmUp-mWnrQ3"
       },
       "exampleBoolean" : true
@@ -53,6 +107,30 @@
     {
       "reference" : {
         "reference" : "Encounter/ehoN2kZnYuW5z0Di4Kkno5w3"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/6279917"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/6283733"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Encounter/4277906"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/6859739"
       },
       "exampleBoolean" : true
     },
@@ -70,7 +148,37 @@
     },
     {
       "reference" : {
+        "reference" : "Practitioner/4272008"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Encounter/4521906"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/1"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "Encounter/eiSX3g2gt4tJIs7-6h7nJjA3"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/1302007"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Encounter/4027915"
       },
       "exampleBoolean" : true
     },
@@ -82,13 +190,73 @@
     },
     {
       "reference" : {
+        "reference" : "Practitioner/4664007"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/4594011"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/4646009"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/7583733"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Encounter/4617906"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/1600014"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "Encounter/e1Jw-ETrL1kZAPiXl3uSMWw3"
       },
       "exampleBoolean" : true
     },
     {
       "reference" : {
+        "reference" : "Encounter/4525906"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/6267785"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/4954007"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "Encounter/eZAjx5sRd6AgpTlKjDh4b5w3"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/6267833"
       },
       "exampleBoolean" : true
     },
@@ -101,6 +269,42 @@
     {
       "reference" : {
         "reference" : "Patient/eroCd17NbCffM3E3WXi7eOQ3"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "AllergyIntolerance/7991735"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Encounter/4323909"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Patient/4342009"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/1590015"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Practitioner/937935"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Encounter/4027912"
       },
       "exampleBoolean" : true
     },
@@ -244,6 +448,12 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/us-core-provenance"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "OperationDefinition/docref"
       },
       "exampleBoolean" : false
@@ -364,6 +574,12 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/us-core-pulse-oximetry"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "SearchParameter/us-core-allergyintolerance-clinical-status"
       },
       "exampleBoolean" : false
@@ -371,6 +587,12 @@
     {
       "reference" : {
         "reference" : "SearchParameter/us-core-documentreference-date"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "SearchParameter/us-core-medicationrequest-intent"
       },
       "exampleBoolean" : false
     },
@@ -461,6 +683,12 @@
     {
       "reference" : {
         "reference" : "CodeSystem/condition-category"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "SearchParameter/us-core-medicationrequest-encounter"
       },
       "exampleBoolean" : false
     },
@@ -999,6 +1227,11 @@
           "generation" : "generated"
         },
         {
+          "nameUrl" : "StructureDefinition-us-core-provenance.html",
+          "title" : "StructureDefinition Us Core Provenance",
+          "generation" : "generated"
+        },
+        {
           "nameUrl" : "StructureDefinition-us-core-birthsex.html",
           "title" : "StructureDefinition Us Core Birthsex",
           "generation" : "generated"
@@ -1016,6 +1249,11 @@
         {
           "nameUrl" : "StructureDefinition-us-core-medicationstatement.html",
           "title" : "StructureDefinition Us Core MedicationStatement",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "StructureDefinition-us-core-pulse-oximetry.html",
+          "title" : "StructureDefinition Us Core Pulse Oximetry",
           "generation" : "generated"
         },
         {
@@ -1389,6 +1627,11 @@
           "generation" : "generated"
         },
         {
+          "nameUrl" : "SearchParameter-us-core-medicationrequest-intent.html",
+          "title" : "SearchParameter Us Core MedicationRequest Intent",
+          "generation" : "generated"
+        },
+        {
           "nameUrl" : "SearchParameter-us-core-location-address.html",
           "title" : "SearchParameter Us Core Location Address",
           "generation" : "generated"
@@ -1426,6 +1669,11 @@
         {
           "nameUrl" : "SearchParameter-us-core-encounter-type.html",
           "title" : "SearchParameter Us Core Encounter Type",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "SearchParameter-us-core-medicationrequest-encounter.html",
+          "title" : "SearchParameter Us Core MedicationRequest Encounter",
           "generation" : "generated"
         },
         {

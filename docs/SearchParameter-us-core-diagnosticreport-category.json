@@ -62,14 +62,14 @@
     ]
   },
   "modifier": [
-    "?",
-    "?",
-    "?",
-    "?",
-    "?",
-    "?",
-    "?",
-    "?"
+    "missing",
+    "text",
+    "not",
+    "in",
+    "not-in",
+    "below",
+    "above",
+    "ofType"
   ],
   "_modifier": [
     {

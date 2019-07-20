@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="7639733"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div><p><b>Allergy Intolerance</b></p><p><b>Patient</b>: SMART, NANCY</p><p><b>Allergy</b>: Medication</p><p><b>Verification Status</b>: Confirmed</p><p><b>Clinical Status</b>: Active</p><p><b>Criticality</b>: Low Risk</p><p><b>Category</b>: Medication</p><p><b>Onset</b>: Dec 14, 2015  6:00 P.M. CST</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+      <userSelected value="false"/>
+    </coding>
+    <text value="Active"/>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+      <userSelected value="false"/>
+    </coding>
+    <text value="Active"/>
+  </verificationStatus>
+  <type value="allergy"/>
+  <category value="medication"/>
+  <criticality value="low"/>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="18631"/>
+      <display value="Azithromycin"/>
+      <userSelected value="false"/>
+    </coding>
+    <text value="azithromycin ophthalmic"/>
+  </code>
+  <patient>
+    <reference value="Patient/4342009"/>
+    <display value="SMART, NANCY"/>
+  </patient>
+  <onsetDateTime value="2015-12-14T18:00:00.000-06:00"/>
+  <recordedDate value="2017-02-28T15:03:00.000-06:00"/>
+  <recorder>
+    <reference value="Practitioner/2042017"/>
+    <display value="Generated Domain User for 0"/>
+  </recorder>
+</AllergyIntolerance>

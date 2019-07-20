@@ -85,6 +85,10 @@
         "name": "USCoreLocation"
       },
       {
+        "id": "observation-us-core-pulse-oximetry-spreadsheet.xml",
+        "name": "USCorePulseOximetryProfile"
+      },
+      {
         "id": "medicationstatement-us-core-profile-spreadsheet.xml",
         "name": "USCoreMedicationStatementProfile"
       },
@@ -94,7 +98,7 @@
       },
       {
         "id": "encounter-us-core-profile-spreadsheet.xml",
-        "name": "/Users/ehaas/Documents/FHIR/USCoreR4Validator/source/resources/encounter-us-core-profile-spreadsheet"
+        "name": "/Users/ehaas/Documents/FHIR/ArgoR4Validator/source/resources/encounter-us-core-profile-spreadsheet"
       },
       {
         "id": "practitioner-us-core-profile-spreadsheet.xml",
@@ -114,7 +118,7 @@
       },
       {
         "id": "practitionerrole-us-core-profile-spreadsheet.xml",
-        "name": "/Users/ehaas/Documents/FHIR/USCoreR4Validator/source/resources/practitionerrole-us-core-profile-spreadsheet"
+        "name": "/Users/ehaas/Documents/FHIR/ArgoR4Validator/source/resources/practitionerrole-us-core-profile-spreadsheet"
       },
       {
         "id": "immunization-us-core-profile-spreadsheet.xml",
@@ -124,6 +128,154 @@
     "resource": [
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-7167733.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/7167733"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-6267775.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/6267775"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-6851733.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/6851733"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-6171733.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/6171733"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-6267831.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/6267831"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-4464007.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/4464007"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-1502022.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/1502022"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-6499769.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/6499769"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-7639733.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/7639733"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Practitioner-e7D.u41Zv3VPrLmUp-mWnrQ3.html"
@@ -137,6 +289,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Encounter-ehoN2kZnYuW5z0Di4Kkno5w3.html"
           }
@@ -148,6 +304,74 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-6279917.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/6279917"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-6283733.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/6283733"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-4277906.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/4277906"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-6859739.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/6859739"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "AllergyIntolerance-eyHIVsZwhzaZhX9XvFesx5A3.html"
@@ -161,6 +385,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Organization-enRyWnSP963FYDpoks4NHOA3.html"
           }
@@ -172,6 +400,58 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-4272008.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/4272008"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-4521906.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/4521906"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/1"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Encounter-eiSX3g2gt4tJIs7-6h7nJjA3.html"
@@ -185,6 +465,42 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-1302007.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/1302007"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-4027915.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/4027915"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Encounter-ejPvGuBUqYJkCweOPRabvYg3.html"
           }
@@ -196,6 +512,106 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-4664007.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/4664007"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-4594011.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/4594011"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-4646009.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/4646009"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-7583733.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/7583733"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-4617906.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/4617906"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-1600014.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/1600014"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Encounter-e1Jw-ETrL1kZAPiXl3uSMWw3.html"
@@ -209,6 +625,58 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-4525906.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/4525906"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-6267785.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/6267785"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-4954007.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/4954007"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Encounter-eZAjx5sRd6AgpTlKjDh4b5w3.html"
           }
@@ -220,6 +688,26 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-6267833.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/6267833"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Location-e4W4rmGe9QzuGm2Dy4NBqVc0KDe6yGld6HW95UuN-Qd03.html"
@@ -233,6 +721,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "Patient-eroCd17NbCffM3E3WXi7eOQ3.html"
           }
@@ -244,6 +736,106 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-7991735.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/7991735"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-4323909.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/4323909"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Patient-4342009.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/4342009"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-1590015.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/1590015"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-937935.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/937935"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Encounter-4027912.html"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/4027912"
+        },
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-medication-codes.html"
@@ -257,6 +849,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-immunization.html"
           }
@@ -268,6 +864,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-location-address-state.html"
@@ -281,6 +881,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-practitionerrole-practitioner.html"
           }
@@ -292,6 +896,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-observation-smokingstatus.html"
@@ -305,6 +913,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-medicationstatement-status.html"
           }
@@ -316,6 +928,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-omb-race-category.html"
@@ -329,6 +945,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-practitionerrole.html"
           }
@@ -340,6 +960,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-allergy-substance.html"
@@ -353,6 +977,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-narrative-status.html"
           }
@@ -364,6 +992,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-cdcrec.html"
@@ -377,6 +1009,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-organization-name.html"
           }
@@ -388,6 +1024,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-observation-lab.html"
@@ -401,6 +1041,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-diagnosticreport-code.html"
           }
@@ -412,6 +1056,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-pediatric-bmi-for-age.html"
@@ -425,6 +1073,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-allergyintolerance.html"
           }
@@ -436,6 +1088,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-goal-lifecycle-status.html"
@@ -449,6 +1105,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-procedure-code.html"
           }
@@ -460,6 +1120,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-documentreference-type.html"
@@ -473,6 +1137,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-patient-gender.html"
           }
@@ -484,6 +1152,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-practitioner.html"
@@ -497,6 +1169,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-diagnosticreport-note.html"
           }
@@ -508,6 +1184,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-omb-ethnicity-category.html"
@@ -521,6 +1201,26 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-us-core-provenance.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/us-core-provenance"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OperationDefinition"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "OperationDefinition-docref.html"
           }
@@ -532,6 +1232,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-condition-clinical-status.html"
@@ -545,6 +1249,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-birthsex.html"
           }
@@ -556,6 +1264,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-documentreference-id.html"
@@ -569,6 +1281,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-careplan-category.html"
           }
@@ -580,6 +1296,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-encounter-class.html"
@@ -593,6 +1313,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-medicationrequest-patient.html"
           }
@@ -604,6 +1328,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CapabilityStatement-us-core-server.html"
@@ -617,6 +1345,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-condition-category.html"
           }
@@ -628,6 +1360,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-detailed-ethnicity.html"
@@ -641,6 +1377,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-documentreference-patient.html"
           }
@@ -652,6 +1392,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-encounter.html"
@@ -665,6 +1409,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-ndc-vaccine-codes.html"
           }
@@ -676,6 +1424,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-patient.html"
@@ -689,6 +1441,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-diagnosticreport-date.html"
           }
@@ -700,6 +1456,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-medicationstatement.html"
@@ -713,6 +1473,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-procedure-icd10pcs.html"
           }
@@ -724,6 +1488,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-provider-specialty.html"
@@ -737,6 +1505,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-procedure-date.html"
           }
@@ -748,6 +1520,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-vaccines-cvx.html"
@@ -761,6 +1537,26 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-us-core-pulse-oximetry.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/us-core-pulse-oximetry"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-allergyintolerance-clinical-status.html"
           }
@@ -772,6 +1568,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-documentreference-date.html"
@@ -785,6 +1585,26 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "SearchParameter-us-core-medicationrequest-intent.html"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/us-core-medicationrequest-intent"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-location.html"
           }
@@ -796,6 +1616,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-location-address.html"
@@ -809,6 +1633,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-observation-smoking-status-status.html"
           }
@@ -820,6 +1648,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-usps-state.html"
@@ -833,6 +1665,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-practitioner-name.html"
           }
@@ -844,6 +1680,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-encounter-type.html"
@@ -857,6 +1697,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-documentreference-period.html"
           }
@@ -868,6 +1712,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-observation-code.html"
@@ -881,6 +1729,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-location-name.html"
           }
@@ -892,6 +1744,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-condition-onset-date.html"
@@ -905,6 +1761,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-patient-given.html"
           }
@@ -916,6 +1776,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-procedure.html"
@@ -929,6 +1793,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-encounter-type.html"
           }
@@ -940,6 +1808,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-problem.html"
@@ -953,6 +1825,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-condition-category.html"
           }
@@ -964,6 +1840,26 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "SearchParameter-us-core-medicationrequest-encounter.html"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/us-core-medicationrequest-encounter"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-encounter-patient.html"
@@ -977,6 +1873,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-organization-address.html"
           }
@@ -988,6 +1888,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-observation-category.html"
@@ -1001,6 +1905,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-medication.html"
           }
@@ -1012,6 +1920,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-diagnosticreport-status.html"
@@ -1025,6 +1937,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-observation-date.html"
           }
@@ -1036,6 +1952,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-birthsex.html"
@@ -1049,6 +1969,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-diagnosticreport-category.html"
           }
@@ -1060,6 +1984,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-observation-status.html"
@@ -1073,6 +2001,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-diagnosticreport-report-and-note-codes.html"
           }
@@ -1084,6 +2016,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-provider-role.html"
@@ -1097,6 +2033,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-ethnicity.html"
           }
@@ -1108,6 +2048,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-documentreference.html"
@@ -1121,6 +2065,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-direct.html"
           }
@@ -1132,6 +2080,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-smoking-status-observation-codes.html"
@@ -1145,6 +2097,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-careteam-provider-roles.html"
           }
@@ -1156,6 +2112,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-documentreference-type.html"
@@ -1169,6 +2129,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-encounter-date.html"
           }
@@ -1180,6 +2144,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-diagnosticreport-category.html"
@@ -1193,6 +2161,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-device.html"
           }
@@ -1204,6 +2176,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-patient-birthdate.html"
@@ -1217,6 +2193,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-careteam.html"
           }
@@ -1228,6 +2208,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-procedure-status.html"
@@ -1241,6 +2225,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-clinical-note-type.html"
           }
@@ -1252,6 +2240,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-encounter-status.html"
@@ -1265,6 +2257,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ConceptMap-ndc-cvx.html"
           }
@@ -1276,6 +2272,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-ethnicity.html"
@@ -1289,6 +2289,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-careplan-status.html"
           }
@@ -1300,6 +2304,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-careplan.html"
@@ -1313,6 +2321,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-condition-patient.html"
           }
@@ -1324,6 +2336,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-allergyintolerance-patient.html"
@@ -1337,6 +2353,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-device-patient.html"
           }
@@ -1348,6 +2368,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-condition-code.html"
@@ -1361,6 +2385,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-observation-patient.html"
           }
@@ -1372,6 +2400,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-race.html"
@@ -1385,6 +2417,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-careplan-patient.html"
           }
@@ -1396,6 +2432,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-patient-family.html"
@@ -1409,6 +2449,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-smokingstatus.html"
           }
@@ -1420,6 +2464,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-medicationrequest-status.html"
@@ -1433,6 +2481,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-medicationstatement-effective.html"
           }
@@ -1444,6 +2496,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-race.html"
@@ -1457,6 +2513,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-medicationstatement-patient.html"
           }
@@ -1468,6 +2528,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-location-address-postalcode.html"
@@ -1481,6 +2545,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-encounter-id.html"
           }
@@ -1492,6 +2560,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-medicationrequest-authoredon.html"
@@ -1505,6 +2577,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-documentreference-status.html"
           }
@@ -1516,6 +2592,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-documentreference-category.html"
@@ -1529,6 +2609,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-procedure-patient.html"
           }
@@ -1540,6 +2624,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-goal-target-date.html"
@@ -1553,6 +2641,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-diagnosticreport-patient.html"
           }
@@ -1564,6 +2656,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-careplan-date.html"
@@ -1577,6 +2673,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-careteam-patient.html"
           }
@@ -1588,6 +2688,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-organization.html"
@@ -1601,6 +2705,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-immunization-date.html"
           }
@@ -1612,6 +2720,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-encounter-identifier.html"
@@ -1625,6 +2737,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-practitionerrole-specialty.html"
           }
@@ -1636,6 +2752,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-patient-name.html"
@@ -1649,6 +2769,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-device-type.html"
           }
@@ -1660,6 +2784,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-procedure-code.html"
@@ -1673,6 +2801,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-diagnosticreport-lab.html"
           }
@@ -1684,6 +2816,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-goal-patient.html"
@@ -1697,6 +2833,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-simple-language.html"
           }
@@ -1708,6 +2848,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-immunization-patient.html"
@@ -1721,6 +2865,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-condition.html"
           }
@@ -1732,6 +2880,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-pediatric-weight-for-height.html"
@@ -1745,6 +2897,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-observation-value-codes.html"
           }
@@ -1756,6 +2912,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-patient-id.html"
@@ -1769,6 +2929,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-location-address-city.html"
           }
@@ -1780,6 +2944,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-goal.html"
@@ -1793,6 +2961,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-careteam-status.html"
           }
@@ -1804,6 +2976,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-us-core-documentreference-category.html"
@@ -1817,6 +2993,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-us-core-diagnosticreport-lab-codes.html"
           }
@@ -1828,6 +3008,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-careplan-category.html"
@@ -1841,6 +3025,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-documentreference-category.html"
           }
@@ -1852,6 +3040,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CapabilityStatement-us-core-client.html"
@@ -1865,6 +3057,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-practitioner-identifier.html"
           }
@@ -1876,6 +3072,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-patient-identifier.html"
@@ -1889,6 +3089,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-condition-category.html"
           }
@@ -1900,6 +3104,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "SearchParameter-us-core-immunization-status.html"
@@ -1913,6 +3121,10 @@
       {
         "extension": [
           {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-us-core-medicationrequest.html"
           }
@@ -1924,6 +3136,10 @@
       },
       {
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "ValueSet-detailed-race.html"
@@ -1986,6 +3202,11 @@
               "generation": "generated"
             },
             {
+              "nameUrl": "StructureDefinition-us-core-provenance.html",
+              "title": "StructureDefinition Us Core Provenance",
+              "generation": "generated"
+            },
+            {
               "nameUrl": "StructureDefinition-us-core-birthsex.html",
               "title": "StructureDefinition Us Core Birthsex",
               "generation": "generated"
@@ -2003,6 +3224,11 @@
             {
               "nameUrl": "StructureDefinition-us-core-medicationstatement.html",
               "title": "StructureDefinition Us Core MedicationStatement",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "StructureDefinition-us-core-pulse-oximetry.html",
+              "title": "StructureDefinition Us Core Pulse Oximetry",
               "generation": "generated"
             },
             {
@@ -2382,6 +3608,11 @@
               "generation": "generated"
             },
             {
+              "nameUrl": "SearchParameter-us-core-medicationrequest-intent.html",
+              "title": "SearchParameter Us Core MedicationRequest Intent",
+              "generation": "generated"
+            },
+            {
               "nameUrl": "SearchParameter-us-core-location-address.html",
               "title": "SearchParameter Us Core Location Address",
               "generation": "generated"
@@ -2419,6 +3650,11 @@
             {
               "nameUrl": "SearchParameter-us-core-encounter-type.html",
               "title": "SearchParameter Us Core Encounter Type",
+              "generation": "generated"
+            },
+            {
+              "nameUrl": "SearchParameter-us-core-medicationrequest-encounter.html",
+              "title": "SearchParameter Us Core MedicationRequest Encounter",
               "generation": "generated"
             },
             {

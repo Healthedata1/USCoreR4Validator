@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="4525906"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div><p><b>Encounter</b></p><p><b>Location</b>: Baseline East Medical Center</p><p><b>Type</b>: Outpatient</p><p><b>Class</b>: ambulatory</p><p><b>Status</b>: In Progress</p><p><b>Period Start Date</b>: Jan  8, 2019  2:00 P.M. UTC</p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/319"/>
+        <code value="1077"/>
+        <display value="FIN NBR"/>
+        <userSelected value="true"/>
+      </coding>
+      <text value="FIN NBR"/>
+    </type>
+    <system value="urn:oid:3.3.3.3.3.3"/>
+    <value value="20003735"/>
+    <period>
+      <start value="2019-01-08T21:58:57.000Z"/>
+    </period>
+  </identifier>
+  <status value="in-progress"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+    <display value="ambulatory"/>
+    <userSelected value="false"/>
+  </class>
+  <type>
+    <coding>
+      <system value="https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/71"/>
+      <code value="309309"/>
+      <display value="Outpatient"/>
+      <userSelected value="true"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0004"/>
+      <code value="O"/>
+      <display value="Outpatient"/>
+      <userSelected value="false"/>
+    </coding>
+    <text value="Outpatient"/>
+  </type>
+  <subject>
+    <reference value="Patient/4342009"/>
+    <display value="SMART, NANCY"/>
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/333"/>
+        <code value="1116"/>
+        <display value="Admitting Physician"/>
+        <userSelected value="true"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="ADM"/>
+        <display value="admitter"/>
+        <userSelected value="false"/>
+      </coding>
+      <text value="Admitting Physician"/>
+    </type>
+    <period>
+      <start value="2019-01-22T20:00:30.000Z"/>
+    </period>
+    <individual>
+      <reference value="Practitioner/4646009"/>
+      <display value="Leaf, Richard"/>
+    </individual>
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="https://fhir.cerner.com/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca/codeSet/333"/>
+        <code value="1123"/>
+        <display value="Ordering Physician"/>
+        <userSelected value="true"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="PPRF"/>
+        <display value="primary performer"/>
+        <userSelected value="false"/>
+      </coding>
+      <text value="Ordering Physician"/>
+    </type>
+    <period>
+      <start value="2019-01-09T16:51:38.000Z"/>
+    </period>
+    <individual>
+      <reference value="Practitioner/4594011"/>
+      <display value="Rajendran, Madhur"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2019-01-08T14:00:00.000Z"/>
+  </period>
+  <location>
+    <location>
+      <reference value="Location/4048128"/>
+      <display value="Baseline East Medical Center"/>
+    </location>
+    <status value="active"/>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/619848"/>
+  </serviceProvider>
+</Encounter>

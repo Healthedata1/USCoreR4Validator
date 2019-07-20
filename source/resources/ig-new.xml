@@ -3,16 +3,16 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.us.core.r4validator-0.0.0"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/ehaas/Documents/FHIR/USCoreR4Validator/source/resources"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/ArgoR4Validator/source/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/ehaas/Documents/FHIR/USCoreR4Validator/source/examples"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/ArgoR4Validator/source/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/ehaas/Documents/FHIR/USCoreR4Validator/framework"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/ArgoR4Validator/framework"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/ehaas/Documents/FHIR/USCoreR4Validator/source/pages"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/ArgoR4Validator/source/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core.r4validator-0.0.0"/>
   <version value="0.0.0"/>
@@ -43,6 +43,60 @@
     </grouping>
     <resource>
       <reference>
+        <reference value="AllergyIntolerance/7167733"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/6267775"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/6851733"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/6171733"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/6267831"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/4464007"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/1502022"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/6499769"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/7639733"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Practitioner/e7D.u41Zv3VPrLmUp-mWnrQ3"/>
       </reference>
       <exampleBoolean value="true"/>
@@ -50,6 +104,30 @@
     <resource>
       <reference>
         <reference value="Encounter/ehoN2kZnYuW5z0Di4Kkno5w3"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/6279917"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/6283733"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/4277906"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/6859739"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -67,7 +145,37 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Practitioner/4272008"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/4521906"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Encounter/eiSX3g2gt4tJIs7-6h7nJjA3"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/1302007"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/4027915"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -79,13 +187,73 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Practitioner/4664007"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/4594011"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/4646009"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/7583733"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/4617906"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/1600014"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Encounter/e1Jw-ETrL1kZAPiXl3uSMWw3"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
       <reference>
+        <reference value="Encounter/4525906"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/6267785"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/4954007"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Encounter/eZAjx5sRd6AgpTlKjDh4b5w3"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/6267833"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -98,6 +266,42 @@
     <resource>
       <reference>
         <reference value="Patient/eroCd17NbCffM3E3WXi7eOQ3"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/7991735"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/4323909"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/4342009"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/1590015"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/937935"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/4027912"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>
@@ -241,6 +445,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/us-core-provenance"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="OperationDefinition/docref"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -361,6 +571,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/us-core-pulse-oximetry"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="SearchParameter/us-core-allergyintolerance-clinical-status"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -368,6 +584,12 @@
     <resource>
       <reference>
         <reference value="SearchParameter/us-core-documentreference-date"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/us-core-medicationrequest-intent"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -458,6 +680,12 @@
     <resource>
       <reference>
         <reference value="CodeSystem/condition-category"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/us-core-medicationrequest-encounter"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -996,6 +1224,11 @@
           <generation value="generated"/>
         </page>
         <page>
+          <nameUrl value="StructureDefinition-us-core-provenance.html"/>
+          <title value="StructureDefinition Us Core Provenance"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="StructureDefinition-us-core-birthsex.html"/>
           <title value="StructureDefinition Us Core Birthsex"/>
           <generation value="generated"/>
@@ -1013,6 +1246,11 @@
         <page>
           <nameUrl value="StructureDefinition-us-core-medicationstatement.html"/>
           <title value="StructureDefinition Us Core MedicationStatement"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-us-core-pulse-oximetry.html"/>
+          <title value="StructureDefinition Us Core Pulse Oximetry"/>
           <generation value="generated"/>
         </page>
         <page>
@@ -1386,6 +1624,11 @@
           <generation value="generated"/>
         </page>
         <page>
+          <nameUrl value="SearchParameter-us-core-medicationrequest-intent.html"/>
+          <title value="SearchParameter Us Core MedicationRequest Intent"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="SearchParameter-us-core-location-address.html"/>
           <title value="SearchParameter Us Core Location Address"/>
           <generation value="generated"/>
@@ -1423,6 +1666,11 @@
         <page>
           <nameUrl value="SearchParameter-us-core-encounter-type.html"/>
           <title value="SearchParameter Us Core Encounter Type"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="SearchParameter-us-core-medicationrequest-encounter.html"/>
+          <title value="SearchParameter Us Core MedicationRequest Encounter"/>
           <generation value="generated"/>
         </page>
         <page>

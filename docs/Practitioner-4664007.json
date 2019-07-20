@@ -1,0 +1,73 @@
+{
+  "resourceType": "Practitioner",
+  "id": "4664007",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Practitioner</b></p><p><b>Name</b>: Hopper, Grace</p><p><b>Identifiers</b>: NPI: 8723y5i7yw3iy, DOCDEA: lsnidf98h9h2in4f</p><p><b>Gender</b>: Female</p><p><b>Status</b>: Active</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NPI",
+            "display": "National provider identifier"
+          }
+        ],
+        "text": "National Provider Identifier"
+      },
+      "system": "urn:ietf:rfc:3986",
+      "value": "8723y5i7yw3iy",
+      "period": {
+        "start": "2018-09-29T00:00:00.000-05:00"
+      }
+    },
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "DEA",
+            "display": "Drug Enforcement Administration registration number"
+          }
+        ],
+        "text": "DOCDEA"
+      },
+      "_system": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "unknown"
+          }
+        ]
+      },
+      "value": "lsnidf98h9h2in4f",
+      "period": {
+        "start": "2018-09-28T00:00:00.000-05:00"
+      }
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "usual",
+      "text": "Hopper, Grace",
+      "family": "Hopper",
+      "given": [
+        "Grace"
+      ],
+      "period": {
+        "start": "2017-05-04T05:14:35.000-05:00"
+      }
+    }
+  ],
+  "gender": "female"
+}

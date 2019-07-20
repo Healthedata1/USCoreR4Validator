@@ -64,6 +64,9 @@
     <grouping id="location-us-core-profile-spreadsheet.xml">
       <name value="USCoreLocation"/>
     </grouping>
+    <grouping id="observation-us-core-pulse-oximetry-spreadsheet.xml">
+      <name value="USCorePulseOximetryProfile"/>
+    </grouping>
     <grouping id="medicationstatement-us-core-profile-spreadsheet.xml">
       <name value="USCoreMedicationStatementProfile"/>
     </grouping>
@@ -71,7 +74,7 @@
       <name value="USCorePatientProfile"/>
     </grouping>
     <grouping id="encounter-us-core-profile-spreadsheet.xml">
-      <name value="/Users/ehaas/Documents/FHIR/USCoreR4Validator/source/resources/encounter-us-core-profile-spreadsheet"/>
+      <name value="/Users/ehaas/Documents/FHIR/ArgoR4Validator/source/resources/encounter-us-core-profile-spreadsheet"/>
     </grouping>
     <grouping id="practitioner-us-core-profile-spreadsheet.xml">
       <name value="USCorePractitionerProfile"/>
@@ -86,12 +89,123 @@
       <name value="USCoreLaboratoryResultObservationProfile"/>
     </grouping>
     <grouping id="practitionerrole-us-core-profile-spreadsheet.xml">
-      <name value="/Users/ehaas/Documents/FHIR/USCoreR4Validator/source/resources/practitionerrole-us-core-profile-spreadsheet"/>
+      <name value="/Users/ehaas/Documents/FHIR/ArgoR4Validator/source/resources/practitionerrole-us-core-profile-spreadsheet"/>
     </grouping>
     <grouping id="immunization-us-core-profile-spreadsheet.xml">
       <name value="USCoreImmunizationProfile"/>
     </grouping>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-7167733.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/7167733"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-6267775.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/6267775"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-6851733.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/6851733"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-6171733.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/6171733"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-6267831.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/6267831"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-4464007.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/4464007"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-1502022.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/1502022"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-6499769.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/6499769"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-7639733.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/7639733"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Practitioner-e7D.u41Zv3VPrLmUp-mWnrQ3.html"/>
       </extension>
@@ -101,6 +215,9 @@
       <exampleBoolean value="true"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Encounter-ehoN2kZnYuW5z0Di4Kkno5w3.html"/>
       </extension>
@@ -110,6 +227,57 @@
       <exampleBoolean value="true"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-6279917.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/6279917"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-6283733.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/6283733"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Encounter-4277906.html"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/4277906"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-6859739.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/6859739"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="AllergyIntolerance-eyHIVsZwhzaZhX9XvFesx5A3.html"/>
       </extension>
@@ -119,6 +287,9 @@
       <exampleBoolean value="true"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Organization-enRyWnSP963FYDpoks4NHOA3.html"/>
       </extension>
@@ -128,6 +299,45 @@
       <exampleBoolean value="true"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-4272008.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/4272008"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Encounter-4521906.html"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/4521906"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-1.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Encounter-eiSX3g2gt4tJIs7-6h7nJjA3.html"/>
       </extension>
@@ -137,6 +347,33 @@
       <exampleBoolean value="true"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-1302007.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/1302007"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Encounter-4027915.html"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/4027915"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Encounter-ejPvGuBUqYJkCweOPRabvYg3.html"/>
       </extension>
@@ -146,6 +383,81 @@
       <exampleBoolean value="true"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-4664007.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/4664007"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-4594011.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/4594011"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-4646009.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/4646009"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-7583733.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/7583733"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Encounter-4617906.html"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/4617906"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-1600014.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/1600014"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Encounter-e1Jw-ETrL1kZAPiXl3uSMWw3.html"/>
       </extension>
@@ -155,6 +467,45 @@
       <exampleBoolean value="true"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Encounter-4525906.html"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/4525906"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-6267785.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/6267785"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-4954007.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/4954007"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Encounter-eZAjx5sRd6AgpTlKjDh4b5w3.html"/>
       </extension>
@@ -164,6 +515,21 @@
       <exampleBoolean value="true"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-6267833.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/6267833"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Location-e4W4rmGe9QzuGm2Dy4NBqVc0KDe6yGld6HW95UuN-Qd03.html"/>
       </extension>
@@ -173,6 +539,9 @@
       <exampleBoolean value="true"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Patient-eroCd17NbCffM3E3WXi7eOQ3.html"/>
       </extension>
@@ -182,6 +551,81 @@
       <exampleBoolean value="true"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="AllergyIntolerance-7991735.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/7991735"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Encounter-4323909.html"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/4323909"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-4342009.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/4342009"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-1590015.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/1590015"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-937935.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/937935"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Encounter-4027912.html"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/4027912"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-medication-codes.html"/>
       </extension>
@@ -191,6 +635,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-immunization.html"/>
       </extension>
@@ -200,6 +647,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-location-address-state.html"/>
       </extension>
@@ -209,6 +659,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-practitionerrole-practitioner.html"/>
       </extension>
@@ -218,6 +671,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-observation-smokingstatus.html"/>
       </extension>
@@ -227,6 +683,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-medicationstatement-status.html"/>
       </extension>
@@ -236,6 +695,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-omb-race-category.html"/>
       </extension>
@@ -245,6 +707,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-practitionerrole.html"/>
       </extension>
@@ -254,6 +719,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-allergy-substance.html"/>
       </extension>
@@ -263,6 +731,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-narrative-status.html"/>
       </extension>
@@ -272,6 +743,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-cdcrec.html"/>
       </extension>
@@ -281,6 +755,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-organization-name.html"/>
       </extension>
@@ -290,6 +767,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-observation-lab.html"/>
       </extension>
@@ -299,6 +779,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-diagnosticreport-code.html"/>
       </extension>
@@ -308,6 +791,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-pediatric-bmi-for-age.html"/>
       </extension>
@@ -317,6 +803,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-allergyintolerance.html"/>
       </extension>
@@ -326,6 +815,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-goal-lifecycle-status.html"/>
       </extension>
@@ -335,6 +827,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-procedure-code.html"/>
       </extension>
@@ -344,6 +839,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-documentreference-type.html"/>
       </extension>
@@ -353,6 +851,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-patient-gender.html"/>
       </extension>
@@ -362,6 +863,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-practitioner.html"/>
       </extension>
@@ -371,6 +875,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-diagnosticreport-note.html"/>
       </extension>
@@ -380,6 +887,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-omb-ethnicity-category.html"/>
       </extension>
@@ -389,6 +899,21 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-provenance.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-provenance"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="OperationDefinition-docref.html"/>
       </extension>
@@ -398,6 +923,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-condition-clinical-status.html"/>
       </extension>
@@ -407,6 +935,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-birthsex.html"/>
       </extension>
@@ -416,6 +947,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-documentreference-id.html"/>
       </extension>
@@ -425,6 +959,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-careplan-category.html"/>
       </extension>
@@ -434,6 +971,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-encounter-class.html"/>
       </extension>
@@ -443,6 +983,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-medicationrequest-patient.html"/>
       </extension>
@@ -452,6 +995,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-us-core-server.html"/>
       </extension>
@@ -461,6 +1007,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-condition-category.html"/>
       </extension>
@@ -470,6 +1019,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-detailed-ethnicity.html"/>
       </extension>
@@ -479,6 +1031,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-documentreference-patient.html"/>
       </extension>
@@ -488,6 +1043,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-encounter.html"/>
       </extension>
@@ -497,6 +1055,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-ndc-vaccine-codes.html"/>
       </extension>
@@ -506,6 +1067,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-patient.html"/>
       </extension>
@@ -515,6 +1079,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-diagnosticreport-date.html"/>
       </extension>
@@ -524,6 +1091,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-medicationstatement.html"/>
       </extension>
@@ -533,6 +1103,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-procedure-icd10pcs.html"/>
       </extension>
@@ -542,6 +1115,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-provider-specialty.html"/>
       </extension>
@@ -551,6 +1127,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-procedure-date.html"/>
       </extension>
@@ -560,6 +1139,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-vaccines-cvx.html"/>
       </extension>
@@ -569,6 +1151,21 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-us-core-pulse-oximetry.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-pulse-oximetry"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-allergyintolerance-clinical-status.html"/>
       </extension>
@@ -578,6 +1175,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-documentreference-date.html"/>
       </extension>
@@ -587,6 +1187,21 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-us-core-medicationrequest-intent.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/us-core-medicationrequest-intent"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-location.html"/>
       </extension>
@@ -596,6 +1211,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-location-address.html"/>
       </extension>
@@ -605,6 +1223,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-observation-smoking-status-status.html"/>
       </extension>
@@ -614,6 +1235,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-usps-state.html"/>
       </extension>
@@ -623,6 +1247,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-practitioner-name.html"/>
       </extension>
@@ -632,6 +1259,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-encounter-type.html"/>
       </extension>
@@ -641,6 +1271,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-documentreference-period.html"/>
       </extension>
@@ -650,6 +1283,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-observation-code.html"/>
       </extension>
@@ -659,6 +1295,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-location-name.html"/>
       </extension>
@@ -668,6 +1307,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-condition-onset-date.html"/>
       </extension>
@@ -677,6 +1319,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-patient-given.html"/>
       </extension>
@@ -686,6 +1331,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-procedure.html"/>
       </extension>
@@ -695,6 +1343,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-encounter-type.html"/>
       </extension>
@@ -704,6 +1355,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-problem.html"/>
       </extension>
@@ -713,6 +1367,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-condition-category.html"/>
       </extension>
@@ -722,6 +1379,21 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="SearchParameter-us-core-medicationrequest-encounter.html"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/us-core-medicationrequest-encounter"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-encounter-patient.html"/>
       </extension>
@@ -731,6 +1403,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-organization-address.html"/>
       </extension>
@@ -740,6 +1415,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-observation-category.html"/>
       </extension>
@@ -749,6 +1427,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-medication.html"/>
       </extension>
@@ -758,6 +1439,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-diagnosticreport-status.html"/>
       </extension>
@@ -767,6 +1451,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-observation-date.html"/>
       </extension>
@@ -776,6 +1463,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-birthsex.html"/>
       </extension>
@@ -785,6 +1475,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-diagnosticreport-category.html"/>
       </extension>
@@ -794,6 +1487,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-observation-status.html"/>
       </extension>
@@ -803,6 +1499,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-diagnosticreport-report-and-note-codes.html"/>
       </extension>
@@ -812,6 +1511,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-provider-role.html"/>
       </extension>
@@ -821,6 +1523,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-ethnicity.html"/>
       </extension>
@@ -830,6 +1535,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-documentreference.html"/>
       </extension>
@@ -839,6 +1547,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-direct.html"/>
       </extension>
@@ -848,6 +1559,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-smoking-status-observation-codes.html"/>
       </extension>
@@ -857,6 +1571,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-careteam-provider-roles.html"/>
       </extension>
@@ -866,6 +1583,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-documentreference-type.html"/>
       </extension>
@@ -875,6 +1595,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-encounter-date.html"/>
       </extension>
@@ -884,6 +1607,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-diagnosticreport-category.html"/>
       </extension>
@@ -893,6 +1619,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-device.html"/>
       </extension>
@@ -902,6 +1631,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-patient-birthdate.html"/>
       </extension>
@@ -911,6 +1643,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-careteam.html"/>
       </extension>
@@ -920,6 +1655,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-procedure-status.html"/>
       </extension>
@@ -929,6 +1667,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-clinical-note-type.html"/>
       </extension>
@@ -938,6 +1679,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-encounter-status.html"/>
       </extension>
@@ -947,6 +1691,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ConceptMap-ndc-cvx.html"/>
       </extension>
@@ -956,6 +1703,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-ethnicity.html"/>
       </extension>
@@ -965,6 +1715,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-careplan-status.html"/>
       </extension>
@@ -974,6 +1727,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-careplan.html"/>
       </extension>
@@ -983,6 +1739,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-condition-patient.html"/>
       </extension>
@@ -992,6 +1751,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-allergyintolerance-patient.html"/>
       </extension>
@@ -1001,6 +1763,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-device-patient.html"/>
       </extension>
@@ -1010,6 +1775,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-condition-code.html"/>
       </extension>
@@ -1019,6 +1787,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-observation-patient.html"/>
       </extension>
@@ -1028,6 +1799,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-race.html"/>
       </extension>
@@ -1037,6 +1811,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-careplan-patient.html"/>
       </extension>
@@ -1046,6 +1823,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-patient-family.html"/>
       </extension>
@@ -1055,6 +1835,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-smokingstatus.html"/>
       </extension>
@@ -1064,6 +1847,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-medicationrequest-status.html"/>
       </extension>
@@ -1073,6 +1859,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-medicationstatement-effective.html"/>
       </extension>
@@ -1082,6 +1871,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-race.html"/>
       </extension>
@@ -1091,6 +1883,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-medicationstatement-patient.html"/>
       </extension>
@@ -1100,6 +1895,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-location-address-postalcode.html"/>
       </extension>
@@ -1109,6 +1907,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-encounter-id.html"/>
       </extension>
@@ -1118,6 +1919,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-medicationrequest-authoredon.html"/>
       </extension>
@@ -1127,6 +1931,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-documentreference-status.html"/>
       </extension>
@@ -1136,6 +1943,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-documentreference-category.html"/>
       </extension>
@@ -1145,6 +1955,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-procedure-patient.html"/>
       </extension>
@@ -1154,6 +1967,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-goal-target-date.html"/>
       </extension>
@@ -1163,6 +1979,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-diagnosticreport-patient.html"/>
       </extension>
@@ -1172,6 +1991,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-careplan-date.html"/>
       </extension>
@@ -1181,6 +2003,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-careteam-patient.html"/>
       </extension>
@@ -1190,6 +2015,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-organization.html"/>
       </extension>
@@ -1199,6 +2027,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-immunization-date.html"/>
       </extension>
@@ -1208,6 +2039,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-encounter-identifier.html"/>
       </extension>
@@ -1217,6 +2051,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-practitionerrole-specialty.html"/>
       </extension>
@@ -1226,6 +2063,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-patient-name.html"/>
       </extension>
@@ -1235,6 +2075,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-device-type.html"/>
       </extension>
@@ -1244,6 +2087,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-procedure-code.html"/>
       </extension>
@@ -1253,6 +2099,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-diagnosticreport-lab.html"/>
       </extension>
@@ -1262,6 +2111,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-goal-patient.html"/>
       </extension>
@@ -1271,6 +2123,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-simple-language.html"/>
       </extension>
@@ -1280,6 +2135,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-immunization-patient.html"/>
       </extension>
@@ -1289,6 +2147,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-condition.html"/>
       </extension>
@@ -1298,6 +2159,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-pediatric-weight-for-height.html"/>
       </extension>
@@ -1307,6 +2171,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-observation-value-codes.html"/>
       </extension>
@@ -1316,6 +2183,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-patient-id.html"/>
       </extension>
@@ -1325,6 +2195,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-location-address-city.html"/>
       </extension>
@@ -1334,6 +2207,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-goal.html"/>
       </extension>
@@ -1343,6 +2219,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-careteam-status.html"/>
       </extension>
@@ -1352,6 +2231,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-us-core-documentreference-category.html"/>
       </extension>
@@ -1361,6 +2243,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-us-core-diagnosticreport-lab-codes.html"/>
       </extension>
@@ -1370,6 +2255,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CodeSystem-careplan-category.html"/>
       </extension>
@@ -1379,6 +2267,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-documentreference-category.html"/>
       </extension>
@@ -1388,6 +2279,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-us-core-client.html"/>
       </extension>
@@ -1397,6 +2291,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-practitioner-identifier.html"/>
       </extension>
@@ -1406,6 +2303,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-patient-identifier.html"/>
       </extension>
@@ -1415,6 +2315,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-condition-category.html"/>
       </extension>
@@ -1424,6 +2327,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="SearchParameter-us-core-immunization-status.html"/>
       </extension>
@@ -1433,6 +2339,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-us-core-medicationrequest.html"/>
       </extension>
@@ -1442,6 +2351,9 @@
       <exampleBoolean value="false"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-detailed-race.html"/>
       </extension>
@@ -1499,6 +2411,11 @@
           <generation value="generated"/>
         </page>
         <page>
+          <nameUrl value="StructureDefinition-us-core-provenance.html"/>
+          <title value="StructureDefinition Us Core Provenance"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="StructureDefinition-us-core-birthsex.html"/>
           <title value="StructureDefinition Us Core Birthsex"/>
           <generation value="generated"/>
@@ -1516,6 +2433,11 @@
         <page>
           <nameUrl value="StructureDefinition-us-core-medicationstatement.html"/>
           <title value="StructureDefinition Us Core MedicationStatement"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-us-core-pulse-oximetry.html"/>
+          <title value="StructureDefinition Us Core Pulse Oximetry"/>
           <generation value="generated"/>
         </page>
         <page>
@@ -1889,6 +2811,11 @@
           <generation value="generated"/>
         </page>
         <page>
+          <nameUrl value="SearchParameter-us-core-medicationrequest-intent.html"/>
+          <title value="SearchParameter Us Core MedicationRequest Intent"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="SearchParameter-us-core-location-address.html"/>
           <title value="SearchParameter Us Core Location Address"/>
           <generation value="generated"/>
@@ -1926,6 +2853,11 @@
         <page>
           <nameUrl value="SearchParameter-us-core-encounter-type.html"/>
           <title value="SearchParameter Us Core Encounter Type"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="SearchParameter-us-core-medicationrequest-encounter.html"/>
+          <title value="SearchParameter Us Core MedicationRequest Encounter"/>
           <generation value="generated"/>
         </page>
         <page>

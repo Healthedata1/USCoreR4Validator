@@ -1,0 +1,44 @@
+{
+  "resourceType": "Practitioner",
+  "id": "4464007",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Practitioner</b></p><p><b>Name</b>: Portal, Portal</p><p><b>Status</b>: Active</p></div>"
+  },
+  "identifier": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode": "unknown"
+        }
+      ]
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "usual",
+      "text": "Portal, Portal",
+      "family": "Portal",
+      "given": [
+        "Portal"
+      ],
+      "period": {
+        "start": "2016-08-23T14:09:16.000-05:00"
+      }
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "8165554141",
+      "use": "work"
+    }
+  ]
+}

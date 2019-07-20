@@ -61,17 +61,17 @@
       <valueCode value="MAY"/>
     </extension>
   </multipleAnd>
-  <modifier value="?">
+  <modifier value="missing">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
       <valueCode value="MAY"/>
     </extension>
   </modifier>
-  <modifier value="?">
+  <modifier value="exact">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
       <valueCode value="MAY"/>
     </extension>
   </modifier>
-  <modifier value="?">
+  <modifier value="contains">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
       <valueCode value="MAY"/>
     </extension>

@@ -115,6 +115,10 @@
   "profiles": {
     "Observation": [
       {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry",
+        "title": "US Core Pulse Oximetry Profile"
+      },
+      {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus",
         "title": "US Core Smoking Status Observation Profile"
       }
@@ -236,6 +240,12 @@
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure",
         "title": "US Core Procedure Profile"
       }
+    ],
+    "Provenance": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance",
+        "title": "US Core Provenance Profile"
+      }
     ]
   },
   "usage": {
@@ -254,6 +264,11 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/codesystem-replacedby": [
       "CodeSystem.concept"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "AllergyIntolerance.code.coding",
+      "Practitioner.identifier",
+      "Practitioner.identifier.system"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.differential.element.constraint",

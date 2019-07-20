@@ -28,6 +28,12 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Device/f:udiCarrier</sch:title>
+    <sch:rule context="f:Device/f:udiCarrier">
+      <sch:assert test="count(f:deviceIdentifier) &gt;= 1">deviceIdentifier: minimum cardinality of 'deviceIdentifier' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Device.udiCarrier</sch:title>
     <sch:rule context="f:Device/f:udiCarrier">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>

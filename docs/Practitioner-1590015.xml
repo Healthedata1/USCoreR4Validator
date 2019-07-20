@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="1590015"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div><p><b>Practitioner</b></p><p><b>Name</b>: Herrman, Greg</p><p><b>Gender</b>: Male</p><p><b>Status</b>: Active</p></div>
+  </text>
+  <identifier>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="unknown"/>
+    </extension>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="usual"/>
+    <text value="Herrman, Greg"/>
+    <family value="Herrman"/>
+    <given value="Greg"/>
+    <period>
+      <start value="2012-08-24T18:03:40.000-05:00"/>
+    </period>
+  </name>
+  <gender value="male"/>
+</Practitioner>

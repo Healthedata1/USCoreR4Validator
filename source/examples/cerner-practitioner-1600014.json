@@ -1,0 +1,37 @@
+{
+    "resourceType": "Practitioner",
+    "id": "1600014",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div><p><b>Practitioner</b></p><p><b>Name</b>: O&apos;Larte, Dave</p><p><b>Status</b>: Active</p></div>"
+    },
+    "identifier": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode": "unknown"
+                }
+            ]
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "use": "usual",
+            "text": "O'Larte, Dave",
+            "family": "O'Larte",
+            "given": [
+                "Dave"
+            ],
+            "period": {
+                "start": "2012-08-28T13:50:17.000-05:00"
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="3dcade53-e25f-44db-b909-00654db361dd"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3dcade53-e25f-44db-b909-00654db361dd</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: vital-signs <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'vital-signs'})</span></p><p><b>code</b>: Body Height <span style="background: LightGoldenRodYellow">(Details : {LOINC code '8302-2' = 'Body height', given as 'Body Height'})</span></p><p><b>subject</b>: <a href="Patient-8b42051b-e45b-4032-926a-747affe4e09d.html">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-afbdacb5-48fc-41ce-bc9a-f0c95e71eb8e.html">Generated Summary: id: afbdacb5-48fc-41ce-bc9a-f0c95e71eb8e; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 162673000}">General examination of patient (procedure)</span>; period: Jul 6, 2018, 1:46:03 PM --&gt; Jul 6, 2018, 2:01:03 PM</a></p><p><b>effective</b>: Jul 6, 2018, 1:46:03 PM</p><p><b>issued</b>: Jul 6, 2018, 1:46:03 PM</p><p><b>value</b>: 182.73306254587698 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM code cm = 'cm')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8302-2"/>
+      <display value="Body Height"/>
+    </coding>
+    <text value="Body Height"/>
+  </code>
+  <subject>
+    <reference value="Patient/8b42051b-e45b-4032-926a-747affe4e09d"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/afbdacb5-48fc-41ce-bc9a-f0c95e71eb8e"/>
+  </encounter>
+  <effectiveDateTime value="2018-07-06T13:46:03-07:00"/>
+  <issued value="2018-07-06T13:46:03.598-07:00"/>
+  <valueQuantity>
+    <value value="182.73306254587698"/>
+    <unit value="cm"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="cm"/>
+  </valueQuantity>
+</Observation>

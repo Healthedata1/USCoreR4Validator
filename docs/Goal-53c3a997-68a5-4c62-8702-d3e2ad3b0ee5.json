@@ -1,0 +1,28 @@
+{
+  "resourceType": "Goal",
+  "id": "53c3a997-68a5-4c62-8702-d3e2ad3b0ee5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 53c3a997-68a5-4c62-8702-d3e2ad3b0ee5</p><p><b>meta</b>: </p><p><b>lifecycleStatus</b>: accepted</p><p><b>achievementStatus</b>: In Progress <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/goal-achievement code 'in-progress' = 'In Progress)</span></p><p><b>description</b>: Improve and maintenance of optimal foot health: aim at early detection of peripheral vascular problems and neuropathy presumed due to diabetes; and prevention of diabetic foot ulcer, gangrene <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>subject</b>: <a href=\"Patient-8b42051b-e45b-4032-926a-747affe4e09d.html\">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p></div>"
+  },
+  "lifecycleStatus": "accepted",
+  "achievementStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+        "code": "in-progress"
+      }
+    ]
+  },
+  "description": {
+    "text": "Improve and maintenance of optimal foot health: aim at early detection of peripheral vascular problems and neuropathy presumed due to diabetes; and prevention of diabetic foot ulcer, gangrene"
+  },
+  "subject": {
+    "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+  }
+}

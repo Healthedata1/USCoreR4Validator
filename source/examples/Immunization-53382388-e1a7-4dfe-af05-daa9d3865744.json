@@ -1,0 +1,28 @@
+{
+    "resourceType": "Immunization",
+    "id": "53382388-e1a7-4dfe-af05-daa9d3865744",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+        ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "140",
+                "display": "Influenza, seasonal, injectable, preservative free"
+            }
+        ],
+        "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+    },
+    "encounter": {
+        "reference": "Encounter/ce60749f-fdec-4983-8101-7af05f65ef94"
+    },
+    "occurrenceDateTime": "2011-05-27T13:46:03-07:00",
+    "primarySource": true
+}

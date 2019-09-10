@@ -71,6 +71,17 @@ anchors.add()
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 });
+
+// to highlight the validation errors
+$("td").each(function(){
+    $this=$(this);
+    if($this.html().search(/\berror\b/) > -1)
+        $this.addClass("error");
+    if($this.html().search(/\bwarning\b/) > -1)
+        $this.addClass("warning");
+    if($this.html().search(/\binformation\b/) > -1)
+        $this.addClass("information");
+});
 </script>
 
 </body>

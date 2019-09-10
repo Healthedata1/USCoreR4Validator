@@ -1,0 +1,34 @@
+{
+  "resourceType": "Procedure",
+  "id": "dd8122e9-1e68-4df8-a40a-9b15195ddb75",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dd8122e9-1e68-4df8-a40a-9b15195ddb75</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>code</b>: Colonoscopy <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '73761001' = 'Colonoscopy', given as 'Colonoscopy'})</span></p><p><b>subject</b>: <a href=\"Patient-8b42051b-e45b-4032-926a-747affe4e09d.html\">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>encounter</b>: <a href=\"Encounter-942493be-d608-47b5-b676-2bfdf2a5c692.html\">Generated Summary: id: 942493be-d608-47b5-b676-2bfdf2a5c692; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://snomed.info/sct 185349003}\">Encounter for 'check-up'</span>; period: May 27, 2013, 1:46:03 PM --&gt; May 27, 2013, 2:34:03 PM</a></p><p><b>performed</b>: May 27, 2013, 1:46:03 PM --&gt; May 27, 2013, 2:19:03 PM</p></div>"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "73761001",
+        "display": "Colonoscopy"
+      }
+    ],
+    "text": "Colonoscopy"
+  },
+  "subject": {
+    "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+  },
+  "encounter": {
+    "reference": "Encounter/942493be-d608-47b5-b676-2bfdf2a5c692"
+  },
+  "performedPeriod": {
+    "start": "2013-05-27T13:46:03-07:00",
+    "end": "2013-05-27T14:19:03-07:00"
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "resourceType": "ExplanationOfBenefit",
+  "id": "17493e1f-7b12-45b0-aa9d-83e2df22078e",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 17493e1f-7b12-45b0-aa9d-83e2df22078e</p><p><b>contained</b>: , </p><p><b>identifier</b>: 41ff9adc-b5b3-488d-a2aa-09af2e7f645a, 99999999999</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-8b42051b-e45b-4032-926a-747affe4e09d.html\">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>billablePeriod</b>: Jun 13, 2014, 2:01:03 PM --&gt; Jun 13, 2015, 2:01:03 PM</p><p><b>created</b>: Jun 13, 2014, 2:01:03 PM</p><p><b>insurer</b>: Medicare</p><p><b>provider</b>: <a href=\"Practitioner-0000016d-1435-7d38-0000-0000000140e6.html\">Generated Summary: id: 0000016d-1435-7d38-0000-0000000140e6; 82150; active; Man114 Cummerata161 ; gender: male</a></p><p><b>referral</b>: unknown resource contained</p><p><b>claim</b>: <a href=\"Claim-41ff9adc-b5b3-488d-a2aa-09af2e7f645a.html\">Generated Summary: id: 41ff9adc-b5b3-488d-a2aa-09af2e7f645a; status: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span>; use: claim; billablePeriod: Jun 13, 2014, 1:46:03 PM --&gt; Jun 13, 2014, 2:01:03 PM; created: Jun 13, 2014, 2:01:03 PM; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span>; </a></p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled yet</b></p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "ServiceRequest",
+      "id": "referral",
+      "status": "completed",
+      "intent": "order",
+      "subject": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+      },
+      "requester": {
+        "reference": "Practitioner/0000016d-1435-7d38-0000-0000000140e6"
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/0000016d-1435-7d38-0000-0000000140e6"
+        }
+      ]
+    },
+    {
+      "resourceType": "Coverage",
+      "id": "coverage",
+      "status": "active",
+      "type": {
+        "text": "Medicare"
+      },
+      "beneficiary": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+      },
+      "payor": [
+        {
+          "display": "Medicare"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+      "value": "41ff9adc-b5b3-488d-a2aa-09af2e7f645a"
+    },
+    {
+      "system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+      "value": "99999999999"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "institutional"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+  },
+  "billablePeriod": {
+    "start": "2014-06-13T14:01:03-07:00",
+    "end": "2015-06-13T14:01:03-07:00"
+  },
+  "created": "2014-06-13T14:01:03-07:00",
+  "insurer": {
+    "display": "Medicare"
+  },
+  "provider": {
+    "reference": "Practitioner/0000016d-1435-7d38-0000-0000000140e6"
+  },
+  "referral": {
+    "reference": "#referral"
+  },
+  "claim": {
+    "reference": "Claim/41ff9adc-b5b3-488d-a2aa-09af2e7f645a"
+  },
+  "outcome": "complete",
+  "careTeam": [
+    {
+      "sequence": 1,
+      "provider": {
+        "reference": "Practitioner/0000016d-1435-7d38-0000-0000000140e6"
+      },
+      "role": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+            "code": "primary",
+            "display": "Primary Care Practitioner"
+          }
+        ]
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "focal": true,
+      "coverage": {
+        "reference": "#coverage",
+        "display": "Medicare"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "category": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+            "code": "1",
+            "display": "Medical care"
+          }
+        ]
+      },
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "162673000",
+            "display": "General examination of patient (procedure)"
+          }
+        ],
+        "text": "General examination of patient (procedure)"
+      },
+      "servicedPeriod": {
+        "start": "2014-06-13T13:46:03-07:00",
+        "end": "2014-06-13T14:01:03-07:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+            "code": "19",
+            "display": "Off Campus-Outpatient Hospital"
+          }
+        ]
+      },
+      "encounter": [
+        {
+          "reference": "Encounter/77ef1756-200a-49bf-ab3a-445e494db472"
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "informationSequence": [
+        1
+      ],
+      "category": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+            "code": "1",
+            "display": "Medical care"
+          }
+        ]
+      },
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/cvx",
+            "code": "140",
+            "display": "Influenza, seasonal, injectable, preservative free"
+          }
+        ],
+        "text": "Influenza, seasonal, injectable, preservative free"
+      },
+      "servicedPeriod": {
+        "start": "2014-06-13T13:46:03-07:00",
+        "end": "2014-06-13T14:01:03-07:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+            "code": "19",
+            "display": "Off Campus-Outpatient Hospital"
+          }
+        ]
+      },
+      "net": {
+        "value": 140.52,
+        "currency": "USD"
+      },
+      "adjudication": [
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                "code": "https://bluebutton.cms.gov/resources/variables/line_coinsrnc_amt",
+                "display": "Line Beneficiary Coinsurance Amount"
+              }
+            ]
+          },
+          "amount": {
+            "value": 28.104000000000003,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                "code": "https://bluebutton.cms.gov/resources/variables/line_prvdr_pmt_amt",
+                "display": "Line Provider Payment Amount"
+              }
+            ]
+          },
+          "amount": {
+            "value": 112.41600000000001,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                "code": "https://bluebutton.cms.gov/resources/variables/line_sbmtd_chrg_amt",
+                "display": "Line Submitted Charge Amount"
+              }
+            ]
+          },
+          "amount": {
+            "value": 140.52,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                "code": "https://bluebutton.cms.gov/resources/variables/line_alowd_chrg_amt",
+                "display": "Line Allowed Charge Amount"
+              }
+            ]
+          },
+          "amount": {
+            "value": 140.52,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                "code": "https://bluebutton.cms.gov/resources/variables/line_bene_ptb_ddctbl_amt",
+                "display": "Line Beneficiary Part B Deductible Amount"
+              }
+            ]
+          },
+          "amount": {
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                "code": "https://bluebutton.cms.gov/resources/variables/line_prcsg_ind_cd",
+                "display": "Line Processing Indicator Code"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "total": [
+    {
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+            "code": "submitted",
+            "display": "Submitted Amount"
+          }
+        ],
+        "text": "Submitted Amount"
+      },
+      "amount": {
+        "value": 129.16,
+        "currency": "USD"
+      }
+    }
+  ],
+  "payment": {
+    "amount": {
+      "value": 112.41600000000001,
+      "currency": "USD"
+    }
+  }
+}

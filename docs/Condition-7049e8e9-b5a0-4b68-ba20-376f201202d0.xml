@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="7049e8e9-b5a0-4b68-ba20-376f201202d0"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 7049e8e9-b5a0-4b68-ba20-376f201202d0</p><p><b>meta</b>: </p><p><b>clinicalStatus</b>: Resolved <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/condition-clinical code 'resolved' = 'Resolved)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/condition-ver-status code 'confirmed' = 'Confirmed)</span></p><p><b>category</b>: Encounter Diagnosis <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/condition-category code 'encounter-diagnosis' = 'Encounter Diagnosis', given as 'Encounter Diagnosis'})</span></p><p><b>code</b>: Sinusitis (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '36971009' = 'Sinusitis', given as 'Sinusitis (disorder)'})</span></p><p><b>subject</b>: <a href="Patient-8b42051b-e45b-4032-926a-747affe4e09d.html">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-7439954a-3abe-4c10-8bf5-d2421d453dd2.html">Generated Summary: id: 7439954a-3abe-4c10-8bf5-d2421d453dd2; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185345009}">Encounter for symptom</span>; period: Jul 26, 2012, 1:46:03 PM --&gt; Jul 26, 2012, 2:01:03 PM; <span title="Codes: {http://snomed.info/sct 36971009}">Sinusitis (disorder)</span></a></p><p><b>onset</b>: Jul 26, 2012, 1:46:03 PM</p><p><b>abatement</b>: Dec 27, 2012, 12:46:03 PM</p><p><b>recordedDate</b>: Jul 26, 2012, 1:46:03 PM</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="resolved"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="36971009"/>
+      <display value="Sinusitis (disorder)"/>
+    </coding>
+    <text value="Sinusitis (disorder)"/>
+  </code>
+  <subject>
+    <reference value="Patient/8b42051b-e45b-4032-926a-747affe4e09d"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/7439954a-3abe-4c10-8bf5-d2421d453dd2"/>
+  </encounter>
+  <onsetDateTime value="2012-07-26T13:46:03-07:00"/>
+  <abatementDateTime value="2012-12-27T12:46:03-08:00"/>
+  <recordedDate value="2012-07-26T13:46:03-07:00"/>
+</Condition>

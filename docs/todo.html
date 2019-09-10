@@ -194,7 +194,7 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto::ehaas@healthedatainc.com">Health eData Inc </a> hl7.fhir.us.core.r4validator#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Sat, Jul 20, 2019 15:50-0700">2019-07-20</span>. <br/>
+     <a href="mailto::ehaas@healthedatainc.com">Health eData Inc </a> hl7.fhir.us.core.r4validator#0.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Sep 9, 2019 19:17-0700">2019-09-09</span>. <br/>
       Links: <!-- <a style="color: #81BEF7" href="toc.html">Table of Contents</a> -->
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       <!-- | <a style="color: #81BEF7" href="#">Version History</a> -->
@@ -276,6 +276,17 @@ anchors.add()
 
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
+});
+
+// to highlight the validation errors
+$("td").each(function(){
+    $this=$(this);
+    if($this.html().search(/\berror\b/) > -1)
+        $this.addClass("error");
+    if($this.html().search(/\bwarning\b/) > -1)
+        $this.addClass("warning");
+    if($this.html().search(/\binformation\b/) > -1)
+        $this.addClass("information");
 });
 </script>
 

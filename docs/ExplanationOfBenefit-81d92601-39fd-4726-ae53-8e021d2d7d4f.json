@@ -1,0 +1,232 @@
+{
+  "resourceType": "ExplanationOfBenefit",
+  "id": "81d92601-39fd-4726-ae53-8e021d2d7d4f",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 81d92601-39fd-4726-ae53-8e021d2d7d4f</p><p><b>contained</b>: , </p><p><b>identifier</b>: ef303436-cf41-4a80-8ce8-23236e2c203a, 99999999999</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-8b42051b-e45b-4032-926a-747affe4e09d.html\">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>billablePeriod</b>: Jul 26, 2012, 2:01:03 PM --&gt; Jul 26, 2013, 2:01:03 PM</p><p><b>created</b>: Jul 26, 2012, 2:01:03 PM</p><p><b>insurer</b>: Medicare</p><p><b>provider</b>: <a href=\"Practitioner-0000016d-1435-7d38-0000-0000000000c8.html\">Generated Summary: id: 0000016d-1435-7d38-0000-0000000000c8; 200; active; Creola518 Hirthe744 ; gender: female</a></p><p><b>referral</b>: unknown resource contained</p><p><b>claim</b>: <a href=\"Claim-ef303436-cf41-4a80-8ce8-23236e2c203a.html\">Generated Summary: id: ef303436-cf41-4a80-8ce8-23236e2c203a; status: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span>; use: claim; billablePeriod: Jul 26, 2012, 1:46:03 PM --&gt; Jul 26, 2012, 2:01:03 PM; created: Jul 26, 2012, 2:01:03 PM; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span>; </a></p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled yet</b></p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "ServiceRequest",
+      "id": "referral",
+      "status": "completed",
+      "intent": "order",
+      "subject": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+      },
+      "requester": {
+        "reference": "Practitioner/0000016d-1435-7d38-0000-0000000000c8"
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/0000016d-1435-7d38-0000-0000000000c8"
+        }
+      ]
+    },
+    {
+      "resourceType": "Coverage",
+      "id": "coverage",
+      "status": "active",
+      "type": {
+        "text": "Medicare"
+      },
+      "beneficiary": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+      },
+      "payor": [
+        {
+          "display": "Medicare"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+      "value": "ef303436-cf41-4a80-8ce8-23236e2c203a"
+    },
+    {
+      "system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+      "value": "99999999999"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "institutional"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+  },
+  "billablePeriod": {
+    "start": "2012-07-26T14:01:03-07:00",
+    "end": "2013-07-26T14:01:03-07:00"
+  },
+  "created": "2012-07-26T14:01:03-07:00",
+  "insurer": {
+    "display": "Medicare"
+  },
+  "provider": {
+    "reference": "Practitioner/0000016d-1435-7d38-0000-0000000000c8"
+  },
+  "referral": {
+    "reference": "#referral"
+  },
+  "claim": {
+    "reference": "Claim/ef303436-cf41-4a80-8ce8-23236e2c203a"
+  },
+  "outcome": "complete",
+  "careTeam": [
+    {
+      "sequence": 1,
+      "provider": {
+        "reference": "Practitioner/0000016d-1435-7d38-0000-0000000000c8"
+      },
+      "role": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+            "code": "primary",
+            "display": "Primary Care Practitioner"
+          }
+        ]
+      }
+    }
+  ],
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosisReference": {
+        "reference": "Condition/7049e8e9-b5a0-4b68-ba20-376f201202d0"
+      },
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+              "code": "principal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "insurance": [
+    {
+      "focal": true,
+      "coverage": {
+        "reference": "#coverage",
+        "display": "Medicare"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "category": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+            "code": "1",
+            "display": "Medical care"
+          }
+        ]
+      },
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185345009",
+            "display": "Encounter for symptom"
+          }
+        ],
+        "text": "Encounter for symptom"
+      },
+      "servicedPeriod": {
+        "start": "2012-07-26T13:46:03-07:00",
+        "end": "2012-07-26T14:01:03-07:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+            "code": "21",
+            "display": "Inpatient Hospital"
+          }
+        ]
+      },
+      "encounter": [
+        {
+          "reference": "Encounter/7439954a-3abe-4c10-8bf5-d2421d453dd2"
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "diagnosisSequence": [
+        1
+      ],
+      "category": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+            "code": "1",
+            "display": "Medical care"
+          }
+        ]
+      },
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "36971009",
+            "display": "Sinusitis (disorder)"
+          }
+        ],
+        "text": "Sinusitis (disorder)"
+      },
+      "servicedPeriod": {
+        "start": "2012-07-26T13:46:03-07:00",
+        "end": "2012-07-26T14:01:03-07:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+            "code": "21",
+            "display": "Inpatient Hospital"
+          }
+        ]
+      }
+    }
+  ],
+  "total": [
+    {
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+            "code": "submitted",
+            "display": "Submitted Amount"
+          }
+        ],
+        "text": "Submitted Amount"
+      },
+      "amount": {
+        "value": 129.16,
+        "currency": "USD"
+      }
+    }
+  ],
+  "payment": {
+    "amount": {
+      "value": 0.0,
+      "currency": "USD"
+    }
+  }
+}

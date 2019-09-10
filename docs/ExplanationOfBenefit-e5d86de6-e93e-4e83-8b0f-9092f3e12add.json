@@ -1,0 +1,232 @@
+{
+  "resourceType": "ExplanationOfBenefit",
+  "id": "e5d86de6-e93e-4e83-8b0f-9092f3e12add",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e5d86de6-e93e-4e83-8b0f-9092f3e12add</p><p><b>contained</b>: , </p><p><b>identifier</b>: d20f2c61-fc57-4e33-823e-98148d34977d, 99999999999</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-8b42051b-e45b-4032-926a-747affe4e09d.html\">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>billablePeriod</b>: May 16, 1975, 2:01:03 PM --&gt; May 16, 1976, 2:01:03 PM</p><p><b>created</b>: May 16, 1975, 2:01:03 PM</p><p><b>insurer</b>: Humana</p><p><b>provider</b>: <a href=\"Practitioner-0000016d-1435-7d38-0000-0000000140e6.html\">Generated Summary: id: 0000016d-1435-7d38-0000-0000000140e6; 82150; active; Man114 Cummerata161 ; gender: male</a></p><p><b>referral</b>: unknown resource contained</p><p><b>claim</b>: <a href=\"Claim-d20f2c61-fc57-4e33-823e-98148d34977d.html\">Generated Summary: id: d20f2c61-fc57-4e33-823e-98148d34977d; status: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span>; use: claim; billablePeriod: May 16, 1975, 1:46:03 PM --&gt; May 16, 1975, 2:01:03 PM; created: May 16, 1975, 2:01:03 PM; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span>; </a></p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled yet</b></p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "ServiceRequest",
+      "id": "referral",
+      "status": "completed",
+      "intent": "order",
+      "subject": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+      },
+      "requester": {
+        "reference": "Practitioner/0000016d-1435-7d38-0000-0000000140e6"
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/0000016d-1435-7d38-0000-0000000140e6"
+        }
+      ]
+    },
+    {
+      "resourceType": "Coverage",
+      "id": "coverage",
+      "status": "active",
+      "type": {
+        "text": "Humana"
+      },
+      "beneficiary": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+      },
+      "payor": [
+        {
+          "display": "Humana"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+      "value": "d20f2c61-fc57-4e33-823e-98148d34977d"
+    },
+    {
+      "system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+      "value": "99999999999"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "institutional"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+  },
+  "billablePeriod": {
+    "start": "1975-05-16T14:01:03-07:00",
+    "end": "1976-05-16T14:01:03-07:00"
+  },
+  "created": "1975-05-16T14:01:03-07:00",
+  "insurer": {
+    "display": "Humana"
+  },
+  "provider": {
+    "reference": "Practitioner/0000016d-1435-7d38-0000-0000000140e6"
+  },
+  "referral": {
+    "reference": "#referral"
+  },
+  "claim": {
+    "reference": "Claim/d20f2c61-fc57-4e33-823e-98148d34977d"
+  },
+  "outcome": "complete",
+  "careTeam": [
+    {
+      "sequence": 1,
+      "provider": {
+        "reference": "Practitioner/0000016d-1435-7d38-0000-0000000140e6"
+      },
+      "role": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+            "code": "primary",
+            "display": "Primary Care Practitioner"
+          }
+        ]
+      }
+    }
+  ],
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosisReference": {
+        "reference": "Condition/4d49ffd0-addf-414b-abf6-b4657d18112b"
+      },
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+              "code": "principal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "insurance": [
+    {
+      "focal": true,
+      "coverage": {
+        "reference": "#coverage",
+        "display": "Humana"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "category": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+            "code": "1",
+            "display": "Medical care"
+          }
+        ]
+      },
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "162673000",
+            "display": "General examination of patient (procedure)"
+          }
+        ],
+        "text": "General examination of patient (procedure)"
+      },
+      "servicedPeriod": {
+        "start": "1975-05-16T13:46:03-07:00",
+        "end": "1975-05-16T14:01:03-07:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+            "code": "19",
+            "display": "Off Campus-Outpatient Hospital"
+          }
+        ]
+      },
+      "encounter": [
+        {
+          "reference": "Encounter/8e564eff-78c1-4118-ad1f-561aad40d1c6"
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "diagnosisSequence": [
+        1
+      ],
+      "category": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+            "code": "1",
+            "display": "Medical care"
+          }
+        ]
+      },
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "15777000",
+            "display": "Prediabetes"
+          }
+        ],
+        "text": "Prediabetes"
+      },
+      "servicedPeriod": {
+        "start": "1975-05-16T13:46:03-07:00",
+        "end": "1975-05-16T14:01:03-07:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+            "code": "19",
+            "display": "Off Campus-Outpatient Hospital"
+          }
+        ]
+      }
+    }
+  ],
+  "total": [
+    {
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+            "code": "submitted",
+            "display": "Submitted Amount"
+          }
+        ],
+        "text": "Submitted Amount"
+      },
+      "amount": {
+        "value": 129.16,
+        "currency": "USD"
+      }
+    }
+  ],
+  "payment": {
+    "amount": {
+      "value": 0.0,
+      "currency": "USD"
+    }
+  }
+}

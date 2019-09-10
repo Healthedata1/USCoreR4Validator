@@ -1,0 +1,49 @@
+{
+  "resourceType": "Observation",
+  "id": "ad30892e-e9bf-4d50-afda-58bf70e79e6c",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ad30892e-e9bf-4d50-afda-58bf70e79e6c</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: laboratory <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory', given as 'laboratory'})</span></p><p><b>code</b>: Glucose <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '2339-0' = 'Glucose [Mass/volume] in Blood', given as 'Glucose'})</span></p><p><b>subject</b>: <a href=\"Patient-8b42051b-e45b-4032-926a-747affe4e09d.html\">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>encounter</b>: <a href=\"Encounter-afbdacb5-48fc-41ce-bc9a-f0c95e71eb8e.html\">Generated Summary: id: afbdacb5-48fc-41ce-bc9a-f0c95e71eb8e; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://snomed.info/sct 162673000}\">General examination of patient (procedure)</span>; period: Jul 6, 2018, 1:46:03 PM --&gt; Jul 6, 2018, 2:01:03 PM</a></p><p><b>effective</b>: Jul 6, 2018, 1:46:03 PM</p><p><b>issued</b>: Jul 6, 2018, 1:46:03 PM</p><p><b>value</b>: 74.0783797625762 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mg/dL = 'mg/dL')</span></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "2339-0",
+        "display": "Glucose"
+      }
+    ],
+    "text": "Glucose"
+  },
+  "subject": {
+    "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+  },
+  "encounter": {
+    "reference": "Encounter/afbdacb5-48fc-41ce-bc9a-f0c95e71eb8e"
+  },
+  "effectiveDateTime": "2018-07-06T13:46:03-07:00",
+  "issued": "2018-07-06T13:46:03.598-07:00",
+  "valueQuantity": {
+    "value": 74.0783797625762,
+    "unit": "mg/dL",
+    "system": "http://unitsofmeasure.org",
+    "code": "mg/dL"
+  }
+}

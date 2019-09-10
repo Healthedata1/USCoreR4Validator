@@ -1,0 +1,90 @@
+{
+    "resourceType": "CarePlan",
+    "id": "56cdb904-df36-4647-8fe4-4639b505af29",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Diabetes self management plan.<br/>Activities: <ul><li>Diabetes self management plan</li><li>Diabetes self management plan</li></ul><br/>Care plan is meant to treat Prediabetes.</div>"
+    },
+    "status": "active",
+    "intent": "order",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "698360004",
+                    "display": "Diabetes self management plan"
+                }
+            ],
+            "text": "Diabetes self management plan"
+        }
+    ],
+    "subject": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+    },
+    "encounter": {
+        "reference": "Encounter/8e564eff-78c1-4118-ad1f-561aad40d1c6"
+    },
+    "period": {
+        "start": "1975-05-16T13:46:03-07:00"
+    },
+    "addresses": [
+        {
+            "reference": "Condition/4d49ffd0-addf-414b-abf6-b4657d18112b"
+        }
+    ],
+    "goal": [
+        {
+            "reference": "Goal/27e1b0a2-0daf-4d97-997c-9dd722e0a5b6"
+        },
+        {
+            "reference": "Goal/7345e82a-c3e5-4ae2-9400-06920f373d41"
+        },
+        {
+            "reference": "Goal/73c13ee7-169e-4e61-9f56-7419a847cbe8"
+        },
+        {
+            "reference": "Goal/53c3a997-68a5-4c62-8702-d3e2ad3b0ee5"
+        },
+        {
+            "reference": "Goal/16e09a8f-de27-4079-bf87-eda298e103cc"
+        }
+    ],
+    "activity": [
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "160670007",
+                            "display": "Diabetic diet"
+                        }
+                    ],
+                    "text": "Diabetic diet"
+                },
+                "status": "in-progress"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "229065009",
+                            "display": "Exercise therapy"
+                        }
+                    ],
+                    "text": "Exercise therapy"
+                },
+                "status": "in-progress"
+            }
+        }
+    ]
+}

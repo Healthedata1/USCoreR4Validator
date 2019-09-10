@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Goal xmlns="http://hl7.org/fhir">
+  <id value="7345e82a-c3e5-4ae2-9400-06920f373d41"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 7345e82a-c3e5-4ae2-9400-06920f373d41</p><p><b>meta</b>: </p><p><b>lifecycleStatus</b>: accepted</p><p><b>achievementStatus</b>: In Progress <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/goal-achievement code 'in-progress' = 'In Progress)</span></p><p><b>description</b>: Glucose [Mass/volume] in Blood &lt; 108 <span style="background: LightGoldenRodYellow">(Details )</span></p><p><b>subject</b>: <a href="Patient-8b42051b-e45b-4032-926a-747affe4e09d.html">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p></div>
+  </text>
+  <lifecycleStatus value="accepted"/>
+  <achievementStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/goal-achievement"/>
+      <code value="in-progress"/>
+    </coding>
+  </achievementStatus>
+  <description>
+    <text value="Glucose [Mass/volume] in Blood &lt; 108"/>
+  </description>
+  <subject>
+    <reference value="Patient/8b42051b-e45b-4032-926a-747affe4e09d"/>
+  </subject>
+</Goal>

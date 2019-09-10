@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="f2d9d704-d370-11e9-96ec-a4d18ccf5172"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f2d9d704-d370-11e9-96ec-a4d18ccf5172</p><p><b>meta</b>: </p><p><b>target</b>: <a href="Condition-7049e8e9-b5a0-4b68-ba20-376f201202d0.html">Generated Summary: id: 7049e8e9-b5a0-4b68-ba20-376f201202d0; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical resolved}">Resolved</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span>; <span title="Codes: {http://snomed.info/sct 36971009}">Sinusitis (disorder)</span>; onset: Jul 26, 2012, 1:46:03 PM; abatement: Dec 27, 2012, 12:46:03 PM; recordedDate: Jul 26, 2012, 1:46:03 PM</a></p><p><b>recorded</b>: Sep 9, 2019, 7:16:07 PM</p><blockquote><p><b>agent</b></p><p><b>type</b>: Transmitter <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type code 'transmitter' = 'Transmitter)</span></p><p><b>who</b>: <a href="Organization-ccbd6376-81a6-35c8-93d1-d6d519e417d6.html">Generated Summary: id: ccbd6376-81a6-35c8-93d1-d6d519e417d6; ccbd6376-81a6-35c8-93d1-d6d519e417d6; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: STEWARD MEDICAL GROUP, INC; ph: 781-792-6000</a></p></blockquote><blockquote><p><b>agent</b></p><p><b>type</b>: Author <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/provenance-participant-type code 'author' = 'Author)</span></p><p><b>who</b>: <a href="Organization-ccbd6376-81a6-35c8-93d1-d6d519e417d6.html">Generated Summary: id: ccbd6376-81a6-35c8-93d1-d6d519e417d6; ccbd6376-81a6-35c8-93d1-d6d519e417d6; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: STEWARD MEDICAL GROUP, INC; ph: 781-792-6000</a></p></blockquote></div>
+  </text>
+  <target>
+    <reference value="Condition/7049e8e9-b5a0-4b68-ba20-376f201202d0"/>
+  </target>
+  <recorded value="2019-09-10T02:16:07.567059Z"/>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type"/>
+        <code value="transmitter"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Organization/ccbd6376-81a6-35c8-93d1-d6d519e417d6"/>
+    </who>
+  </agent>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="author"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Organization/ccbd6376-81a6-35c8-93d1-d6d519e417d6"/>
+    </who>
+  </agent>
+</Provenance>

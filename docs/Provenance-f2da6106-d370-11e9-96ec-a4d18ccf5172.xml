@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="f2da6106-d370-11e9-96ec-a4d18ccf5172"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f2da6106-d370-11e9-96ec-a4d18ccf5172</p><p><b>meta</b>: </p><p><b>target</b>: <a href="ExplanationOfBenefit-422e377d-f97d-4dd9-8f7d-43f150fa8457.html">Generated Summary: id: 422e377d-f97d-4dd9-8f7d-43f150fa8457; 0ae942bb-1aeb-4c39-ad4d-ffd31100ee08, 99999999999; status: active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/claim-type institutional}">Institutional</span>; use: claim; billablePeriod: Nov 15, 2012, 1:01:03 PM --&gt; Nov 15, 2013, 1:01:03 PM; created: Nov 15, 2012, 1:01:03 PM; outcome: complete</a></p><p><b>recorded</b>: Sep 9, 2019, 7:16:07 PM</p><blockquote><p><b>agent</b></p><p><b>type</b>: Transmitter <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type code 'transmitter' = 'Transmitter)</span></p><p><b>who</b>: <a href="Organization-ccbd6376-81a6-35c8-93d1-d6d519e417d6.html">Generated Summary: id: ccbd6376-81a6-35c8-93d1-d6d519e417d6; ccbd6376-81a6-35c8-93d1-d6d519e417d6; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: STEWARD MEDICAL GROUP, INC; ph: 781-792-6000</a></p></blockquote><blockquote><p><b>agent</b></p><p><b>type</b>: Author <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/provenance-participant-type code 'author' = 'Author)</span></p><p><b>who</b>: <a href="Organization-ccbd6376-81a6-35c8-93d1-d6d519e417d6.html">Generated Summary: id: ccbd6376-81a6-35c8-93d1-d6d519e417d6; ccbd6376-81a6-35c8-93d1-d6d519e417d6; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: STEWARD MEDICAL GROUP, INC; ph: 781-792-6000</a></p></blockquote></div>
+  </text>
+  <target>
+    <reference value="ExplanationOfBenefit/422e377d-f97d-4dd9-8f7d-43f150fa8457"/>
+  </target>
+  <recorded value="2019-09-10T02:16:07.570613Z"/>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type"/>
+        <code value="transmitter"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Organization/ccbd6376-81a6-35c8-93d1-d6d519e417d6"/>
+    </who>
+  </agent>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="author"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Organization/ccbd6376-81a6-35c8-93d1-d6d519e417d6"/>
+    </who>
+  </agent>
+</Provenance>

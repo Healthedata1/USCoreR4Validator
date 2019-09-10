@@ -11,34 +11,6 @@
       ]
     },
     {
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
-      "title": "US Core Birth Sex Extension",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
-      "title": "US Core Birth Sex Extension",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
-      "title": "US Core Direct email Extension",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
-      "title": "US Core Direct email Extension",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
       "title": "US Core Direct email Extension",
       "types": [
@@ -48,194 +20,6 @@
     {
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
       "title": "US Core Ethnicity Extension",
-      "types": [
-        "Coding",
-        "Coding",
-        "string",
-        "base64Binary",
-        "boolean",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "Meta"
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
-      "title": "US Core Ethnicity Extension",
-      "types": [
-        "Coding",
-        "Coding",
-        "string",
-        "base64Binary",
-        "boolean",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "Meta"
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
-      "title": "US Core Ethnicity Extension",
-      "types": [
-        "Coding",
-        "Coding",
-        "string",
-        "base64Binary",
-        "boolean",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "Meta"
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
-      "title": "US Core Race Extension",
-      "types": [
-        "Coding",
-        "Coding",
-        "string",
-        "base64Binary",
-        "boolean",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "Meta"
-      ]
-    },
-    {
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
-      "title": "US Core Race Extension",
       "types": [
         "Coding",
         "Coding",
@@ -335,35 +119,11 @@
         "title": "US Core Pulse Oximetry Profile"
       },
       {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry",
-        "title": "US Core Pulse Oximetry Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry",
-        "title": "US Core Pulse Oximetry Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus",
-        "title": "US Core Smoking Status Observation Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus",
-        "title": "US Core Smoking Status Observation Profile"
-      },
-      {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus",
         "title": "US Core Smoking Status Observation Profile"
       }
     ],
     "AllergyIntolerance": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance",
-        "title": "US  Core AllergyIntolerance Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance",
-        "title": "US  Core AllergyIntolerance Profile"
-      },
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance",
         "title": "US  Core AllergyIntolerance Profile"
@@ -373,25 +133,9 @@
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan",
         "title": "US Core CarePlan Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan",
-        "title": "US Core CarePlan Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan",
-        "title": "US Core CarePlan Profile"
       }
     ],
     "CareTeam": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam",
-        "title": "US Core CareTeam Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam",
-        "title": "US Core CareTeam Profile"
-      },
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam",
         "title": "US Core CareTeam Profile"
@@ -401,50 +145,12 @@
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition",
         "title": "US Core Condition Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition",
-        "title": "US Core Condition Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition",
-        "title": "US Core Condition Profile"
-      }
-    ],
-    "Device": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device",
-        "title": "US Core Device Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device",
-        "title": "US Core Device Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-device",
-        "title": "US Core Device Profile"
       }
     ],
     "DiagnosticReport": [
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab",
         "title": "US Core DiagnosticReport Profile for Laboratory Results Reporting"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab",
-        "title": "US Core DiagnosticReport Profile for Laboratory Results Reporting"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab",
-        "title": "US Core DiagnosticReport Profile for Laboratory Results Reporting"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note",
-        "title": "US Core DiagnosticReport Profile for Report and Note exchange"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note",
-        "title": "US Core DiagnosticReport Profile for Report and Note exchange"
       },
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note",
@@ -455,25 +161,9 @@
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
         "title": "US Core DocumentReference Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
-        "title": "US Core DocumentReference Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
-        "title": "US Core DocumentReference Profile"
       }
     ],
     "Encounter": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter",
-        "title": "US Core Encounter Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter",
-        "title": "US Core Encounter Profile"
-      },
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter",
         "title": "US Core Encounter Profile"
@@ -483,39 +173,21 @@
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal",
         "title": "US Core Goal Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal",
-        "title": "US Core Goal Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal",
-        "title": "US Core Goal Profile"
       }
     ],
     "Immunization": [
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
         "title": "US Core Immunization Profile"
-      },
+      }
+    ],
+    "Device": [
       {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
-        "title": "US Core Immunization Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
-        "title": "US Core Immunization Profile"
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device",
+        "title": "US Core Implantable Device Profile"
       }
     ],
     "Location": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
-        "title": "US Core Location Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
-        "title": "US Core Location Profile"
-      },
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location",
         "title": "US Core Location Profile"
@@ -525,53 +197,15 @@
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication",
         "title": "US Core Medication Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication",
-        "title": "US Core Medication Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication",
-        "title": "US Core Medication Profile"
       }
     ],
     "MedicationRequest": [
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
         "title": "US Core MedicationRequest Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
-        "title": "US Core MedicationRequest Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
-        "title": "US Core MedicationRequest Profile"
-      }
-    ],
-    "MedicationStatement": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement",
-        "title": "US Core MedicationStatement Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement",
-        "title": "US Core MedicationStatement Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement",
-        "title": "US Core MedicationStatement Profile"
       }
     ],
     "Organization": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
-        "title": "US Core Organization Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
-        "title": "US Core Organization Profile"
-      },
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
         "title": "US Core Organization Profile"
@@ -581,25 +215,9 @@
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
         "title": "US Core Patient Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
-        "title": "US Core Patient Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
-        "title": "US Core Patient Profile"
       }
     ],
     "Practitioner": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
-        "title": "US Core Practitioner Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
-        "title": "US Core Practitioner Profile"
-      },
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
         "title": "US Core Practitioner Profile"
@@ -609,25 +227,9 @@
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole",
         "title": "US Core PractitionerRole Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole",
-        "title": "US Core PractitionerRole Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole",
-        "title": "US Core PractitionerRole Profile"
       }
     ],
     "Procedure": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure",
-        "title": "US Core Procedure Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure",
-        "title": "US Core Procedure Profile"
-      },
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure",
         "title": "US Core Procedure Profile"
@@ -637,19 +239,12 @@
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance",
         "title": "US Core Provenance Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance",
-        "title": "US Core Provenance Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance",
-        "title": "US Core Provenance Profile"
       }
     ]
   },
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.rest.interaction",
       "CapabilityStatement.rest.resource",
       "CapabilityStatement.rest.resource.interaction",
       "CapabilityStatement.rest.resource.operation",
@@ -665,11 +260,6 @@
     "http://hl7.org/fhir/StructureDefinition/codesystem-replacedby": [
       "CodeSystem.concept"
     ],
-    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
-      "AllergyIntolerance.code.coding",
-      "Practitioner.identifier",
-      "Practitioner.identifier.system"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.differential.element.constraint",
       "StructureDefinition.snapshot.element.constraint"
@@ -684,7 +274,6 @@
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
-      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet": [
@@ -694,11 +283,14 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/implementationguide-page": [
-      "ImplementationGuide.definition.resource"
+    "http://hl7.org/fhir/StructureDefinition/geolocation": [
+      "Patient.address"
     ],
-    "http://hl7.org/fhir/StructureDefinition/rendered-value": [
-      "Patient.identifier"
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
@@ -724,8 +316,11 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
     ],
-    "https://open.epic.com/fhir/extensions/specialty": [
-      "Location"
+    "http://synthetichealth.github.io/synthea/disability-adjusted-life-years": [
+      "Patient"
+    ],
+    "http://synthetichealth.github.io/synthea/quality-adjusted-life-years": [
+      "Patient"
     ]
   }
 }

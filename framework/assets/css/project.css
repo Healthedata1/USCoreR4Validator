@@ -600,3 +600,20 @@ p.note-to-balloters {
     background-color: #fff2ff;
     border-left-color: #ffa0ff;
 }
+
+/* ----------validation error styling------*/
+
+td.error {
+    background-color: #C11724;
+    color: #FFFFFF;
+}
+
+td.warning {
+    background-color: #ff6700;
+    color: #FFFFFF;
+}
+
+td.information {
+    background-color: #27e833;
+    color: #FFFFFF;
+}

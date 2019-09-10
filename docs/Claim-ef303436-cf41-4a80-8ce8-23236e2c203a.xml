@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="ef303436-cf41-4a80-8ce8-23236e2c203a"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ef303436-cf41-4a80-8ce8-23236e2c203a</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-8b42051b-e45b-4032-926a-747affe4e09d.html">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>billablePeriod</b>: Jul 26, 2012, 1:46:03 PM --&gt; Jul 26, 2012, 2:01:03 PM</p><p><b>created</b>: Jul 26, 2012, 2:01:03 PM</p><p><b>provider</b>: <a href="Organization-c44f361c-2efb-3050-8f97-0354a12e2920.html">Generated Summary: id: c44f361c-2efb-3050-8f97-0354a12e2920; c44f361c-2efb-3050-8f97-0354a12e2920; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: SIGNATURE HEALTHCARE BROCKTON HOSPITAL; ph: 5089417000</a></p><p><b>priority</b>: Normal <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/processpriority code 'normal' = 'Normal)</span></p><h3>Diagnoses</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td></tr><tr><td>*</td><td>1</td><td><a href="Condition-7049e8e9-b5a0-4b68-ba20-376f201202d0.html">Generated Summary: id: 7049e8e9-b5a0-4b68-ba20-376f201202d0; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical resolved}">Resolved</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span>; <span title="Codes: {http://snomed.info/sct 36971009}">Sinusitis (disorder)</span>; onset: Jul 26, 2012, 1:46:03 PM; abatement: Dec 27, 2012, 12:46:03 PM; recordedDate: Jul 26, 2012, 1:46:03 PM</a></td></tr></table><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>Medicare</td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: Encounter for symptom <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '185345009' = 'Encounter for symptom', given as 'Encounter for symptom'})</span></p><p><b>encounter</b>: <a href="Encounter-7439954a-3abe-4c10-8bf5-d2421d453dd2.html">Generated Summary: id: 7439954a-3abe-4c10-8bf5-d2421d453dd2; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185345009}">Encounter for symptom</span>; period: Jul 26, 2012, 1:46:03 PM --&gt; Jul 26, 2012, 2:01:03 PM; <span title="Codes: {http://snomed.info/sct 36971009}">Sinusitis (disorder)</span></a></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>diagnosisSequence</b>: 1</p><p><b>productOrService</b>: Sinusitis (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '36971009' = 'Sinusitis', given as 'Sinusitis (disorder)'})</span></p></blockquote><p><b>total</b>: </p></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="institutional"/>
+    </coding>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/8b42051b-e45b-4032-926a-747affe4e09d"/>
+  </patient>
+  <billablePeriod>
+    <start value="2012-07-26T13:46:03-07:00"/>
+    <end value="2012-07-26T14:01:03-07:00"/>
+  </billablePeriod>
+  <created value="2012-07-26T14:01:03-07:00"/>
+  <provider>
+    <reference value="Organization/c44f361c-2efb-3050-8f97-0354a12e2920"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+    </coding>
+  </priority>
+  <diagnosis>
+    <sequence value="1"/>
+    <diagnosisReference>
+      <reference value="Condition/7049e8e9-b5a0-4b68-ba20-376f201202d0"/>
+    </diagnosisReference>
+  </diagnosis>
+  <insurance>
+    <sequence value="1"/>
+    <focal value="true"/>
+    <coverage>
+      <display value="Medicare"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="185345009"/>
+        <display value="Encounter for symptom"/>
+      </coding>
+      <text value="Encounter for symptom"/>
+    </productOrService>
+    <encounter>
+      <reference value="Encounter/7439954a-3abe-4c10-8bf5-d2421d453dd2"/>
+    </encounter>
+  </item>
+  <item>
+    <sequence value="2"/>
+    <diagnosisSequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="36971009"/>
+        <display value="Sinusitis (disorder)"/>
+      </coding>
+      <text value="Sinusitis (disorder)"/>
+    </productOrService>
+  </item>
+  <total>
+    <value value="129.16"/>
+    <currency value="USD"/>
+  </total>
+</Claim>

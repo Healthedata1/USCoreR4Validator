@@ -15432,3 +15432,1271 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "77606-2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Weight-for-length Per age and sex",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "3151-8"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Inhaled oxygen flow rate",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "3150-0"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Inhaled oxygen concentration",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "59576-9"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Body mass index (BMI) [Percentile] Per age and sex",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "39156-5"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Body mass index (BMI) [Ratio]",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "58410-2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Complete blood count (hemogram) panel - Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72166-2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Tobacco smoking status",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72514-3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Pain severity - 0-10 verbal numeric rating [Score] - Reported",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "787-2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "MCV [Entitic volume] by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "786-4"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "MCHC [Mass/volume] by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "785-6"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "MCH [Entitic mass] by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "789-8"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Erythrocytes [#/volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "29463-7"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Body weight",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "21000-5"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Erythrocyte distribution width [Entitic volume] by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "32207-3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Platelet distribution width [Entitic volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "8302-2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Body height",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "718-7"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Hemoglobin [Mass/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "55284-4"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Blood pressure systolic and diastolic",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "8462-4"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Diastolic blood pressure",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "8480-6"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Systolic blood pressure",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "8331-1"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Oral temperature",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "777-3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Platelets [#/volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "4544-3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Hematocrit [Volume Fraction] of Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "6690-2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Leukocytes [#/volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "32623-1"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Platelet mean volume [Entitic volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "39156-5",
+    "display" : "Body Mass Index"
+  }],
+  "text" : "Body Mass Index"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "85353-1"
+      },
+      {
+        "code" : "9279-1"
+      },
+      {
+        "code" : "8867-4"
+      },
+      {
+        "code" : "2708-6"
+      },
+      {
+        "code" : "8310-5"
+      },
+      {
+        "code" : "8302-2"
+      },
+      {
+        "code" : "9843-4"
+      },
+      {
+        "code" : "29463-7"
+      },
+      {
+        "code" : "39156-5"
+      },
+      {
+        "code" : "85354-9"
+      },
+      {
+        "code" : "8480-6"
+      },
+      {
+        "code" : "8462-4"
+      },
+      {
+        "code" : "8478-0"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Body mass index (BMI) [Ratio]",
+  "severity" : "warning",
+  "error" : "The display \"Body Mass Index\" is not a valid display for the code {http://loinc.org}39156-5 - should be one of [\"Body mass index (BMI) [Ratio]\",BMI]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "58410-2",
+    "display" : "Complete blood count (hemogram) panel - Blood by Automated count"
+  }],
+  "text" : "Complete blood count (hemogram) panel - Blood by Automated count"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Complete blood count (hemogram) panel - Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "72166-2",
+    "display" : "Tobacco smoking status NHIS"
+  }],
+  "text" : "Tobacco smoking status NHIS"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "72166-2",
+        "display" : "Tobacco smoking status NHIS"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Tobacco smoking status",
+  "severity" : "warning",
+  "error" : "The display \"Tobacco smoking status NHIS\" is not a valid display for the code {http://loinc.org}72166-2 - should be one of [\"Tobacco smoking status\",\"Tobac smoke stat\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "72514-3",
+    "display" : "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+  }],
+  "text" : "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "85353-1"
+      },
+      {
+        "code" : "9279-1"
+      },
+      {
+        "code" : "8867-4"
+      },
+      {
+        "code" : "2708-6"
+      },
+      {
+        "code" : "8310-5"
+      },
+      {
+        "code" : "8302-2"
+      },
+      {
+        "code" : "9843-4"
+      },
+      {
+        "code" : "29463-7"
+      },
+      {
+        "code" : "39156-5"
+      },
+      {
+        "code" : "85354-9"
+      },
+      {
+        "code" : "8480-6"
+      },
+      {
+        "code" : "8462-4"
+      },
+      {
+        "code" : "8478-0"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://loinc.org#72514-3, (Pain severity - 0-10 verbal numeric rating [Score] - Reported)) is not  valid in the value set VitalSigns"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "787-2",
+  "display" : "MCV [Entitic volume] by Automated count"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "MCV [Entitic volume] by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "786-4",
+  "display" : "MCHC [Mass/volume] by Automated count"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "MCHC [Mass/volume] by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "785-6",
+  "display" : "MCH [Entitic mass] by Automated count"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "MCH [Entitic mass] by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "789-8",
+  "display" : "Erythrocytes [#/volume] in Blood by Automated count"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Erythrocytes [#/volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "29463-7",
+    "display" : "Body Weight"
+  }],
+  "text" : "Body Weight"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "85353-1"
+      },
+      {
+        "code" : "9279-1"
+      },
+      {
+        "code" : "8867-4"
+      },
+      {
+        "code" : "2708-6"
+      },
+      {
+        "code" : "8310-5"
+      },
+      {
+        "code" : "8302-2"
+      },
+      {
+        "code" : "9843-4"
+      },
+      {
+        "code" : "29463-7"
+      },
+      {
+        "code" : "39156-5"
+      },
+      {
+        "code" : "85354-9"
+      },
+      {
+        "code" : "8480-6"
+      },
+      {
+        "code" : "8462-4"
+      },
+      {
+        "code" : "8478-0"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Body weight",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "21000-5",
+  "display" : "Erythrocyte distribution width [Entitic volume] by Automated count"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Erythrocyte distribution width [Entitic volume] by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "32207-3",
+  "display" : "Platelet distribution width [Entitic volume] in Blood by Automated count"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Platelet distribution width [Entitic volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "8302-2",
+    "display" : "Body Height"
+  }],
+  "text" : "Body Height"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "85353-1"
+      },
+      {
+        "code" : "9279-1"
+      },
+      {
+        "code" : "8867-4"
+      },
+      {
+        "code" : "2708-6"
+      },
+      {
+        "code" : "8310-5"
+      },
+      {
+        "code" : "8302-2"
+      },
+      {
+        "code" : "9843-4"
+      },
+      {
+        "code" : "29463-7"
+      },
+      {
+        "code" : "39156-5"
+      },
+      {
+        "code" : "85354-9"
+      },
+      {
+        "code" : "8480-6"
+      },
+      {
+        "code" : "8462-4"
+      },
+      {
+        "code" : "8478-0"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Body height",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "718-7",
+  "display" : "Hemoglobin [Mass/volume] in Blood"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Hemoglobin [Mass/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "55284-4",
+    "display" : "Blood Pressure"
+  }],
+  "text" : "Blood Pressure"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "85353-1"
+      },
+      {
+        "code" : "9279-1"
+      },
+      {
+        "code" : "8867-4"
+      },
+      {
+        "code" : "2708-6"
+      },
+      {
+        "code" : "8310-5"
+      },
+      {
+        "code" : "8302-2"
+      },
+      {
+        "code" : "9843-4"
+      },
+      {
+        "code" : "29463-7"
+      },
+      {
+        "code" : "39156-5"
+      },
+      {
+        "code" : "85354-9"
+      },
+      {
+        "code" : "8480-6"
+      },
+      {
+        "code" : "8462-4"
+      },
+      {
+        "code" : "8478-0"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The display \"Blood Pressure\" is not a valid display for the code ,{http://loinc.org}55284-4 - should be one of [\"Blood pressure systolic and diastolic\",\"BP sys/dias\"]; The code provided (http://loinc.org#55284-4, (Blood Pressure)) is not  valid in the value set VitalSigns"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "8462-4",
+    "display" : "Diastolic Blood Pressure"
+  }],
+  "text" : "Diastolic Blood Pressure"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "85353-1"
+      },
+      {
+        "code" : "9279-1"
+      },
+      {
+        "code" : "8867-4"
+      },
+      {
+        "code" : "2708-6"
+      },
+      {
+        "code" : "8310-5"
+      },
+      {
+        "code" : "8302-2"
+      },
+      {
+        "code" : "9843-4"
+      },
+      {
+        "code" : "29463-7"
+      },
+      {
+        "code" : "39156-5"
+      },
+      {
+        "code" : "85354-9"
+      },
+      {
+        "code" : "8480-6"
+      },
+      {
+        "code" : "8462-4"
+      },
+      {
+        "code" : "8478-0"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Diastolic blood pressure",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "8480-6",
+    "display" : "Systolic Blood Pressure"
+  }],
+  "text" : "Systolic Blood Pressure"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "85353-1"
+      },
+      {
+        "code" : "9279-1"
+      },
+      {
+        "code" : "8867-4"
+      },
+      {
+        "code" : "2708-6"
+      },
+      {
+        "code" : "8310-5"
+      },
+      {
+        "code" : "8302-2"
+      },
+      {
+        "code" : "9843-4"
+      },
+      {
+        "code" : "29463-7"
+      },
+      {
+        "code" : "39156-5"
+      },
+      {
+        "code" : "85354-9"
+      },
+      {
+        "code" : "8480-6"
+      },
+      {
+        "code" : "8462-4"
+      },
+      {
+        "code" : "8478-0"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Systolic blood pressure",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "8331-1",
+    "display" : "Oral temperature"
+  }],
+  "text" : "Oral temperature"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "85353-1"
+      },
+      {
+        "code" : "9279-1"
+      },
+      {
+        "code" : "8867-4"
+      },
+      {
+        "code" : "2708-6"
+      },
+      {
+        "code" : "8310-5"
+      },
+      {
+        "code" : "8302-2"
+      },
+      {
+        "code" : "9843-4"
+      },
+      {
+        "code" : "29463-7"
+      },
+      {
+        "code" : "39156-5"
+      },
+      {
+        "code" : "85354-9"
+      },
+      {
+        "code" : "8480-6"
+      },
+      {
+        "code" : "8462-4"
+      },
+      {
+        "code" : "8478-0"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://loinc.org#8331-1, (Oral temperature)) is not  valid in the value set VitalSigns"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "777-3",
+  "display" : "Platelets [#/volume] in Blood by Automated count"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Platelets [#/volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "4544-3",
+  "display" : "Hematocrit [Volume Fraction] of Blood by Automated count"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Hematocrit [Volume Fraction] of Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "6690-2",
+  "display" : "Leukocytes [#/volume] in Blood by Automated count"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Leukocytes [#/volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "32623-1",
+  "display" : "Platelet mean volume [Entitic volume] in Blood by Automated count"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Platelet mean volume [Entitic volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "49765-1"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Calcium [Mass/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "6299-2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Urea nitrogen [Mass/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2339-0"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Glucose [Mass/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "18262-6"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2947-0"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Sodium [Moles/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "20565-8"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Carbon dioxide, total [Moles/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2069-3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Chloride [Moles/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "4548-4"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "6298-4"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "57698-3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Lipid panel with direct LDL - Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2571-8"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Triglyceride [Mass/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "51990-0"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Basic metabolic panel - Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2085-9"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "38483-4"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Creatinine [Mass/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2093-3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Cholesterol [Mass/volume] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "58410-2",
+    "display" : "Complete blood count (hemogram) panel - Blood by Automated count"
+  }],
+  "text" : "Complete blood count (hemogram) panel - Blood by Automated count"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Complete blood count (hemogram) panel - Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "49765-1",
+  "display" : "Calcium"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Calcium [Mass/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Calcium\" is not a valid display for the code {http://loinc.org}49765-1 - should be one of [\"Calcium [Mass/volume] in Blood\",\"Calcium Bld-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "6299-2",
+  "display" : "Urea Nitrogen"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Urea nitrogen [Mass/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Urea Nitrogen\" is not a valid display for the code {http://loinc.org}6299-2 - should be one of [\"Urea nitrogen [Mass/volume] in Blood\",\"BUN Bld-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2339-0",
+  "display" : "Glucose"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Glucose [Mass/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Glucose\" is not a valid display for the code {http://loinc.org}2339-0 - should be one of [\"Glucose [Mass/volume] in Blood\",\"Glucose Bld-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "18262-6",
+  "display" : "Low Density Lipoprotein Cholesterol"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay",
+  "severity" : "warning",
+  "error" : "The display \"Low Density Lipoprotein Cholesterol\" is not a valid display for the code {http://loinc.org}18262-6 - should be one of [\"Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay\",\"LDLc SerPl Direct Assay-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2947-0",
+  "display" : "Sodium"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Sodium [Moles/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Sodium\" is not a valid display for the code {http://loinc.org}2947-0 - should be one of [\"Sodium [Moles/volume] in Blood\",\"Sodium Bld-sCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "20565-8",
+  "display" : "Carbon Dioxide"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Carbon dioxide, total [Moles/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Carbon Dioxide\" is not a valid display for the code {http://loinc.org}20565-8 - should be one of [\"Carbon dioxide, total [Moles/volume] in Blood\",\"CO2 Bld-sCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2069-3",
+  "display" : "Chloride"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Chloride [Moles/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Chloride\" is not a valid display for the code {http://loinc.org}2069-3 - should be one of [\"Chloride [Moles/volume] in Blood\",\"Chloride Bld-sCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "4548-4",
+  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "6298-4",
+  "display" : "Potassium"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Potassium\" is not a valid display for the code {http://loinc.org}6298-4 - should be one of [\"Potassium [Moles/volume] in Blood\",\"Potassium Bld-sCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "57698-3",
+    "display" : "Lipid Panel"
+  }],
+  "text" : "Lipid Panel"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Lipid panel with direct LDL - Serum or Plasma",
+  "severity" : "warning",
+  "error" : "The display \"Lipid Panel\" is not a valid display for the code {http://loinc.org}57698-3 - should be one of [\"Lipid panel with direct LDL - Serum or Plasma\",\"Lipid pnl with direct LDL SerPl\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2571-8",
+  "display" : "Triglycerides"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Triglyceride [Mass/volume] in Serum or Plasma",
+  "severity" : "warning",
+  "error" : "The display \"Triglycerides\" is not a valid display for the code {http://loinc.org}2571-8 - should be one of [\"Triglyceride [Mass/volume] in Serum or Plasma\",\"Trigl SerPl-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "51990-0",
+    "display" : "Basic Metabolic Panel"
+  }],
+  "text" : "Basic Metabolic Panel"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Basic metabolic panel - Blood",
+  "severity" : "warning",
+  "error" : "The display \"Basic Metabolic Panel\" is not a valid display for the code {http://loinc.org}51990-0 - should be one of [\"Basic metabolic panel - Blood\",\"Bas Metab Pnl Bld\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2085-9",
+  "display" : "High Density Lipoprotein Cholesterol"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+  "severity" : "warning",
+  "error" : "The display \"High Density Lipoprotein Cholesterol\" is not a valid display for the code {http://loinc.org}2085-9 - should be one of [\"Cholesterol in HDL [Mass/volume] in Serum or Plasma\",\"HDLc SerPl-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "38483-4",
+  "display" : "Creatinine"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Creatinine [Mass/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Creatinine\" is not a valid display for the code {http://loinc.org}38483-4 - should be one of [\"Creatinine [Mass/volume] in Blood\",\"Creat Bld-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "2093-3",
+  "display" : "Total Cholesterol"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Cholesterol [Mass/volume] in Serum or Plasma",
+  "severity" : "warning",
+  "error" : "The display \"Total Cholesterol\" is not a valid display for the code {http://loinc.org}2093-3 - should be one of [\"Cholesterol [Mass/volume] in Serum or Plasma\",\"Cholest SerPl-mCnc\"]"
+}
+-------------------------------------------------------------------------------------

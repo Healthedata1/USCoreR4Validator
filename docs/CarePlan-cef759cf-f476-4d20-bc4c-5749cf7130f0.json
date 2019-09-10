@@ -1,0 +1,88 @@
+{
+  "resourceType": "CarePlan",
+  "id": "cef759cf-f476-4d20-bc4c-5749cf7130f0",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Musculoskeletal care.<br/>Activities: <ul><li>Musculoskeletal care</li><li>Musculoskeletal care</li><li>Musculoskeletal care</li></ul><br/>Care plan is meant to treat Gout.</div>"
+  },
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "872781000000100",
+          "display": "Musculoskeletal care"
+        }
+      ],
+      "text": "Musculoskeletal care"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+  },
+  "encounter": {
+    "reference": "Encounter/6a4741ed-47a2-4afb-9f21-af445dd543f1"
+  },
+  "period": {
+    "start": "2016-02-18T12:46:03-08:00"
+  },
+  "addresses": [
+    {
+      "reference": "Condition/3396d919-4907-45bc-986b-f5cc5b9905bc"
+    }
+  ],
+  "activity": [
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "183301007",
+              "display": "Physical exercises"
+            }
+          ],
+          "text": "Physical exercises"
+        },
+        "status": "in-progress"
+      }
+    },
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "229580007",
+              "display": "Ice therapy"
+            }
+          ],
+          "text": "Ice therapy"
+        },
+        "status": "in-progress"
+      }
+    },
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "226234005",
+              "display": "Healthy diet"
+            }
+          ],
+          "text": "Healthy diet"
+        },
+        "status": "in-progress"
+      }
+    }
+  ]
+}

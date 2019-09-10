@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="0000016d-1435-7d38-0000-0000000000c8"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0000016d-1435-7d38-0000-0000000000c8</p><p><b>meta</b>: </p><p><b>identifier</b>: 200</p><p><b>active</b>: true</p><p><b>name</b>: Creola518 Hirthe744 </p><p><b>address</b>: 680 CENTER STREET BROCKTON MA 02302 US </p><p><b>gender</b>: female</p></div>
+  </text>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="200"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Hirthe744"/>
+    <given value="Creola518"/>
+    <prefix value="Dr."/>
+  </name>
+  <address>
+    <line value="680 CENTER STREET"/>
+    <city value="BROCKTON"/>
+    <state value="MA"/>
+    <postalCode value="02302"/>
+    <country value="US"/>
+  </address>
+  <gender value="female"/>
+</Practitioner>

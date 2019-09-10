@@ -1,0 +1,140 @@
+{
+  "resourceType": "Claim",
+  "id": "87d8eb18-e249-4bad-8b7d-718d45203799",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 87d8eb18-e249-4bad-8b7d-718d45203799</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-8b42051b-e45b-4032-926a-747affe4e09d.html\">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>billablePeriod</b>: Jul 6, 2018, 1:46:03 PM --&gt; Jul 6, 2018, 2:01:03 PM</p><p><b>created</b>: Jul 6, 2018, 2:01:03 PM</p><p><b>provider</b>: <a href=\"Organization-ccbd6376-81a6-35c8-93d1-d6d519e417d6.html\">Generated Summary: id: ccbd6376-81a6-35c8-93d1-d6d519e417d6; ccbd6376-81a6-35c8-93d1-d6d519e417d6; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: STEWARD MEDICAL GROUP, INC; ph: 781-792-6000</a></p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/processpriority code 'normal' = 'Normal)</span></p><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: Information <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claiminformationcategory code 'info' = 'Information)</span></p><p><b>value</b>: <a href=\"Immunization-c8935449-a399-4758-87e4-e8ec45a88ea9.html\">Generated Summary: id: c8935449-a399-4758-87e4-e8ec45a88ea9; status: completed; <span title=\"Codes: {http://hl7.org/fhir/sid/cvx 140}\">Influenza, seasonal, injectable, preservative free</span>; occurrence: Jul 6, 2018, 1:46:03 PM; primarySource</a></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: Information <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claiminformationcategory code 'info' = 'Information)</span></p><p><b>value</b>: <a href=\"Immunization-915f4013-9b8b-47fb-96ce-587bd5371524.html\">Generated Summary: id: 915f4013-9b8b-47fb-96ce-587bd5371524; status: completed; <span title=\"Codes: {http://hl7.org/fhir/sid/cvx 113}\">Td (adult) preservative free</span>; occurrence: Jul 6, 2018, 1:46:03 PM; primarySource</a></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>Medicare</td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: General examination of patient (procedure) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '162673000' = 'General examination of patient', given as 'General examination of patient (procedure)'})</span></p><p><b>encounter</b>: <a href=\"Encounter-afbdacb5-48fc-41ce-bc9a-f0c95e71eb8e.html\">Generated Summary: id: afbdacb5-48fc-41ce-bc9a-f0c95e71eb8e; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://snomed.info/sct 162673000}\">General examination of patient (procedure)</span>; period: Jul 6, 2018, 1:46:03 PM --&gt; Jul 6, 2018, 2:01:03 PM</a></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>informationSequence</b>: 1</p><p><b>productOrService</b>: Influenza, seasonal, injectable, preservative free <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/sid/cvx code '140' = 'Influenza, seasonal, injectable, preservative free', given as 'Influenza, seasonal, injectable, preservative free'})</span></p><p><b>net</b>: </p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 3</p><p><b>informationSequence</b>: 2</p><p><b>productOrService</b>: Td (adult) preservative free <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/sid/cvx code '113' = 'Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed', given as 'Td (adult) preservative free'})</span></p><p><b>net</b>: </p></blockquote><p><b>total</b>: </p></div>"
+  },
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "institutional"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+  },
+  "billablePeriod": {
+    "start": "2018-07-06T13:46:03-07:00",
+    "end": "2018-07-06T14:01:03-07:00"
+  },
+  "created": "2018-07-06T14:01:03-07:00",
+  "provider": {
+    "reference": "Organization/ccbd6376-81a6-35c8-93d1-d6d519e417d6"
+  },
+  "priority": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+        "code": "normal"
+      }
+    ]
+  },
+  "supportingInfo": [
+    {
+      "sequence": 1,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "info"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Immunization/c8935449-a399-4758-87e4-e8ec45a88ea9"
+      }
+    },
+    {
+      "sequence": 2,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "info"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Immunization/915f4013-9b8b-47fb-96ce-587bd5371524"
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "sequence": 1,
+      "focal": true,
+      "coverage": {
+        "display": "Medicare"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "162673000",
+            "display": "General examination of patient (procedure)"
+          }
+        ],
+        "text": "General examination of patient (procedure)"
+      },
+      "encounter": [
+        {
+          "reference": "Encounter/afbdacb5-48fc-41ce-bc9a-f0c95e71eb8e"
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "informationSequence": [
+        1
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/cvx",
+            "code": "140",
+            "display": "Influenza, seasonal, injectable, preservative free"
+          }
+        ],
+        "text": "Influenza, seasonal, injectable, preservative free"
+      },
+      "net": {
+        "value": 140.52,
+        "currency": "USD"
+      }
+    },
+    {
+      "sequence": 3,
+      "informationSequence": [
+        2
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/cvx",
+            "code": "113",
+            "display": "Td (adult) preservative free"
+          }
+        ],
+        "text": "Td (adult) preservative free"
+      },
+      "net": {
+        "value": 140.52,
+        "currency": "USD"
+      }
+    }
+  ],
+  "total": {
+    "value": 129.16,
+    "currency": "USD"
+  }
+}

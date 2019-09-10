@@ -1,0 +1,45 @@
+{
+    "resourceType": "Observation",
+    "id": "ec99cf93-0bc1-43bc-8b7d-94068333bc14",
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "laboratory"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "49765-1",
+                "display": "Calcium"
+            }
+        ],
+        "text": "Calcium"
+    },
+    "subject": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+    },
+    "encounter": {
+        "reference": "Encounter/57cc5e10-bb5e-4047-944d-e09c79d41e2b"
+    },
+    "effectiveDateTime": "2017-06-30T13:46:03-07:00",
+    "issued": "2017-06-30T13:46:03.598-07:00",
+    "valueQuantity": {
+        "value": 9.527986148324011,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+    },
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+        ]
+    }
+}

@@ -3,66 +3,82 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="us-core-server"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">US Core Server CapabilityStatement</h2><ul><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2019-05-28</li><li>Published by: HL7 International - US Realm Steering Committee</li></ul><p><p>This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ONC 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and and the latest proposed ONC [U.S. Core Data for Interoperability (USCDI)].  US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p></p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The US Core Server <strong>SHALL</strong>:</p><ol><li>Support the US Core Patient resource profile.</li><li>Support at least one additional resource profile from the list of US Core Profiles.</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">Us Core Server CapabilityStatement</h2><ul><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2019-09-05</li><li>Published by: HL7 International - US Realm Steering Committee</li></ul><p><p>This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ONC 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and and the latest proposed ONC [U.S. Core Data for Interoperability (USCDI)].  US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p></p><h3 id="behavior">FHIR RESTful Capabilities</h3><p>The US Core Server <strong>SHALL</strong>:</p><ol><li>Support the US Core Patient resource profile.</li><li>Support at least one additional resource profile from the list of US Core Profiles.</li><li>Implement the RESTful behavior according to the FHIR specification.</li><li>Return the following response classes:
 <ul><li>(Status 400): invalid parameter</li><li>(Status 401/4xx): unauthorized request</li><li>(Status 403): insufficient scope</li><li>(Status 404): unknown resource</li><li>(Status 410): deleted resource.</li></ul>
-</li><li>Support json source formats for all US Core interactions.</li><li>Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.</li></ol><p>The US Core Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all US Core interactions.</li><li>Identify the US Core profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li><li>Support xml resource formats for all Argonaut questionnaire interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported Includes</th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#allergyintolerance">AllergyIntolerance</a></td><td><a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a></td><td>
+</li><li>Support json source formats for all US Core interactions.</li></ol><p>The US Core Server <strong>SHOULD</strong>:</p><ol><li>Support xml source formats for all US Core interactions.</li><li>Identify the US Core profiles supported as part of the FHIR <code>meta.profile</code> attribute for each instance.</li><li>Support xml resource formats for all Argonaut questionnaire interactions.</li></ol><p id="security"><strong>Security:</strong></p><ol><li>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li><li>A server <strong>SHALL</strong> reject any unauthorized requests by returning an <code>HTTP 401</code> unauthorized response code.</li></ol><p><strong>Summary of System Wide Interactions</strong></p><li><strong>MAY</strong> support the	<code>transaction</code> interaction.</li><li><strong>MAY</strong> support the	<code>batch</code> interaction.</li><li><strong>MAY</strong> support the	<code>search-system</code> interaction.</li><li><strong>MAY</strong> support the	<code>history-system</code> interaction.</li><h3 id="resource--details" class="no_toc">RESTful Capabilities by Resource/Profile:</h3><p><strong>Summary of Search Criteria</strong></p><table class="grid"><thead><tr><th>Resource Type</th><th>Supported Profiles</th><th>Supported Searches</th><th>Supported <code>_includes</code></th><th>Supported <code>_revincludes</code></th><th>Supported Operations</th></tr></thead><tbody><tr><td><a href="#allergyintolerance">AllergyIntolerance</a></td><td><a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a></td><td>
 							
 							patient, patient+clinical-status
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#careplan">CarePlan</a></td><td><a href="StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a></td><td>
-							, patient+category+status+date, patient+category+status, patient+category+date, patient+category
+							, patient+category, patient+category+status, patient+category+status+date, patient+category+date
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#careteam">CareTeam</a></td><td><a href="StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a></td><td>
 							, patient+status
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#condition">Condition</a></td><td><a href="StructureDefinition-us-core-condition.html">US Core Condition Profile</a></td><td>
 							
-							patient, patient+code, patient+category, patient+clinical-status, patient+onset-date
+							patient, patient+code, patient+clinical-status, patient+onset-date, patient+category
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
-						</td></tr><tr><td><a href="#device">Device</a></td><td><a href="StructureDefinition-us-core-device.html">US Core Device Profile</a></td><td>
+						</td></tr><tr><td><a href="#device">Device</a></td><td><a href="StructureDefinition-us-core-implantable-device.html">US Core Implantable Device Profile</a></td><td>
 							
 							patient, patient+type
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#diagnosticreport">DiagnosticReport</a></td><td><a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note exchange</a>, 
 
 						<a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></td><td>
-							, patient+code, patient+category, patient+code+date, patient+category+date, patient+category+date, patient+category, patient+status
+							, patient+category+date, patient+code+date, patient+status, patient+code, patient+category, patient+category, patient+category+date
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#documentreference">DocumentReference</a></td><td><a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a></td><td>
 							
 							_id, 
-							patient, patient+type, patient+category+date, patient+type+period, patient+category, patient+status
+							patient, patient+type, patient+category+date, patient+type+period, patient+status, patient+category
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 							$docref
 						</td></tr><tr><td><a href="#encounter">Encounter</a></td><td><a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a></td><td>
 							
 							_id, 
 							identifier, 
-							patient, class+patient, patient+type, date+patient, patient+status
+							patient, date+patient, class+patient, patient+type, patient+status
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#goal">Goal</a></td><td><a href="StructureDefinition-us-core-goal.html">US Core Goal Profile</a></td><td>
 							
@@ -70,13 +86,17 @@
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#immunization">Immunization</a></td><td><a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a></td><td>
 							
-							patient, patient+status, patient+date
+							patient, patient+date, patient+status
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#location">Location</a></td><td><a href="StructureDefinition-us-core-location.html">US Core Location Profile</a></td><td>
 							
@@ -88,26 +108,24 @@
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#medication">Medication</a></td><td><a href="StructureDefinition-us-core-medication.html">US Core Medication Profile</a></td><td>
 							
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#medicationrequest">MedicationRequest</a></td><td><a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a></td><td>
-							
-							patient, patient+status, patient+authoredon
+							, patient+intent+authoredon, patient+intent+encounter, patient+intent, patient+intent+status
 						</td><td>
 							MedicationRequest:medication
 						</td><td>
-							
-						</td></tr><tr><td><a href="#medicationstatement">MedicationStatement</a></td><td><a href="StructureDefinition-us-core-medicationstatement.html">US Core MedicationStatement Profile</a></td><td>
-							
-							patient, patient+status, patient+effective
-						</td><td>
-							MedicationStatement:medication
-						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#observation">Observation</a></td><td><a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a>, 
 
@@ -115,11 +133,15 @@
 
 						<a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>, 
 
-						<a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a></td><td>
-							, patient+code, patient+category+status, patient+code+date, patient+category+date, patient+category
+						<a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a>, 
+
+						<a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a></td><td>
+							, patient+category+date, patient+code+date, patient+category+status, patient+code, patient+category
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#organization">Organization</a></td><td><a href="StructureDefinition-us-core-organization.html">US Core Organization Profile</a></td><td>
 							
@@ -128,15 +150,19 @@
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#patient">Patient</a></td><td><a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a></td><td>
 							
 							_id, 
 							identifier, 
-							name, birthdate+name, gender+name, birthdate+family, family+gender
+							name, birthdate+family, birthdate+name, family+gender, gender+name
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#practitioner">Practitioner</a></td><td><a href="StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a></td><td>
 							
@@ -145,6 +171,8 @@
 						</td><td>
 							
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#practitionerrole">PractitionerRole</a></td><td><a href="StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a></td><td>
 							
@@ -153,14 +181,37 @@
 						</td><td>
 							PractitionerRole:endpoint, PractitionerRole:practitioner
 						</td><td>
+              Provenance:target
+            </td><td>
 							
 						</td></tr><tr><td><a href="#procedure">Procedure</a></td><td><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td><td>
 							
-							patient, patient+status, patient+date, patient+code+date
+							patient, patient+date, patient+code+date, patient+status
+						</td><td>
+							
+						</td><td>
+              Provenance:target
+            </td><td>
+							
+						</td></tr><tr><td><a href="#provenance">Provenance</a></td><td><a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a></td><td>
+							
+						</td><td>
+							
+						</td><td>
+              
+            </td><td>
+							
+						</td></tr><tr><td><a href="#valueset">ValueSet</a></td><td>
+
 						</td><td>
 							
 						</td><td>
 							
+						</td><td>
+              
+            </td><td>
+							
+							$expand
 						</td></tr></tbody></table><br/><h4 id="allergyintolerance" class="no_toc">AllergyIntolerance</h4><p>Supported Profiles:
 				
 											<a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a>
@@ -178,6 +229,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a AllergyIntolerance resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/AllergyIntolerance/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/AllergyIntolerance?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-allergyintolerance-clinical-status.html">clinical-status</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/AllergyIntolerance?clinical-status=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-allergyintolerance-patient.html">patient</a></td><td>
@@ -201,6 +258,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a CarePlan resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/CarePlan/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/CarePlan?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-careplan-category.html">category</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/CarePlan?category=[system]|[code]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-careplan-date.html">date</a></td><td>
@@ -209,15 +272,15 @@
 							reference
 						</td><td><code class="highlighter-rouge">GET [base]/CarePlan?patient=[patient]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-careplan-status.html">status</a></td><td>
 							token
-						</td><td><code class="highlighter-rouge">GET [base]/CarePlan?status=[status]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>patient+category+status+date
-						</td><td>reference+token+token+date
-						</td><td><code class="highlighter-rouge">GET [base]/CarePlan?patient=[patient]&amp;category=[system]|[code]&amp;status=[status]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+category+status
-						</td><td>reference+token+token
-						</td><td><code class="highlighter-rouge">GET [base]/CarePlan?patient=[patient]&amp;category=[system]|[code]&amp;status=[status]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+category+date
-						</td><td>reference+token+date
-						</td><td><code class="highlighter-rouge">GET [base]/CarePlan?patient=[patient]&amp;category=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+category
+						</td><td><code class="highlighter-rouge">GET [base]/CarePlan?status=[status]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td>patient+category
 						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/CarePlan?patient=[patient]&amp;category=[system]|[code]</code></td></tr></tbody></table><hr/><h4 id="careteam" class="no_toc">CareTeam</h4><p>Supported Profiles:
+						</td><td><code class="highlighter-rouge">GET [base]/CarePlan?patient=[patient]&amp;category=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+category+status
+						</td><td>reference+token+token
+						</td><td><code class="highlighter-rouge">GET [base]/CarePlan?patient=[patient]&amp;category=[system]|[code]&amp;status=[status]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+category+status+date
+						</td><td>reference+token+token+date
+						</td><td><code class="highlighter-rouge">GET [base]/CarePlan?patient=[patient]&amp;category=[system]|[code]&amp;status=[status]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+category+date
+						</td><td>reference+token+date
+						</td><td><code class="highlighter-rouge">GET [base]/CarePlan?patient=[patient]&amp;category=[system]|[code]&amp;date=[date]</code></td></tr></tbody></table><hr/><h4 id="careteam" class="no_toc">CareTeam</h4><p>Supported Profiles:
 				
 											<a href="StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a>
 				
@@ -234,6 +297,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a CareTeam resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/CareTeam/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/CareTeam?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-careteam-patient.html">patient</a></td><td>
 							reference
 						</td><td><code class="highlighter-rouge">GET [base]/CareTeam?patient=[patient]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-careteam-status.html">status</a></td><td>
@@ -257,6 +326,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a Condition resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Condition/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/Condition?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-condition-category.html">category</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/Condition?category=[system]|[code]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-condition-clinical-status.html">clinical-status</a></td><td>
@@ -269,15 +344,15 @@
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/Condition?code=[system]|[code]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>patient+code
 						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/Condition?patient=[patient]&amp;code=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+category
-						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/Condition?patient=[patient]&amp;category=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+clinical-status
+						</td><td><code class="highlighter-rouge">GET [base]/Condition?patient=[patient]&amp;code=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+clinical-status
 						</td><td>reference+token
 						</td><td><code class="highlighter-rouge">GET [base]/Condition?patient=[patient]&amp;clinical-status=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+onset-date
 						</td><td>reference+date
-						</td><td><code class="highlighter-rouge">GET [base]/Condition?patient=[patient]&amp;onset-date=[onset-date]</code></td></tr></tbody></table><hr/><h4 id="device" class="no_toc">Device</h4><p>Supported Profiles:
+						</td><td><code class="highlighter-rouge">GET [base]/Condition?patient=[patient]&amp;onset-date=[onset-date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+category
+						</td><td>reference+token
+						</td><td><code class="highlighter-rouge">GET [base]/Condition?patient=[patient]&amp;category=[system]|[code]</code></td></tr></tbody></table><hr/><h4 id="device" class="no_toc">Device</h4><p>Supported Profiles:
 				
-											<a href="StructureDefinition-us-core-device.html">US Core Device Profile</a>
+											<a href="StructureDefinition-us-core-implantable-device.html">US Core Implantable Device Profile</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -292,6 +367,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a Device resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Device/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/Device?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-device-patient.html">patient</a></td><td>
 							reference
 						</td><td><code class="highlighter-rouge">GET [base]/Device?patient=[patient]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-device-type.html">type</a></td><td>
@@ -318,6 +399,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a DiagnosticReport resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/DiagnosticReport/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/DiagnosticReport?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-diagnosticreport-status.html">status</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?status=[status]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-diagnosticreport-patient.html">patient</a></td><td>
@@ -328,21 +415,21 @@
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?code=[system]|[code]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-diagnosticreport-date.html">date</a></td><td>
 							date
-						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?date=[date]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td>patient+code
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?date=[date]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td>patient+category+date
+						</td><td>reference+token+date
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;category=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+code+date
+						</td><td>reference+token+date
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;code=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+status
+						</td><td>reference+token
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;status=[status]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+code
 						</td><td>reference+token
 						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;code=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+category
 						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;category=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+code+date
-						</td><td>reference+token+date
-						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;code=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+category+date
-						</td><td>reference+token+date
-						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;category=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+category+date
-						</td><td>reference+token+date
-						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;category=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+category
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;category=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+category
 						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;category=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+status
-						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;status=[status]</code></td></tr></tbody></table><hr/><h4 id="documentreference" class="no_toc">DocumentReference</h4><p>Supported Profiles:
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;category=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+category+date
+						</td><td>reference+token+date
+						</td><td><code class="highlighter-rouge">GET [base]/DiagnosticReport?patient=[patient]&amp;category=[system]|[code]&amp;date=[date]</code></td></tr></tbody></table><hr/><h4 id="documentreference" class="no_toc">DocumentReference</h4><p>Supported Profiles:
 				
 											<a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a>
 				
@@ -361,6 +448,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a DocumentReference resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/DocumentReference/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/DocumentReference?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-documentreference-id.html">_id</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?_id=[id]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-documentreference-status.html">status</a></td><td>
@@ -381,11 +474,11 @@
 						</td><td>reference+token+date
 						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]&amp;category=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+type+period
 						</td><td>reference+token+date
-						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]&amp;type=[system]|[code]&amp;period=[period]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+category
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]&amp;type=[system]|[code]&amp;period=[period]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+status
 						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]&amp;category=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+status
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]&amp;status=[status]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+category
 						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]&amp;status=[status]</code></td></tr></tbody></table><hr/><h4 id="encounter" class="no_toc">Encounter</h4><p>Supported Profiles:
+						</td><td><code class="highlighter-rouge">GET [base]/DocumentReference?patient=[patient]&amp;category=[system]|[code]</code></td></tr></tbody></table><hr/><h4 id="encounter" class="no_toc">Encounter</h4><p>Supported Profiles:
 				
 											<a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>
 				
@@ -402,6 +495,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a Encounter resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Encounter/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/Encounter?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-encounter-id.html">_id</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/Encounter?_id=[id]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-encounter-class.html">class</a></td><td>
@@ -416,13 +515,13 @@
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/Encounter?status=[status]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-encounter-type.html">type</a></td><td>
 							token
-						</td><td><code class="highlighter-rouge">GET [base]/Encounter?type=[system]|[code]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>class+patient
+						</td><td><code class="highlighter-rouge">GET [base]/Encounter?type=[system]|[code]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td>date+patient
+						</td><td>date+reference
+						</td><td><code class="highlighter-rouge">GET [base]/Encounter?date=[date]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>class+patient
 						</td><td>token+reference
 						</td><td><code class="highlighter-rouge">GET [base]/Encounter?class=[system]|[code]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+type
 						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/Encounter?patient=[patient]&amp;type=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td>date+patient
-						</td><td>date+reference
-						</td><td><code class="highlighter-rouge">GET [base]/Encounter?date=[date]&amp;patient=[patient]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+status
+						</td><td><code class="highlighter-rouge">GET [base]/Encounter?patient=[patient]&amp;type=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+status
 						</td><td>reference+token
 						</td><td><code class="highlighter-rouge">GET [base]/Encounter?patient=[patient]&amp;status=[status]</code></td></tr></tbody></table><hr/><h4 id="goal" class="no_toc">Goal</h4><p>Supported Profiles:
 				
@@ -441,6 +540,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a Goal resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Goal/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/Goal?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-goal-lifecycle-status.html">lifecycle-status</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/Goal?lifecycle-status=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-goal-patient.html">patient</a></td><td>
@@ -468,17 +573,23 @@
 					A Server <strong>SHALL</strong> be capable of returning a Immunization resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Immunization/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/Immunization?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-immunization-patient.html">patient</a></td><td>
 							reference
 						</td><td><code class="highlighter-rouge">GET [base]/Immunization?patient=[patient]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-immunization-status.html">status</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/Immunization?status=[status]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-immunization-date.html">date</a></td><td>
 							date
-						</td><td><code class="highlighter-rouge">GET [base]/Immunization?date=[date]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>patient+status
-						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/Immunization?patient=[patient]&amp;status=[status]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+date
+						</td><td><code class="highlighter-rouge">GET [base]/Immunization?date=[date]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>patient+date
 						</td><td>reference+date
-						</td><td><code class="highlighter-rouge">GET [base]/Immunization?patient=[patient]&amp;date=[date]</code></td></tr></tbody></table><hr/><h4 id="location" class="no_toc">Location</h4><p>Supported Profiles:
+						</td><td><code class="highlighter-rouge">GET [base]/Immunization?patient=[patient]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+status
+						</td><td>reference+token
+						</td><td><code class="highlighter-rouge">GET [base]/Immunization?patient=[patient]&amp;status=[status]</code></td></tr></tbody></table><hr/><h4 id="location" class="no_toc">Location</h4><p>Supported Profiles:
 				
 											<a href="StructureDefinition-us-core-location.html">US Core Location Profile</a>
 				
@@ -495,6 +606,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a Location resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Location/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/Location?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-location-name.html">name</a></td><td>
 							string
 						</td><td><code class="highlighter-rouge">GET [base]/Location?name=[name]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-location-address.html">address</a></td><td>
@@ -522,11 +639,17 @@
 					A Server <strong>SHALL</strong> be capable of returning a Medication resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Medication/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/Medication?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><hr/><h4 id="medicationrequest" class="no_toc">MedicationRequest</h4><p>Supported Profiles:
 				
 											<a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
 				
-				</p><p>Resource Specific Documentation:</p><blockquote><p>The MedicationStatement resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be <a href="http://hl7.org/fhir/R4/references.html#contained">contained</a> or an external resource. The server application <strong>MAY</strong> choose any one way or more than one method, but if an external reference to Medication is used, the server <strong>SHALL</strong> support the _include` parameter for searching this element. The client application must support all methods.</p><p>For example, A server <strong>SHALL</strong> be capable of returning all medications for a patient using one of or both:</p><p><code>GET /MedicationStatement?patient=[id]</code></p><p><code>GET /MedicationStatement?patient=[id]&amp;_include=MedicationStatement:medication</code></p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+				</p><p>Resource Specific Documentation:</p><blockquote><p>The MedicationRequest resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be <a href="http://hl7.org/fhir/R4/references.html#contained">contained</a> or an external resource. The server application <strong>MAY</strong> choose any one way or more than one method, but if an external reference to Medication is used, the server <strong>SHALL</strong> support the _include` parameter for searching this element. The client application must support all methods.</p><p>For example, A server <strong>SHALL</strong> be capable of returning all medications for a patient using one of or both:</p><p><code>GET /MedicationRequest?patient=[id]</code></p><p><code>GET /MedicationRequest?patient=[id]&amp;_include=MedicationRequest:medication</code></p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
 																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
 																							<code>vread</code>, 
@@ -545,50 +668,31 @@
 					
 						MedicationRequest:medication - <code class="highlighter-rouge">GET [base]/MedicationRequest?[parameter=value]&amp;_include=MedicationRequest:medication</code>
 					
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/MedicationRequest?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-medicationrequest-status.html">status</a></td><td>
 							token
-						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?status=[status]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-medicationrequest-patient.html">patient</a></td><td>
-							reference
-						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?patient=[patient]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-medicationrequest-authoredon.html">authoredon</a></td><td>
-							date
-						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?authoredon=[authoredon]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td>patient+status
-						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?patient=[patient]&amp;status=[status]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+authoredon
-						</td><td>reference+date
-						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?patient=[patient]&amp;authoredon=[authoredon]</code></td></tr></tbody></table><hr/><h4 id="medicationstatement" class="no_toc">MedicationStatement</h4><p>Supported Profiles:
-				
-											<a href="StructureDefinition-us-core-medicationstatement.html">US Core MedicationStatement Profile</a>
-				
-				</p><p>Resource Specific Documentation:</p><blockquote><p>The MedicationStatement resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be <a href="http://hl7.org/fhir/R4/references.html#contained">contained</a> or an external resource. The server application <strong>MAY</strong> choose any one way or more than one method, but if an external reference to Medication is used, the server <strong>SHALL</strong> support the _include` parameter for searching this element. The client application must support all methods.</p><p>For example, A server <strong>SHALL</strong> be capable of returning all medications for a patient using one of or both:</p><p><code>GET /MedicationStatement?patient=[id]</code></p><p><code>GET /MedicationStatement?patient=[id]&amp;_include=MedicationStatement:medication</code></p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
-																							<code>search-type</code>, 
-																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
-																							<code>vread</code>, 
-																							<code>history-instance</code>.</li><li><strong>MAY</strong> support 
-																							<code>create</code>, 
-																							<code>update</code>, 
-																							<code>patch</code>, 
-																							<code>delete</code>, 
-																							<code>history-type</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
-					A Server <strong>SHALL</strong> be capable of returning a MedicationStatement resource using:
-					<br/>
-						<code class="highlighter-rouge">GET [base]/MedicationStatement/[id]</code>
-				</li><br/><li>
-					A Server <strong>SHOULD</strong> be capable of supporting the following _includes:
-					<br/>
-					
-						MedicationStatement:medication - <code class="highlighter-rouge">GET [base]/MedicationStatement?[parameter=value]&amp;_include=MedicationStatement:medication</code>
-					
-				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-medicationstatement-status.html">status</a></td><td>
+						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?status=[status]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-medicationrequest-intent.html">intent</a></td><td>
 							token
-						</td><td><code class="highlighter-rouge">GET [base]/MedicationStatement?status=[status]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-medicationstatement-patient.html">patient</a></td><td>
+						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?intent=[system]|[code]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-medicationrequest-patient.html">patient</a></td><td>
 							reference
-						</td><td><code class="highlighter-rouge">GET [base]/MedicationStatement?patient=[patient]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-medicationstatement-effective.html">effective</a></td><td>
+						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?patient=[patient]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-medicationrequest-encounter.html">encounter</a></td><td>
+							reference
+						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?encounter=[encounter]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-medicationrequest-authoredon.html">authoredon</a></td><td>
 							date
-						</td><td><code class="highlighter-rouge">GET [base]/MedicationStatement?effective=[effective]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>patient+status
+						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?authoredon=[authoredon]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>patient+intent+authoredon
+						</td><td>reference+token+date
+						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?patient=[patient]&amp;intent=[system]|[code]&amp;authoredon=[authoredon]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+intent+encounter
+						</td><td>reference+token+reference
+						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?patient=[patient]&amp;intent=[system]|[code]&amp;encounter=[encounter]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+intent
 						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/MedicationStatement?patient=[patient]&amp;status=[status]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+effective
-						</td><td>reference+date
-						</td><td><code class="highlighter-rouge">GET [base]/MedicationStatement?patient=[patient]&amp;effective=[effective]</code></td></tr></tbody></table><hr/><h4 id="observation" class="no_toc">Observation</h4><p>Supported Profiles:
+						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?patient=[patient]&amp;intent=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+intent+status
+						</td><td>reference+token+token
+						</td><td><code class="highlighter-rouge">GET [base]/MedicationRequest?patient=[patient]&amp;intent=[system]|[code]&amp;status=[status]</code></td></tr></tbody></table><hr/><h4 id="observation" class="no_toc">Observation</h4><p>Supported Profiles:
 				
 											<a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a>, 
 				
@@ -596,7 +700,9 @@
 				
 											<a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>, 
 				
-											<a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a>
+											<a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a>, 
+				
+											<a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a>
 				
 				</p><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
 																							<code>search-type</code>, 
@@ -611,6 +717,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a Observation resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Observation/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/Observation?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-observation-status.html">status</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/Observation?status=[status]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-observation-category.html">category</a></td><td>
@@ -621,15 +733,15 @@
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/Observation?date=[date]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-observation-patient.html">patient</a></td><td>
 							reference
-						</td><td><code class="highlighter-rouge">GET [base]/Observation?patient=[patient]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td>patient+code
-						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/Observation?patient=[patient]&amp;code=[system]|[code]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+category+status
+						</td><td><code class="highlighter-rouge">GET [base]/Observation?patient=[patient]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td>patient+category+date
+						</td><td>reference+token+date
+						</td><td><code class="highlighter-rouge">GET [base]/Observation?patient=[patient]&amp;category=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+code+date
+						</td><td>reference+token+date
+						</td><td><code class="highlighter-rouge">GET [base]/Observation?patient=[patient]&amp;code=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+category+status
 						</td><td>reference+token+token
-						</td><td><code class="highlighter-rouge">GET [base]/Observation?patient=[patient]&amp;category=[system]|[code]&amp;status=[status]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+code+date
-						</td><td>reference+token+date
-						</td><td><code class="highlighter-rouge">GET [base]/Observation?patient=[patient]&amp;code=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+category+date
-						</td><td>reference+token+date
-						</td><td><code class="highlighter-rouge">GET [base]/Observation?patient=[patient]&amp;category=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+category
+						</td><td><code class="highlighter-rouge">GET [base]/Observation?patient=[patient]&amp;category=[system]|[code]&amp;status=[status]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+code
+						</td><td>reference+token
+						</td><td><code class="highlighter-rouge">GET [base]/Observation?patient=[patient]&amp;code=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+category
 						</td><td>reference+token
 						</td><td><code class="highlighter-rouge">GET [base]/Observation?patient=[patient]&amp;category=[system]|[code]</code></td></tr></tbody></table><hr/><h4 id="organization" class="no_toc">Organization</h4><p>Supported Profiles:
 				
@@ -648,6 +760,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a Organization resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Organization/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/Organization?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-organization-name.html">name</a></td><td>
 							string
 						</td><td><code class="highlighter-rouge">GET [base]/Organization?name=[name]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-organization-address.html">address</a></td><td>
@@ -669,6 +787,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a Patient resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Patient/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/Patient?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-patient-id.html">_id</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/Patient?_id=[id]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-patient-birthdate.html">birthdate</a></td><td>
@@ -683,15 +807,15 @@
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/Patient?identifier=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-patient-name.html">name</a></td><td>
 							string
-						</td><td><code class="highlighter-rouge">GET [base]/Patient?name=[name]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td>birthdate+name
+						</td><td><code class="highlighter-rouge">GET [base]/Patient?name=[name]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>birthdate+family
 						</td><td>date+string
-						</td><td><code class="highlighter-rouge">GET [base]/Patient?birthdate=[birthdate]&amp;name=[name]</code></td></tr><tr><td><strong>SHALL</strong></td><td>gender+name
-						</td><td>token+string
-						</td><td><code class="highlighter-rouge">GET [base]/Patient?gender=[system]|[code]&amp;name=[name]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>birthdate+family
+						</td><td><code class="highlighter-rouge">GET [base]/Patient?birthdate=[birthdate]&amp;family=[family]</code></td></tr><tr><td><strong>SHALL</strong></td><td>birthdate+name
 						</td><td>date+string
-						</td><td><code class="highlighter-rouge">GET [base]/Patient?birthdate=[birthdate]&amp;family=[family]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>family+gender
+						</td><td><code class="highlighter-rouge">GET [base]/Patient?birthdate=[birthdate]&amp;name=[name]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>family+gender
 						</td><td>string+token
-						</td><td><code class="highlighter-rouge">GET [base]/Patient?family=[family]&amp;gender=[system]|[code]</code></td></tr></tbody></table><hr/><h4 id="practitioner" class="no_toc">Practitioner</h4><p>Supported Profiles:
+						</td><td><code class="highlighter-rouge">GET [base]/Patient?family=[family]&amp;gender=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td>gender+name
+						</td><td>token+string
+						</td><td><code class="highlighter-rouge">GET [base]/Patient?gender=[system]|[code]&amp;name=[name]</code></td></tr></tbody></table><hr/><h4 id="practitioner" class="no_toc">Practitioner</h4><p>Supported Profiles:
 				
 											<a href="StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
 				
@@ -708,6 +832,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a Practitioner resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Practitioner/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/Practitioner?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-practitioner-name.html">name</a></td><td>
 							string
 						</td><td><code class="highlighter-rouge">GET [base]/Practitioner?name=[name]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-practitioner-identifier.html">identifier</a></td><td>
@@ -737,6 +867,12 @@
 					
 						PractitionerRole:practitioner - <code class="highlighter-rouge">GET [base]/PractitionerRole?[parameter=value]&amp;_include=PractitionerRole:practitioner</code>
 					
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/PractitionerRole?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-practitionerrole-specialty.html">specialty</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/PractitionerRole?specialty=[system]|[code]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-practitionerrole-practitioner.html">practitioner</a></td><td>
@@ -758,6 +894,12 @@
 					A Server <strong>SHALL</strong> be capable of returning a Procedure resource using:
 					<br/>
 						<code class="highlighter-rouge">GET [base]/Procedure/[id]</code>
+				</li><br/><li>
+					A Server <strong>SHOULD</strong> be capable of supporting the following _revincludes:
+					<br/>
+					
+						Provenance:target - <code class="highlighter-rouge">GET [base]/Procedure?[parameter=value]&amp;_revinclude=Provenance:target</code>
+					
 				</li><br/></ul><p>Search Parameter Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Example</th></tr></thead><tbody><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-procedure-status.html">status</a></td><td>
 							token
 						</td><td><code class="highlighter-rouge">GET [base]/Procedure?status=[status]</code></td></tr><tr><td><strong>SHALL</strong></td><td><a href="SearchParameter-us-core-procedure-patient.html">patient</a></td><td>
@@ -766,21 +908,40 @@
 							date
 						</td><td><code class="highlighter-rouge">GET [base]/Procedure?date=[date]</code></td></tr><tr><td><strong>MAY</strong></td><td><a href="SearchParameter-us-core-procedure-code.html">code</a></td><td>
 							token
-						</td><td><code class="highlighter-rouge">GET [base]/Procedure?code=[system]|[code]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHOULD</strong></td><td>patient+status
-						</td><td>reference+token
-						</td><td><code class="highlighter-rouge">GET [base]/Procedure?patient=[patient]&amp;status=[status]</code></td></tr><tr><td><strong>SHALL</strong></td><td>patient+date
+						</td><td><code class="highlighter-rouge">GET [base]/Procedure?code=[system]|[code]</code></td></tr></tbody></table><p>Search Parameter Combination Summary:</p><table class="grid"><thead><tr><th>Conformance</th><th>Parameter Combination</th><th>Types</th><th>Example</th></tr></thead><tbody><tr><td><strong>SHALL</strong></td><td>patient+date
 						</td><td>reference+date
 						</td><td><code class="highlighter-rouge">GET [base]/Procedure?patient=[patient]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+code+date
 						</td><td>reference+token+date
-						</td><td><code class="highlighter-rouge">GET [base]/Procedure?patient=[patient]&amp;code=[system]|[code]&amp;date=[date]</code></td></tr></tbody></table><hr/><br/></div>
+						</td><td><code class="highlighter-rouge">GET [base]/Procedure?patient=[patient]&amp;code=[system]|[code]&amp;date=[date]</code></td></tr><tr><td><strong>SHOULD</strong></td><td>patient+status
+						</td><td>reference+token
+						</td><td><code class="highlighter-rouge">GET [base]/Procedure?patient=[patient]&amp;status=[status]</code></td></tr></tbody></table><hr/><h4 id="provenance" class="no_toc">Provenance</h4><p>Supported Profiles:
+				
+											<a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a>
+				
+				</p><p>Resource Specific Documentation:</p><blockquote><p>If a system receives a provider in <code>Provenance.agent.who</code> as free text they must capture who sent them the information as the organization. On request they <strong>SHALL</strong> provide this organization as the source and <strong>MAY</strong> include the free text provider.</p></blockquote><p>Reference Policy: <code>resolves</code></p><p>Profile Interaction Summary:</p><ul><li><strong>SHALL</strong> support 
+																							<code>search-type</code>, 
+																							<code>read</code>.</li><li><strong>SHOULD</strong> support 
+																							<code>vread</code>, 
+																							<code>history-instance</code>.</li><li><strong>MAY</strong> support 
+																							<code>create</code>, 
+																							<code>update</code>, 
+																							<code>patch</code>, 
+																							<code>delete</code>, 
+																							<code>history-type</code>.</li></ul><p>Fetch and Search Criteria:</p><ul><li>
+					A Server <strong>SHALL</strong> be capable of returning a Provenance resource using:
+					<br/>
+						<code class="highlighter-rouge">GET [base]/Provenance/[id]</code>
+				</li><br/></ul><hr/><h4 id="valueset" class="no_toc">ValueSet</h4><p>Operation  Summary:</p><ul><li><strong>SHOULD</strong> support the 
+																									<a href="http://hl7.org/fhir/R4/valueset-operation-expand.html">$expand</a> operation
+																									<p><p>A  client can determine the note and report types support by a server by invoking the standard FHIR Value Set Expansion ($expand) operation defined in the FHIR R4 specification. Because servers may support different read and write formats, it also is used to determine the formats (for example, text, pdf) the server supports read and write transactions.</p></p></li></ul><hr/><br/></div>
   </text>
   <url value="http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server"/>
   <version value="0.0.0"/>
-  <name value="USCoreServerCapabilityStatement"/>
-  <title value="US Core Server CapabilityStatement"/>
+  <name value="UsCoreServerCapabilityStatement"/>
+  <title value="Us Core Server CapabilityStatement"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2019-05-28T00:00:00-07:00"/>
+  <date value="2019-09-05T00:00:00-07:00"/>
   <publisher value="HL7 International - US Realm Steering Committee"/>
   <contact>
     <telecom>
@@ -801,10 +962,10 @@
   <format value="xml"/>
   <format value="json"/>
   <patchFormat value="application/json-patch+json"/>
-  <implementationGuide value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core.r4-4.0.0"/>
+  <implementationGuide value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core-3.0.1"/>
   <rest>
     <mode value="server"/>
-    <documentation value="The US Core Server **SHALL**:&#xA;&#xA;1. Support the US Core Patient resource profile.&#xA;1. Support at least one additional resource profile from the list of US Core Profiles.&#xA;1. Implement the RESTful behavior according to the FHIR specification.&#xA;1. Return the following response classes:&#xA;   - (Status 400): invalid parameter&#xA;   - (Status 401/4xx): unauthorized request&#xA;   - (Status 403): insufficient scope&#xA;   - (Status 404): unknown resource&#xA;   - (Status 410): deleted resource.&#xA;1. Support json source formats for all US Core interactions.&#xA;1. Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.&#xA;&#xA;The US Core Server **SHOULD**:&#xA;&#xA;1. Support xml source formats for all US Core interactions.&#xA;1. Identify the US Core profiles supported as part of the FHIR `meta.profile` attribute for each instance.&#xA;1. Support xml resource formats for all Argonaut questionnaire interactions."/>
+    <documentation value="The US Core Server **SHALL**:&#xA;&#xA;1. Support the US Core Patient resource profile.&#xA;1. Support at least one additional resource profile from the list of US Core Profiles.&#xA;1. Implement the RESTful behavior according to the FHIR specification.&#xA;1. Return the following response classes:&#xA;   - (Status 400): invalid parameter&#xA;   - (Status 401/4xx): unauthorized request&#xA;   - (Status 403): insufficient scope&#xA;   - (Status 404): unknown resource&#xA;   - (Status 410): deleted resource.&#xA;1. Support json source formats for all US Core interactions.&#xA;&#xA;The US Core Server **SHOULD**:&#xA;&#xA;1. Support xml source formats for all US Core interactions.&#xA;1. Identify the US Core profiles supported as part of the FHIR `meta.profile` attribute for each instance.&#xA;1. Support xml resource formats for all Argonaut questionnaire interactions."/>
     <security>
       <description value="1. See the [General Security Considerations](security.html) section for requirements and recommendations.&#xA;1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."/>
     </security>
@@ -824,7 +985,6 @@
         </extension>
       </extension>
       <type value="AllergyIntolerance"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -881,6 +1041,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -904,51 +1065,6 @@
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
-          <valueString value="category"/>
-        </extension>
-        <extension url="required">
-          <valueString value="status"/>
-        </extension>
-        <extension url="required">
-          <valueString value="date"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
-          <valueString value="category"/>
-        </extension>
-        <extension url="required">
-          <valueString value="status"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
-          <valueString value="category"/>
-        </extension>
-        <extension url="required">
-          <valueString value="date"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
         <extension url="required">
@@ -958,8 +1074,52 @@
           <valueString value="category"/>
         </extension>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="category"/>
+        </extension>
+        <extension url="required">
+          <valueString value="status"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="category"/>
+        </extension>
+        <extension url="required">
+          <valueString value="status"/>
+        </extension>
+        <extension url="required">
+          <valueString value="date"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="category"/>
+        </extension>
+        <extension url="required">
+          <valueString value="date"/>
+        </extension>
+      </extension>
       <type value="CarePlan"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -1016,6 +1176,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -1065,7 +1226,6 @@
         </extension>
       </extension>
       <type value="CareTeam"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -1122,6 +1282,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -1162,17 +1323,6 @@
           <valueString value="patient"/>
         </extension>
         <extension url="required">
-          <valueString value="category"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
           <valueString value="clinical-status"/>
         </extension>
       </extension>
@@ -1187,8 +1337,18 @@
           <valueString value="onset-date"/>
         </extension>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="category"/>
+        </extension>
+      </extension>
       <type value="Condition"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -1245,6 +1405,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -1302,8 +1463,7 @@
         </extension>
       </extension>
       <type value="Device"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -1359,6 +1519,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -1388,18 +1549,10 @@
           <valueString value="patient"/>
         </extension>
         <extension url="required">
-          <valueString value="code"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
           <valueString value="category"/>
+        </extension>
+        <extension url="required">
+          <valueString value="date"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -1414,45 +1567,6 @@
         </extension>
         <extension url="required">
           <valueString value="date"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
-          <valueString value="category"/>
-        </extension>
-        <extension url="required">
-          <valueString value="date"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
-          <valueString value="category"/>
-        </extension>
-        <extension url="required">
-          <valueString value="date"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
-          <valueString value="category"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -1466,8 +1580,54 @@
           <valueString value="status"/>
         </extension>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="code"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="category"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="category"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="category"/>
+        </extension>
+        <extension url="required">
+          <valueString value="date"/>
+        </extension>
+      </extension>
       <type value="DiagnosticReport"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-note"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"/>
       <interaction>
@@ -1526,6 +1686,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -1612,17 +1773,6 @@
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
-          <valueString value="category"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
         </extension>
         <extension url="required">
@@ -1632,8 +1782,18 @@
           <valueString value="status"/>
         </extension>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="category"/>
+        </extension>
+      </extension>
       <type value="DocumentReference"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
       <documentation value="The DocumentReference.type binding SHALL support at a minimum the [5 Common Clinical Notes](ValueSet-us-core-clinical-note-type.html) and may extend to the full US Core DocumentReference Type Value Set"/>
       <interaction>
@@ -1691,6 +1851,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -1762,6 +1923,17 @@
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <extension url="required">
+          <valueString value="date"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
         </extension>
         <extension url="required">
@@ -1784,17 +1956,6 @@
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <extension url="required">
-          <valueString value="date"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
         </extension>
         <extension url="required">
@@ -1805,7 +1966,6 @@
         </extension>
       </extension>
       <type value="Encounter"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -1862,6 +2022,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -1946,7 +2107,6 @@
         </extension>
       </extension>
       <type value="Goal"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Goal"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -2003,6 +2163,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -2040,7 +2201,7 @@
           <valueString value="patient"/>
         </extension>
         <extension url="required">
-          <valueString value="status"/>
+          <valueString value="date"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -2051,11 +2212,10 @@
           <valueString value="patient"/>
         </extension>
         <extension url="required">
-          <valueString value="date"/>
+          <valueString value="status"/>
         </extension>
       </extension>
       <type value="Immunization"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -2112,6 +2272,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -2142,7 +2303,6 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Location"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Location"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -2199,6 +2359,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -2245,7 +2406,6 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Medication"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
       <documentation value="The MedicationStatement and MedicationRequest resources can represent a medication, using an external reference to a Medication resource. If an external Medication Resource is used in a MedicationStatement or a MedicationRequest, then the READ and SEARCH Criteria  **SHALL**  be supported."/>
       <interaction>
@@ -2303,6 +2463,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -2310,13 +2471,16 @@
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
+          <valueCode value="SHOULD"/>
         </extension>
         <extension url="required">
           <valueString value="patient"/>
         </extension>
         <extension url="required">
-          <valueString value="status"/>
+          <valueString value="intent"/>
+        </extension>
+        <extension url="required">
+          <valueString value="authoredon"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -2327,13 +2491,40 @@
           <valueString value="patient"/>
         </extension>
         <extension url="required">
-          <valueString value="authoredon"/>
+          <valueString value="intent"/>
+        </extension>
+        <extension url="required">
+          <valueString value="encounter"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="intent"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="intent"/>
+        </extension>
+        <extension url="required">
+          <valueString value="status"/>
         </extension>
       </extension>
       <type value="MedicationRequest"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
-      <documentation value="The MedicationStatement resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be [contained](http://hl7.org/fhir/R4/references.html#contained) or an external resource. The server application **MAY** choose any one way or more than one method, but if an external reference to Medication is used, the server **SHALL** support the _include` parameter for searching this element. The client application must support all methods.&#xA;&#xA; For example, A server **SHALL** be capable of returning all medications for a patient using one of or both:&#xA;&#xA; `GET /MedicationStatement?patient=[id]`&#xA;&#xA; `GET /MedicationStatement?patient=[id]&amp;_include=MedicationStatement:medication`"/>
+      <documentation value="The MedicationRequest resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be [contained](http://hl7.org/fhir/R4/references.html#contained) or an external resource. The server application **MAY** choose any one way or more than one method, but if an external reference to Medication is used, the server **SHALL** support the _include` parameter for searching this element. The client application must support all methods.&#xA;&#xA; For example, A server **SHALL** be capable of returning all medications for a patient using one of or both:&#xA;&#xA; `GET /MedicationRequest?patient=[id]`&#xA;&#xA; `GET /MedicationRequest?patient=[id]&amp;_include=MedicationRequest:medication`"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -2390,6 +2581,7 @@
       </interaction>
       <referencePolicy value="resolves"/>
       <searchInclude value="MedicationRequest:medication"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -2400,10 +2592,26 @@
       </searchParam>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="intent"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-intent"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
         </extension>
         <name value="patient"/>
         <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-patient"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="encounter"/>
+        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationrequest-encounter"/>
         <type value="reference"/>
       </searchParam>
       <searchParam>
@@ -2421,129 +2629,7 @@
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
-          <valueString value="status"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
-          <valueString value="effective"/>
-        </extension>
-      </extension>
-      <type value="MedicationStatement"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
-      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
-      <documentation value="The MedicationStatement resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be [contained](http://hl7.org/fhir/R4/references.html#contained) or an external resource. The server application **MAY** choose any one way or more than one method, but if an external reference to Medication is used, the server **SHALL** support the _include` parameter for searching this element. The client application must support all methods.&#xA;&#xA; For example, A server **SHALL** be capable of returning all medications for a patient using one of or both:&#xA;&#xA; `GET /MedicationStatement?patient=[id]`&#xA;&#xA; `GET /MedicationStatement?patient=[id]&amp;_include=MedicationStatement:medication`"/>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="MAY"/>
-        </extension>
-        <code value="create"/>
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
-        </extension>
-        <code value="search-type"/>
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <code value="read"/>
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <code value="vread"/>
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="MAY"/>
-        </extension>
-        <code value="update"/>
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="MAY"/>
-        </extension>
-        <code value="patch"/>
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="MAY"/>
-        </extension>
-        <code value="delete"/>
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <code value="history-instance"/>
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="MAY"/>
-        </extension>
-        <code value="history-type"/>
-      </interaction>
-      <referencePolicy value="resolves"/>
-      <searchInclude value="MedicationStatement:medication"/>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="MAY"/>
-        </extension>
-        <name value="status"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationstatement-status"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="patient"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationstatement-patient"/>
-        <type value="reference"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="MAY"/>
-        </extension>
-        <name value="effective"/>
-        <definition value="http://hl7.org/fhir/us/core/SearchParameter/us-core-medicationstatement-effective"/>
-        <type value="date"/>
-      </searchParam>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHALL"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
-          <valueString value="code"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
         </extension>
         <extension url="required">
           <valueString value="patient"/>
@@ -2552,7 +2638,7 @@
           <valueString value="category"/>
         </extension>
         <extension url="required">
-          <valueString value="status"/>
+          <valueString value="date"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -2571,7 +2657,7 @@
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
+          <valueCode value="SHOULD"/>
         </extension>
         <extension url="required">
           <valueString value="patient"/>
@@ -2580,7 +2666,18 @@
           <valueString value="category"/>
         </extension>
         <extension url="required">
-          <valueString value="date"/>
+          <valueString value="status"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="code"/>
         </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -2595,11 +2692,11 @@
         </extension>
       </extension>
       <type value="Observation"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/pediatric-bmi-for-age"/>
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-pulse-oximetry"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -2655,6 +2752,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -2701,7 +2799,6 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Organization"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -2758,6 +2855,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -2781,28 +2879,6 @@
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <extension url="required">
-          <valueString value="birthdate"/>
-        </extension>
-        <extension url="required">
-          <valueString value="name"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <extension url="required">
-          <valueString value="gender"/>
-        </extension>
-        <extension url="required">
-          <valueString value="name"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
         </extension>
         <extension url="required">
@@ -2814,6 +2890,17 @@
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <extension url="required">
+          <valueString value="birthdate"/>
+        </extension>
+        <extension url="required">
+          <valueString value="name"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
         </extension>
         <extension url="required">
@@ -2821,10 +2908,20 @@
         </extension>
         <extension url="required">
           <valueString value="gender"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <extension url="required">
+          <valueString value="gender"/>
+        </extension>
+        <extension url="required">
+          <valueString value="name"/>
         </extension>
       </extension>
       <type value="Patient"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -2881,6 +2978,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -2943,7 +3041,6 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Practitioner"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -3000,6 +3097,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -3022,7 +3120,6 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="PractitionerRole"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -3081,6 +3178,7 @@
       <referencePolicy value="resolves"/>
       <searchInclude value="PractitionerRole:endpoint"/>
       <searchInclude value="PractitionerRole:practitioner"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -3101,17 +3199,6 @@
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHALL"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-        <extension url="required">
-          <valueString value="patient"/>
-        </extension>
-        <extension url="required">
-          <valueString value="status"/>
-        </extension>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -3138,8 +3225,18 @@
           <valueString value="date"/>
         </extension>
       </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="status"/>
+        </extension>
+      </extension>
       <type value="Procedure"/>
-      <profile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
       <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -3196,6 +3293,7 @@
         <code value="history-type"/>
       </interaction>
       <referencePolicy value="resolves"/>
+      <searchRevInclude value="Provenance:target"/>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -3229,5 +3327,106 @@
         <type value="token"/>
       </searchParam>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="Provenance"/>
+      <supportedProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"/>
+      <documentation value="If a system receives a provider in `Provenance.agent.who` as free text they must capture who sent them the information as the organization. On request they **SHALL** provide this organization as the source and **MAY** include the free text provider."/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <code value="patch"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <code value="delete"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="history-instance"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <code value="history-type"/>
+      </interaction>
+      <referencePolicy value="resolves"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <type value="ValueSet"/>
+      <operation>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="expand"/>
+        <definition value="http://hl7.org/fhir/OperationDefinition/ValueSet-expand"/>
+        <documentation value="A  client can determine the note and report types support by a server by invoking the standard FHIR Value Set Expansion ($expand) operation defined in the FHIR R4 specification. Because servers may support different read and write formats, it also is used to determine the formats (for example, text, pdf) the server supports read and write transactions."/>
+      </operation>
+    </resource>
+    <interaction>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <code value="transaction"/>
+    </interaction>
+    <interaction>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <code value="batch"/>
+    </interaction>
+    <interaction>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <code value="search-system"/>
+    </interaction>
+    <interaction>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <code value="history-system"/>
+    </interaction>
   </rest>
 </CapabilityStatement>

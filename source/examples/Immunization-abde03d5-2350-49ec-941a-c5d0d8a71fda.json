@@ -1,0 +1,28 @@
+{
+    "resourceType": "Immunization",
+    "id": "abde03d5-2350-49ec-941a-c5d0d8a71fda",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+        ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "33",
+                "display": "pneumococcal polysaccharide vaccine, 23 valent"
+            }
+        ],
+        "text": "pneumococcal polysaccharide vaccine, 23 valent"
+    },
+    "patient": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+    },
+    "encounter": {
+        "reference": "Encounter/be7f3abc-5dc3-4900-8168-47748e78c604"
+    },
+    "occurrenceDateTime": "2013-06-07T13:46:03-07:00",
+    "primarySource": true
+}

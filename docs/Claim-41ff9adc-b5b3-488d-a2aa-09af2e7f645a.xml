@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="41ff9adc-b5b3-488d-a2aa-09af2e7f645a"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 41ff9adc-b5b3-488d-a2aa-09af2e7f645a</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-8b42051b-e45b-4032-926a-747affe4e09d.html">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>billablePeriod</b>: Jun 13, 2014, 1:46:03 PM --&gt; Jun 13, 2014, 2:01:03 PM</p><p><b>created</b>: Jun 13, 2014, 2:01:03 PM</p><p><b>provider</b>: <a href="Organization-ccbd6376-81a6-35c8-93d1-d6d519e417d6.html">Generated Summary: id: ccbd6376-81a6-35c8-93d1-d6d519e417d6; ccbd6376-81a6-35c8-93d1-d6d519e417d6; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: STEWARD MEDICAL GROUP, INC; ph: 781-792-6000</a></p><p><b>priority</b>: Normal <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/processpriority code 'normal' = 'Normal)</span></p><h3>SupportingInfos</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>1</td><td>Information <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/claiminformationcategory code 'info' = 'Information)</span></td><td><a href="Immunization-e0d1d37b-577a-403e-a4c1-97d4cb1f661d.html">Generated Summary: id: e0d1d37b-577a-403e-a4c1-97d4cb1f661d; status: completed; <span title="Codes: {http://hl7.org/fhir/sid/cvx 140}">Influenza, seasonal, injectable, preservative free</span>; occurrence: Jun 13, 2014, 1:46:03 PM; primarySource</a></td></tr></table><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>Medicare</td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: General examination of patient (procedure) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '162673000' = 'General examination of patient', given as 'General examination of patient (procedure)'})</span></p><p><b>encounter</b>: <a href="Encounter-77ef1756-200a-49bf-ab3a-445e494db472.html">Generated Summary: id: 77ef1756-200a-49bf-ab3a-445e494db472; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 162673000}">General examination of patient (procedure)</span>; period: Jun 13, 2014, 1:46:03 PM --&gt; Jun 13, 2014, 2:01:03 PM</a></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>informationSequence</b>: 1</p><p><b>productOrService</b>: Influenza, seasonal, injectable, preservative free <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/sid/cvx code '140' = 'Influenza, seasonal, injectable, preservative free', given as 'Influenza, seasonal, injectable, preservative free'})</span></p><p><b>net</b>: </p></blockquote><p><b>total</b>: </p></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="institutional"/>
+    </coding>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/8b42051b-e45b-4032-926a-747affe4e09d"/>
+  </patient>
+  <billablePeriod>
+    <start value="2014-06-13T13:46:03-07:00"/>
+    <end value="2014-06-13T14:01:03-07:00"/>
+  </billablePeriod>
+  <created value="2014-06-13T14:01:03-07:00"/>
+  <provider>
+    <reference value="Organization/ccbd6376-81a6-35c8-93d1-d6d519e417d6"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+    </coding>
+  </priority>
+  <supportingInfo>
+    <sequence value="1"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+        <code value="info"/>
+      </coding>
+    </category>
+    <valueReference>
+      <reference value="Immunization/e0d1d37b-577a-403e-a4c1-97d4cb1f661d"/>
+    </valueReference>
+  </supportingInfo>
+  <insurance>
+    <sequence value="1"/>
+    <focal value="true"/>
+    <coverage>
+      <display value="Medicare"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="162673000"/>
+        <display value="General examination of patient (procedure)"/>
+      </coding>
+      <text value="General examination of patient (procedure)"/>
+    </productOrService>
+    <encounter>
+      <reference value="Encounter/77ef1756-200a-49bf-ab3a-445e494db472"/>
+    </encounter>
+  </item>
+  <item>
+    <sequence value="2"/>
+    <informationSequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://hl7.org/fhir/sid/cvx"/>
+        <code value="140"/>
+        <display value="Influenza, seasonal, injectable, preservative free"/>
+      </coding>
+      <text value="Influenza, seasonal, injectable, preservative free"/>
+    </productOrService>
+    <net>
+      <value value="140.52"/>
+      <currency value="USD"/>
+    </net>
+  </item>
+  <total>
+    <value value="129.16"/>
+    <currency value="USD"/>
+  </total>
+</Claim>

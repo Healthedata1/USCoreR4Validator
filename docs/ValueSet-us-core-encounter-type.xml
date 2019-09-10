@@ -3,17 +3,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="us-core-encounter-type"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
-			<h2>US Core Encounter Type</h2>
-			<p>The type of encounter: a specific code indicating type of service provided, from CPT</p>
-			<p>
-				<b>Copyright Statement:</b> CPT copyright 2014 American Medical Association. All rights reserved.
-			</p>
-			<p>This value set includes only the codes of the Current Procedure and Terminology designated for Evaluation and Management (99200 – 99607) (subscription to AMA Required) from code systems:</p>
-			<ul>
-				<li>http://www.ama-assn.org/go/cpt</li>
-			</ul>
-		</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>US Core Encounter Type</h2><div><p>The type of encounter: a specific code indicating type of service provided. This value set includes codes from SNOMED CT decending from the concept 308335008 (Patient encounter procedure (procedure)) and from the Current Procedure and Terminology(CPT) designated for Evaluation and Management (99200 – 99607) (subscription to AMA Required)</p>
+</div><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.  This value set includes content from CPT copyright 2014 American Medical Association. All rights reserved.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  308335008 (Patient encounter procedure)</li><li>Include all codes defined in <code>http://www.ama-assn.org/go/cpt</code></li></ul></div>
   </text>
   <url value="http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type"/>
   <identifier>
@@ -32,7 +23,7 @@
       <value value="http://hl7.org/fhir"/>
     </telecom>
   </contact>
-  <description value="The type of encounter: a specific code indicating type of service provided, from CPT"/>
+  <description value="The type of encounter: a specific code indicating type of service provided. This value set includes codes from SNOMED CT decending from the concept 308335008 (Patient encounter procedure (procedure)) and from the Current Procedure and Terminology(CPT) designated for Evaluation and Management (99200 &#x2013; 99607) (subscription to AMA Required)"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -40,8 +31,16 @@
       <display value="United States of America"/>
     </coding>
   </jurisdiction>
-  <copyright value="CPT copyright 2014 American Medical Association. All rights reserved."/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright &#xA9; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.  This value set includes content from CPT copyright 2014 American Medical Association. All rights reserved."/>
   <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="308335008"/>
+      </filter>
+    </include>
     <include>
       <system value="http://www.ama-assn.org/go/cpt"/>
     </include>

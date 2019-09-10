@@ -1,0 +1,47 @@
+{
+  "resourceType": "Encounter",
+  "id": "faecae6c-bb04-4157-a905-2241125a2d9d",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: faecae6c-bb04-4157-a905-2241125a2d9d</p><p><b>meta</b>: </p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'null')</p><p><b>type</b>: General examination of patient (procedure) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '162673000' = 'General examination of patient', given as 'General examination of patient (procedure)'})</span></p><p><b>subject</b>: <a href=\"Patient-8b42051b-e45b-4032-926a-747affe4e09d.html\">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-0000016d-1435-7d38-0000-0000000140e6.html\">Generated Summary: id: 0000016d-1435-7d38-0000-0000000140e6; 82150; active; Man114 Cummerata161 ; gender: male</a></td></tr></table><p><b>period</b>: Jul 12, 2019, 1:46:03 PM --&gt; Jul 12, 2019, 2:16:03 PM</p><p><b>serviceProvider</b>: <a href=\"Organization-ccbd6376-81a6-35c8-93d1-d6d519e417d6.html\">Generated Summary: id: ccbd6376-81a6-35c8-93d1-d6d519e417d6; ccbd6376-81a6-35c8-93d1-d6d519e417d6; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: STEWARD MEDICAL GROUP, INC; ph: 781-792-6000</a></p></div>"
+  },
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "AMB"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "162673000",
+          "display": "General examination of patient (procedure)"
+        }
+      ],
+      "text": "General examination of patient (procedure)"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "Practitioner/0000016d-1435-7d38-0000-0000000140e6"
+      }
+    }
+  ],
+  "period": {
+    "start": "2019-07-12T13:46:03-07:00",
+    "end": "2019-07-12T14:16:03-07:00"
+  },
+  "serviceProvider": {
+    "reference": "Organization/ccbd6376-81a6-35c8-93d1-d6d519e417d6"
+  }
+}

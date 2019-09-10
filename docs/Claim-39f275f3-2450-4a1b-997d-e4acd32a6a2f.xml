@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="39f275f3-2450-4a1b-997d-e4acd32a6a2f"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 39f275f3-2450-4a1b-997d-e4acd32a6a2f</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-8b42051b-e45b-4032-926a-747affe4e09d.html">Generated Summary: id: 8b42051b-e45b-4032-926a-747affe4e09d; ffd13be6-c334-4ede-bea5-2cd7d569b71f, Medical Record Number = ffd13be6-c334-4ede-bea5-2cd7d569b71f, Social Security Number = 999-95-3799, Driver's License = S99927323, Passport Number = X48434749X; Phillip440 Ullrich385 (OFFICIAL); ph: 555-841-8167(HOME); gender: male; birthDate: Mar 7, 1947; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>billablePeriod</b>: Dec 13, 2012, 12:46:03 PM --&gt; Dec 13, 2012, 1:01:03 PM</p><p><b>created</b>: Dec 13, 2012, 1:01:03 PM</p><p><b>provider</b>: <a href="Organization-c44f361c-2efb-3050-8f97-0354a12e2920.html">Generated Summary: id: c44f361c-2efb-3050-8f97-0354a12e2920; c44f361c-2efb-3050-8f97-0354a12e2920; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: SIGNATURE HEALTHCARE BROCKTON HOSPITAL; ph: 5089417000</a></p><p><b>priority</b>: Normal <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/processpriority code 'normal' = 'Normal)</span></p><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>Medicare</td></tr></table><h3>Items</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>ProductOrService</b></td><td><b>Encounter</b></td></tr><tr><td>*</td><td>1</td><td>Encounter for symptom <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '185345009' = 'Encounter for symptom', given as 'Encounter for symptom'})</span></td><td><a href="Encounter-cb1d171a-c16a-4083-a28f-56514e9d4f31.html">Generated Summary: id: cb1d171a-c16a-4083-a28f-56514e9d4f31; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185345009}">Encounter for symptom</span>; period: Dec 13, 2012, 12:46:03 PM --&gt; Dec 13, 2012, 1:01:03 PM; <span title="Codes: {http://snomed.info/sct 36971009}">Sinusitis (disorder)</span></a></td></tr></table><p><b>total</b>: </p></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="institutional"/>
+    </coding>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/8b42051b-e45b-4032-926a-747affe4e09d"/>
+  </patient>
+  <billablePeriod>
+    <start value="2012-12-13T12:46:03-08:00"/>
+    <end value="2012-12-13T13:01:03-08:00"/>
+  </billablePeriod>
+  <created value="2012-12-13T13:01:03-08:00"/>
+  <provider>
+    <reference value="Organization/c44f361c-2efb-3050-8f97-0354a12e2920"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+    </coding>
+  </priority>
+  <insurance>
+    <sequence value="1"/>
+    <focal value="true"/>
+    <coverage>
+      <display value="Medicare"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="185345009"/>
+        <display value="Encounter for symptom"/>
+      </coding>
+      <text value="Encounter for symptom"/>
+    </productOrService>
+    <encounter>
+      <reference value="Encounter/cb1d171a-c16a-4083-a28f-56514e9d4f31"/>
+    </encounter>
+  </item>
+  <total>
+    <value value="129.16"/>
+    <currency value="USD"/>
+  </total>
+</Claim>

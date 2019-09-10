@@ -1,0 +1,77 @@
+{
+    "resourceType": "Observation",
+    "id": "98ebcb07-7598-4ac4-9dbb-b5bc1d31742f",
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "vital-signs",
+                    "display": "vital-signs"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "55284-4",
+                "display": "Blood Pressure"
+            }
+        ],
+        "text": "Blood Pressure"
+    },
+    "subject": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+    },
+    "encounter": {
+        "reference": "Encounter/57cc5e10-bb5e-4047-944d-e09c79d41e2b"
+    },
+    "effectiveDateTime": "2017-06-30T13:46:03-07:00",
+    "issued": "2017-06-30T13:46:03.598-07:00",
+    "component": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "8462-4",
+                        "display": "Diastolic Blood Pressure"
+                    }
+                ],
+                "text": "Diastolic Blood Pressure"
+            },
+            "valueQuantity": {
+                "value": 73.83254123613557,
+                "unit": "mm[Hg]",
+                "system": "http://unitsofmeasure.org",
+                "code": "mm[Hg]"
+            }
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "8480-6",
+                        "display": "Systolic Blood Pressure"
+                    }
+                ],
+                "text": "Systolic Blood Pressure"
+            },
+            "valueQuantity": {
+                "value": 122.39976195542735,
+                "unit": "mm[Hg]",
+                "system": "http://unitsofmeasure.org",
+                "code": "mm[Hg]"
+            }
+        }
+    ],
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+        ]
+    }
+}

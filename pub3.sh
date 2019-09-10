@@ -14,7 +14,7 @@ do
  o) PUB=1;;
  n) USEDEF=1;;
  p) UPDATE=1;;
- w) WATCH =1;;
+ w) WATCH=1;;
  esac
 done
 echo "================================================================="
@@ -55,7 +55,6 @@ if [[ $DEFN ]]; then
 fi
 
 if [[ $USEDEF ]]; then
-
   echo "================================================================="
   echo === use definition files from relative path ../$SOURCE ===
   echo "================================================================="
@@ -67,14 +66,19 @@ if [[ $USEDEF ]]; then
   git status
 fi
 
-if [[ $PUB ]]; then
+if [[ $WATCH ]]; then
   echo "================================================================="
-  echo === run last known good version of the igpublisherrun most recent version of the igpublisher ===
+  echo ===un most recent version of the igpublisher with watch on ===
+  echo "================================================================="
+  java -jar ${path1} -ig ig.json -watch -tx $NA
+elif [[ $PUB ]]; then
+  echo "================================================================="
+  echo === run last known good version of the igpublisher run most recent version of the igpublisher ===
   echo "================================================================="
   java -jar ${path2} -ig ig.json -watch -tx $NA
 else
   echo "================================================================="
-  echo ===run most recent version of the igpublisher ===
+  echo ===run igpublisher just once \(no watch option\)===
   echo "================================================================="
-  java -jar ${path1} -ig ig.json -watch -tx $NA
+  java -jar ${path1} -ig ig.json -tx $NA
 fi

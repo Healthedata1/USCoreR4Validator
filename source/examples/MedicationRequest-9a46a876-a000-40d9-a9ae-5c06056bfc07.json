@@ -1,0 +1,36 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "9a46a876-a000-40d9-a9ae-5c06056bfc07",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+        ]
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "858069",
+                "display": "Colchicine 0.6 MG [Colcrys]"
+            }
+        ],
+        "text": "Colchicine 0.6 MG [Colcrys]"
+    },
+    "subject": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+    },
+    "encounter": {
+        "reference": "Encounter/6a4741ed-47a2-4afb-9f21-af445dd543f1"
+    },
+    "authoredOn": "2016-02-18T12:46:03-08:00",
+    "requester": {
+        "reference": "Practitioner/0000016d-1435-7d38-0000-0000000000c8"
+    },
+    "reasonReference": [
+        {
+            "reference": "Condition/3396d919-4907-45bc-986b-f5cc5b9905bc"
+        }
+    ]
+}

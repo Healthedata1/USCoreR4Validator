@@ -48,7 +48,6 @@
 </div></div>
   </text>
   <url value="http://hl7.org/fhir/us/core/OperationDefinition/docref"/>
-  <version value="0.0.0"/>
   <name value="USCoreFetchDocumentReferences"/>
   <title value="US Core Fetch DocumentReferences"/>
   <status value="active"/>

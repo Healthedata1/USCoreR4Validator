@@ -1,0 +1,30 @@
+{
+    "resourceType": "Procedure",
+    "id": "7572e5f0-ccfa-4cb0-8381-69a7cfe0a3dd",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+        ]
+    },
+    "status": "completed",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "428191000124101",
+                "display": "Documentation of current medications"
+            }
+        ],
+        "text": "Documentation of current medications"
+    },
+    "subject": {
+        "reference": "Patient/8b42051b-e45b-4032-926a-747affe4e09d"
+    },
+    "encounter": {
+        "reference": "Encounter/d8827a4c-126e-4068-8939-5e08a2bcd24e"
+    },
+    "performedPeriod": {
+        "start": "2010-05-21T13:46:03-07:00",
+        "end": "2010-05-21T14:01:03-07:00"
+    }
+}

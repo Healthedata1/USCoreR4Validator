@@ -30697,3 +30697,183 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "757594"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "JOLIVETTE 28 Day Pack",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "831533"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Errin 28 Day Pack",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1000126"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "1 ML medroxyPROGESTERone acetate 150 MG/ML Injection",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+    "code" : "757594",
+    "display" : "Jolivette 28 Day Pack"
+  }],
+  "text" : "Jolivette 28 Day Pack"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "filter" : [{
+        "property" : "TTY",
+        "op" : "in",
+        "value" : "SCD,SBD,GPCK,BPCK,SCDG,SBDG,SCDF,SBDF"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "{28 (Norethindrone 0.35 MG Oral Tablet) } Pack [Jolivette 28 Day]",
+  "severity" : "warning",
+  "error" : "The display \"Jolivette 28 Day Pack\" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}757594 - should be one of [\"{28 (Norethindrone 0.35 MG Oral Tablet) } Pack [Jolivette 28 Day]\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+    "code" : "831533",
+    "display" : "Errin 28 Day Pack"
+  }],
+  "text" : "Errin 28 Day Pack"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "filter" : [{
+        "property" : "TTY",
+        "op" : "in",
+        "value" : "SCD,SBD,GPCK,BPCK,SCDG,SBDG,SCDF,SBDF"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "{28 (Norethindrone 0.35 MG Oral Tablet) } Pack [Errin 28 Day]",
+  "severity" : "warning",
+  "error" : "The display \"Errin 28 Day Pack\" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}831533 - should be one of [\"{28 (Norethindrone 0.35 MG Oral Tablet) } Pack [Errin 28 Day]\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+    "code" : "1000126",
+    "display" : "1 ML medroxyprogesterone acetate 150 MG/ML Injection"
+  }],
+  "text" : "1 ML medroxyprogesterone acetate 150 MG/ML Injection"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "filter" : [{
+        "property" : "TTY",
+        "op" : "in",
+        "value" : "SCD,SBD,GPCK,BPCK,SCDG,SBDG,SCDF,SBDF"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "1 ML medroxyprogesterone acetate 150 MG/ML Injection",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "197319"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "allopurinol 100 MG Oral Tablet",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "858069"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Colchicine 0.6 MG [Colcrys]",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+    "code" : "197319",
+    "display" : "Allopurinol 100 MG Oral Tablet"
+  }],
+  "text" : "Allopurinol 100 MG Oral Tablet"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "filter" : [{
+        "property" : "TTY",
+        "op" : "in",
+        "value" : "SCD,SBD,GPCK,BPCK,SCDG,SBDG,SCDF,SBDF"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Allopurinol 100 MG Oral Tablet",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+    "code" : "858069",
+    "display" : "Colchicine 0.6 MG [Colcrys]"
+  }],
+  "text" : "Colchicine 0.6 MG [Colcrys]"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "filter" : [{
+        "property" : "TTY",
+        "op" : "in",
+        "value" : "SCD,SBD,GPCK,BPCK,SCDG,SBDG,SCDF,SBDF"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://www.nlm.nih.gov/research/umls/rxnorm#858069, (Colchicine 0.6 MG [Colcrys])) is not  valid in the value set USCoreMedicationCodes"
+}
+-------------------------------------------------------------------------------------

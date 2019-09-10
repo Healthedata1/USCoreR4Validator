@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="cef759cf-f476-4d20-bc4c-5749cf7130f0"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Care Plan for Musculoskeletal care.<br/>Activities: <ul><li>Musculoskeletal care</li><li>Musculoskeletal care</li><li>Musculoskeletal care</li></ul><br/>Care plan is meant to treat Gout.</div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="872781000000100"/>
+      <display value="Musculoskeletal care"/>
+    </coding>
+    <text value="Musculoskeletal care"/>
+  </category>
+  <subject>
+    <reference value="Patient/8b42051b-e45b-4032-926a-747affe4e09d"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/6a4741ed-47a2-4afb-9f21-af445dd543f1"/>
+  </encounter>
+  <period>
+    <start value="2016-02-18T12:46:03-08:00"/>
+  </period>
+  <addresses>
+    <reference value="Condition/3396d919-4907-45bc-986b-f5cc5b9905bc"/>
+  </addresses>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="183301007"/>
+          <display value="Physical exercises"/>
+        </coding>
+        <text value="Physical exercises"/>
+      </code>
+      <status value="in-progress"/>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="229580007"/>
+          <display value="Ice therapy"/>
+        </coding>
+        <text value="Ice therapy"/>
+      </code>
+      <status value="in-progress"/>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="226234005"/>
+          <display value="Healthy diet"/>
+        </coding>
+        <text value="Healthy diet"/>
+      </code>
+      <status value="in-progress"/>
+    </detail>
+  </activity>
+</CarePlan>

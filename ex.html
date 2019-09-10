@@ -10,15 +10,14 @@ topofpage: True
 <!-- ============CONTENT CONTENT=============== -->
 
 <h2>{{[title]}}</h2>
-<!--
-<p>
-Formats: <a href="{{[type]}}-{{[id]}}.xml.html">XML</a>, <a href="{{[type]}}-{{[id]}}.json.html">JSON</a>, <a href="{{[type]}}-{{[id]}}.ttl.html">Turtle</a>
-</p>
--->
+
+<h3>Validation Results</h3>
+
+{% include {{[type]}}-{{[id]}}-validation.xhtml %}
+
+<h3>Narrative View</h3>
+
 {% include {{[type]}}-{{[name]}}.xhtml %}
 
-<h3>Validation results for {{[title]}}</h3>
-
-{% include {{[type]}}-{{[id]}}-valdiation.xhtml %}
 
   <!-- ==============END CONTENT END CONTENT=================== -->

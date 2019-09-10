@@ -24,7 +24,7 @@
 	<differential>
 		<element id="Provenance">
 			<path value="Provenance"/>
-			<short value="US Core Provenance - DRAFT"/>
+			<short value="US Core Provenance"/>
 			<definition value="The US Core Provenance Profile is based upon the Argonaut Data Query requirements."/>
 			<alias value="Basic Provenance"/>
 			<mustSupport value="false"/>
@@ -58,12 +58,8 @@
 			<path value="Provenance.agent"/>
 			<slicing>
 				<discriminator>
-					<type value="value"/>
-					<path value="type.coding.code"/>
-				</discriminator>
-				<discriminator>
-					<type value="value"/>
-					<path value="type.coding.system"/>
+				<type value="pattern"/>
+				<path value="type"/>
 				</discriminator>
 				<rules value="open"/>
 			</slicing>
@@ -72,50 +68,23 @@
 			<mustSupport value="true"/>
 			<isModifier value="false"/>
 		</element>
-		<element id="Provenance.agent:author">
-			<path value="Provenance.agent"/>
-			<sliceName value="provenance-author"/>
-			<min value="1"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-			<isModifier value="false"/>
-		</element>
-		<element id="Provenance.agent:author.type">
+		<element id="Provenance.agent.type">
 			<path value="Provenance.agent.type"/>
-			<min value="1"/>
+			<min value="0"/>
 			<max value="1"/>
-			<mustSupport value="true"/>
-			<isModifier value="false"/>
-		</element>
-		<element id="Provenance.agent:author.type.coding">
-			<path value="Provenance.agent.type.coding"/>
-			<min value="1"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-			<isModifier value="false"/>
-		</element>
-		<element id="Provenance.agent:author.type.coding.system">
-			<path value="Provenance.agent.type.coding.system"/>
-			<min value="1"/>
-			<max value="1"/>
+
 			<type>
-				<code value="uri"/>
+				<code value="CodeableConcept"/>
 			</type>
-			<fixedUri value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+
 			<mustSupport value="true"/>
 			<isModifier value="false"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type"/>
+			</binding>
 		</element>
-		<element id="Provenance.agent:author.type.coding.code">
-			<path value="Provenance.agent.type.coding.code"/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="code"/>
-			</type>
-			<fixedCode value="author"/>
-			<mustSupport value="true"/>
-			<isModifier value="false"/>
-		</element>
+
 		<element id="Provenance.agent.who">
 			<path value="Provenance.agent.who"/>
 			<min value="1"/>
@@ -133,8 +102,9 @@
 			<isModifier value="false"/>
 		</element>
 		<element id="Provenance.agent.onBehalfOf">
+
 			<path value="Provenance.agent.onBehalfOf"/>
-			<!-- short value="SHALL be present when Provenance.agent.who is a Practitioner."/ -->
+			<!-- short value="SHALL be present when Provenance.agent.who is a Practitioner or device."/ -->
 			<min value="0"/>
 			<max value="1"/>
 			<type>
@@ -144,11 +114,67 @@
 			<constraint>
 				<key value="provenance-1"/>
 				<severity value="error"/>
-				<human value="onBehalfOf SHALL be present when Provenance.agent.who is a Practitioner"/>
-				<expression value="($this.agent.who.resolve().is Practitioner) implies exists()"/>
+				<human value="onBehalfOf SHALL be present when Provenance.agent.who is a Practitioner or Device"/>
+				<expression value="($this.agent.who.resolve().is Practitioner or Device) implies exists()"/>
 			</constraint>
 			<mustSupport value="true"/>
 			<isModifier value="false"/>
 		</element>
+
+		<element id="Provenance.agent:ProvenanceAuthor">
+			<path value="Provenance.agent"/>
+			<sliceName value="ProvenanceAuthor"/>
+			<min value="0"/>
+			<max value="*"/>
+			<mustSupport value="true"/>
+			<isModifier value="false"/>
+		</element>
+		<element id="Provenance.agent.type:ProvenanceAuthor">
+			<path value="Provenance.agent.type"/>
+			<min value="1"/>
+			<max value="1"/>
+
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
+			<patternCodeableConcept>
+				<coding>
+					<system
+									value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+					<code value="author"/>
+				</coding>
+			</patternCodeableConcept>
+
+			<mustSupport value="true"/>
+			<isModifier value="false"/>
+		</element>
+		<element id="Provenance.agent:ProvenanceTransmitter">
+			<path value="Provenance.agent"/>
+			<sliceName value="ProvenanceTransmitter"/>
+			<min value="0"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+			<isModifier value="false"/>
+		</element>
+		<element id="Provenance.agent.type:ProvenanceTransmitter">
+			<path value="Provenance.agent.type"/>
+			<min value="1"/>
+			<max value="1"/>
+
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
+			<patternCodeableConcept>
+				<coding>
+					<system
+						value="http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type"/>
+					<code value="transmitter"/>
+				</coding>
+			</patternCodeableConcept>
+
+			<mustSupport value="true"/>
+			<isModifier value="false"/>
+		</element>
+
 	</differential>
 </StructureDefinition>

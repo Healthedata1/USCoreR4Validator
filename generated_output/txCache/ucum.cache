@@ -1,0 +1,141 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "kg/m2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "kg/m2",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "{score}"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "{score}",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "fL"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "fL",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "g/dL"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "g/dL",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "pg"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "pg",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "10*6/uL"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "10*6/uL",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "kg"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "kg",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "cm"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "cm",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "mm[Hg]"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "mm[Hg]",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "Cel"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Cel",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "10*3/uL"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "10*3/uL",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "%"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "%",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "mg/dL"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "mg/dL",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "mmol/L"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "mmol/L",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

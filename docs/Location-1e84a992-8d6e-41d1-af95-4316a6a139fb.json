@@ -1,0 +1,38 @@
+{
+  "resourceType": "Location",
+  "id": "1e84a992-8d6e-41d1-af95-4316a6a139fb",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1e84a992-8d6e-41d1-af95-4316a6a139fb</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>name</b>: PCP31369</p><p><b>telecom</b>: ph: 781-934-2597</p><p><b>address</b>: 145 WASHINGTON ST NORWELL MA 02061-1744 US </p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-70.818844</td><td>42.164569</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-3ffca313-cdd3-37d2-ad04-00dc4adcb86f.html\">PCP31369. Generated Summary: id: 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: PCP31369; ph: 781-934-2597</a></p></div>"
+  },
+  "status": "active",
+  "name": "PCP31369",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "781-934-2597"
+    }
+  ],
+  "address": {
+    "line": [
+      "145 WASHINGTON ST"
+    ],
+    "city": "NORWELL",
+    "state": "MA",
+    "postalCode": "02061-1744",
+    "country": "US"
+  },
+  "position": {
+    "longitude": -70.818844,
+    "latitude": 42.164569
+  },
+  "managingOrganization": {
+    "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f",
+    "display": "PCP31369"
+  }
+}

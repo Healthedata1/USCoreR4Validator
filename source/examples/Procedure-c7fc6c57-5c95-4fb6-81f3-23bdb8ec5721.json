@@ -1,0 +1,40 @@
+{
+    "resourceType": "Procedure",
+    "id": "c7fc6c57-5c95-4fb6-81f3-23bdb8ec5721",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+        ]
+    },
+    "status": "completed",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "274031008",
+                "display": "Rectal polypectomy"
+            }
+        ],
+        "text": "Rectal polypectomy"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/c04bf692-5517-4c30-81cf-19fd7aa1836b"
+    },
+    "performedPeriod": {
+        "start": "2012-09-02T16:16:44-07:00",
+        "end": "2012-09-02T16:31:44-07:00"
+    },
+    "location": {
+        "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+        "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+    },
+    "reasonReference": [
+        {
+            "reference": "Condition/26746a47-1ef3-4e72-b437-73efcf9c1586",
+            "display": "Polyp of colon"
+        }
+    ]
+}

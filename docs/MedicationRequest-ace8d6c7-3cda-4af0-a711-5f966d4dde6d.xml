@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="ace8d6c7-3cda-4af0-a711-5f966d4dde6d"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ace8d6c7-3cda-4af0-a711-5f966d4dde6d</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Amlodipine 5 MG / Hydrochlorothiazide 12.5 MG / Olmesartan medoxomil 20 MG <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '999969' = 'amLODIPine 5 MG / Hydrochlorothiazide 12.5 MG / Olmesartan medoxomil 20 MG [Tribenzor]', given as 'Amlodipine 5 MG / Hydrochlorothiazide 12.5 MG / Olmesartan medoxomil 20 MG'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-87f97350-7032-4560-afbf-e9003f4dc9ec.html">Generated Summary: id: 87f97350-7032-4560-afbf-e9003f4dc9ec; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 390906007}">Hypertension follow-up encounter</span>; period: Jul 14, 1958, 4:16:44 PM --&gt; Jul 14, 1958, 4:31:44 PM</a></p><p><b>authoredOn</b>: Jul 14, 1958, 4:16:44 PM</p><p><b>requester</b>: <a href="Practitioner-0000016d-235f-39b3-0000-0000000001c2.html">Dr. Nelida367 Green467. Generated Summary: id: 0000016d-235f-39b3-0000-0000000001c2; 450; active; Nelida367 Green467 ; Nelida367.Green467@example.com(WORK); gender: female</a></p><p><b>reasonReference</b>: <a href="Condition-ef170662-f531-4156-b4b3-00ff16f33292.html">Generated Summary: id: ef170662-f531-4156-b4b3-00ff16f33292; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span>; <span title="Codes: {http://snomed.info/sct 59621000}">Hypertension</span>; onset: Apr 15, 1958, 3:16:44 PM; recordedDate: Apr 15, 1958, 3:16:44 PM</a></p></div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="999969"/>
+      <display value="Amlodipine 5 MG / Hydrochlorothiazide 12.5 MG / Olmesartan medoxomil 20 MG"/>
+    </coding>
+    <text value="Amlodipine 5 MG / Hydrochlorothiazide 12.5 MG / Olmesartan medoxomil 20 MG"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/87f97350-7032-4560-afbf-e9003f4dc9ec"/>
+  </encounter>
+  <authoredOn value="1958-07-14T16:16:44-07:00"/>
+  <requester>
+    <reference value="Practitioner/0000016d-235f-39b3-0000-0000000001c2"/>
+    <display value="Dr. Nelida367 Green467"/>
+  </requester>
+  <reasonReference>
+    <reference value="Condition/ef170662-f531-4156-b4b3-00ff16f33292"/>
+  </reasonReference>
+</MedicationRequest>

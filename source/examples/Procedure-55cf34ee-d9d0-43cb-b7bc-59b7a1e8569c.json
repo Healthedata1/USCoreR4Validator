@@ -1,0 +1,40 @@
+{
+    "resourceType": "Procedure",
+    "id": "55cf34ee-d9d0-43cb-b7bc-59b7a1e8569c",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+        ]
+    },
+    "status": "completed",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "703423002",
+                "display": "Combined chemotherapy and radiation therapy (procedure)"
+            }
+        ],
+        "text": "Combined chemotherapy and radiation therapy (procedure)"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/93bf5421-8f03-4e17-bd71-715aaac03d2d"
+    },
+    "performedPeriod": {
+        "start": "2019-07-04T16:16:44-07:00",
+        "end": "2019-07-04T19:16:44-07:00"
+    },
+    "location": {
+        "reference": "Location/7653e0ab-0566-4083-95d8-c695e4735e53",
+        "display": "Quincy Outpatient Clinic"
+    },
+    "reasonReference": [
+        {
+            "reference": "Condition/19d85f45-7128-4af8-ac71-ce2414b5c0fc",
+            "display": "Non-small cell carcinoma of lung, TNM stage 1 (disorder)"
+        }
+    ]
+}

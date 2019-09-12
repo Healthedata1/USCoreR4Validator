@@ -1,0 +1,38 @@
+{
+    "resourceType": "MedicationStatement",
+    "id": "bb18e2a6-9774-4cc3-a697-02a0bf4b4d6d",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
+        ]
+    },
+    "status": "active",
+    "medicationReference": {
+        "reference": "Medication/e4e72913-af90-4831-a547-3f63ea90a560"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "context": {
+        "reference": "Encounter/9a10d7b7-b7fe-4a9f-8877-2fc0db94f02a"
+    },
+    "effectiveDateTime": "2001-02-04T15:16:44-08:00",
+    "dateAsserted": "2001-02-04T15:16:44-08:00",
+    "derivedFrom": [
+        {
+            "reference": "MedicationRequest/e7bb9f5e-477c-4d25-a36e-984ed4757240"
+        }
+    ],
+    "reasonCode": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "239872002",
+                    "display": "Osteoarthritis of hip"
+                }
+            ],
+            "text": "Osteoarthritis of hip"
+        }
+    ]
+}

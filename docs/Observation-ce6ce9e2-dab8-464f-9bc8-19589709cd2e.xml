@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ce6ce9e2-dab8-464f-9bc8-19589709cd2e"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ce6ce9e2-dab8-464f-9bc8-19589709cd2e</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: laboratory <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory', given as 'laboratory'})</span></p><p><b>code</b>: Low Density Lipoprotein Cholesterol <span style="background: LightGoldenRodYellow">(Details : {LOINC code '18262-6' = 'Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay', given as 'Low Density Lipoprotein Cholesterol'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-84b5550a-1688-4d49-8138-e510f8aa9f0a.html">Generated Summary: id: 84b5550a-1688-4d49-8138-e510f8aa9f0a; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for check up (procedure)</span>; period: Sep 16, 2014, 4:16:44 PM --&gt; Sep 16, 2014, 4:46:44 PM</a></p><p><b>effective</b>: Sep 16, 2014, 4:16:44 PM</p><p><b>issued</b>: Sep 16, 2014, 4:16:44 PM</p><p><b>value</b>: 127.69420829932082 mg/dL<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg/dL = 'mg/dL')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18262-6"/>
+      <display value="Low Density Lipoprotein Cholesterol"/>
+    </coding>
+    <text value="Low Density Lipoprotein Cholesterol"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/84b5550a-1688-4d49-8138-e510f8aa9f0a"/>
+  </encounter>
+  <effectiveDateTime value="2014-09-16T16:16:44-07:00"/>
+  <issued value="2014-09-16T16:16:44.618-07:00"/>
+  <valueQuantity>
+    <value value="127.69420829932082"/>
+    <unit value="mg/dL"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mg/dL"/>
+  </valueQuantity>
+</Observation>

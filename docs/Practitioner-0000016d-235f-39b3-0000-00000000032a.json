@@ -1,0 +1,56 @@
+{
+  "resourceType": "Practitioner",
+  "id": "0000016d-235f-39b3-0000-00000000032a",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0000016d-235f-39b3-0000-00000000032a</p><p><b>meta</b>: </p><p><b>identifier</b>: 810</p><p><b>active</b>: true</p><p><b>name</b>: Sergio619 Armijo730 </p><p><b>telecom</b>: Sergio619.Armijo730@example.com(WORK)</p><p><b>address</b>: 110 West Squantum Street Quincy MA 02169 US </p><p><b>gender</b>: male</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "810"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Armijo730",
+      "given": [
+        "Sergio619"
+      ],
+      "prefix": [
+        "Dr."
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        }
+      ],
+      "system": "email",
+      "value": "Sergio619.Armijo730@example.com",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "110 West Squantum Street"
+      ],
+      "city": "Quincy",
+      "state": "MA",
+      "postalCode": "02169",
+      "country": "US"
+    }
+  ],
+  "gender": "male"
+}

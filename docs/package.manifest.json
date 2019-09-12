@@ -1,6 +1,6 @@
 ﻿{
   "version": "0.0.0",
   "fhirVersion": "[4.0.0]",
-  "date": "20190909191632",
+  "date": "20190911213751",
   "name": "hl7.fhir.us.core.r4validator"
 }

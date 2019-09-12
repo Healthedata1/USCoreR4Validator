@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="337bc754-318b-48e1-8a50-dad3fb7070a1"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 337bc754-318b-48e1-8a50-dad3fb7070a1</p><p><b>meta</b>: </p><p><b>code</b>: Hydrocortisone 10 MG/ML Topical Cream <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '106258' = 'Hydrocortisone 10 MG/ML Topical Cream', given as 'Hydrocortisone 10 MG/ML Topical Cream'})</span></p><p><b>status</b>: active</p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="106258"/>
+      <display value="Hydrocortisone 10 MG/ML Topical Cream"/>
+    </coding>
+    <text value="Hydrocortisone 10 MG/ML Topical Cream"/>
+  </code>
+  <status value="active"/>
+</Medication>

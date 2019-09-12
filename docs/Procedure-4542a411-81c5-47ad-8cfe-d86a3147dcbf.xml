@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="4542a411-81c5-47ad-8cfe-d86a3147dcbf"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 4542a411-81c5-47ad-8cfe-d86a3147dcbf</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>code</b>: Computed tomography of chest and abdomen <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '418891003' = 'Computed tomography of chest and abdomen (procedure)', given as 'Computed tomography of chest and abdomen'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-0d28f688-a230-4a19-9431-a63a73d6819f.html">Generated Summary: id: 0d28f688-a230-4a19-9431-a63a73d6819f; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185347001}">Encounter for problem</span>; period: Jul 20, 2016, 4:16:44 PM --&gt; Jul 20, 2016, 5:10:44 PM; <span title="Codes: {http://snomed.info/sct 162573006}">Suspected lung cancer (situation)</span></a></p><p><b>performed</b>: Jul 20, 2016, 4:16:44 PM --&gt; Jul 20, 2016, 4:55:44 PM</p><p><b>location</b>: <a href="Location-7653e0ab-0566-4083-95d8-c695e4735e53.html">Quincy Outpatient Clinic. Generated Summary: id: 7653e0ab-0566-4083-95d8-c695e4735e53; status: active; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p><p><b>reasonReference</b>: <a href="Condition-d948a4e9-8e90-4742-9b2f-6eb095a66808.html">Suspected lung cancer (situation). Generated Summary: id: d948a4e9-8e90-4742-9b2f-6eb095a66808; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span>; <span title="Codes: {http://snomed.info/sct 162573006}">Suspected lung cancer (situation)</span>; onset: Jul 17, 2016, 4:16:44 PM; recordedDate: Jul 17, 2016, 4:16:44 PM</a></p></div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="418891003"/>
+      <display value="Computed tomography of chest and abdomen"/>
+    </coding>
+    <text value="Computed tomography of chest and abdomen"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/0d28f688-a230-4a19-9431-a63a73d6819f"/>
+  </encounter>
+  <performedPeriod>
+    <start value="2016-07-20T16:16:44-07:00"/>
+    <end value="2016-07-20T16:55:44-07:00"/>
+  </performedPeriod>
+  <location>
+    <reference value="Location/7653e0ab-0566-4083-95d8-c695e4735e53"/>
+    <display value="Quincy Outpatient Clinic"/>
+  </location>
+  <reasonReference>
+    <reference value="Condition/d948a4e9-8e90-4742-9b2f-6eb095a66808"/>
+    <display value="Suspected lung cancer (situation)"/>
+  </reasonReference>
+</Procedure>

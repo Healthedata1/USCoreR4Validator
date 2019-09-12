@@ -1,0 +1,32 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "0aeaedc2-2371-4129-981e-ce51c0d730ee",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+        ]
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "752899",
+                "display": "0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe"
+            }
+        ],
+        "text": "0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/28d35dc3-d8c3-4b41-85c3-8b552b3501da"
+    },
+    "authoredOn": "2008-06-03T16:16:44-07:00",
+    "requester": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2",
+        "display": "Dr. Nelida367 Green467"
+    }
+}

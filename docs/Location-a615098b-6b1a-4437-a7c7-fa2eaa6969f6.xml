@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="a615098b-6b1a-4437-a7c7-fa2eaa6969f6"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a615098b-6b1a-4437-a7c7-fa2eaa6969f6</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>name</b>: BRIGHAM AND WOMEN'S HOSPITAL</p><p><b>telecom</b>: ph: 6177325500</p><p><b>address</b>: 75 FRANCIS STREET BOSTON MA 02115 US </p><h3>Positions</h3><table class="grid"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-71.020173</td><td>42.33196</td></tr></table><p><b>managingOrganization</b>: <a href="Organization-27379046-608b-32f0-9df7-8c833cf5d11d.html">BRIGHAM AND WOMEN'S HOSPITAL. Generated Summary: id: 27379046-608b-32f0-9df7-8c833cf5d11d; 27379046-608b-32f0-9df7-8c833cf5d11d; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: BRIGHAM AND WOMEN'S HOSPITAL; ph: 6177325500</a></p></div>
+  </text>
+  <status value="active"/>
+  <name value="BRIGHAM AND WOMEN&#39;S HOSPITAL"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="6177325500"/>
+  </telecom>
+  <address>
+    <line value="75 FRANCIS STREET"/>
+    <city value="BOSTON"/>
+    <state value="MA"/>
+    <postalCode value="02115"/>
+    <country value="US"/>
+  </address>
+  <position>
+    <longitude value="-71.020173"/>
+    <latitude value="42.33196"/>
+  </position>
+  <managingOrganization>
+    <reference value="Organization/27379046-608b-32f0-9df7-8c833cf5d11d"/>
+    <display value="BRIGHAM AND WOMEN&#39;S HOSPITAL"/>
+  </managingOrganization>
+</Location>

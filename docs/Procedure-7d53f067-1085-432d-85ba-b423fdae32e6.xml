@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="7d53f067-1085-432d-85ba-b423fdae32e6"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 7d53f067-1085-432d-85ba-b423fdae32e6</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>code</b>: Fecal occult blood test <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '1015401000000102' = '1015401000000102', given as 'Fecal occult blood test'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-c04bf692-5517-4c30-81cf-19fd7aa1836b.html">Generated Summary: id: c04bf692-5517-4c30-81cf-19fd7aa1836b; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for 'check-up'</span>; period: Sep 2, 2012, 4:16:44 PM --&gt; Sep 2, 2012, 5:41:44 PM</a></p><p><b>performed</b>: Sep 2, 2012, 4:16:44 PM --&gt; Sep 2, 2012, 4:31:44 PM</p><p><b>location</b>: <a href="Location-a615098b-6b1a-4437-a7c7-fa2eaa6969f6.html">BRIGHAM AND WOMEN'S HOSPITAL. Generated Summary: id: a615098b-6b1a-4437-a7c7-fa2eaa6969f6; status: active; name: BRIGHAM AND WOMEN'S HOSPITAL; ph: 6177325500</a></p><p><b>reasonReference</b>: <a href="Condition-26746a47-1ef3-4e72-b437-73efcf9c1586.html">Polyp of colon. Generated Summary: id: 26746a47-1ef3-4e72-b437-73efcf9c1586; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical resolved}">Resolved</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span>; <span title="Codes: {http://snomed.info/sct 68496003}">Polyp of colon</span>; onset: Sep 2, 2012, 4:16:44 PM; abatement: Oct 27, 2013, 4:16:44 PM; recordedDate: Sep 2, 2012, 4:16:44 PM</a></p></div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1015401000000102"/>
+      <display value="Fecal occult blood test"/>
+    </coding>
+    <text value="Fecal occult blood test"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/c04bf692-5517-4c30-81cf-19fd7aa1836b"/>
+  </encounter>
+  <performedPeriod>
+    <start value="2012-09-02T16:16:44-07:00"/>
+    <end value="2012-09-02T16:31:44-07:00"/>
+  </performedPeriod>
+  <location>
+    <reference value="Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6"/>
+    <display value="BRIGHAM AND WOMEN&#39;S HOSPITAL"/>
+  </location>
+  <reasonReference>
+    <reference value="Condition/26746a47-1ef3-4e72-b437-73efcf9c1586"/>
+    <display value="Polyp of colon"/>
+  </reasonReference>
+</Procedure>

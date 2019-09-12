@@ -1,0 +1,20 @@
+{
+    "resourceType": "Medication",
+    "id": "f4d4662e-96ff-4fe0-8c32-4fb9db8c39d7",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1736854",
+                "display": "Cisplatin 50 MG Injection"
+            }
+        ],
+        "text": "Cisplatin 50 MG Injection"
+    },
+    "status": "active"
+}

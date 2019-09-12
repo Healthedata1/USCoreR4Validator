@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="26746a47-1ef3-4e72-b437-73efcf9c1586"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 26746a47-1ef3-4e72-b437-73efcf9c1586</p><p><b>meta</b>: </p><p><b>clinicalStatus</b>: Resolved <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/condition-clinical code 'resolved' = 'Resolved)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/condition-ver-status code 'confirmed' = 'Confirmed)</span></p><p><b>category</b>: Encounter Diagnosis <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/condition-category code 'encounter-diagnosis' = 'Encounter Diagnosis', given as 'Encounter Diagnosis'})</span></p><p><b>code</b>: Polyp of colon <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '68496003' = 'Polyp of colon', given as 'Polyp of colon'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-c04bf692-5517-4c30-81cf-19fd7aa1836b.html">Generated Summary: id: c04bf692-5517-4c30-81cf-19fd7aa1836b; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for 'check-up'</span>; period: Sep 2, 2012, 4:16:44 PM --&gt; Sep 2, 2012, 5:41:44 PM</a></p><p><b>onset</b>: Sep 2, 2012, 4:16:44 PM</p><p><b>abatement</b>: Oct 27, 2013, 4:16:44 PM</p><p><b>recordedDate</b>: Sep 2, 2012, 4:16:44 PM</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="resolved"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="68496003"/>
+      <display value="Polyp of colon"/>
+    </coding>
+    <text value="Polyp of colon"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/c04bf692-5517-4c30-81cf-19fd7aa1836b"/>
+  </encounter>
+  <onsetDateTime value="2012-09-02T16:16:44-07:00"/>
+  <abatementDateTime value="2013-10-27T16:16:44-07:00"/>
+  <recordedDate value="2012-09-02T16:16:44-07:00"/>
+</Condition>

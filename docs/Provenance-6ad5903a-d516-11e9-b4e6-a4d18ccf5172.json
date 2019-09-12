@@ -1,0 +1,47 @@
+{
+  "resourceType": "Provenance",
+  "id": "6ad5903a-d516-11e9-b4e6-a4d18ccf5172",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6ad5903a-d516-11e9-b4e6-a4d18ccf5172</p><p><b>meta</b>: </p><p><b>target</b>: <a href=\"DiagnosticReport-ec0eaee6-a3e2-4b97-8b3d-b5e6544d0d8d.html\">Generated Summary: id: ec0eaee6-a3e2-4b97-8b3d-b5e6544d0d8d; status: final; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>; <span title=\"Codes: {http://loinc.org 57698-3}\">Lipid Panel</span>; effective: Mar 26, 2013, 4:16:44 PM; issued: Mar 26, 2013, 4:16:44 PM</a></p><p><b>recorded</b>: Sep 11, 2019, 9:33:06 PM</p><blockquote><p><b>agent</b></p><p><b>type</b>: Transmitter <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type code 'transmitter' = 'Transmitter)</span></p><p><b>who</b>: <a href=\"Organization-3ffca313-cdd3-37d2-ad04-00dc4adcb86f.html\">Generated Summary: id: 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: PCP31369; ph: 781-934-2597</a></p></blockquote><blockquote><p><b>agent</b></p><p><b>type</b>: Author <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/provenance-participant-type code 'author' = 'Author)</span></p><p><b>who</b>: <a href=\"Organization-3ffca313-cdd3-37d2-ad04-00dc4adcb86f.html\">Generated Summary: id: 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: PCP31369; ph: 781-934-2597</a></p></blockquote></div>"
+  },
+  "target": [
+    {
+      "reference": "DiagnosticReport/ec0eaee6-a3e2-4b97-8b3d-b5e6544d0d8d"
+    }
+  ],
+  "recorded": "2019-09-12T04:33:06.988808Z",
+  "agent": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type",
+            "code": "transmitter"
+          }
+        ]
+      },
+      "who": {
+        "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code": "author"
+          }
+        ]
+      },
+      "who": {
+        "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f"
+      }
+    }
+  ]
+}

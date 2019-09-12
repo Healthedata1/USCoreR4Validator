@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="d7dde302-468b-4b8f-b4f9-803f8884cf48"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: d7dde302-468b-4b8f-b4f9-803f8884cf48</p><p><b>meta</b>: </p><p><b>practitioner</b>: <a href="Practitioner-0000016d-235f-39b3-0000-00000000032a.html">Dr. Sergio619 Armijo730. Generated Summary: id: 0000016d-235f-39b3-0000-00000000032a; 810; active; Sergio619 Armijo730 ; Sergio619.Armijo730@example.com(WORK); gender: male</a></p><p><b>organization</b>: <a href="Organization-18f774ab-db01-37ba-95c4-44c4eab47089.html">Quincy Outpatient Clinic. Generated Summary: id: 18f774ab-db01-37ba-95c4-44c4eab47089; 18f774ab-db01-37ba-95c4-44c4eab47089; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p><p><b>code</b>: General Practice <span style="background: LightGoldenRodYellow">(Details : {http://nucc.org/provider-taxonomy code '208D00000X' = 'General Practice', given as 'General Practice'})</span></p><p><b>specialty</b>: General Practice <span style="background: LightGoldenRodYellow">(Details : {http://nucc.org/provider-taxonomy code '208D00000X' = 'General Practice', given as 'General Practice'})</span></p><p><b>location</b>: <a href="Location-7653e0ab-0566-4083-95d8-c695e4735e53.html">Quincy Outpatient Clinic. Generated Summary: id: 7653e0ab-0566-4083-95d8-c695e4735e53; status: active; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p><p><b>telecom</b>: ph: 800-865-3384</p></div>
+  </text>
+  <practitioner>
+    <reference value="Practitioner/0000016d-235f-39b3-0000-00000000032a"/>
+    <display value="Dr. Sergio619 Armijo730"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/18f774ab-db01-37ba-95c4-44c4eab47089"/>
+    <display value="Quincy Outpatient Clinic"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="http://nucc.org/provider-taxonomy"/>
+      <code value="208D00000X"/>
+      <display value="General Practice"/>
+    </coding>
+    <text value="General Practice"/>
+  </code>
+  <specialty>
+    <coding>
+      <system value="http://nucc.org/provider-taxonomy"/>
+      <code value="208D00000X"/>
+      <display value="General Practice"/>
+    </coding>
+    <text value="General Practice"/>
+  </specialty>
+  <location>
+    <reference value="Location/7653e0ab-0566-4083-95d8-c695e4735e53"/>
+    <display value="Quincy Outpatient Clinic"/>
+  </location>
+  <telecom>
+    <system value="phone"/>
+    <value value="800-865-3384"/>
+  </telecom>
+</PractitionerRole>

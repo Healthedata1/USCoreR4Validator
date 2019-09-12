@@ -1,0 +1,30 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "164c5587-8258-42fe-81c6-534317a566dd",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 164c5587-8258-42fe-81c6-534317a566dd</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"Medication-5fb48c34-531d-40fb-9a9b-d1de69d526d7.html\">Generated Summary: id: 5fb48c34-531d-40fb-9a9b-d1de69d526d7; <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 197604}\">Digoxin 0.125 MG Oral Tablet</span>; status: active</a></p><p><b>subject</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>context</b>: <a href=\"Encounter-b8c2cf6a-a35c-408b-84ac-dfa2443fe907.html\">Generated Summary: id: b8c2cf6a-a35c-408b-84ac-dfa2443fe907; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://snomed.info/sct 185349003}\">Encounter for check up (procedure)</span>; period: Sep 7, 2010, 4:16:44 PM --&gt; Sep 7, 2010, 4:46:44 PM</a></p><p><b>effective</b>: Sep 7, 2010, 4:16:44 PM</p><p><b>dateAsserted</b>: Sep 7, 2010, 4:16:44 PM</p><p><b>derivedFrom</b>: <a href=\"MedicationRequest-4428bfb7-cbe6-4f19-8f96-5f9eb29aad7e.html\">Generated Summary: id: 4428bfb7-cbe6-4f19-8f96-5f9eb29aad7e; status: active; intent: order; <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 197604}\">Digoxin 0.125 MG Oral Tablet</span>; authoredOn: Sep 7, 2010, 4:16:44 PM</a></p></div>"
+  },
+  "status": "active",
+  "medicationReference": {
+    "reference": "Medication/5fb48c34-531d-40fb-9a9b-d1de69d526d7"
+  },
+  "subject": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+  },
+  "context": {
+    "reference": "Encounter/b8c2cf6a-a35c-408b-84ac-dfa2443fe907"
+  },
+  "effectiveDateTime": "2010-09-07T16:16:44-07:00",
+  "dateAsserted": "2010-09-07T16:16:44-07:00",
+  "derivedFrom": [
+    {
+      "reference": "MedicationRequest/4428bfb7-cbe6-4f19-8f96-5f9eb29aad7e"
+    }
+  ]
+}

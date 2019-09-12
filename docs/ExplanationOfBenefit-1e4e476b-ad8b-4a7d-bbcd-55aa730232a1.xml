@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExplanationOfBenefit xmlns="http://hl7.org/fhir">
+  <id value="1e4e476b-ad8b-4a7d-bbcd-55aa730232a1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1e4e476b-ad8b-4a7d-bbcd-55aa730232a1</p><p><b>contained</b>: , </p><p><b>identifier</b>: 47d909ad-d167-459a-a24f-dc531fbae5e0, 99999999999</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>billablePeriod</b>: Feb 22, 1972, 3:31:44 PM --&gt; Feb 22, 1973, 3:31:44 PM</p><p><b>created</b>: Feb 22, 1972, 3:31:44 PM</p><p><b>insurer</b>: Cigna Health</p><p><b>provider</b>: <a href="Practitioner-0000016d-235f-39b3-0000-0000000001c2.html">Generated Summary: id: 0000016d-235f-39b3-0000-0000000001c2; 450; active; Nelida367 Green467 ; Nelida367.Green467@example.com(WORK); gender: female</a></p><p><b>referral</b>: unknown resource contained</p><p><b>facility</b>: <a href="Location-a615098b-6b1a-4437-a7c7-fa2eaa6969f6.html">BRIGHAM AND WOMEN'S HOSPITAL. Generated Summary: id: a615098b-6b1a-4437-a7c7-fa2eaa6969f6; status: active; name: BRIGHAM AND WOMEN'S HOSPITAL; ph: 6177325500</a></p><p><b>claim</b>: <a href="Claim-47d909ad-d167-459a-a24f-dc531fbae5e0.html">Generated Summary: id: 47d909ad-d167-459a-a24f-dc531fbae5e0; status: active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/claim-type institutional}">Institutional</span>; use: claim; billablePeriod: Feb 22, 1972, 3:16:44 PM --&gt; Feb 22, 1972, 3:31:44 PM; created: Feb 22, 1972, 3:31:44 PM; <span title="Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}">Normal</span>; </a></p><p><b style="color: maroon">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled yet</b></p></div>
+  </text>
+  <contained>
+    <ServiceRequest>
+      <id value="referral"/>
+      <status value="completed"/>
+      <intent value="order"/>
+      <subject>
+        <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+      </subject>
+      <requester>
+        <reference value="Practitioner/0000016d-235f-39b3-0000-0000000001c2"/>
+      </requester>
+      <performer>
+        <reference value="Practitioner/0000016d-235f-39b3-0000-0000000001c2"/>
+      </performer>
+    </ServiceRequest>
+  </contained>
+  <contained>
+    <Coverage>
+      <id value="coverage"/>
+      <status value="active"/>
+      <type>
+        <text value="Cigna Health"/>
+      </type>
+      <beneficiary>
+        <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+      </beneficiary>
+      <payor>
+        <display value="Cigna Health"/>
+      </payor>
+    </Coverage>
+  </contained>
+  <identifier>
+    <system value="https://bluebutton.cms.gov/resources/variables/clm_id"/>
+    <value value="47d909ad-d167-459a-a24f-dc531fbae5e0"/>
+  </identifier>
+  <identifier>
+    <system value="https://bluebutton.cms.gov/resources/identifier/claim-group"/>
+    <value value="99999999999"/>
+  </identifier>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="institutional"/>
+    </coding>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </patient>
+  <billablePeriod>
+    <start value="1972-02-22T15:31:44-08:00"/>
+    <end value="1973-02-22T15:31:44-08:00"/>
+  </billablePeriod>
+  <created value="1972-02-22T15:31:44-08:00"/>
+  <insurer>
+    <display value="Cigna Health"/>
+  </insurer>
+  <provider>
+    <reference value="Practitioner/0000016d-235f-39b3-0000-0000000001c2"/>
+  </provider>
+  <referral>
+    <reference value="#referral"/>
+  </referral>
+  <facility>
+    <reference value="Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6"/>
+    <display value="BRIGHAM AND WOMEN&#39;S HOSPITAL"/>
+  </facility>
+  <claim>
+    <reference value="Claim/47d909ad-d167-459a-a24f-dc531fbae5e0"/>
+  </claim>
+  <outcome value="complete"/>
+  <careTeam>
+    <sequence value="1"/>
+    <provider>
+      <reference value="Practitioner/0000016d-235f-39b3-0000-0000000001c2"/>
+    </provider>
+    <role>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claimcareteamrole"/>
+        <code value="primary"/>
+        <display value="Primary Care Practitioner"/>
+      </coding>
+    </role>
+  </careTeam>
+  <insurance>
+    <focal value="true"/>
+    <coverage>
+      <reference value="#coverage"/>
+      <display value="Cigna Health"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <category>
+      <coding>
+        <system value="https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd"/>
+        <code value="1"/>
+        <display value="Medical care"/>
+      </coding>
+    </category>
+    <productOrService>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="185347001"/>
+        <display value="Encounter for problem"/>
+      </coding>
+      <text value="Encounter for problem"/>
+    </productOrService>
+    <servicedPeriod>
+      <start value="1972-02-22T15:16:44-08:00"/>
+      <end value="1972-02-22T15:31:44-08:00"/>
+    </servicedPeriod>
+    <locationCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/ex-serviceplace"/>
+        <code value="21"/>
+        <display value="Inpatient Hospital"/>
+      </coding>
+    </locationCodeableConcept>
+    <encounter>
+      <reference value="Encounter/49726919-64c1-4bbe-bd2d-3f2f286d2233"/>
+    </encounter>
+  </item>
+  <total>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+        <code value="submitted"/>
+        <display value="Submitted Amount"/>
+      </coding>
+      <text value="Submitted Amount"/>
+    </category>
+    <amount>
+      <value value="129.16"/>
+      <currency value="USD"/>
+    </amount>
+  </total>
+  <payment>
+    <amount>
+      <value value="0.0"/>
+      <currency value="USD"/>
+    </amount>
+  </payment>
+</ExplanationOfBenefit>

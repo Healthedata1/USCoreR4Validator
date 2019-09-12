@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Goal xmlns="http://hl7.org/fhir">
+  <id value="c17c79ee-528f-4f6a-bd4c-f9df3564f808"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c17c79ee-528f-4f6a-bd4c-f9df3564f808</p><p><b>meta</b>: </p><p><b>lifecycleStatus</b>: accepted</p><p><b>achievementStatus</b>: In Progress <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/goal-achievement code 'in-progress' = 'In Progress)</span></p><p><b>description</b>: Maintain blood pressure below 140/90 mm[Hg] <span style="background: LightGoldenRodYellow">(Details )</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p></div>
+  </text>
+  <lifecycleStatus value="accepted"/>
+  <achievementStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/goal-achievement"/>
+      <code value="in-progress"/>
+    </coding>
+  </achievementStatus>
+  <description>
+    <text value="Maintain blood pressure below 140/90 mm[Hg]"/>
+  </description>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+</Goal>

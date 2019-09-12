@@ -1,0 +1,53 @@
+{
+    "resourceType": "PractitionerRole",
+    "id": "a3abde10-5a3a-45c2-b699-d28cef4a8ecd",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"
+        ]
+    },
+    "practitioner": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-0000000051f4",
+        "display": "Dr. Marica887 Bode78"
+    },
+    "organization": {
+        "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f",
+        "display": "PCP31369"
+    },
+    "code": [
+        {
+            "coding": [
+                {
+                    "system": "http://nucc.org/provider-taxonomy",
+                    "code": "208D00000X",
+                    "display": "General Practice"
+                }
+            ],
+            "text": "General Practice"
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://nucc.org/provider-taxonomy",
+                    "code": "208D00000X",
+                    "display": "General Practice"
+                }
+            ],
+            "text": "General Practice"
+        }
+    ],
+    "location": [
+        {
+            "reference": "Location/1e84a992-8d6e-41d1-af95-4316a6a139fb",
+            "display": "PCP31369"
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "781-934-2597"
+        }
+    ]
+}

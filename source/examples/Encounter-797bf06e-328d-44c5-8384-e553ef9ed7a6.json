@@ -1,0 +1,54 @@
+{
+    "resourceType": "Encounter",
+    "id": "797bf06e-328d-44c5-8384-e553ef9ed7a6",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+        ]
+    },
+    "status": "finished",
+    "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "EMER"
+    },
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "50849002",
+                    "display": "Emergency room admission (procedure)"
+                }
+            ],
+            "text": "Emergency room admission (procedure)"
+        }
+    ],
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+        "display": "Mr. Jose871 Cruickshank494"
+    },
+    "participant": [
+        {
+            "individual": {
+                "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2",
+                "display": "Dr. Nelida367 Green467"
+            }
+        }
+    ],
+    "period": {
+        "start": "1993-05-22T16:16:44-07:00",
+        "end": "1993-05-22T17:16:44-07:00"
+    },
+    "location": [
+        {
+            "location": {
+                "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+                "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+            }
+        }
+    ],
+    "serviceProvider": {
+        "reference": "Organization/27379046-608b-32f0-9df7-8c833cf5d11d",
+        "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+    }
+}

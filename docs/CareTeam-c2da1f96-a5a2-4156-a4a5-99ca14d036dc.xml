@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CareTeam xmlns="http://hl7.org/fhir">
+  <id value="c2da1f96-a5a2-4156-a4a5-99ca14d036dc"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: c2da1f96-a5a2-4156-a4a5-99ca14d036dc</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-060fe62d-9928-46c3-8dbc-b1bff340f95b.html">Generated Summary: id: 060fe62d-9928-46c3-8dbc-b1bff340f95b; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185347001}">Encounter for problem</span>; period: Jul 28, 2016, 4:16:44 PM --&gt; Jul 28, 2016, 5:50:44 PM; <span title="Codes: {http://snomed.info/sct 424132000}">Non-small cell carcinoma of lung, TNM stage 1 (disorder)</span></a></p><p><b>period</b>: Jul 28, 2016, 4:16:44 PM --&gt; (ongoing)</p><blockquote><p><b>participant</b></p><p><b>role</b>: Patient <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '116153009' = 'Donor of control material', given as 'Patient'})</span></p><p><b>member</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Mr. Jose871 Cruickshank494. Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: Person in the healthcare environment (person) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '303118004' = 'Person in the healthcare environment', given as 'Person in the healthcare environment (person)'})</span></p><p><b>member</b>: <a href="Practitioner-0000016d-235f-39b3-0000-00000000032a.html">Dr. Sergio619 Armijo730. Generated Summary: id: 0000016d-235f-39b3-0000-00000000032a; 810; active; Sergio619 Armijo730 ; Sergio619.Armijo730@example.com(WORK); gender: male</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>role</b>: Healthcare related organization (qualifier value) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '303118004' = 'Person in the healthcare environment', given as 'Healthcare related organization (qualifier value)'})</span></p><p><b>member</b>: <a href="Organization-18f774ab-db01-37ba-95c4-44c4eab47089.html">Quincy Outpatient Clinic. Generated Summary: id: 18f774ab-db01-37ba-95c4-44c4eab47089; 18f774ab-db01-37ba-95c4-44c4eab47089; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p></blockquote><p><b>reasonCode</b>: Non-small cell carcinoma of lung, TNM stage 1 (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '424132000' = 'Non-small cell carcinoma of lung, TNM stage 1 (disorder)', given as 'Non-small cell carcinoma of lung, TNM stage 1 (disorder)'})</span></p><p><b>managingOrganization</b>: <a href="Organization-18f774ab-db01-37ba-95c4-44c4eab47089.html">Quincy Outpatient Clinic. Generated Summary: id: 18f774ab-db01-37ba-95c4-44c4eab47089; 18f774ab-db01-37ba-95c4-44c4eab47089; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p></div>
+  </text>
+  <status value="active"/>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/060fe62d-9928-46c3-8dbc-b1bff340f95b"/>
+  </encounter>
+  <period>
+    <start value="2016-07-28T16:16:44-07:00"/>
+  </period>
+  <participant>
+    <role>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="116153009"/>
+        <display value="Patient"/>
+      </coding>
+      <text value="Patient"/>
+    </role>
+    <member>
+      <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+      <display value="Mr. Jose871 Cruickshank494"/>
+    </member>
+  </participant>
+  <participant>
+    <role>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="303118004"/>
+        <display value="Person in the healthcare environment (person)"/>
+      </coding>
+      <text value="Person in the healthcare environment (person)"/>
+    </role>
+    <member>
+      <reference value="Practitioner/0000016d-235f-39b3-0000-00000000032a"/>
+      <display value="Dr. Sergio619 Armijo730"/>
+    </member>
+  </participant>
+  <participant>
+    <role>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="303118004"/>
+        <display value="Healthcare related organization (qualifier value)"/>
+      </coding>
+      <text value="Healthcare related organization (qualifier value)"/>
+    </role>
+    <member>
+      <reference value="Organization/18f774ab-db01-37ba-95c4-44c4eab47089"/>
+      <display value="Quincy Outpatient Clinic"/>
+    </member>
+  </participant>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="424132000"/>
+      <display value="Non-small cell carcinoma of lung, TNM stage 1 (disorder)"/>
+    </coding>
+    <text value="Non-small cell carcinoma of lung, TNM stage 1 (disorder)"/>
+  </reasonCode>
+  <managingOrganization>
+    <reference value="Organization/18f774ab-db01-37ba-95c4-44c4eab47089"/>
+    <display value="Quincy Outpatient Clinic"/>
+  </managingOrganization>
+</CareTeam>

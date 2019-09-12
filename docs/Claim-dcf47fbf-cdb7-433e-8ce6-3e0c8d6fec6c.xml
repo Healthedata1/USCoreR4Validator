@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="dcf47fbf-cdb7-433e-8ce6-3e0c8d6fec6c"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: dcf47fbf-cdb7-433e-8ce6-3e0c8d6fec6c</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Jose871 Cruickshank494. Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>billablePeriod</b>: Jan 11, 2011, 3:16:44 PM --&gt; Jan 11, 2011, 3:46:44 PM</p><p><b>created</b>: Jan 11, 2011, 3:46:44 PM</p><p><b>provider</b>: <a href="Organization-18f774ab-db01-37ba-95c4-44c4eab47089.html">Quincy Outpatient Clinic. Generated Summary: id: 18f774ab-db01-37ba-95c4-44c4eab47089; 18f774ab-db01-37ba-95c4-44c4eab47089; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p><p><b>priority</b>: Normal <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/processpriority code 'normal' = 'Normal)</span></p><p><b>facility</b>: <a href="Location-7653e0ab-0566-4083-95d8-c695e4735e53.html">Quincy Outpatient Clinic. Generated Summary: id: 7653e0ab-0566-4083-95d8-c695e4735e53; status: active; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p><h3>Procedures</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Procedure[x]</b></td></tr><tr><td>*</td><td>1</td><td><a href="Procedure-e3fd7733-79c1-4b8e-809d-3dd10c9342ce.html">Generated Summary: id: e3fd7733-79c1-4b8e-809d-3dd10c9342ce; status: completed; <span title="Codes: {http://snomed.info/sct 180325003}">Electrical cardioversion</span>; performed: Jan 11, 2011, 3:16:44 PM --&gt; Jan 11, 2011, 3:31:44 PM</a></td></tr></table><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>Medicare</td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: Encounter for check up (procedure) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '185349003' = 'Encounter for check up (procedure)', given as 'Encounter for check up (procedure)'})</span></p><p><b>encounter</b>: <a href="Encounter-51e75f41-af0f-41ba-9a7a-d3ef31ac0a1e.html">Generated Summary: id: 51e75f41-af0f-41ba-9a7a-d3ef31ac0a1e; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for check up (procedure)</span>; period: Jan 11, 2011, 3:16:44 PM --&gt; Jan 11, 2011, 3:46:44 PM</a></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>procedureSequence</b>: 1</p><p><b>productOrService</b>: Electrical cardioversion <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '180325003' = 'Electrical cardioversion', given as 'Electrical cardioversion'})</span></p><p><b>net</b>: </p></blockquote><p><b>total</b>: </p></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="institutional"/>
+    </coding>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+    <display value="Jose871 Cruickshank494"/>
+  </patient>
+  <billablePeriod>
+    <start value="2011-01-11T15:16:44-08:00"/>
+    <end value="2011-01-11T15:46:44-08:00"/>
+  </billablePeriod>
+  <created value="2011-01-11T15:46:44-08:00"/>
+  <provider>
+    <reference value="Organization/18f774ab-db01-37ba-95c4-44c4eab47089"/>
+    <display value="Quincy Outpatient Clinic"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+    </coding>
+  </priority>
+  <facility>
+    <reference value="Location/7653e0ab-0566-4083-95d8-c695e4735e53"/>
+    <display value="Quincy Outpatient Clinic"/>
+  </facility>
+  <procedure>
+    <sequence value="1"/>
+    <procedureReference>
+      <reference value="Procedure/e3fd7733-79c1-4b8e-809d-3dd10c9342ce"/>
+    </procedureReference>
+  </procedure>
+  <insurance>
+    <sequence value="1"/>
+    <focal value="true"/>
+    <coverage>
+      <display value="Medicare"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="185349003"/>
+        <display value="Encounter for check up (procedure)"/>
+      </coding>
+      <text value="Encounter for check up (procedure)"/>
+    </productOrService>
+    <encounter>
+      <reference value="Encounter/51e75f41-af0f-41ba-9a7a-d3ef31ac0a1e"/>
+    </encounter>
+  </item>
+  <item>
+    <sequence value="2"/>
+    <procedureSequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="180325003"/>
+        <display value="Electrical cardioversion"/>
+      </coding>
+      <text value="Electrical cardioversion"/>
+    </productOrService>
+    <net>
+      <value value="33313.16"/>
+      <currency value="USD"/>
+    </net>
+  </item>
+  <total>
+    <value value="129.16"/>
+    <currency value="USD"/>
+  </total>
+</Claim>

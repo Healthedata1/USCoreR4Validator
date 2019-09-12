@@ -1,0 +1,93 @@
+{
+    "resourceType": "CareTeam",
+    "id": "1bc1351c-fa04-4e3e-b8be-d7b89ecfd745",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
+        ]
+    },
+    "status": "active",
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/04d8ab1f-a869-4089-9b32-7224da8b7177"
+    },
+    "period": {
+        "start": "1958-04-15T15:16:44-08:00"
+    },
+    "participant": [
+        {
+            "role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "116153009",
+                            "display": "Patient"
+                        }
+                    ],
+                    "text": "Patient"
+                }
+            ],
+            "member": {
+                "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+                "display": "Mr. Jose871 Cruickshank494"
+            }
+        },
+        {
+            "role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "303118004",
+                            "display": "Person in the healthcare environment (person)"
+                        }
+                    ],
+                    "text": "Person in the healthcare environment (person)"
+                }
+            ],
+            "member": {
+                "reference": "Practitioner/0000016d-235f-39b3-0000-0000000051f4",
+                "display": "Dr. Marica887 Bode78"
+            }
+        },
+        {
+            "role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "303118004",
+                            "display": "Healthcare related organization (qualifier value)"
+                        }
+                    ],
+                    "text": "Healthcare related organization (qualifier value)"
+                }
+            ],
+            "member": {
+                "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f",
+                "display": "PCP31369"
+            }
+        }
+    ],
+    "reasonCode": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "59621000",
+                    "display": "Hypertension"
+                }
+            ],
+            "text": "Hypertension"
+        }
+    ],
+    "managingOrganization": [
+        {
+            "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f",
+            "display": "PCP31369"
+        }
+    ]
+}

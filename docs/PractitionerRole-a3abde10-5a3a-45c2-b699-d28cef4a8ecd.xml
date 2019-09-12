@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="a3abde10-5a3a-45c2-b699-d28cef4a8ecd"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a3abde10-5a3a-45c2-b699-d28cef4a8ecd</p><p><b>meta</b>: </p><p><b>practitioner</b>: <a href="Practitioner-0000016d-235f-39b3-0000-0000000051f4.html">Dr. Marica887 Bode78. Generated Summary: id: 0000016d-235f-39b3-0000-0000000051f4; 20980; active; Marica887 Bode78 ; Marica887.Bode78@example.com(WORK); gender: female</a></p><p><b>organization</b>: <a href="Organization-3ffca313-cdd3-37d2-ad04-00dc4adcb86f.html">PCP31369. Generated Summary: id: 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: PCP31369; ph: 781-934-2597</a></p><p><b>code</b>: General Practice <span style="background: LightGoldenRodYellow">(Details : {http://nucc.org/provider-taxonomy code '208D00000X' = 'General Practice', given as 'General Practice'})</span></p><p><b>specialty</b>: General Practice <span style="background: LightGoldenRodYellow">(Details : {http://nucc.org/provider-taxonomy code '208D00000X' = 'General Practice', given as 'General Practice'})</span></p><p><b>location</b>: <a href="Location-1e84a992-8d6e-41d1-af95-4316a6a139fb.html">PCP31369. Generated Summary: id: 1e84a992-8d6e-41d1-af95-4316a6a139fb; status: active; name: PCP31369; ph: 781-934-2597</a></p><p><b>telecom</b>: ph: 781-934-2597</p></div>
+  </text>
+  <practitioner>
+    <reference value="Practitioner/0000016d-235f-39b3-0000-0000000051f4"/>
+    <display value="Dr. Marica887 Bode78"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f"/>
+    <display value="PCP31369"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="http://nucc.org/provider-taxonomy"/>
+      <code value="208D00000X"/>
+      <display value="General Practice"/>
+    </coding>
+    <text value="General Practice"/>
+  </code>
+  <specialty>
+    <coding>
+      <system value="http://nucc.org/provider-taxonomy"/>
+      <code value="208D00000X"/>
+      <display value="General Practice"/>
+    </coding>
+    <text value="General Practice"/>
+  </specialty>
+  <location>
+    <reference value="Location/1e84a992-8d6e-41d1-af95-4316a6a139fb"/>
+    <display value="PCP31369"/>
+  </location>
+  <telecom>
+    <system value="phone"/>
+    <value value="781-934-2597"/>
+  </telecom>
+</PractitionerRole>

@@ -11,7 +11,7 @@
   <name value="USCoreConditionCategoryExtensionCodes"/>
   <title value="US Core Condition Category Extension Codes"/>
   <status value="active"/>
-  <date value="2019-09-09T19:17:34-07:00"/>
+  <date value="2019-09-11T21:39:24-07:00"/>
   <publisher value="HL7 US Realm Steering Committee"/>
   <description value="Set of codes that are needed for implementation of the US-Core profiles. These codes are used as extensions to the FHIR and US Core value sets.&#xA;"/>
   <jurisdiction>

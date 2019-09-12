@@ -1,0 +1,45 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "81343203-2c86-43a4-8a7c-2c9e2b581319",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 81343203-2c86-43a4-8a7c-2c9e2b581319</p><p><b>meta</b>: </p><p><b>status</b>: stopped</p><p><b>medication</b>: <a href=\"Medication-bd12bb4c-d6b6-4385-a3dd-8075fc0c15e3.html\">Generated Summary: id: bd12bb4c-d6b6-4385-a3dd-8075fc0c15e3; <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 583214}\">PACLitaxel 100 MG Injection</span>; status: active</a></p><p><b>subject</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>context</b>: <a href=\"Encounter-8fc666d3-72d7-4419-a766-e6d0f56b21b7.html\">Generated Summary: id: 8fc666d3-72d7-4419-a766-e6d0f56b21b7; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; <span title=\"Codes: {http://snomed.info/sct 185347001}\">Encounter for problem</span>; period: Dec 30, 2016, 3:16:44 PM --&gt; Dec 31, 2016, 4:16:44 PM</a></p><p><b>effective</b>: Dec 30, 2016, 3:16:44 PM --&gt; Dec 30, 2016, 3:16:44 PM</p><p><b>dateAsserted</b>: Dec 30, 2016, 3:16:44 PM</p><p><b>derivedFrom</b>: <a href=\"MedicationRequest-5a25cbd8-3b76-4358-a521-5d697c35f843.html\">Generated Summary: id: 5a25cbd8-3b76-4358-a521-5d697c35f843; status: stopped; intent: order; <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 583214}\">PACLitaxel 100 MG Injection</span>; authoredOn: Dec 30, 2016, 3:16:44 PM</a></p><p><b>reasonCode</b>: Non-small cell carcinoma of lung, TNM stage 1 (disorder) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '424132000' = 'Non-small cell carcinoma of lung, TNM stage 1 (disorder)', given as 'Non-small cell carcinoma of lung, TNM stage 1 (disorder)'})</span></p></div>"
+  },
+  "status": "stopped",
+  "medicationReference": {
+    "reference": "Medication/bd12bb4c-d6b6-4385-a3dd-8075fc0c15e3"
+  },
+  "subject": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+  },
+  "context": {
+    "reference": "Encounter/8fc666d3-72d7-4419-a766-e6d0f56b21b7"
+  },
+  "effectivePeriod": {
+    "start": "2016-12-30T15:16:44-08:00",
+    "end": "2016-12-30T15:16:44-08:00"
+  },
+  "dateAsserted": "2016-12-30T15:16:44-08:00",
+  "derivedFrom": [
+    {
+      "reference": "MedicationRequest/5a25cbd8-3b76-4358-a521-5d697c35f843"
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "424132000",
+          "display": "Non-small cell carcinoma of lung, TNM stage 1 (disorder)"
+        }
+      ],
+      "text": "Non-small cell carcinoma of lung, TNM stage 1 (disorder)"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+    "resourceType": "Claim",
+    "id": "32ac8d10-549c-4c9b-8760-9ef1d0902521",
+    "status": "active",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                "code": "institutional"
+            }
+        ]
+    },
+    "use": "claim",
+    "patient": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+        "display": "Jose871 Cruickshank494"
+    },
+    "billablePeriod": {
+        "start": "2000-04-18T16:16:44-07:00",
+        "end": "2000-04-18T17:05:44-07:00"
+    },
+    "created": "2000-04-18T17:05:44-07:00",
+    "provider": {
+        "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f",
+        "display": "PCP31369"
+    },
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+                "code": "normal"
+            }
+        ]
+    },
+    "facility": {
+        "reference": "Location/1e84a992-8d6e-41d1-af95-4316a6a139fb",
+        "display": "PCP31369"
+    },
+    "diagnosis": [
+        {
+            "sequence": 1,
+            "diagnosisReference": {
+                "reference": "Condition/08f56a84-079d-4a4d-950d-b185e0b6c70e"
+            }
+        }
+    ],
+    "insurance": [
+        {
+            "sequence": 1,
+            "focal": true,
+            "coverage": {
+                "display": "Cigna Health"
+            }
+        }
+    ],
+    "item": [
+        {
+            "sequence": 1,
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "162673000",
+                        "display": "General examination of patient (procedure)"
+                    }
+                ],
+                "text": "General examination of patient (procedure)"
+            },
+            "encounter": [
+                {
+                    "reference": "Encounter/ddad6975-91c4-4365-a167-7669012f80b5"
+                }
+            ]
+        },
+        {
+            "sequence": 2,
+            "diagnosisSequence": [
+                1
+            ],
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "64859006",
+                        "display": "Osteoporosis (disorder)"
+                    }
+                ],
+                "text": "Osteoporosis (disorder)"
+            }
+        }
+    ],
+    "total": {
+        "value": 129.16,
+        "currency": "USD"
+    }
+}

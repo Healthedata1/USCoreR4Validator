@@ -1,0 +1,45 @@
+{
+    "resourceType": "Observation",
+    "id": "6160797e-7dc3-4190-8d22-5ef389aac2df",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+        ]
+    },
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "laboratory"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "2069-3",
+                "display": "Chloride"
+            }
+        ],
+        "text": "Chloride"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/7d35f0d0-9a20-4989-89b8-557b81c6f841"
+    },
+    "effectiveDateTime": "2012-10-30T16:16:44-07:00",
+    "issued": "2012-10-30T16:16:44.618-07:00",
+    "valueQuantity": {
+        "value": 101.14845079018956,
+        "unit": "mmol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "mmol/L"
+    }
+}

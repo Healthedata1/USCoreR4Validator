@@ -1,0 +1,38 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "ddfbe83e-19f5-444a-82b5-6f6f132bfbd7",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+        ]
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "106258",
+                "display": "Hydrocortisone 10 MG/ML Topical Cream"
+            }
+        ],
+        "text": "Hydrocortisone 10 MG/ML Topical Cream"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/49726919-64c1-4bbe-bd2d-3f2f286d2233"
+    },
+    "authoredOn": "1972-02-22T15:16:44-08:00",
+    "requester": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2",
+        "display": "Dr. Nelida367 Green467"
+    },
+    "dosageInstruction": [
+        {
+            "sequence": 1,
+            "asNeededBoolean": true
+        }
+    ]
+}

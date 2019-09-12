@@ -1,0 +1,303 @@
+{
+    "resourceType": "ExplanationOfBenefit",
+    "id": "18e15c9b-d235-42a1-b380-7de5232de68d",
+    "contained": [
+        {
+            "resourceType": "ServiceRequest",
+            "id": "referral",
+            "status": "completed",
+            "intent": "order",
+            "subject": {
+                "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+            },
+            "requester": {
+                "reference": "Practitioner/0000016d-235f-39b3-0000-000000016c4c"
+            },
+            "performer": [
+                {
+                    "reference": "Practitioner/0000016d-235f-39b3-0000-000000016c4c"
+                }
+            ]
+        },
+        {
+            "resourceType": "Coverage",
+            "id": "coverage",
+            "status": "active",
+            "type": {
+                "text": "Medicare"
+            },
+            "beneficiary": {
+                "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+            },
+            "payor": [
+                {
+                    "display": "Medicare"
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+            "value": "cef1057d-e37e-4cc8-b5e0-f40e75151e9d"
+        },
+        {
+            "system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+            "value": "99999999999"
+        }
+    ],
+    "status": "active",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                "code": "institutional"
+            }
+        ]
+    },
+    "use": "claim",
+    "patient": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "billablePeriod": {
+        "start": "2014-01-21T15:31:44-08:00",
+        "end": "2015-01-21T15:31:44-08:00"
+    },
+    "created": "2014-01-21T15:31:44-08:00",
+    "insurer": {
+        "display": "Medicare"
+    },
+    "provider": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-000000016c4c"
+    },
+    "referral": {
+        "reference": "#referral"
+    },
+    "facility": {
+        "reference": "Location/3a2d1aad-e90c-4ddd-8101-958a529adeb8",
+        "display": "HANOVER FAMILY HEALTH AND URGENT CARE"
+    },
+    "claim": {
+        "reference": "Claim/cef1057d-e37e-4cc8-b5e0-f40e75151e9d"
+    },
+    "outcome": "complete",
+    "careTeam": [
+        {
+            "sequence": 1,
+            "provider": {
+                "reference": "Practitioner/0000016d-235f-39b3-0000-000000016c4c"
+            },
+            "role": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+                        "code": "primary",
+                        "display": "Primary Care Practitioner"
+                    }
+                ]
+            }
+        }
+    ],
+    "insurance": [
+        {
+            "focal": true,
+            "coverage": {
+                "reference": "#coverage",
+                "display": "Medicare"
+            }
+        }
+    ],
+    "item": [
+        {
+            "sequence": 1,
+            "category": {
+                "coding": [
+                    {
+                        "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+                        "code": "1",
+                        "display": "Medical care"
+                    }
+                ]
+            },
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "702927004",
+                        "display": "Urgent care clinic (procedure)"
+                    }
+                ],
+                "text": "Urgent care clinic (procedure)"
+            },
+            "servicedPeriod": {
+                "start": "2014-01-21T15:16:44-08:00",
+                "end": "2014-01-21T15:31:44-08:00"
+            },
+            "locationCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+                        "code": "20",
+                        "display": "Urgent Care Facility"
+                    }
+                ]
+            },
+            "encounter": [
+                {
+                    "reference": "Encounter/73532632-1e8d-48ba-b707-719f2c89e9b4"
+                }
+            ]
+        },
+        {
+            "sequence": 2,
+            "category": {
+                "coding": [
+                    {
+                        "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+                        "code": "1",
+                        "display": "Medical care"
+                    }
+                ]
+            },
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "180325003",
+                        "display": "Electrical cardioversion"
+                    }
+                ],
+                "text": "Electrical cardioversion"
+            },
+            "servicedPeriod": {
+                "start": "2014-01-21T15:16:44-08:00",
+                "end": "2014-01-21T15:31:44-08:00"
+            },
+            "locationCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+                        "code": "20",
+                        "display": "Urgent Care Facility"
+                    }
+                ]
+            },
+            "net": {
+                "value": 40444.41,
+                "currency": "USD"
+            },
+            "adjudication": [
+                {
+                    "category": {
+                        "coding": [
+                            {
+                                "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                "code": "https://bluebutton.cms.gov/resources/variables/line_coinsrnc_amt",
+                                "display": "Line Beneficiary Coinsurance Amount"
+                            }
+                        ]
+                    },
+                    "amount": {
+                        "value": 8088.882000000001,
+                        "currency": "USD"
+                    }
+                },
+                {
+                    "category": {
+                        "coding": [
+                            {
+                                "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                "code": "https://bluebutton.cms.gov/resources/variables/line_prvdr_pmt_amt",
+                                "display": "Line Provider Payment Amount"
+                            }
+                        ]
+                    },
+                    "amount": {
+                        "value": 32355.528000000006,
+                        "currency": "USD"
+                    }
+                },
+                {
+                    "category": {
+                        "coding": [
+                            {
+                                "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                "code": "https://bluebutton.cms.gov/resources/variables/line_sbmtd_chrg_amt",
+                                "display": "Line Submitted Charge Amount"
+                            }
+                        ]
+                    },
+                    "amount": {
+                        "value": 40444.41,
+                        "currency": "USD"
+                    }
+                },
+                {
+                    "category": {
+                        "coding": [
+                            {
+                                "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                "code": "https://bluebutton.cms.gov/resources/variables/line_alowd_chrg_amt",
+                                "display": "Line Allowed Charge Amount"
+                            }
+                        ]
+                    },
+                    "amount": {
+                        "value": 40444.41,
+                        "currency": "USD"
+                    }
+                },
+                {
+                    "category": {
+                        "coding": [
+                            {
+                                "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                "code": "https://bluebutton.cms.gov/resources/variables/line_bene_ptb_ddctbl_amt",
+                                "display": "Line Beneficiary Part B Deductible Amount"
+                            }
+                        ]
+                    },
+                    "amount": {
+                        "value": 0,
+                        "currency": "USD"
+                    }
+                },
+                {
+                    "category": {
+                        "coding": [
+                            {
+                                "system": "https://bluebutton.cms.gov/resources/codesystem/adjudication",
+                                "code": "https://bluebutton.cms.gov/resources/variables/line_prcsg_ind_cd",
+                                "display": "Line Processing Indicator Code"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "total": [
+        {
+            "category": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                        "code": "submitted",
+                        "display": "Submitted Amount"
+                    }
+                ],
+                "text": "Submitted Amount"
+            },
+            "amount": {
+                "value": 129.16,
+                "currency": "USD"
+            }
+        }
+    ],
+    "payment": {
+        "amount": {
+            "value": 32355.528000000006,
+            "currency": "USD"
+        }
+    }
+}

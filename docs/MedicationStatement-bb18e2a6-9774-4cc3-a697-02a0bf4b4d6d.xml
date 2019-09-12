@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="bb18e2a6-9774-4cc3-a697-02a0bf4b4d6d"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: bb18e2a6-9774-4cc3-a697-02a0bf4b4d6d</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>medication</b>: <a href="Medication-e4e72913-af90-4831-a547-3f63ea90a560.html">Generated Summary: id: e4e72913-af90-4831-a547-3f63ea90a560; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 849574}">Naproxen sodium 220 MG Oral Tablet</span>; status: active</a></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>context</b>: <a href="Encounter-9a10d7b7-b7fe-4a9f-8877-2fc0db94f02a.html">Generated Summary: id: 9a10d7b7-b7fe-4a9f-8877-2fc0db94f02a; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185347001}">Encounter for problem</span>; period: Feb 4, 2001, 3:16:44 PM --&gt; Feb 4, 2001, 3:31:44 PM; <span title="Codes: {http://snomed.info/sct 239872002}">Osteoarthritis of hip</span></a></p><p><b>effective</b>: Feb 4, 2001, 3:16:44 PM</p><p><b>dateAsserted</b>: Feb 4, 2001, 3:16:44 PM</p><p><b>derivedFrom</b>: <a href="MedicationRequest-e7bb9f5e-477c-4d25-a36e-984ed4757240.html">Generated Summary: id: e7bb9f5e-477c-4d25-a36e-984ed4757240; status: active; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 849574}">Naproxen sodium 220 MG Oral Tablet</span>; authoredOn: Feb 4, 2001, 3:16:44 PM</a></p><p><b>reasonCode</b>: Osteoarthritis of hip <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '239872002' = 'Degenerative joint disease of hip', given as 'Osteoarthritis of hip'})</span></p></div>
+  </text>
+  <status value="active"/>
+  <medicationReference>
+    <reference value="Medication/e4e72913-af90-4831-a547-3f63ea90a560"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <context>
+    <reference value="Encounter/9a10d7b7-b7fe-4a9f-8877-2fc0db94f02a"/>
+  </context>
+  <effectiveDateTime value="2001-02-04T15:16:44-08:00"/>
+  <dateAsserted value="2001-02-04T15:16:44-08:00"/>
+  <derivedFrom>
+    <reference value="MedicationRequest/e7bb9f5e-477c-4d25-a36e-984ed4757240"/>
+  </derivedFrom>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="239872002"/>
+      <display value="Osteoarthritis of hip"/>
+    </coding>
+    <text value="Osteoarthritis of hip"/>
+  </reasonCode>
+</MedicationStatement>

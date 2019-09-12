@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImagingStudy xmlns="http://hl7.org/fhir">
+  <id value="84b9e0c5-8c4c-4201-9372-d6c960ca047d"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 84b9e0c5-8c4c-4201-9372-d6c960ca047d</p><p><b>identifier</b>: urn:oid:1.2.840.99999999.27529798.1568256682410 (OFFICIAL)</p><p><b>status</b>: available</p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-a5b4e585-c136-4b77-8ec5-785905b4a3e4.html">Generated Summary: id: a5b4e585-c136-4b77-8ec5-785905b4a3e4; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode EMER}">emergency</span>; <span title="Codes: {http://snomed.info/sct 50849002}">Emergency room admission (procedure)</span>; period: Nov 10, 2017, 3:16:44 PM --&gt; Nov 10, 2017, 5:13:44 PM</a></p><p><b>started</b>: Nov 10, 2017, 3:16:44 PM</p><p><b>numberOfSeries</b>: 1</p><p><b>numberOfInstances</b>: 1</p><p><b>location</b>: <a href="Location-a615098b-6b1a-4437-a7c7-fa2eaa6969f6.html">BRIGHAM AND WOMEN'S HOSPITAL. Generated Summary: id: a615098b-6b1a-4437-a7c7-fa2eaa6969f6; status: active; name: BRIGHAM AND WOMEN'S HOSPITAL; ph: 6177325500</a></p><blockquote><p><b>series</b></p><p><b>uid</b>: 1.2.840.99999999.1.33786172.1568256682410</p><p><b>number</b>: 1</p><p><b>modality</b>: Digital Radiography (Details: DICOM code DX = 'Digital Radiography', stated as 'Digital Radiography')</p><p><b>numberOfInstances</b>: 1</p><p><b>bodySite</b>: Wrist (Details: SNOMED CT code 8205005 = 'Wrist', stated as 'Wrist')</p><p><b>started</b>: Nov 10, 2017, 3:16:44 PM</p><h3>Instances</h3><table class="grid"><tr><td>-</td><td><b>Uid</b></td><td><b>SopClass</b></td><td><b>Number</b></td><td><b>Title</b></td></tr><tr><td>*</td><td>1.2.840.99999999.1.1.65939674.1568256682410</td><td>1.2.840.10008.5.1.4.1.1.1.1 (Details: urn:ietf:rfc:3986 code 1.2.840.10008.5.1.4.1.1.1.1 = '1.2.840.10008.5.1.4.1.1.1.1', stated as 'null')</td><td>1</td><td>Image of wrist</td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:1.2.840.99999999.27529798.1568256682410"/>
+  </identifier>
+  <status value="available"/>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/a5b4e585-c136-4b77-8ec5-785905b4a3e4"/>
+  </encounter>
+  <started value="2017-11-10T15:16:44-08:00"/>
+  <numberOfSeries value="1"/>
+  <numberOfInstances value="1"/>
+  <location>
+    <reference value="Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6"/>
+    <display value="BRIGHAM AND WOMEN&#39;S HOSPITAL"/>
+  </location>
+  <series>
+    <uid value="1.2.840.99999999.1.33786172.1568256682410"/>
+    <number value="1"/>
+    <modality>
+      <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+      <code value="DX"/>
+      <display value="Digital Radiography"/>
+    </modality>
+    <numberOfInstances value="1"/>
+    <bodySite>
+      <system value="http://snomed.info/sct"/>
+      <code value="8205005"/>
+      <display value="Wrist"/>
+    </bodySite>
+    <started value="2017-11-10T15:16:44-08:00"/>
+    <instance>
+      <uid value="1.2.840.99999999.1.1.65939674.1568256682410"/>
+      <sopClass>
+        <system value="urn:ietf:rfc:3986"/>
+        <code value="1.2.840.10008.5.1.4.1.1.1.1"/>
+      </sopClass>
+      <number value="1"/>
+      <title value="Image of wrist"/>
+    </instance>
+  </series>
+</ImagingStudy>

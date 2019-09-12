@@ -1,0 +1,34 @@
+{
+    "resourceType": "Procedure",
+    "id": "f9b3b47c-a13a-4c7d-9e70-60d84ea8489a",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+        ]
+    },
+    "status": "completed",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "430193006",
+                "display": "Medication Reconciliation (procedure)"
+            }
+        ],
+        "text": "Medication Reconciliation (procedure)"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/82c612ad-009a-4a9a-8abb-fc122e729501"
+    },
+    "performedPeriod": {
+        "start": "2011-04-05T16:16:44-07:00",
+        "end": "2011-04-05T16:31:44-07:00"
+    },
+    "location": {
+        "reference": "Location/7653e0ab-0566-4083-95d8-c695e4735e53",
+        "display": "Quincy Outpatient Clinic"
+    }
+}

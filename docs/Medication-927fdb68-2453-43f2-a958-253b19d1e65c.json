@@ -1,0 +1,24 @@
+{
+  "resourceType": "Medication",
+  "id": "927fdb68-2453-43f2-a958-253b19d1e65c",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 927fdb68-2453-43f2-a958-253b19d1e65c</p><p><b>meta</b>: </p><p><b>code</b>: 0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '752899' = 'leuprolide acetate 7.5 MG in 0.25 ML (1 month) Prefilled Syringe', given as '0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe'})</span></p><p><b>status</b>: active</p></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "752899",
+        "display": "0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe"
+      }
+    ],
+    "text": "0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe"
+  },
+  "status": "active"
+}

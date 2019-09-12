@@ -1,0 +1,52 @@
+{
+    "resourceType": "Practitioner",
+    "id": "0000016d-235f-39b3-0000-000000016c4c",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+        ]
+    },
+    "identifier": [
+        {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "93260"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "family": "Beier427",
+            "given": [
+                "Almeda560"
+            ],
+            "prefix": [
+                "Dr."
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+                    "valueBoolean": true
+                }
+            ],
+            "system": "email",
+            "value": "Almeda560.Beier427@example.com",
+            "use": "work"
+        }
+    ],
+    "address": [
+        {
+            "line": [
+                "1399 WASHINGTON STREET"
+            ],
+            "city": "HANOVER",
+            "state": "MA",
+            "postalCode": "2339",
+            "country": "US"
+        }
+    ],
+    "gender": "female"
+}

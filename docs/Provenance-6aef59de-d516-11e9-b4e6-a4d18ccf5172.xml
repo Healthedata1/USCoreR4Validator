@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="6aef59de-d516-11e9-b4e6-a4d18ccf5172"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6aef59de-d516-11e9-b4e6-a4d18ccf5172</p><p><b>meta</b>: </p><p><b>target</b>: <a href="Claim-eb5fe8f9-8767-48ea-ae64-33e8696d181d.html">Generated Summary: id: eb5fe8f9-8767-48ea-ae64-33e8696d181d; status: active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/claim-type pharmacy}">Pharmacy</span>; use: claim; billablePeriod: Mar 2, 2017, 3:16:44 PM --&gt; Mar 3, 2017, 5:16:44 PM; created: Mar 3, 2017, 5:16:44 PM; <span title="Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}">Normal</span>; </a></p><p><b style="color: maroon">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled yet</b></p></div>
+  </text>
+  <target>
+    <reference value="Claim/eb5fe8f9-8767-48ea-ae64-33e8696d181d"/>
+  </target>
+  <recorded value="2019-09-12T04:33:07.157804Z"/>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type"/>
+        <code value="transmitter"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f"/>
+    </who>
+  </agent>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="author"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f"/>
+    </who>
+  </agent>
+</Provenance>

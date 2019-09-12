@@ -1,0 +1,20 @@
+{
+    "resourceType": "Medication",
+    "id": "462d55d8-98f7-4bdf-aefe-e6fc89d7f6d3",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "999969",
+                "display": "Amlodipine 5 MG / Hydrochlorothiazide 12.5 MG / Olmesartan medoxomil 20 MG"
+            }
+        ],
+        "text": "Amlodipine 5 MG / Hydrochlorothiazide 12.5 MG / Olmesartan medoxomil 20 MG"
+    },
+    "status": "active"
+}

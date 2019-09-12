@@ -1,0 +1,34 @@
+{
+    "resourceType": "Procedure",
+    "id": "04d79f8a-a60f-4ad9-9687-d67328515ca7",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+        ]
+    },
+    "status": "completed",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "73761001",
+                "display": "Colonoscopy"
+            }
+        ],
+        "text": "Colonoscopy"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/e703b439-cb26-4cff-afac-928b2bd1fec6"
+    },
+    "performedPeriod": {
+        "start": "2018-10-26T16:16:44-07:00",
+        "end": "2018-10-26T16:50:44-07:00"
+    },
+    "location": {
+        "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+        "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+    }
+}

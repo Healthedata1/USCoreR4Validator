@@ -1,0 +1,49 @@
+{
+  "resourceType": "Observation",
+  "id": "6fdf676b-4934-420e-afcd-efc862b42e2f",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6fdf676b-4934-420e-afcd-efc862b42e2f</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: vital-signs <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'vital-signs'})</span></p><p><b>code</b>: Body Mass Index <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '39156-5' = 'Body mass index (BMI) [Ratio]', given as 'Body Mass Index'})</span></p><p><b>subject</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>encounter</b>: <a href=\"Encounter-fd28a9d7-e94e-4768-8de6-60d96b6517a9.html\">Generated Summary: id: fd28a9d7-e94e-4768-8de6-60d96b6517a9; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://snomed.info/sct 185349003}\">Encounter for check up (procedure)</span>; period: Nov 18, 2014, 3:16:44 PM --&gt; Nov 18, 2014, 3:46:44 PM</a></p><p><b>effective</b>: Nov 18, 2014, 3:16:44 PM</p><p><b>issued</b>: Nov 18, 2014, 3:16:44 PM</p><p><b>value</b>: 23.639050542620556 kg/m2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "39156-5",
+        "display": "Body Mass Index"
+      }
+    ],
+    "text": "Body Mass Index"
+  },
+  "subject": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+  },
+  "encounter": {
+    "reference": "Encounter/fd28a9d7-e94e-4768-8de6-60d96b6517a9"
+  },
+  "effectiveDateTime": "2014-11-18T15:16:44-08:00",
+  "issued": "2014-11-18T15:16:44.618-08:00",
+  "valueQuantity": {
+    "value": 23.639050542620556,
+    "unit": "kg/m2",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg/m2"
+  }
+}

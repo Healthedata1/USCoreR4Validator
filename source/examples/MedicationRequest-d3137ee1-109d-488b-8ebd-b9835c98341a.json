@@ -1,0 +1,32 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "d3137ee1-109d-488b-8ebd-b9835c98341a",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+        ]
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "904419",
+                "display": "Alendronic acid 10 MG Oral Tablet"
+            }
+        ],
+        "text": "Alendronic acid 10 MG Oral Tablet"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/ddad6975-91c4-4365-a167-7669012f80b5"
+    },
+    "authoredOn": "2000-04-18T16:16:44-07:00",
+    "requester": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-0000000051f4",
+        "display": "Dr. Marica887 Bode78"
+    }
+}

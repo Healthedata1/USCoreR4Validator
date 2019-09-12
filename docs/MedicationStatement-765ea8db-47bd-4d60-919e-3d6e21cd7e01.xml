@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="765ea8db-47bd-4d60-919e-3d6e21cd7e01"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 765ea8db-47bd-4d60-919e-3d6e21cd7e01</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>medication</b>: <a href="Medication-927fdb68-2453-43f2-a958-253b19d1e65c.html">Generated Summary: id: 927fdb68-2453-43f2-a958-253b19d1e65c; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 752899}">0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe</span>; status: active</a></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>context</b>: <a href="Encounter-28d35dc3-d8c3-4b41-85c3-8b552b3501da.html">Generated Summary: id: 28d35dc3-d8c3-4b41-85c3-8b552b3501da; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185347001}">Encounter for problem</span>; period: Jun 3, 2008, 4:16:44 PM --&gt; Jun 3, 2008, 8:31:44 PM; <span title="Codes: {http://snomed.info/sct 126906006}">Neoplasm of prostate</span></a></p><p><b>effective</b>: Jun 3, 2008, 4:16:44 PM</p><p><b>dateAsserted</b>: Jun 3, 2008, 4:16:44 PM</p><p><b>derivedFrom</b>: <a href="MedicationRequest-0aeaedc2-2371-4129-981e-ce51c0d730ee.html">Generated Summary: id: 0aeaedc2-2371-4129-981e-ce51c0d730ee; status: active; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 752899}">0.25 ML Leuprolide Acetate 30 MG/ML Prefilled Syringe</span>; authoredOn: Jun 3, 2008, 4:16:44 PM</a></p></div>
+  </text>
+  <status value="active"/>
+  <medicationReference>
+    <reference value="Medication/927fdb68-2453-43f2-a958-253b19d1e65c"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <context>
+    <reference value="Encounter/28d35dc3-d8c3-4b41-85c3-8b552b3501da"/>
+  </context>
+  <effectiveDateTime value="2008-06-03T16:16:44-07:00"/>
+  <dateAsserted value="2008-06-03T16:16:44-07:00"/>
+  <derivedFrom>
+    <reference value="MedicationRequest/0aeaedc2-2371-4129-981e-ce51c0d730ee"/>
+  </derivedFrom>
+</MedicationStatement>

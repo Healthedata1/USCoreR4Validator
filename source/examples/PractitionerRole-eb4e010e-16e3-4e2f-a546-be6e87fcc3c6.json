@@ -1,0 +1,53 @@
+{
+    "resourceType": "PractitionerRole",
+    "id": "eb4e010e-16e3-4e2f-a546-be6e87fcc3c6",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"
+        ]
+    },
+    "practitioner": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2",
+        "display": "Dr. Nelida367 Green467"
+    },
+    "organization": {
+        "reference": "Organization/27379046-608b-32f0-9df7-8c833cf5d11d",
+        "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+    },
+    "code": [
+        {
+            "coding": [
+                {
+                    "system": "http://nucc.org/provider-taxonomy",
+                    "code": "208D00000X",
+                    "display": "General Practice"
+                }
+            ],
+            "text": "General Practice"
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://nucc.org/provider-taxonomy",
+                    "code": "208D00000X",
+                    "display": "General Practice"
+                }
+            ],
+            "text": "General Practice"
+        }
+    ],
+    "location": [
+        {
+            "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+            "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "6177325500"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="208a3c0d-2ed2-4dff-a2ec-3552d81265df"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 208a3c0d-2ed2-4dff-a2ec-3552d81265df</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: vital-signs <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'vital-signs'})</span></p><p><b>code</b>: Body Mass Index <span style="background: LightGoldenRodYellow">(Details : {LOINC code '39156-5' = 'Body mass index (BMI) [Ratio]', given as 'Body Mass Index'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-8a010a5c-8db9-4118-affd-97735dc797ba.html">Generated Summary: id: 8a010a5c-8db9-4118-affd-97735dc797ba; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for check up (procedure)</span>; period: Nov 27, 2012, 3:16:44 PM --&gt; Nov 27, 2012, 3:46:44 PM</a></p><p><b>effective</b>: Nov 27, 2012, 3:16:44 PM</p><p><b>issued</b>: Nov 27, 2012, 3:16:44 PM</p><p><b>value</b>: 24.369430411447603 kg/m2<span style="background: LightGoldenRodYellow"> (Details: UCUM code kg/m2 = 'kg/m2')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="39156-5"/>
+      <display value="Body Mass Index"/>
+    </coding>
+    <text value="Body Mass Index"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/8a010a5c-8db9-4118-affd-97735dc797ba"/>
+  </encounter>
+  <effectiveDateTime value="2012-11-27T15:16:44-08:00"/>
+  <issued value="2012-11-27T15:16:44.618-08:00"/>
+  <valueQuantity>
+    <value value="24.369430411447603"/>
+    <unit value="kg/m2"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="kg/m2"/>
+  </valueQuantity>
+</Observation>

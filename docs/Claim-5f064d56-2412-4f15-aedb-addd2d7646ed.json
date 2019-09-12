@@ -1,0 +1,180 @@
+{
+  "resourceType": "Claim",
+  "id": "5f064d56-2412-4f15-aedb-addd2d7646ed",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 5f064d56-2412-4f15-aedb-addd2d7646ed</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Jose871 Cruickshank494. Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>billablePeriod</b>: Sep 2, 2012, 4:16:44 PM --&gt; Sep 2, 2012, 5:41:44 PM</p><p><b>created</b>: Sep 2, 2012, 5:41:44 PM</p><p><b>provider</b>: <a href=\"Organization-27379046-608b-32f0-9df7-8c833cf5d11d.html\">BRIGHAM AND WOMEN'S HOSPITAL. Generated Summary: id: 27379046-608b-32f0-9df7-8c833cf5d11d; 27379046-608b-32f0-9df7-8c833cf5d11d; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: BRIGHAM AND WOMEN'S HOSPITAL; ph: 6177325500</a></p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/processpriority code 'normal' = 'Normal)</span></p><p><b>facility</b>: <a href=\"Location-a615098b-6b1a-4437-a7c7-fa2eaa6969f6.html\">BRIGHAM AND WOMEN'S HOSPITAL. Generated Summary: id: a615098b-6b1a-4437-a7c7-fa2eaa6969f6; status: active; name: BRIGHAM AND WOMEN'S HOSPITAL; ph: 6177325500</a></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td></tr><tr><td>*</td><td>1</td><td><a href=\"Condition-26746a47-1ef3-4e72-b437-73efcf9c1586.html\">Generated Summary: id: 26746a47-1ef3-4e72-b437-73efcf9c1586; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span>; <span title=\"Codes: {http://snomed.info/sct 68496003}\">Polyp of colon</span>; onset: Sep 2, 2012, 4:16:44 PM; abatement: Oct 27, 2013, 4:16:44 PM; recordedDate: Sep 2, 2012, 4:16:44 PM</a></td></tr></table><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 1</p><p><b>procedure</b>: <a href=\"Procedure-90f4b06b-8df2-438e-a819-438b691cdc1f.html\">Generated Summary: id: 90f4b06b-8df2-438e-a819-438b691cdc1f; status: completed; <span title=\"Codes: {http://snomed.info/sct 73761001}\">Colonoscopy</span>; performed: Sep 2, 2012, 4:16:44 PM --&gt; Sep 2, 2012, 4:56:44 PM</a></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 2</p><p><b>procedure</b>: <a href=\"Procedure-7d53f067-1085-432d-85ba-b423fdae32e6.html\">Generated Summary: id: 7d53f067-1085-432d-85ba-b423fdae32e6; status: completed; <span title=\"Codes: {http://snomed.info/sct 1015401000000102}\">Fecal occult blood test</span>; performed: Sep 2, 2012, 4:16:44 PM --&gt; Sep 2, 2012, 4:31:44 PM</a></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 3</p><p><b>procedure</b>: <a href=\"Procedure-c7fc6c57-5c95-4fb6-81f3-23bdb8ec5721.html\">Generated Summary: id: c7fc6c57-5c95-4fb6-81f3-23bdb8ec5721; status: completed; <span title=\"Codes: {http://snomed.info/sct 274031008}\">Rectal polypectomy</span>; performed: Sep 2, 2012, 4:16:44 PM --&gt; Sep 2, 2012, 4:31:44 PM</a></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>Medicare</td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: Encounter for 'check-up' <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '185349003' = 'Encounter for check up (procedure)', given as 'Encounter for 'check-up''})</span></p><p><b>encounter</b>: <a href=\"Encounter-c04bf692-5517-4c30-81cf-19fd7aa1836b.html\">Generated Summary: id: c04bf692-5517-4c30-81cf-19fd7aa1836b; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://snomed.info/sct 185349003}\">Encounter for 'check-up'</span>; period: Sep 2, 2012, 4:16:44 PM --&gt; Sep 2, 2012, 5:41:44 PM</a></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>procedureSequence</b>: 1</p><p><b>productOrService</b>: Colonoscopy <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '73761001' = 'Colonoscopy', given as 'Colonoscopy'})</span></p><p><b>net</b>: </p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 3</p><p><b>diagnosisSequence</b>: 1</p><p><b>productOrService</b>: Polyp of colon <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '68496003' = 'Polyp of colon', given as 'Polyp of colon'})</span></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 4</p><p><b>procedureSequence</b>: 2</p><p><b>productOrService</b>: Fecal occult blood test <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '1015401000000102' = '1015401000000102', given as 'Fecal occult blood test'})</span></p><p><b>net</b>: </p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 5</p><p><b>procedureSequence</b>: 3</p><p><b>productOrService</b>: Rectal polypectomy <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '274031008' = 'Rectal polypectomy', given as 'Rectal polypectomy'})</span></p><p><b>net</b>: </p></blockquote><p><b>total</b>: </p></div>"
+  },
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "institutional"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+    "display": "Jose871 Cruickshank494"
+  },
+  "billablePeriod": {
+    "start": "2012-09-02T16:16:44-07:00",
+    "end": "2012-09-02T17:41:44-07:00"
+  },
+  "created": "2012-09-02T17:41:44-07:00",
+  "provider": {
+    "reference": "Organization/27379046-608b-32f0-9df7-8c833cf5d11d",
+    "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+  },
+  "priority": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+        "code": "normal"
+      }
+    ]
+  },
+  "facility": {
+    "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+    "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+  },
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosisReference": {
+        "reference": "Condition/26746a47-1ef3-4e72-b437-73efcf9c1586"
+      }
+    }
+  ],
+  "procedure": [
+    {
+      "sequence": 1,
+      "procedureReference": {
+        "reference": "Procedure/90f4b06b-8df2-438e-a819-438b691cdc1f"
+      }
+    },
+    {
+      "sequence": 2,
+      "procedureReference": {
+        "reference": "Procedure/7d53f067-1085-432d-85ba-b423fdae32e6"
+      }
+    },
+    {
+      "sequence": 3,
+      "procedureReference": {
+        "reference": "Procedure/c7fc6c57-5c95-4fb6-81f3-23bdb8ec5721"
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "sequence": 1,
+      "focal": true,
+      "coverage": {
+        "display": "Medicare"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Encounter for 'check-up'"
+          }
+        ],
+        "text": "Encounter for 'check-up'"
+      },
+      "encounter": [
+        {
+          "reference": "Encounter/c04bf692-5517-4c30-81cf-19fd7aa1836b"
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "procedureSequence": [
+        1
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "73761001",
+            "display": "Colonoscopy"
+          }
+        ],
+        "text": "Colonoscopy"
+      },
+      "net": {
+        "value": 17515.3,
+        "currency": "USD"
+      }
+    },
+    {
+      "sequence": 3,
+      "diagnosisSequence": [
+        1
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "68496003",
+            "display": "Polyp of colon"
+          }
+        ],
+        "text": "Polyp of colon"
+      }
+    },
+    {
+      "sequence": 4,
+      "procedureSequence": [
+        2
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1015401000000102",
+            "display": "Fecal occult blood test"
+          }
+        ],
+        "text": "Fecal occult blood test"
+      },
+      "net": {
+        "value": 516.65,
+        "currency": "USD"
+      }
+    },
+    {
+      "sequence": 5,
+      "procedureSequence": [
+        3
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "274031008",
+            "display": "Rectal polypectomy"
+          }
+        ],
+        "text": "Rectal polypectomy"
+      },
+      "net": {
+        "value": 8167.91,
+        "currency": "USD"
+      }
+    }
+  ],
+  "total": {
+    "value": 129.16,
+    "currency": "USD"
+  }
+}

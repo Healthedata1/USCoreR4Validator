@@ -1,0 +1,180 @@
+{
+  "resourceType": "ExplanationOfBenefit",
+  "id": "155f604d-a06b-4380-8251-8a14ace2e761",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 155f604d-a06b-4380-8251-8a14ace2e761</p><p><b>contained</b>: , </p><p><b>identifier</b>: a22400ac-a15e-4e1e-aac7-27f936d145d0, 99999999999</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>billablePeriod</b>: Jul 14, 1958, 4:31:44 PM --&gt; Jul 14, 1959, 4:31:44 PM</p><p><b>created</b>: Jul 14, 1958, 4:31:44 PM</p><p><b>insurer</b>: Cigna Health</p><p><b>provider</b>: <a href=\"Practitioner-0000016d-235f-39b3-0000-0000000001c2.html\">Generated Summary: id: 0000016d-235f-39b3-0000-0000000001c2; 450; active; Nelida367 Green467 ; Nelida367.Green467@example.com(WORK); gender: female</a></p><p><b>referral</b>: unknown resource contained</p><p><b>facility</b>: <a href=\"Location-a615098b-6b1a-4437-a7c7-fa2eaa6969f6.html\">BRIGHAM AND WOMEN'S HOSPITAL. Generated Summary: id: a615098b-6b1a-4437-a7c7-fa2eaa6969f6; status: active; name: BRIGHAM AND WOMEN'S HOSPITAL; ph: 6177325500</a></p><p><b>claim</b>: <a href=\"Claim-a22400ac-a15e-4e1e-aac7-27f936d145d0.html\">Generated Summary: id: a22400ac-a15e-4e1e-aac7-27f936d145d0; status: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span>; use: claim; billablePeriod: Jul 14, 1958, 4:16:44 PM --&gt; Jul 14, 1958, 4:31:44 PM; created: Jul 14, 1958, 4:31:44 PM; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span>; </a></p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled yet</b></p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "ServiceRequest",
+      "id": "referral",
+      "status": "completed",
+      "intent": "order",
+      "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+      },
+      "requester": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2"
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2"
+        }
+      ]
+    },
+    {
+      "resourceType": "Coverage",
+      "id": "coverage",
+      "status": "active",
+      "type": {
+        "text": "Cigna Health"
+      },
+      "beneficiary": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+      },
+      "payor": [
+        {
+          "display": "Cigna Health"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+      "value": "a22400ac-a15e-4e1e-aac7-27f936d145d0"
+    },
+    {
+      "system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+      "value": "99999999999"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "institutional"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+  },
+  "billablePeriod": {
+    "start": "1958-07-14T16:31:44-07:00",
+    "end": "1959-07-14T16:31:44-07:00"
+  },
+  "created": "1958-07-14T16:31:44-07:00",
+  "insurer": {
+    "display": "Cigna Health"
+  },
+  "provider": {
+    "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2"
+  },
+  "referral": {
+    "reference": "#referral"
+  },
+  "facility": {
+    "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+    "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+  },
+  "claim": {
+    "reference": "Claim/a22400ac-a15e-4e1e-aac7-27f936d145d0"
+  },
+  "outcome": "complete",
+  "careTeam": [
+    {
+      "sequence": 1,
+      "provider": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2"
+      },
+      "role": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+            "code": "primary",
+            "display": "Primary Care Practitioner"
+          }
+        ]
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "focal": true,
+      "coverage": {
+        "reference": "#coverage",
+        "display": "Cigna Health"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "category": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+            "code": "1",
+            "display": "Medical care"
+          }
+        ]
+      },
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "390906007",
+            "display": "Hypertension follow-up encounter"
+          }
+        ],
+        "text": "Hypertension follow-up encounter"
+      },
+      "servicedPeriod": {
+        "start": "1958-07-14T16:16:44-07:00",
+        "end": "1958-07-14T16:31:44-07:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+            "code": "21",
+            "display": "Inpatient Hospital"
+          }
+        ]
+      },
+      "encounter": [
+        {
+          "reference": "Encounter/87f97350-7032-4560-afbf-e9003f4dc9ec"
+        }
+      ]
+    }
+  ],
+  "total": [
+    {
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+            "code": "submitted",
+            "display": "Submitted Amount"
+          }
+        ],
+        "text": "Submitted Amount"
+      },
+      "amount": {
+        "value": 129.16,
+        "currency": "USD"
+      }
+    }
+  ],
+  "payment": {
+    "amount": {
+      "value": 0.0,
+      "currency": "USD"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "f56a19ac-4e93-4920-b1b6-0ad514b3771b",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f56a19ac-4e93-4920-b1b6-0ad514b3771b</p><p><b>meta</b>: </p><p><b>practitioner</b>: <a href=\"Practitioner-0000016d-235f-39b3-0000-000000016c4c.html\">Dr. Almeda560 Beier427. Generated Summary: id: 0000016d-235f-39b3-0000-000000016c4c; 93260; active; Almeda560 Beier427 ; Almeda560.Beier427@example.com(WORK); gender: female</a></p><p><b>organization</b>: <a href=\"Organization-4e916854-3a59-3f17-bb16-7c406148d822.html\">HANOVER FAMILY HEALTH AND URGENT CARE. Generated Summary: id: 4e916854-3a59-3f17-bb16-7c406148d822; 4e916854-3a59-3f17-bb16-7c406148d822; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: HANOVER FAMILY HEALTH AND URGENT CARE; ph: 781-829-1000</a></p><p><b>code</b>: General Practice <span style=\"background: LightGoldenRodYellow\">(Details : {http://nucc.org/provider-taxonomy code '208D00000X' = 'General Practice', given as 'General Practice'})</span></p><p><b>specialty</b>: General Practice <span style=\"background: LightGoldenRodYellow\">(Details : {http://nucc.org/provider-taxonomy code '208D00000X' = 'General Practice', given as 'General Practice'})</span></p><p><b>location</b>: <a href=\"Location-3a2d1aad-e90c-4ddd-8101-958a529adeb8.html\">HANOVER FAMILY HEALTH AND URGENT CARE. Generated Summary: id: 3a2d1aad-e90c-4ddd-8101-958a529adeb8; status: active; name: HANOVER FAMILY HEALTH AND URGENT CARE; ph: 781-829-1000</a></p><p><b>telecom</b>: ph: 781-829-1000</p></div>"
+  },
+  "practitioner": {
+    "reference": "Practitioner/0000016d-235f-39b3-0000-000000016c4c",
+    "display": "Dr. Almeda560 Beier427"
+  },
+  "organization": {
+    "reference": "Organization/4e916854-3a59-3f17-bb16-7c406148d822",
+    "display": "HANOVER FAMILY HEALTH AND URGENT CARE"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice"
+        }
+      ],
+      "text": "General Practice"
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://nucc.org/provider-taxonomy",
+          "code": "208D00000X",
+          "display": "General Practice"
+        }
+      ],
+      "text": "General Practice"
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/3a2d1aad-e90c-4ddd-8101-958a529adeb8",
+      "display": "HANOVER FAMILY HEALTH AND URGENT CARE"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "781-829-1000"
+    }
+  ]
+}

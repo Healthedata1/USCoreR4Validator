@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="72b49a24-9fd3-4954-9274-82ccd3507cfd"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 72b49a24-9fd3-4954-9274-82ccd3507cfd</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: laboratory <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory', given as 'laboratory'})</span></p><p><b>code</b>: Sodium <span style="background: LightGoldenRodYellow">(Details : {LOINC code '2947-0' = 'Sodium [Moles/volume] in Blood', given as 'Sodium'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-427bb68d-6386-4961-ad71-c22b44ae3160.html">Generated Summary: id: 427bb68d-6386-4961-ad71-c22b44ae3160; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 162673000}">General examination of patient (procedure)</span>; period: Jul 2, 2013, 4:16:44 PM --&gt; Jul 2, 2013, 5:01:44 PM</a></p><p><b>effective</b>: Jul 2, 2013, 4:16:44 PM</p><p><b>issued</b>: Jul 2, 2013, 4:16:44 PM</p><p><b>value</b>: 138.5465154649241 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM code mmol/L = 'mmol/L')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="2947-0"/>
+      <display value="Sodium"/>
+    </coding>
+    <text value="Sodium"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/427bb68d-6386-4961-ad71-c22b44ae3160"/>
+  </encounter>
+  <effectiveDateTime value="2013-07-02T16:16:44-07:00"/>
+  <issued value="2013-07-02T16:16:44.618-07:00"/>
+  <valueQuantity>
+    <value value="138.5465154649241"/>
+    <unit value="mmol/L"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mmol/L"/>
+  </valueQuantity>
+</Observation>

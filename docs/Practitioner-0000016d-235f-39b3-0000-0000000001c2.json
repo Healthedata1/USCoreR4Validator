@@ -1,0 +1,56 @@
+{
+  "resourceType": "Practitioner",
+  "id": "0000016d-235f-39b3-0000-0000000001c2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0000016d-235f-39b3-0000-0000000001c2</p><p><b>meta</b>: </p><p><b>identifier</b>: 450</p><p><b>active</b>: true</p><p><b>name</b>: Nelida367 Green467 </p><p><b>telecom</b>: Nelida367.Green467@example.com(WORK)</p><p><b>address</b>: 75 FRANCIS STREET BOSTON MA 02115 US </p><p><b>gender</b>: female</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "450"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Green467",
+      "given": [
+        "Nelida367"
+      ],
+      "prefix": [
+        "Dr."
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        }
+      ],
+      "system": "email",
+      "value": "Nelida367.Green467@example.com",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "75 FRANCIS STREET"
+      ],
+      "city": "BOSTON",
+      "state": "MA",
+      "postalCode": "02115",
+      "country": "US"
+    }
+  ],
+  "gender": "female"
+}

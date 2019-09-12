@@ -1,0 +1,32 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "9c470bb9-927e-4f06-bf42-e9f81e333f33",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+        ]
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "855332",
+                "display": "Warfarin Sodium 5 MG Oral Tablet"
+            }
+        ],
+        "text": "Warfarin Sodium 5 MG Oral Tablet"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/b8c2cf6a-a35c-408b-84ac-dfa2443fe907"
+    },
+    "authoredOn": "2010-09-07T16:16:44-07:00",
+    "requester": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-00000000032a",
+        "display": "Dr. Sergio619 Armijo730"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "resourceType": "Location",
+    "id": "1e84a992-8d6e-41d1-af95-4316a6a139fb",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+        ]
+    },
+    "status": "active",
+    "name": "PCP31369",
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "781-934-2597"
+        }
+    ],
+    "address": {
+        "line": [
+            "145 WASHINGTON ST"
+        ],
+        "city": "NORWELL",
+        "state": "MA",
+        "postalCode": "02061-1744",
+        "country": "US"
+    },
+    "position": {
+        "longitude": -70.818844,
+        "latitude": 42.164569
+    },
+    "managingOrganization": {
+        "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f",
+        "display": "PCP31369"
+    }
+}

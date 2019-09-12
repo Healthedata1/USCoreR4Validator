@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="58375abf-7109-44e5-b65f-edf466e9f79e"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 58375abf-7109-44e5-b65f-edf466e9f79e</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>code</b>: Electrical cardioversion <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '180325003' = 'Electrical cardioversion', given as 'Electrical cardioversion'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-4bf1d682-f7df-4e87-828e-62eeefd3d031.html">Generated Summary: id: 4bf1d682-f7df-4e87-828e-62eeefd3d031; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for check up (procedure)</span>; period: Nov 8, 2016, 3:16:44 PM --&gt; Nov 8, 2016, 3:46:44 PM</a></p><p><b>performed</b>: Nov 8, 2016, 3:16:44 PM --&gt; Nov 8, 2016, 3:31:44 PM</p><p><b>location</b>: <a href="Location-7653e0ab-0566-4083-95d8-c695e4735e53.html">Quincy Outpatient Clinic. Generated Summary: id: 7653e0ab-0566-4083-95d8-c695e4735e53; status: active; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p><p><b>reasonReference</b>: <a href="Condition-14561089-c20d-495a-a0b8-5e03fc7b96ec.html">Atrial Fibrillation. Generated Summary: id: 14561089-c20d-495a-a0b8-5e03fc7b96ec; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span>; <span title="Codes: {http://snomed.info/sct 49436004}">Atrial Fibrillation</span>; onset: Sep 7, 2010, 4:16:44 PM; recordedDate: Sep 7, 2010, 4:16:44 PM</a></p></div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="180325003"/>
+      <display value="Electrical cardioversion"/>
+    </coding>
+    <text value="Electrical cardioversion"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/4bf1d682-f7df-4e87-828e-62eeefd3d031"/>
+  </encounter>
+  <performedPeriod>
+    <start value="2016-11-08T15:16:44-08:00"/>
+    <end value="2016-11-08T15:31:44-08:00"/>
+  </performedPeriod>
+  <location>
+    <reference value="Location/7653e0ab-0566-4083-95d8-c695e4735e53"/>
+    <display value="Quincy Outpatient Clinic"/>
+  </location>
+  <reasonReference>
+    <reference value="Condition/14561089-c20d-495a-a0b8-5e03fc7b96ec"/>
+    <display value="Atrial Fibrillation"/>
+  </reasonReference>
+</Procedure>

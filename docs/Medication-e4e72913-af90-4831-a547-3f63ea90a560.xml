@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="e4e72913-af90-4831-a547-3f63ea90a560"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e4e72913-af90-4831-a547-3f63ea90a560</p><p><b>meta</b>: </p><p><b>code</b>: Naproxen sodium 220 MG Oral Tablet <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '849574' = 'naproxen sodium 220 MG Oral Tablet', given as 'Naproxen sodium 220 MG Oral Tablet'})</span></p><p><b>status</b>: active</p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="849574"/>
+      <display value="Naproxen sodium 220 MG Oral Tablet"/>
+    </coding>
+    <text value="Naproxen sodium 220 MG Oral Tablet"/>
+  </code>
+  <status value="active"/>
+</Medication>

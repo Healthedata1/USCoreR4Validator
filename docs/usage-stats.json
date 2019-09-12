@@ -310,6 +310,9 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
       "Patient"
     ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct": [
+      "Practitioner.telecom"
+    ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
       "Patient"
     ],

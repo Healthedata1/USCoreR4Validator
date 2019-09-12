@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="815b73b8-1164-4bbd-8f89-980006a285f0"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 815b73b8-1164-4bbd-8f89-980006a285f0</p><p><b>meta</b>: </p><p><b>code</b>: Cisplatin 50 MG Injection <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '1736854' = 'CISplatin 50 MG Injection', given as 'Cisplatin 50 MG Injection'})</span></p><p><b>status</b>: active</p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="1736854"/>
+      <display value="Cisplatin 50 MG Injection"/>
+    </coding>
+    <text value="Cisplatin 50 MG Injection"/>
+  </code>
+  <status value="active"/>
+</Medication>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="e72f201f-d426-4217-9ee2-7d6e1e97857f"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e72f201f-d426-4217-9ee2-7d6e1e97857f</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: laboratory <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory', given as 'laboratory'})</span></p><p><b>code</b>: Carbon Dioxide <span style="background: LightGoldenRodYellow">(Details : {LOINC code '20565-8' = 'Carbon dioxide, total [Moles/volume] in Blood', given as 'Carbon Dioxide'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-d47a65e6-54a2-40f7-87d6-cfb055c2c045.html">Generated Summary: id: d47a65e6-54a2-40f7-87d6-cfb055c2c045; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}">inpatient encounter</span>; <span title="Codes: {http://snomed.info/sct 185347001}">Encounter for problem</span>; period: Apr 1, 2017, 4:16:44 PM --&gt; Apr 2, 2017, 5:16:44 PM</a></p><p><b>effective</b>: Apr 4, 2017, 4:16:44 PM</p><p><b>issued</b>: Apr 4, 2017, 4:16:44 PM</p><p><b>value</b>: 21.742963940520305 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM code mmol/L = 'mmol/L')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="20565-8"/>
+      <display value="Carbon Dioxide"/>
+    </coding>
+    <text value="Carbon Dioxide"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/d47a65e6-54a2-40f7-87d6-cfb055c2c045"/>
+  </encounter>
+  <effectiveDateTime value="2017-04-04T16:16:44-07:00"/>
+  <issued value="2017-04-04T16:16:44.618-07:00"/>
+  <valueQuantity>
+    <value value="21.742963940520305"/>
+    <unit value="mmol/L"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mmol/L"/>
+  </valueQuantity>
+</Observation>

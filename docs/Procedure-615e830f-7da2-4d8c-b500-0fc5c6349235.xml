@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="615e830f-7da2-4d8c-b500-0fc5c6349235"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 615e830f-7da2-4d8c-b500-0fc5c6349235</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>code</b>: Combined chemotherapy and radiation therapy (procedure) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '703423002' = 'Combined chemotherapy and radiation therapy (procedure)', given as 'Combined chemotherapy and radiation therapy (procedure)'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-e4d82889-8740-471c-b887-908add363ebe.html">Generated Summary: id: e4d82889-8740-471c-b887-908add363ebe; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}">inpatient encounter</span>; <span title="Codes: {http://snomed.info/sct 185347001}">Encounter for problem</span>; period: Dec 31, 2017, 3:16:44 PM --&gt; Jan 1, 2018, 6:16:44 PM</a></p><p><b>performed</b>: Dec 31, 2017, 3:16:44 PM --&gt; Dec 31, 2017, 6:16:44 PM</p><p><b>location</b>: <a href="Location-7653e0ab-0566-4083-95d8-c695e4735e53.html">Quincy Outpatient Clinic. Generated Summary: id: 7653e0ab-0566-4083-95d8-c695e4735e53; status: active; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p><p><b>reasonReference</b>: <a href="Condition-19d85f45-7128-4af8-ac71-ce2414b5c0fc.html">Non-small cell carcinoma of lung, TNM stage 1 (disorder). Generated Summary: id: 19d85f45-7128-4af8-ac71-ce2414b5c0fc; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span>; <span title="Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}">Encounter Diagnosis</span>; <span title="Codes: {http://snomed.info/sct 424132000}">Non-small cell carcinoma of lung, TNM stage 1 (disorder)</span>; onset: Jul 28, 2016, 4:16:44 PM; recordedDate: Jul 28, 2016, 4:16:44 PM</a></p></div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="703423002"/>
+      <display value="Combined chemotherapy and radiation therapy (procedure)"/>
+    </coding>
+    <text value="Combined chemotherapy and radiation therapy (procedure)"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/e4d82889-8740-471c-b887-908add363ebe"/>
+  </encounter>
+  <performedPeriod>
+    <start value="2017-12-31T15:16:44-08:00"/>
+    <end value="2017-12-31T18:16:44-08:00"/>
+  </performedPeriod>
+  <location>
+    <reference value="Location/7653e0ab-0566-4083-95d8-c695e4735e53"/>
+    <display value="Quincy Outpatient Clinic"/>
+  </location>
+  <reasonReference>
+    <reference value="Condition/19d85f45-7128-4af8-ac71-ce2414b5c0fc"/>
+    <display value="Non-small cell carcinoma of lung, TNM stage 1 (disorder)"/>
+  </reasonReference>
+</Procedure>

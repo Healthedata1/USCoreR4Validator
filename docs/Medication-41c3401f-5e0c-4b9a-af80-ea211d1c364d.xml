@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="41c3401f-5e0c-4b9a-af80-ea211d1c364d"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 41c3401f-5e0c-4b9a-af80-ea211d1c364d</p><p><b>meta</b>: </p><p><b>code</b>: Warfarin Sodium 5 MG Oral Tablet <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '855332' = 'warfarin sodium 5 MG Oral Tablet', given as 'Warfarin Sodium 5 MG Oral Tablet'})</span></p><p><b>status</b>: active</p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="855332"/>
+      <display value="Warfarin Sodium 5 MG Oral Tablet"/>
+    </coding>
+    <text value="Warfarin Sodium 5 MG Oral Tablet"/>
+  </code>
+  <status value="active"/>
+</Medication>

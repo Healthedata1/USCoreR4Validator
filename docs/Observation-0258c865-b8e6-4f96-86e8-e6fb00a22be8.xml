@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="0258c865-b8e6-4f96-86e8-e6fb00a22be8"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0258c865-b8e6-4f96-86e8-e6fb00a22be8</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: vital-signs <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'vital-signs'})</span></p><p><b>code</b>: Blood Pressure <span style="background: LightGoldenRodYellow">(Details : {LOINC code '55284-4' = 'Blood pressure systolic and diastolic', given as 'Blood Pressure'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-75209e38-97e4-48c7-a2d1-713b9729245a.html">Generated Summary: id: 75209e38-97e4-48c7-a2d1-713b9729245a; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for check up (procedure)</span>; period: Feb 26, 2019, 3:16:44 PM --&gt; Feb 26, 2019, 3:46:44 PM</a></p><p><b>effective</b>: Feb 26, 2019, 3:16:44 PM</p><p><b>issued</b>: Feb 26, 2019, 3:16:44 PM</p><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic Blood Pressure <span style="background: LightGoldenRodYellow">(Details : {LOINC code '8462-4' = 'Diastolic blood pressure', given as 'Diastolic Blood Pressure'})</span></p><p><b>value</b>: 81.87854202286496 mm[Hg]<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Systolic Blood Pressure <span style="background: LightGoldenRodYellow">(Details : {LOINC code '8480-6' = 'Systolic blood pressure', given as 'Systolic Blood Pressure'})</span></p><p><b>value</b>: 129.734754883546 mm[Hg]<span style="background: LightGoldenRodYellow"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="55284-4"/>
+      <display value="Blood Pressure"/>
+    </coding>
+    <text value="Blood Pressure"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/75209e38-97e4-48c7-a2d1-713b9729245a"/>
+  </encounter>
+  <effectiveDateTime value="2019-02-26T15:16:44-08:00"/>
+  <issued value="2019-02-26T15:16:44.618-08:00"/>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8462-4"/>
+        <display value="Diastolic Blood Pressure"/>
+      </coding>
+      <text value="Diastolic Blood Pressure"/>
+    </code>
+    <valueQuantity>
+      <value value="81.87854202286496"/>
+      <unit value="mm[Hg]"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8480-6"/>
+        <display value="Systolic Blood Pressure"/>
+      </coding>
+      <text value="Systolic Blood Pressure"/>
+    </code>
+    <valueQuantity>
+      <value value="129.734754883546"/>
+      <unit value="mm[Hg]"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+</Observation>

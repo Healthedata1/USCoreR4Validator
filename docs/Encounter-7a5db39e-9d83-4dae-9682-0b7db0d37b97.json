@@ -1,0 +1,58 @@
+{
+  "resourceType": "Encounter",
+  "id": "7a5db39e-9d83-4dae-9682-0b7db0d37b97",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 7a5db39e-9d83-4dae-9682-0b7db0d37b97</p><p><b>meta</b>: </p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'null')</p><p><b>type</b>: Urgent care clinic (procedure) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '702927004' = 'Urgent care clinic (environment)', given as 'Urgent care clinic (procedure)'})</span></p><p><b>subject</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Mr. Jose871 Cruickshank494. Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-0000016d-235f-39b3-0000-000000016c4c.html\">Dr. Almeda560 Beier427. Generated Summary: id: 0000016d-235f-39b3-0000-000000016c4c; 93260; active; Almeda560 Beier427 ; Almeda560.Beier427@example.com(WORK); gender: female</a></td></tr></table><p><b>period</b>: Nov 27, 2018, 3:16:44 PM --&gt; Nov 27, 2018, 3:31:44 PM</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"Location-3a2d1aad-e90c-4ddd-8101-958a529adeb8.html\">HANOVER FAMILY HEALTH AND URGENT CARE. Generated Summary: id: 3a2d1aad-e90c-4ddd-8101-958a529adeb8; status: active; name: HANOVER FAMILY HEALTH AND URGENT CARE; ph: 781-829-1000</a></td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-4e916854-3a59-3f17-bb16-7c406148d822.html\">HANOVER FAMILY HEALTH AND URGENT CARE. Generated Summary: id: 4e916854-3a59-3f17-bb16-7c406148d822; 4e916854-3a59-3f17-bb16-7c406148d822; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: HANOVER FAMILY HEALTH AND URGENT CARE; ph: 781-829-1000</a></p></div>"
+  },
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "AMB"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "702927004",
+          "display": "Urgent care clinic (procedure)"
+        }
+      ],
+      "text": "Urgent care clinic (procedure)"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+    "display": "Mr. Jose871 Cruickshank494"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-000000016c4c",
+        "display": "Dr. Almeda560 Beier427"
+      }
+    }
+  ],
+  "period": {
+    "start": "2018-11-27T15:16:44-08:00",
+    "end": "2018-11-27T15:31:44-08:00"
+  },
+  "location": [
+    {
+      "location": {
+        "reference": "Location/3a2d1aad-e90c-4ddd-8101-958a529adeb8",
+        "display": "HANOVER FAMILY HEALTH AND URGENT CARE"
+      }
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/4e916854-3a59-3f17-bb16-7c406148d822",
+    "display": "HANOVER FAMILY HEALTH AND URGENT CARE"
+  }
+}

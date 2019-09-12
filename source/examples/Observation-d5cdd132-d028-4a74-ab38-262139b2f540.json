@@ -1,0 +1,45 @@
+{
+    "resourceType": "Observation",
+    "id": "d5cdd132-d028-4a74-ab38-262139b2f540",
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "laboratory"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "14959-1",
+                "display": "Microalbumin Creatinine Ratio"
+            }
+        ],
+        "text": "Microalbumin Creatinine Ratio"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/2cdc32e7-931e-480b-aada-fbd4dffb061f"
+    },
+    "effectiveDateTime": "2018-10-30T16:16:44-07:00",
+    "issued": "2018-10-30T16:16:44.618-07:00",
+    "valueQuantity": {
+        "value": 108.92151741379003,
+        "unit": "mg/g",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/g"
+    },
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+        ]
+    }
+}

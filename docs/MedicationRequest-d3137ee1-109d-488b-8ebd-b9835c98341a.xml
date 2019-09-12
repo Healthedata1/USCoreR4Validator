@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="d3137ee1-109d-488b-8ebd-b9835c98341a"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: d3137ee1-109d-488b-8ebd-b9835c98341a</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Alendronic acid 10 MG Oral Tablet <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '904419' = 'alendronate sodium 10 MG Oral Tablet', given as 'Alendronic acid 10 MG Oral Tablet'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-ddad6975-91c4-4365-a167-7669012f80b5.html">Generated Summary: id: ddad6975-91c4-4365-a167-7669012f80b5; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 162673000}">General examination of patient (procedure)</span>; period: Apr 18, 2000, 4:16:44 PM --&gt; Apr 18, 2000, 5:05:44 PM</a></p><p><b>authoredOn</b>: Apr 18, 2000, 4:16:44 PM</p><p><b>requester</b>: <a href="Practitioner-0000016d-235f-39b3-0000-0000000051f4.html">Dr. Marica887 Bode78. Generated Summary: id: 0000016d-235f-39b3-0000-0000000051f4; 20980; active; Marica887 Bode78 ; Marica887.Bode78@example.com(WORK); gender: female</a></p></div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="904419"/>
+      <display value="Alendronic acid 10 MG Oral Tablet"/>
+    </coding>
+    <text value="Alendronic acid 10 MG Oral Tablet"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ddad6975-91c4-4365-a167-7669012f80b5"/>
+  </encounter>
+  <authoredOn value="2000-04-18T16:16:44-07:00"/>
+  <requester>
+    <reference value="Practitioner/0000016d-235f-39b3-0000-0000000051f4"/>
+    <display value="Dr. Marica887 Bode78"/>
+  </requester>
+</MedicationRequest>

@@ -1,0 +1,108 @@
+{
+  "resourceType": "CarePlan",
+  "id": "e5645629-a5ae-49c3-9bbb-79cf70f33283",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Care Plan.<br/>Activities: <ul><li>Care Plan</li><li>Care Plan</li><li>Care Plan</li></ul></div>"
+  },
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "734163000",
+          "display": "Care Plan"
+        }
+      ],
+      "text": "Care Plan"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+  },
+  "encounter": {
+    "reference": "Encounter/25f65164-dcca-4da5-a358-67a707b377a2"
+  },
+  "period": {
+    "start": "1974-05-07T16:16:44-07:00"
+  },
+  "careTeam": [
+    {
+      "reference": "CareTeam/b62d0bba-79d0-4134-b10f-39026018d4da"
+    }
+  ],
+  "activity": [
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "313071005",
+              "display": "Counseling for substance abuse (procedure)"
+            }
+          ],
+          "text": "Counseling for substance abuse (procedure)"
+        },
+        "status": "in-progress",
+        "location": {
+          "reference": "Location/1e84a992-8d6e-41d1-af95-4316a6a139fb",
+          "display": "PCP31369"
+        }
+      }
+    },
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "408935001",
+              "display": "Substance abuse prevention education (procedure)"
+            }
+          ],
+          "text": "Substance abuse prevention education (procedure)"
+        },
+        "status": "in-progress",
+        "location": {
+          "reference": "Location/1e84a992-8d6e-41d1-af95-4316a6a139fb",
+          "display": "PCP31369"
+        }
+      }
+    },
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "408936000",
+              "display": "Substance abuse prevention management (procedure)"
+            }
+          ],
+          "text": "Substance abuse prevention management (procedure)"
+        },
+        "status": "in-progress",
+        "location": {
+          "reference": "Location/1e84a992-8d6e-41d1-af95-4316a6a139fb",
+          "display": "PCP31369"
+        }
+      }
+    }
+  ]
+}

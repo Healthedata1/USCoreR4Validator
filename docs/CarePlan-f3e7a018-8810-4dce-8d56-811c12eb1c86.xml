@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="f3e7a018-8810-4dce-8d56-811c12eb1c86"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Care Plan for Diabetes self management plan.<br/>Activities: <ul><li>Diabetes self management plan</li><li>Diabetes self management plan</li></ul><br/>Care plan is meant to treat Diabetes.</div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/core/CodeSystem/careplan-category"/>
+      <code value="assess-plan"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="698360004"/>
+      <display value="Diabetes self management plan"/>
+    </coding>
+    <text value="Diabetes self management plan"/>
+  </category>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/76a90ca5-a0e3-4ece-b32a-1ce9d424b6da"/>
+  </encounter>
+  <period>
+    <start value="1991-02-26T15:16:44-08:00"/>
+  </period>
+  <careTeam>
+    <reference value="CareTeam/bffa254a-33d7-4bf0-a362-a0457d236f5e"/>
+  </careTeam>
+  <addresses>
+    <reference value="Condition/7c607cfd-f375-4e55-a9ee-1593773fd500"/>
+  </addresses>
+  <goal>
+    <reference value="Goal/73415c80-e767-4258-b6e8-d2452ad640fc"/>
+  </goal>
+  <goal>
+    <reference value="Goal/a89554b1-a785-482b-b217-0865fedb4933"/>
+  </goal>
+  <goal>
+    <reference value="Goal/8a9f533a-b175-4cb8-b1ca-32baf8d0a121"/>
+  </goal>
+  <goal>
+    <reference value="Goal/99a3b179-64b0-46c6-adc3-a5c5bbb1c5c0"/>
+  </goal>
+  <goal>
+    <reference value="Goal/b5664a8b-25d7-43c7-b1e3-8bb59572e763"/>
+  </goal>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="160670007"/>
+          <display value="Diabetic diet"/>
+        </coding>
+        <text value="Diabetic diet"/>
+      </code>
+      <status value="in-progress"/>
+      <location>
+        <reference value="Location/1e84a992-8d6e-41d1-af95-4316a6a139fb"/>
+        <display value="PCP31369"/>
+      </location>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="229065009"/>
+          <display value="Exercise therapy"/>
+        </coding>
+        <text value="Exercise therapy"/>
+      </code>
+      <status value="in-progress"/>
+      <location>
+        <reference value="Location/1e84a992-8d6e-41d1-af95-4316a6a139fb"/>
+        <display value="PCP31369"/>
+      </location>
+    </detail>
+  </activity>
+</CarePlan>

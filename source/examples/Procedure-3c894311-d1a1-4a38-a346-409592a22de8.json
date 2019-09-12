@@ -1,0 +1,40 @@
+{
+    "resourceType": "Procedure",
+    "id": "3c894311-d1a1-4a38-a346-409592a22de8",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+        ]
+    },
+    "status": "completed",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "18286008",
+                "display": "Catheter ablation of tissue of heart"
+            }
+        ],
+        "text": "Catheter ablation of tissue of heart"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/8f1adae8-7776-4496-88e0-1fb80acac421"
+    },
+    "performedPeriod": {
+        "start": "2013-08-27T16:16:44-07:00",
+        "end": "2013-08-27T16:31:44-07:00"
+    },
+    "location": {
+        "reference": "Location/3a2d1aad-e90c-4ddd-8101-958a529adeb8",
+        "display": "HANOVER FAMILY HEALTH AND URGENT CARE"
+    },
+    "reasonReference": [
+        {
+            "reference": "Condition/14561089-c20d-495a-a0b8-5e03fc7b96ec",
+            "display": "Atrial Fibrillation"
+        }
+    ]
+}

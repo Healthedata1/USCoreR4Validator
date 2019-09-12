@@ -1,0 +1,45 @@
+{
+    "resourceType": "Observation",
+    "id": "b70cf0f7-e751-4ab2-b1f3-e846244d8fae",
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "vital-signs",
+                    "display": "vital-signs"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "39156-5",
+                "display": "Body Mass Index"
+            }
+        ],
+        "text": "Body Mass Index"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/ae77a9de-0a67-4700-99a0-0c85c3df8306"
+    },
+    "effectiveDateTime": "2012-06-26T16:16:44-07:00",
+    "issued": "2012-06-26T16:16:44.618-07:00",
+    "valueQuantity": {
+        "value": 24.369430411447603,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+    },
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="4c6517a3-e07f-4446-bc6f-019fbeaf3d84"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Care Plan for Fracture care.<br/>Activities: <ul><li>Fracture care</li><li>Fracture care</li></ul><br/>Care plan is meant to treat Fracture subluxation of wrist.</div>
+  </text>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/core/CodeSystem/careplan-category"/>
+      <code value="assess-plan"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="385691007"/>
+      <display value="Fracture care"/>
+    </coding>
+    <text value="Fracture care"/>
+  </category>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/a5b4e585-c136-4b77-8ec5-785905b4a3e4"/>
+  </encounter>
+  <period>
+    <start value="2017-11-10T15:16:44-08:00"/>
+    <end value="2017-12-10T15:16:44-08:00"/>
+  </period>
+  <careTeam>
+    <reference value="CareTeam/c264402c-fa7b-44de-bcdc-27a6844da389"/>
+  </careTeam>
+  <addresses>
+    <reference value="Condition/dbab6d0f-060c-40dc-a8a0-8ff42ed08ffc"/>
+  </addresses>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="183051005"/>
+          <display value="Recommendation to rest"/>
+        </coding>
+        <text value="Recommendation to rest"/>
+      </code>
+      <status value="completed"/>
+      <location>
+        <reference value="Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6"/>
+        <display value="BRIGHAM AND WOMEN&#39;S HOSPITAL"/>
+      </location>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="408580007"/>
+          <display value="Physical activity target light exercise"/>
+        </coding>
+        <text value="Physical activity target light exercise"/>
+      </code>
+      <status value="completed"/>
+      <location>
+        <reference value="Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6"/>
+        <display value="BRIGHAM AND WOMEN&#39;S HOSPITAL"/>
+      </location>
+    </detail>
+  </activity>
+</CarePlan>

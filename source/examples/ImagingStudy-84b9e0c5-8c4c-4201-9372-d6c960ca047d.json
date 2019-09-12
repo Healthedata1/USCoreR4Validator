@@ -1,0 +1,54 @@
+{
+    "resourceType": "ImagingStudy",
+    "id": "84b9e0c5-8c4c-4201-9372-d6c960ca047d",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:1.2.840.99999999.27529798.1568256682410"
+        }
+    ],
+    "status": "available",
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/a5b4e585-c136-4b77-8ec5-785905b4a3e4"
+    },
+    "started": "2017-11-10T15:16:44-08:00",
+    "numberOfSeries": 1,
+    "numberOfInstances": 1,
+    "location": {
+        "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+        "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+    },
+    "series": [
+        {
+            "uid": "1.2.840.99999999.1.33786172.1568256682410",
+            "number": 1,
+            "modality": {
+                "system": "http://dicom.nema.org/resources/ontology/DCM",
+                "code": "DX",
+                "display": "Digital Radiography"
+            },
+            "numberOfInstances": 1,
+            "bodySite": {
+                "system": "http://snomed.info/sct",
+                "code": "8205005",
+                "display": "Wrist"
+            },
+            "started": "2017-11-10T15:16:44-08:00",
+            "instance": [
+                {
+                    "uid": "1.2.840.99999999.1.1.65939674.1568256682410",
+                    "sopClass": {
+                        "system": "urn:ietf:rfc:3986",
+                        "code": "1.2.840.10008.5.1.4.1.1.1.1"
+                    },
+                    "number": 1,
+                    "title": "Image of wrist"
+                }
+            ]
+        }
+    ]
+}

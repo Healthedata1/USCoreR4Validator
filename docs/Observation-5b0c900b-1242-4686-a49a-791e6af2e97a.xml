@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="5b0c900b-1242-4686-a49a-791e6af2e97a"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 5b0c900b-1242-4686-a49a-791e6af2e97a</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: laboratory <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory', given as 'laboratory'})</span></p><p><b>code</b>: Triglycerides <span style="background: LightGoldenRodYellow">(Details : {LOINC code '2571-8' = 'Triglyceride [Mass/volume] in Serum or Plasma', given as 'Triglycerides'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-990edceb-afcd-4302-8124-5993a98ff4fc.html">Generated Summary: id: 990edceb-afcd-4302-8124-5993a98ff4fc; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for check up (procedure)</span>; period: May 1, 2018, 4:16:44 PM --&gt; May 1, 2018, 4:46:44 PM</a></p><p><b>effective</b>: May 1, 2018, 4:16:44 PM</p><p><b>issued</b>: May 1, 2018, 4:16:44 PM</p><p><b>value</b>: 172.16632262000476 mg/dL<span style="background: LightGoldenRodYellow"> (Details: UCUM code mg/dL = 'mg/dL')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="2571-8"/>
+      <display value="Triglycerides"/>
+    </coding>
+    <text value="Triglycerides"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/990edceb-afcd-4302-8124-5993a98ff4fc"/>
+  </encounter>
+  <effectiveDateTime value="2018-05-01T16:16:44-07:00"/>
+  <issued value="2018-05-01T16:16:44.618-07:00"/>
+  <valueQuantity>
+    <value value="172.16632262000476"/>
+    <unit value="mg/dL"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mg/dL"/>
+  </valueQuantity>
+</Observation>

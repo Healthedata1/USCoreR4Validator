@@ -1,0 +1,55 @@
+{
+    "resourceType": "Condition",
+    "id": "26746a47-1ef3-4e72-b437-73efcf9c1586",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+        ]
+    },
+    "clinicalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "resolved"
+            }
+        ]
+    },
+    "verificationStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                    "code": "encounter-diagnosis",
+                    "display": "Encounter Diagnosis"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "68496003",
+                "display": "Polyp of colon"
+            }
+        ],
+        "text": "Polyp of colon"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/c04bf692-5517-4c30-81cf-19fd7aa1836b"
+    },
+    "onsetDateTime": "2012-09-02T16:16:44-07:00",
+    "abatementDateTime": "2013-10-27T16:16:44-07:00",
+    "recordedDate": "2012-09-02T16:16:44-07:00"
+}

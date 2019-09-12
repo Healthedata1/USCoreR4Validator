@@ -1,0 +1,89 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "525c7535-8f3a-4538-8852-f8ae7192377a",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 525c7535-8f3a-4538-8852-f8ae7192377a</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v2-0074 code 'LAB' = 'Laboratory', given as 'Laboratory'})</span></p><p><b>code</b>: Complete blood count (hemogram) panel - Blood by Automated count <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '58410-2' = 'Complete blood count (hemogram) panel - Blood by Automated count', given as 'Complete blood count (hemogram) panel - Blood by Automated count'})</span></p><p><b>subject</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>encounter</b>: <a href=\"Encounter-d33babcf-6413-4b79-843a-237cd3b79860.html\">Generated Summary: id: d33babcf-6413-4b79-843a-237cd3b79860; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://snomed.info/sct 162673000}\">General examination of patient (procedure)</span>; period: Jul 25, 2017, 4:16:44 PM --&gt; Jul 25, 2017, 4:46:44 PM</a></p><p><b>effective</b>: Jul 25, 2017, 4:16:44 PM</p><p><b>issued</b>: Jul 25, 2017, 4:16:44 PM</p><p><b>result</b>: </p><ul><li><a href=\"Observation-6438eacf-7745-4726-a9b8-f679298edb56.html\">Leukocytes [#/volume] in Blood by Automated count. Generated Summary: id: 6438eacf-7745-4726-a9b8-f679298edb56; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">laboratory</span>; <span title=\"Codes: {http://loinc.org 6690-2}\">Leukocytes [#/volume] in Blood by Automated count</span>; effective: Jul 25, 2017, 4:16:44 PM; issued: Jul 25, 2017, 4:16:44 PM; 3.7334407188798515 10*3/uL</a></li><li><a href=\"Observation-661bcc98-6287-42f2-ab04-17b513ecb585.html\">Erythrocytes [#/volume] in Blood by Automated count. Generated Summary: id: 661bcc98-6287-42f2-ab04-17b513ecb585; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">laboratory</span>; <span title=\"Codes: {http://loinc.org 789-8}\">Erythrocytes [#/volume] in Blood by Automated count</span>; effective: Jul 25, 2017, 4:16:44 PM; issued: Jul 25, 2017, 4:16:44 PM; 4.654779514592407 10*6/uL</a></li><li><a href=\"Observation-ac5190c5-606c-4926-8432-d101ffea6f75.html\">Hemoglobin [Mass/volume] in Blood. Generated Summary: id: ac5190c5-606c-4926-8432-d101ffea6f75; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">laboratory</span>; <span title=\"Codes: {http://loinc.org 718-7}\">Hemoglobin [Mass/volume] in Blood</span>; effective: Jul 25, 2017, 4:16:44 PM; issued: Jul 25, 2017, 4:16:44 PM; 12.426964686169395 g/dL</a></li><li><a href=\"Observation-1b2d0adb-f972-440a-ba6f-8df1ca182845.html\">Hematocrit [Volume Fraction] of Blood by Automated count. Generated Summary: id: 1b2d0adb-f972-440a-ba6f-8df1ca182845; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">laboratory</span>; <span title=\"Codes: {http://loinc.org 4544-3}\">Hematocrit [Volume Fraction] of Blood by Automated count</span>; effective: Jul 25, 2017, 4:16:44 PM; issued: Jul 25, 2017, 4:16:44 PM; 48.06964531250565 %</a></li><li><a href=\"Observation-27bd6a7d-c079-4b44-8876-50496b1d9ef7.html\">MCV [Entitic volume] by Automated count. Generated Summary: id: 27bd6a7d-c079-4b44-8876-50496b1d9ef7; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">laboratory</span>; <span title=\"Codes: {http://loinc.org 787-2}\">MCV [Entitic volume] by Automated count</span>; effective: Jul 25, 2017, 4:16:44 PM; issued: Jul 25, 2017, 4:16:44 PM; 81.18224143319065 fL</a></li><li><a href=\"Observation-d69274dd-7208-405e-aabf-80c9dad483d2.html\">MCH [Entitic mass] by Automated count. Generated Summary: id: d69274dd-7208-405e-aabf-80c9dad483d2; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">laboratory</span>; <span title=\"Codes: {http://loinc.org 785-6}\">MCH [Entitic mass] by Automated count</span>; effective: Jul 25, 2017, 4:16:44 PM; issued: Jul 25, 2017, 4:16:44 PM; 31.051350493970666 pg</a></li><li><a href=\"Observation-50d5b1b4-5de7-42f5-b148-0fa57bd79ff1.html\">MCHC [Mass/volume] by Automated count. Generated Summary: id: 50d5b1b4-5de7-42f5-b148-0fa57bd79ff1; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">laboratory</span>; <span title=\"Codes: {http://loinc.org 786-4}\">MCHC [Mass/volume] by Automated count</span>; effective: Jul 25, 2017, 4:16:44 PM; issued: Jul 25, 2017, 4:16:44 PM; 34.215444781266385 g/dL</a></li><li><a href=\"Observation-dd7437f7-52a6-41a5-943d-e2c0c42d736f.html\">Erythrocyte distribution width [Entitic volume] by Automated count. Generated Summary: id: dd7437f7-52a6-41a5-943d-e2c0c42d736f; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">laboratory</span>; <span title=\"Codes: {http://loinc.org 21000-5}\">Erythrocyte distribution width [Entitic volume] by Automated count</span>; effective: Jul 25, 2017, 4:16:44 PM; issued: Jul 25, 2017, 4:16:44 PM; 41.59898450152683 fL</a></li><li><a href=\"Observation-15f257ba-0c0e-4436-b22b-d3c1923c7d5e.html\">Platelets [#/volume] in Blood by Automated count. Generated Summary: id: 15f257ba-0c0e-4436-b22b-d3c1923c7d5e; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">laboratory</span>; <span title=\"Codes: {http://loinc.org 777-3}\">Platelets [#/volume] in Blood by Automated count</span>; effective: Jul 25, 2017, 4:16:44 PM; issued: Jul 25, 2017, 4:16:44 PM; 389.79340686370585 10*3/uL</a></li><li><a href=\"Observation-98f62b95-d85b-4297-af8c-c43d85db7279.html\">Platelet distribution width [Entitic volume] in Blood by Automated count. Generated Summary: id: 98f62b95-d85b-4297-af8c-c43d85db7279; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">laboratory</span>; <span title=\"Codes: {http://loinc.org 32207-3}\">Platelet distribution width [Entitic volume] in Blood by Automated count</span>; effective: Jul 25, 2017, 4:16:44 PM; issued: Jul 25, 2017, 4:16:44 PM; 185.45621863095005 fL</a></li><li><a href=\"Observation-7e70773b-bd32-474e-9eef-b11b479e2077.html\">Platelet mean volume [Entitic volume] in Blood by Automated count. Generated Summary: id: 7e70773b-bd32-474e-9eef-b11b479e2077; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">laboratory</span>; <span title=\"Codes: {http://loinc.org 32623-1}\">Platelet mean volume [Entitic volume] in Blood by Automated count</span>; effective: Jul 25, 2017, 4:16:44 PM; issued: Jul 25, 2017, 4:16:44 PM; 10.588229084271395 fL</a></li></ul></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "58410-2",
+        "display": "Complete blood count (hemogram) panel - Blood by Automated count"
+      }
+    ],
+    "text": "Complete blood count (hemogram) panel - Blood by Automated count"
+  },
+  "subject": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+  },
+  "encounter": {
+    "reference": "Encounter/d33babcf-6413-4b79-843a-237cd3b79860"
+  },
+  "effectiveDateTime": "2017-07-25T16:16:44-07:00",
+  "issued": "2017-07-25T16:16:44.618-07:00",
+  "result": [
+    {
+      "reference": "Observation/6438eacf-7745-4726-a9b8-f679298edb56",
+      "display": "Leukocytes [#/volume] in Blood by Automated count"
+    },
+    {
+      "reference": "Observation/661bcc98-6287-42f2-ab04-17b513ecb585",
+      "display": "Erythrocytes [#/volume] in Blood by Automated count"
+    },
+    {
+      "reference": "Observation/ac5190c5-606c-4926-8432-d101ffea6f75",
+      "display": "Hemoglobin [Mass/volume] in Blood"
+    },
+    {
+      "reference": "Observation/1b2d0adb-f972-440a-ba6f-8df1ca182845",
+      "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+    },
+    {
+      "reference": "Observation/27bd6a7d-c079-4b44-8876-50496b1d9ef7",
+      "display": "MCV [Entitic volume] by Automated count"
+    },
+    {
+      "reference": "Observation/d69274dd-7208-405e-aabf-80c9dad483d2",
+      "display": "MCH [Entitic mass] by Automated count"
+    },
+    {
+      "reference": "Observation/50d5b1b4-5de7-42f5-b148-0fa57bd79ff1",
+      "display": "MCHC [Mass/volume] by Automated count"
+    },
+    {
+      "reference": "Observation/dd7437f7-52a6-41a5-943d-e2c0c42d736f",
+      "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+    },
+    {
+      "reference": "Observation/15f257ba-0c0e-4436-b22b-d3c1923c7d5e",
+      "display": "Platelets [#/volume] in Blood by Automated count"
+    },
+    {
+      "reference": "Observation/98f62b95-d85b-4297-af8c-c43d85db7279",
+      "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+    },
+    {
+      "reference": "Observation/7e70773b-bd32-474e-9eef-b11b479e2077",
+      "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "resourceType": "CarePlan",
+  "id": "ab5056f4-8034-413e-8614-65bdce98e9df",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Musculoskeletal care.<br/>Activities: <ul><li>Musculoskeletal care</li><li>Musculoskeletal care</li></ul><br/>Care plan is meant to treat Osteoarthritis of hip.</div>"
+  },
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "408869004",
+          "display": "Musculoskeletal care"
+        }
+      ],
+      "text": "Musculoskeletal care"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+  },
+  "encounter": {
+    "reference": "Encounter/9a10d7b7-b7fe-4a9f-8877-2fc0db94f02a"
+  },
+  "period": {
+    "start": "2001-02-04T15:16:44-08:00"
+  },
+  "careTeam": [
+    {
+      "reference": "CareTeam/69608e01-fd28-4b87-82e3-5394d345b19e"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/71b01219-a045-41f2-85f8-72d931c44101"
+    }
+  ],
+  "activity": [
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "386294003",
+              "display": "Joint mobility exercises"
+            }
+          ],
+          "text": "Joint mobility exercises"
+        },
+        "status": "in-progress",
+        "location": {
+          "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+          "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+        }
+      }
+    },
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266694003",
+              "display": "Heat therapy"
+            }
+          ],
+          "text": "Heat therapy"
+        },
+        "status": "in-progress",
+        "location": {
+          "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+          "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+        }
+      }
+    }
+  ]
+}

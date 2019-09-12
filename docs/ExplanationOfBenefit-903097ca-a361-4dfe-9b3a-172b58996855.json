@@ -1,0 +1,180 @@
+{
+  "resourceType": "ExplanationOfBenefit",
+  "id": "903097ca-a361-4dfe-9b3a-172b58996855",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 903097ca-a361-4dfe-9b3a-172b58996855</p><p><b>contained</b>: , </p><p><b>identifier</b>: 430a8769-54aa-4267-a540-150b1525cd41, 99999999999</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>billablePeriod</b>: Dec 10, 2017, 3:31:44 PM --&gt; Dec 10, 2018, 3:31:44 PM</p><p><b>created</b>: Dec 10, 2017, 3:31:44 PM</p><p><b>insurer</b>: Medicare</p><p><b>provider</b>: <a href=\"Practitioner-0000016d-235f-39b3-0000-0000000001c2.html\">Generated Summary: id: 0000016d-235f-39b3-0000-0000000001c2; 450; active; Nelida367 Green467 ; Nelida367.Green467@example.com(WORK); gender: female</a></p><p><b>referral</b>: unknown resource contained</p><p><b>facility</b>: <a href=\"Location-a615098b-6b1a-4437-a7c7-fa2eaa6969f6.html\">BRIGHAM AND WOMEN'S HOSPITAL. Generated Summary: id: a615098b-6b1a-4437-a7c7-fa2eaa6969f6; status: active; name: BRIGHAM AND WOMEN'S HOSPITAL; ph: 6177325500</a></p><p><b>claim</b>: <a href=\"Claim-430a8769-54aa-4267-a540-150b1525cd41.html\">Generated Summary: id: 430a8769-54aa-4267-a540-150b1525cd41; status: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span>; use: claim; billablePeriod: Dec 10, 2017, 3:16:44 PM --&gt; Dec 10, 2017, 3:31:44 PM; created: Dec 10, 2017, 3:31:44 PM; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span>; </a></p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled yet</b></p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "ServiceRequest",
+      "id": "referral",
+      "status": "completed",
+      "intent": "order",
+      "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+      },
+      "requester": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2"
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2"
+        }
+      ]
+    },
+    {
+      "resourceType": "Coverage",
+      "id": "coverage",
+      "status": "active",
+      "type": {
+        "text": "Medicare"
+      },
+      "beneficiary": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+      },
+      "payor": [
+        {
+          "display": "Medicare"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+      "value": "430a8769-54aa-4267-a540-150b1525cd41"
+    },
+    {
+      "system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+      "value": "99999999999"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "institutional"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+  },
+  "billablePeriod": {
+    "start": "2017-12-10T15:31:44-08:00",
+    "end": "2018-12-10T15:31:44-08:00"
+  },
+  "created": "2017-12-10T15:31:44-08:00",
+  "insurer": {
+    "display": "Medicare"
+  },
+  "provider": {
+    "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2"
+  },
+  "referral": {
+    "reference": "#referral"
+  },
+  "facility": {
+    "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+    "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+  },
+  "claim": {
+    "reference": "Claim/430a8769-54aa-4267-a540-150b1525cd41"
+  },
+  "outcome": "complete",
+  "careTeam": [
+    {
+      "sequence": 1,
+      "provider": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2"
+      },
+      "role": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+            "code": "primary",
+            "display": "Primary Care Practitioner"
+          }
+        ]
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "focal": true,
+      "coverage": {
+        "reference": "#coverage",
+        "display": "Medicare"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "category": {
+        "coding": [
+          {
+            "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+            "code": "1",
+            "display": "Medical care"
+          }
+        ]
+      },
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Encounter for 'check-up'"
+          }
+        ],
+        "text": "Encounter for 'check-up'"
+      },
+      "servicedPeriod": {
+        "start": "2017-12-10T15:16:44-08:00",
+        "end": "2017-12-10T15:31:44-08:00"
+      },
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+            "code": "21",
+            "display": "Inpatient Hospital"
+          }
+        ]
+      },
+      "encounter": [
+        {
+          "reference": "Encounter/1f666978-4f6b-4ce5-ac0a-dcadc6f4b337"
+        }
+      ]
+    }
+  ],
+  "total": [
+    {
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+            "code": "submitted",
+            "display": "Submitted Amount"
+          }
+        ],
+        "text": "Submitted Amount"
+      },
+      "amount": {
+        "value": 129.16,
+        "currency": "USD"
+      }
+    }
+  ],
+  "payment": {
+    "amount": {
+      "value": 0.0,
+      "currency": "USD"
+    }
+  }
+}

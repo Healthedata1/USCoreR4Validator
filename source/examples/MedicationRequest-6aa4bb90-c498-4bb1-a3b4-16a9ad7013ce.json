@@ -1,0 +1,37 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "6aa4bb90-c498-4bb1-a3b4-16a9ad7013ce",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+        ]
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "583214",
+                "display": "PACLitaxel 100 MG Injection"
+            }
+        ],
+        "text": "PACLitaxel 100 MG Injection"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/2b1a0240-4347-4b7e-8d0c-fe07a7d5cb98"
+    },
+    "authoredOn": "2018-12-08T15:16:44-08:00",
+    "requester": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-00000000032a",
+        "display": "Dr. Sergio619 Armijo730"
+    },
+    "reasonReference": [
+        {
+            "reference": "Condition/19d85f45-7128-4af8-ac71-ce2414b5c0fc"
+        }
+    ]
+}

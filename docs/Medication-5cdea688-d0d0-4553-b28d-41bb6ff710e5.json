@@ -1,0 +1,24 @@
+{
+  "resourceType": "Medication",
+  "id": "5cdea688-d0d0-4553-b28d-41bb6ff710e5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 5cdea688-d0d0-4553-b28d-41bb6ff710e5</p><p><b>meta</b>: </p><p><b>code</b>: Alendronic acid 10 MG Oral Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '904419' = 'alendronate sodium 10 MG Oral Tablet', given as 'Alendronic acid 10 MG Oral Tablet'})</span></p><p><b>status</b>: active</p></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "904419",
+        "display": "Alendronic acid 10 MG Oral Tablet"
+      }
+    ],
+    "text": "Alendronic acid 10 MG Oral Tablet"
+  },
+  "status": "active"
+}

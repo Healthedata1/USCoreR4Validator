@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="e3954b31-8fc0-40cd-93bc-25de39553bca"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e3954b31-8fc0-40cd-93bc-25de39553bca</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: Influenza, seasonal, injectable, preservative free <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/sid/cvx code '140' = 'Influenza, seasonal, injectable, preservative free', given as 'Influenza, seasonal, injectable, preservative free'})</span></p><p><b>patient</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-8f1adae8-7776-4496-88e0-1fb80acac421.html">Generated Summary: id: 8f1adae8-7776-4496-88e0-1fb80acac421; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 702927004}">Urgent care clinic (procedure)</span>; period: Aug 27, 2013, 4:16:44 PM --&gt; Aug 27, 2013, 4:31:44 PM</a></p><p><b>occurrence</b>: Aug 27, 2013, 4:16:44 PM</p><p><b>primarySource</b>: true</p><p><b>location</b>: <a href="Location-3a2d1aad-e90c-4ddd-8101-958a529adeb8.html">HANOVER FAMILY HEALTH AND URGENT CARE. Generated Summary: id: 3a2d1aad-e90c-4ddd-8101-958a529adeb8; status: active; name: HANOVER FAMILY HEALTH AND URGENT CARE; ph: 781-829-1000</a></p></div>
+  </text>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <code value="140"/>
+      <display value="Influenza, seasonal, injectable, preservative free"/>
+    </coding>
+    <text value="Influenza, seasonal, injectable, preservative free"/>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </patient>
+  <encounter>
+    <reference value="Encounter/8f1adae8-7776-4496-88e0-1fb80acac421"/>
+  </encounter>
+  <occurrenceDateTime value="2013-08-27T16:16:44-07:00"/>
+  <primarySource value="true"/>
+  <location>
+    <reference value="Location/3a2d1aad-e90c-4ddd-8101-958a529adeb8"/>
+    <display value="HANOVER FAMILY HEALTH AND URGENT CARE"/>
+  </location>
+</Immunization>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="07c25634-cb86-442c-ba5a-d7025c009714"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 07c25634-cb86-442c-ba5a-d7025c009714</p><p><b>meta</b>: </p><p><b>status</b>: stopped</p><p><b>medication</b>: <a href="Medication-af87109b-30a5-4bec-816d-13fa42ee3528.html">Generated Summary: id: af87109b-30a5-4bec-816d-13fa42ee3528; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 1736854}">Cisplatin 50 MG Injection</span>; status: active</a></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>context</b>: <a href="Encounter-b167d05f-6f5b-44c7-a7af-58cf7c7f4feb.html">Generated Summary: id: b167d05f-6f5b-44c7-a7af-58cf7c7f4feb; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}">inpatient encounter</span>; <span title="Codes: {http://snomed.info/sct 185347001}">Encounter for problem</span>; period: Nov 28, 2016, 3:16:44 PM --&gt; Nov 29, 2016, 5:16:44 PM</a></p><p><b>effective</b>: Nov 28, 2016, 3:16:44 PM --&gt; Nov 28, 2016, 3:16:44 PM</p><p><b>dateAsserted</b>: Nov 28, 2016, 3:16:44 PM</p><p><b>derivedFrom</b>: <a href="MedicationRequest-efe47d5b-6901-4ff1-a337-bd51668a835a.html">Generated Summary: id: efe47d5b-6901-4ff1-a337-bd51668a835a; status: stopped; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 1736854}">Cisplatin 50 MG Injection</span>; authoredOn: Nov 28, 2016, 3:16:44 PM</a></p><p><b>reasonCode</b>: Non-small cell carcinoma of lung, TNM stage 1 (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '424132000' = 'Non-small cell carcinoma of lung, TNM stage 1 (disorder)', given as 'Non-small cell carcinoma of lung, TNM stage 1 (disorder)'})</span></p></div>
+  </text>
+  <status value="stopped"/>
+  <medicationReference>
+    <reference value="Medication/af87109b-30a5-4bec-816d-13fa42ee3528"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <context>
+    <reference value="Encounter/b167d05f-6f5b-44c7-a7af-58cf7c7f4feb"/>
+  </context>
+  <effectivePeriod>
+    <start value="2016-11-28T15:16:44-08:00"/>
+    <end value="2016-11-28T15:16:44-08:00"/>
+  </effectivePeriod>
+  <dateAsserted value="2016-11-28T15:16:44-08:00"/>
+  <derivedFrom>
+    <reference value="MedicationRequest/efe47d5b-6901-4ff1-a337-bd51668a835a"/>
+  </derivedFrom>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="424132000"/>
+      <display value="Non-small cell carcinoma of lung, TNM stage 1 (disorder)"/>
+    </coding>
+    <text value="Non-small cell carcinoma of lung, TNM stage 1 (disorder)"/>
+  </reasonCode>
+</MedicationStatement>

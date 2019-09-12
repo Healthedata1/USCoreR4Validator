@@ -1,0 +1,37 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "193a3154-f9fa-448a-904e-443a2b8e4889",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+        ]
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1736854",
+                "display": "Cisplatin 50 MG Injection"
+            }
+        ],
+        "text": "Cisplatin 50 MG Injection"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/1b025d01-afb5-43c2-80d5-f312a4edc88f"
+    },
+    "authoredOn": "2018-05-10T16:16:44-07:00",
+    "requester": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-00000000032a",
+        "display": "Dr. Sergio619 Armijo730"
+    },
+    "reasonReference": [
+        {
+            "reference": "Condition/19d85f45-7128-4af8-ac71-ce2414b5c0fc"
+        }
+    ]
+}

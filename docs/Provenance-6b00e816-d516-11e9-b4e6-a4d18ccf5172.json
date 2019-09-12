@@ -1,0 +1,47 @@
+{
+  "resourceType": "Provenance",
+  "id": "6b00e816-d516-11e9-b4e6-a4d18ccf5172",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6b00e816-d516-11e9-b4e6-a4d18ccf5172</p><p><b>meta</b>: </p><p><b>target</b>: <a href=\"Claim-db9c858b-c5d7-409e-be52-3bf46e3544dd.html\">Generated Summary: id: db9c858b-c5d7-409e-be52-3bf46e3544dd; status: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span>; use: claim; billablePeriod: Oct 26, 2018, 4:16:44 PM --&gt; Oct 26, 2018, 5:05:44 PM; created: Oct 26, 2018, 5:05:44 PM; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span>; </a></p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled yet</b></p></div>"
+  },
+  "target": [
+    {
+      "reference": "Claim/db9c858b-c5d7-409e-be52-3bf46e3544dd"
+    }
+  ],
+  "recorded": "2019-09-12T04:33:07.272874Z",
+  "agent": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type",
+            "code": "transmitter"
+          }
+        ]
+      },
+      "who": {
+        "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+            "code": "author"
+          }
+        ]
+      },
+      "who": {
+        "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f"
+      }
+    }
+  ]
+}

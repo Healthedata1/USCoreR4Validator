@@ -1,0 +1,40 @@
+{
+    "resourceType": "Procedure",
+    "id": "9936d7e6-a0ce-4270-9e9e-bdc7ab843246",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+        ]
+    },
+    "status": "completed",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "180325003",
+                "display": "Electrical cardioversion"
+            }
+        ],
+        "text": "Electrical cardioversion"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/eb439e64-a313-437d-b813-ffdc8ba032ee"
+    },
+    "performedPeriod": {
+        "start": "2015-02-17T15:16:44-08:00",
+        "end": "2015-02-17T15:31:44-08:00"
+    },
+    "location": {
+        "reference": "Location/7653e0ab-0566-4083-95d8-c695e4735e53",
+        "display": "Quincy Outpatient Clinic"
+    },
+    "reasonReference": [
+        {
+            "reference": "Condition/14561089-c20d-495a-a0b8-5e03fc7b96ec",
+            "display": "Atrial Fibrillation"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="fff18676-7507-4b33-98fa-3bdcfa539bad"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: fff18676-7507-4b33-98fa-3bdcfa539bad</p><p><b>status</b>: active</p><p><b>type</b>: Pharmacy <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'pharmacy' = 'Pharmacy)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>billablePeriod</b>: Apr 18, 2000, 4:16:44 PM --&gt; Apr 18, 2000, 5:05:44 PM</p><p><b>created</b>: Apr 18, 2000, 5:05:44 PM</p><p><b>provider</b>: <a href="Organization-3ffca313-cdd3-37d2-ad04-00dc4adcb86f.html">PCP31369. Generated Summary: id: 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: PCP31369; ph: 781-934-2597</a></p><p><b>priority</b>: Normal <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/processpriority code 'normal' = 'Normal)</span></p><p><b>prescription</b>: <a href="MedicationRequest-d3137ee1-109d-488b-8ebd-b9835c98341a.html">Generated Summary: id: d3137ee1-109d-488b-8ebd-b9835c98341a; status: active; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 904419}">Alendronic acid 10 MG Oral Tablet</span>; authoredOn: Apr 18, 2000, 4:16:44 PM</a></p><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>Cigna Health</td></tr></table><h3>Items</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>ProductOrService</b></td><td><b>Encounter</b></td></tr><tr><td>*</td><td>1</td><td>General examination of patient (procedure) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '162673000' = 'General examination of patient', given as 'General examination of patient (procedure)'})</span></td><td><a href="Encounter-ddad6975-91c4-4365-a167-7669012f80b5.html">Generated Summary: id: ddad6975-91c4-4365-a167-7669012f80b5; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 162673000}">General examination of patient (procedure)</span>; period: Apr 18, 2000, 4:16:44 PM --&gt; Apr 18, 2000, 5:05:44 PM</a></td></tr></table><p><b>total</b>: </p></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="pharmacy"/>
+    </coding>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </patient>
+  <billablePeriod>
+    <start value="2000-04-18T16:16:44-07:00"/>
+    <end value="2000-04-18T17:05:44-07:00"/>
+  </billablePeriod>
+  <created value="2000-04-18T17:05:44-07:00"/>
+  <provider>
+    <reference value="Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f"/>
+    <display value="PCP31369"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+    </coding>
+  </priority>
+  <prescription>
+    <reference value="MedicationRequest/d3137ee1-109d-488b-8ebd-b9835c98341a"/>
+  </prescription>
+  <insurance>
+    <sequence value="1"/>
+    <focal value="true"/>
+    <coverage>
+      <display value="Cigna Health"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="162673000"/>
+        <display value="General examination of patient (procedure)"/>
+      </coding>
+      <text value="General examination of patient (procedure)"/>
+    </productOrService>
+    <encounter>
+      <reference value="Encounter/ddad6975-91c4-4365-a167-7669012f80b5"/>
+    </encounter>
+  </item>
+  <total>
+    <value value="79.51"/>
+    <currency value="USD"/>
+  </total>
+</Claim>

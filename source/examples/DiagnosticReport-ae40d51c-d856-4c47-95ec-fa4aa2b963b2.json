@@ -1,0 +1,57 @@
+{
+    "resourceType": "DiagnosticReport",
+    "id": "ae40d51c-d856-4c47-95ec-fa4aa2b963b2",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+        ]
+    },
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                    "code": "LAB",
+                    "display": "Laboratory"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "57698-3",
+                "display": "Lipid Panel"
+            }
+        ],
+        "text": "Lipid Panel"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/c94b88f7-0434-4548-b070-21c452f8dc52"
+    },
+    "effectiveDateTime": "2016-10-11T16:16:44-07:00",
+    "issued": "2016-10-11T16:16:44.618-07:00",
+    "result": [
+        {
+            "reference": "Observation/9caec146-39e1-4b51-a726-252a3c983ed8",
+            "display": "Total Cholesterol"
+        },
+        {
+            "reference": "Observation/e312ecaa-4848-44fe-bf44-8cb395c9af85",
+            "display": "Triglycerides"
+        },
+        {
+            "reference": "Observation/4142e028-f891-4f6d-a116-1ef7572bc24b",
+            "display": "Low Density Lipoprotein Cholesterol"
+        },
+        {
+            "reference": "Observation/5178b50c-bbe2-48b4-b208-12b2197d2a66",
+            "display": "High Density Lipoprotein Cholesterol"
+        }
+    ]
+}

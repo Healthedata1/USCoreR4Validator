@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="ccbc5b21-8856-4842-8283-63bef47b57e5"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ccbc5b21-8856-4842-8283-63bef47b57e5</p><p><b>meta</b>: </p><p><b>code</b>: Verapamil Hydrochloride 40 MG <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '897718' = 'Verapamil hydrochloride 40 MG', given as 'Verapamil Hydrochloride 40 MG'})</span></p><p><b>status</b>: active</p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="897718"/>
+      <display value="Verapamil Hydrochloride 40 MG"/>
+    </coding>
+    <text value="Verapamil Hydrochloride 40 MG"/>
+  </code>
+  <status value="active"/>
+</Medication>

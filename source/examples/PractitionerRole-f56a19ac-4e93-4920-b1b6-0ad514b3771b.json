@@ -1,0 +1,53 @@
+{
+    "resourceType": "PractitionerRole",
+    "id": "f56a19ac-4e93-4920-b1b6-0ad514b3771b",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"
+        ]
+    },
+    "practitioner": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-000000016c4c",
+        "display": "Dr. Almeda560 Beier427"
+    },
+    "organization": {
+        "reference": "Organization/4e916854-3a59-3f17-bb16-7c406148d822",
+        "display": "HANOVER FAMILY HEALTH AND URGENT CARE"
+    },
+    "code": [
+        {
+            "coding": [
+                {
+                    "system": "http://nucc.org/provider-taxonomy",
+                    "code": "208D00000X",
+                    "display": "General Practice"
+                }
+            ],
+            "text": "General Practice"
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://nucc.org/provider-taxonomy",
+                    "code": "208D00000X",
+                    "display": "General Practice"
+                }
+            ],
+            "text": "General Practice"
+        }
+    ],
+    "location": [
+        {
+            "reference": "Location/3a2d1aad-e90c-4ddd-8101-958a529adeb8",
+            "display": "HANOVER FAMILY HEALTH AND URGENT CARE"
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "781-829-1000"
+        }
+    ]
+}

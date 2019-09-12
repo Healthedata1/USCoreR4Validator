@@ -1,0 +1,24 @@
+{
+  "resourceType": "Medication",
+  "id": "0ea0504c-9ca0-4a84-877d-927aa673535e",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0ea0504c-9ca0-4a84-877d-927aa673535e</p><p><b>meta</b>: </p><p><b>code</b>: Acetaminophen 325 MG Oral Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '313782' = 'acetaminophen 325 MG Oral Tablet', given as 'Acetaminophen 325 MG Oral Tablet'})</span></p><p><b>status</b>: active</p></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "313782",
+        "display": "Acetaminophen 325 MG Oral Tablet"
+      }
+    ],
+    "text": "Acetaminophen 325 MG Oral Tablet"
+  },
+  "status": "active"
+}

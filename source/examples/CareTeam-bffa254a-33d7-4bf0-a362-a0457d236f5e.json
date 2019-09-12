@@ -1,0 +1,93 @@
+{
+    "resourceType": "CareTeam",
+    "id": "bffa254a-33d7-4bf0-a362-a0457d236f5e",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
+        ]
+    },
+    "status": "active",
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/76a90ca5-a0e3-4ece-b32a-1ce9d424b6da"
+    },
+    "period": {
+        "start": "1991-02-26T15:16:44-08:00"
+    },
+    "participant": [
+        {
+            "role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "116153009",
+                            "display": "Patient"
+                        }
+                    ],
+                    "text": "Patient"
+                }
+            ],
+            "member": {
+                "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+                "display": "Mr. Jose871 Cruickshank494"
+            }
+        },
+        {
+            "role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "303118004",
+                            "display": "Person in the healthcare environment (person)"
+                        }
+                    ],
+                    "text": "Person in the healthcare environment (person)"
+                }
+            ],
+            "member": {
+                "reference": "Practitioner/0000016d-235f-39b3-0000-0000000051f4",
+                "display": "Dr. Marica887 Bode78"
+            }
+        },
+        {
+            "role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "303118004",
+                            "display": "Healthcare related organization (qualifier value)"
+                        }
+                    ],
+                    "text": "Healthcare related organization (qualifier value)"
+                }
+            ],
+            "member": {
+                "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f",
+                "display": "PCP31369"
+            }
+        }
+    ],
+    "reasonCode": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "44054006",
+                    "display": "Diabetes"
+                }
+            ],
+            "text": "Diabetes"
+        }
+    ],
+    "managingOrganization": [
+        {
+            "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f",
+            "display": "PCP31369"
+        }
+    ]
+}

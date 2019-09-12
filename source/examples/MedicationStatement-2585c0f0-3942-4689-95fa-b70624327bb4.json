@@ -1,0 +1,108 @@
+{
+    "resourceType": "MedicationStatement",
+    "id": "2585c0f0-3942-4689-95fa-b70624327bb4",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
+        ]
+    },
+    "status": "active",
+    "medicationReference": {
+        "reference": "Medication/38025213-0118-4d07-8403-4179df1a04a0"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "context": {
+        "reference": "Encounter/73e0ede0-29e7-4560-88d2-0d582cafd1ba"
+    },
+    "effectiveDateTime": "1996-09-24T16:16:44-07:00",
+    "dateAsserted": "1996-09-24T16:16:44-07:00",
+    "derivedFrom": [
+        {
+            "reference": "MedicationRequest/8e545170-3a94-470a-a815-2b8026b45c17"
+        }
+    ],
+    "reasonCode": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "44054006",
+                    "display": "Diabetes"
+                }
+            ],
+            "text": "Diabetes"
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "44054006",
+                    "display": "Diabetes"
+                }
+            ],
+            "text": "Diabetes"
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "44054006",
+                    "display": "Diabetes"
+                }
+            ],
+            "text": "Diabetes"
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "44054006",
+                    "display": "Diabetes"
+                }
+            ],
+            "text": "Diabetes"
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "44054006",
+                    "display": "Diabetes"
+                }
+            ],
+            "text": "Diabetes"
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "44054006",
+                    "display": "Diabetes"
+                }
+            ],
+            "text": "Diabetes"
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "44054006",
+                    "display": "Diabetes"
+                }
+            ],
+            "text": "Diabetes"
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "44054006",
+                    "display": "Diabetes"
+                }
+            ],
+            "text": "Diabetes"
+        }
+    ]
+}

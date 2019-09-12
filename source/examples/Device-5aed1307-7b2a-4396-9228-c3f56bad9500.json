@@ -1,0 +1,40 @@
+{
+    "resourceType": "Device",
+    "id": "5aed1307-7b2a-4396-9228-c3f56bad9500",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-implantable-device"
+        ]
+    },
+    "udiCarrier": [
+        {
+            "deviceIdentifier": "45740134700353",
+            "carrierHRF": "(01)45740134700353(11)150630(17)150627(10)6089(21)54123784459553"
+        }
+    ],
+    "status": "active",
+    "distinctIdentifier": "45740134700353",
+    "manufactureDate": "2015-06-30T16:16:44-07:00",
+    "expirationDate": "2115-06-27T16:16:44-07:00",
+    "lotNumber": "6089",
+    "serialNumber": "54123784459553",
+    "deviceName": [
+        {
+            "name": "Implantable cardiac pacemaker (physical object)",
+            "type": "user-friendly-name"
+        }
+    ],
+    "type": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "706004007",
+                "display": "Implantable cardiac pacemaker (physical object)"
+            }
+        ],
+        "text": "Implantable cardiac pacemaker (physical object)"
+    },
+    "patient": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    }
+}

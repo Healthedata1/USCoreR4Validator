@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="38466c7f-a30e-4ee9-bcae-7a2c58b06e83"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 38466c7f-a30e-4ee9-bcae-7a2c58b06e83</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>medication</b>: <a href="Medication-5cdea688-d0d0-4553-b28d-41bb6ff710e5.html">Generated Summary: id: 5cdea688-d0d0-4553-b28d-41bb6ff710e5; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 904419}">Alendronic acid 10 MG Oral Tablet</span>; status: active</a></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>context</b>: <a href="Encounter-ddad6975-91c4-4365-a167-7669012f80b5.html">Generated Summary: id: ddad6975-91c4-4365-a167-7669012f80b5; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 162673000}">General examination of patient (procedure)</span>; period: Apr 18, 2000, 4:16:44 PM --&gt; Apr 18, 2000, 5:05:44 PM</a></p><p><b>effective</b>: Apr 18, 2000, 4:16:44 PM</p><p><b>dateAsserted</b>: Apr 18, 2000, 4:16:44 PM</p><p><b>derivedFrom</b>: <a href="MedicationRequest-d3137ee1-109d-488b-8ebd-b9835c98341a.html">Generated Summary: id: d3137ee1-109d-488b-8ebd-b9835c98341a; status: active; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 904419}">Alendronic acid 10 MG Oral Tablet</span>; authoredOn: Apr 18, 2000, 4:16:44 PM</a></p></div>
+  </text>
+  <status value="active"/>
+  <medicationReference>
+    <reference value="Medication/5cdea688-d0d0-4553-b28d-41bb6ff710e5"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <context>
+    <reference value="Encounter/ddad6975-91c4-4365-a167-7669012f80b5"/>
+  </context>
+  <effectiveDateTime value="2000-04-18T16:16:44-07:00"/>
+  <dateAsserted value="2000-04-18T16:16:44-07:00"/>
+  <derivedFrom>
+    <reference value="MedicationRequest/d3137ee1-109d-488b-8ebd-b9835c98341a"/>
+  </derivedFrom>
+</MedicationStatement>

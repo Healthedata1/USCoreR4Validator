@@ -1,0 +1,20 @@
+{
+    "resourceType": "Medication",
+    "id": "ccbc5b21-8856-4842-8283-63bef47b57e5",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "897718",
+                "display": "Verapamil Hydrochloride 40 MG"
+            }
+        ],
+        "text": "Verapamil Hydrochloride 40 MG"
+    },
+    "status": "active"
+}

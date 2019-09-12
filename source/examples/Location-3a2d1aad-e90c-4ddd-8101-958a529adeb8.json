@@ -1,0 +1,34 @@
+{
+    "resourceType": "Location",
+    "id": "3a2d1aad-e90c-4ddd-8101-958a529adeb8",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+        ]
+    },
+    "status": "active",
+    "name": "HANOVER FAMILY HEALTH AND URGENT CARE",
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "781-829-1000"
+        }
+    ],
+    "address": {
+        "line": [
+            "1399 WASHINGTON STREET"
+        ],
+        "city": "HANOVER",
+        "state": "MA",
+        "postalCode": "2339",
+        "country": "US"
+    },
+    "position": {
+        "longitude": -70.844005,
+        "latitude": 42.144202
+    },
+    "managingOrganization": {
+        "reference": "Organization/4e916854-3a59-3f17-bb16-7c406148d822",
+        "display": "HANOVER FAMILY HEALTH AND URGENT CARE"
+    }
+}

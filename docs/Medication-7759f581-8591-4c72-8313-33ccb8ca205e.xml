@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="7759f581-8591-4c72-8313-33ccb8ca205e"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 7759f581-8591-4c72-8313-33ccb8ca205e</p><p><b>meta</b>: </p><p><b>code</b>: PACLitaxel 100 MG Injection <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '583214' = 'PACLitaxel 100 MG Injection', given as 'PACLitaxel 100 MG Injection'})</span></p><p><b>status</b>: active</p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="583214"/>
+      <display value="PACLitaxel 100 MG Injection"/>
+    </coding>
+    <text value="PACLitaxel 100 MG Injection"/>
+  </code>
+  <status value="active"/>
+</Medication>

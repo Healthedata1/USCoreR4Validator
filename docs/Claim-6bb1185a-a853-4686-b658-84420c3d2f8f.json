@@ -1,0 +1,176 @@
+{
+  "resourceType": "Claim",
+  "id": "6bb1185a-a853-4686-b658-84420c3d2f8f",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6bb1185a-a853-4686-b658-84420c3d2f8f</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Jose871 Cruickshank494. Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>billablePeriod</b>: Nov 10, 2017, 3:16:44 PM --&gt; Nov 10, 2017, 5:13:44 PM</p><p><b>created</b>: Nov 10, 2017, 5:13:44 PM</p><p><b>provider</b>: <a href=\"Organization-27379046-608b-32f0-9df7-8c833cf5d11d.html\">BRIGHAM AND WOMEN'S HOSPITAL. Generated Summary: id: 27379046-608b-32f0-9df7-8c833cf5d11d; 27379046-608b-32f0-9df7-8c833cf5d11d; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: BRIGHAM AND WOMEN'S HOSPITAL; ph: 6177325500</a></p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/processpriority code 'normal' = 'Normal)</span></p><p><b>facility</b>: <a href=\"Location-a615098b-6b1a-4437-a7c7-fa2eaa6969f6.html\">BRIGHAM AND WOMEN'S HOSPITAL. Generated Summary: id: a615098b-6b1a-4437-a7c7-fa2eaa6969f6; status: active; name: BRIGHAM AND WOMEN'S HOSPITAL; ph: 6177325500</a></p><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 1</p><p><b>diagnosis</b>: <a href=\"Condition-dbab6d0f-060c-40dc-a8a0-8ff42ed08ffc.html\">Generated Summary: id: dbab6d0f-060c-40dc-a8a0-8ff42ed08ffc; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span>; <span title=\"Codes: {http://snomed.info/sct 263102004}\">Fracture subluxation of wrist</span>; onset: Nov 10, 2017, 3:16:44 PM; abatement: Dec 10, 2017, 3:16:44 PM; recordedDate: Nov 10, 2017, 3:16:44 PM</a></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 2</p><p><b>diagnosis</b>: <a href=\"Condition-66f76326-3aa8-43ca-b57c-84f01913e7d7.html\">Generated Summary: id: 66f76326-3aa8-43ca-b57c-84f01913e7d7; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span>; <span title=\"Codes: {http://snomed.info/sct 443165006}\">Pathological fracture due to osteoporosis (disorder)</span>; onset: Nov 10, 2017, 3:16:44 PM; abatement: Dec 10, 2017, 3:16:44 PM; recordedDate: Nov 10, 2017, 3:16:44 PM</a></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 1</p><p><b>procedure</b>: <a href=\"Procedure-3e7ea23a-9720-47b9-9963-58ce0544b924.html\">Generated Summary: id: 3e7ea23a-9720-47b9-9963-58ce0544b924; status: completed; <span title=\"Codes: {http://snomed.info/sct 60027007}\">X-ray or wrist</span>; performed: Nov 10, 2017, 3:16:44 PM --&gt; Nov 10, 2017, 3:46:44 PM</a></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 2</p><p><b>procedure</b>: <a href=\"Procedure-0853e23a-94de-41e8-bc0e-c5a5ac2d0fc1.html\">Generated Summary: id: 0853e23a-94de-41e8-bc0e-c5a5ac2d0fc1; status: completed; <span title=\"Codes: {http://snomed.info/sct 274474001}\">Bone immobilization</span>; performed: Nov 10, 2017, 3:16:44 PM --&gt; Nov 10, 2017, 3:43:44 PM</a></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>Medicare</td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: Emergency room admission (procedure) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '50849002' = 'Admission to accident and emergency department', given as 'Emergency room admission (procedure)'})</span></p><p><b>encounter</b>: <a href=\"Encounter-a5b4e585-c136-4b77-8ec5-785905b4a3e4.html\">Generated Summary: id: a5b4e585-c136-4b77-8ec5-785905b4a3e4; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode EMER}\">emergency</span>; <span title=\"Codes: {http://snomed.info/sct 50849002}\">Emergency room admission (procedure)</span>; period: Nov 10, 2017, 3:16:44 PM --&gt; Nov 10, 2017, 5:13:44 PM</a></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>diagnosisSequence</b>: 1</p><p><b>productOrService</b>: Fracture subluxation of wrist <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '263102004' = 'Fracture subluxation of wrist', given as 'Fracture subluxation of wrist'})</span></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 3</p><p><b>procedureSequence</b>: 1</p><p><b>productOrService</b>: X-ray or wrist <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '60027007' = 'X-ray of wrist', given as 'X-ray or wrist'})</span></p><p><b>net</b>: </p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 4</p><p><b>procedureSequence</b>: 2</p><p><b>productOrService</b>: Bone immobilization <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '274474001' = 'Bone immobilization', given as 'Bone immobilization'})</span></p><p><b>net</b>: </p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 5</p><p><b>diagnosisSequence</b>: 2</p><p><b>productOrService</b>: Pathological fracture due to osteoporosis (disorder) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '443165006' = 'Pathological fracture due to osteoporosis (disorder)', given as 'Pathological fracture due to osteoporosis (disorder)'})</span></p></blockquote><p><b>total</b>: </p></div>"
+  },
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "institutional"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+    "display": "Jose871 Cruickshank494"
+  },
+  "billablePeriod": {
+    "start": "2017-11-10T15:16:44-08:00",
+    "end": "2017-11-10T17:13:44-08:00"
+  },
+  "created": "2017-11-10T17:13:44-08:00",
+  "provider": {
+    "reference": "Organization/27379046-608b-32f0-9df7-8c833cf5d11d",
+    "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+  },
+  "priority": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+        "code": "normal"
+      }
+    ]
+  },
+  "facility": {
+    "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+    "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+  },
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosisReference": {
+        "reference": "Condition/dbab6d0f-060c-40dc-a8a0-8ff42ed08ffc"
+      }
+    },
+    {
+      "sequence": 2,
+      "diagnosisReference": {
+        "reference": "Condition/66f76326-3aa8-43ca-b57c-84f01913e7d7"
+      }
+    }
+  ],
+  "procedure": [
+    {
+      "sequence": 1,
+      "procedureReference": {
+        "reference": "Procedure/3e7ea23a-9720-47b9-9963-58ce0544b924"
+      }
+    },
+    {
+      "sequence": 2,
+      "procedureReference": {
+        "reference": "Procedure/0853e23a-94de-41e8-bc0e-c5a5ac2d0fc1"
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "sequence": 1,
+      "focal": true,
+      "coverage": {
+        "display": "Medicare"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "50849002",
+            "display": "Emergency room admission (procedure)"
+          }
+        ],
+        "text": "Emergency room admission (procedure)"
+      },
+      "encounter": [
+        {
+          "reference": "Encounter/a5b4e585-c136-4b77-8ec5-785905b4a3e4"
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "diagnosisSequence": [
+        1
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "263102004",
+            "display": "Fracture subluxation of wrist"
+          }
+        ],
+        "text": "Fracture subluxation of wrist"
+      }
+    },
+    {
+      "sequence": 3,
+      "procedureSequence": [
+        1
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "60027007",
+            "display": "X-ray or wrist"
+          }
+        ],
+        "text": "X-ray or wrist"
+      },
+      "net": {
+        "value": 516.65,
+        "currency": "USD"
+      }
+    },
+    {
+      "sequence": 4,
+      "procedureSequence": [
+        2
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "274474001",
+            "display": "Bone immobilization"
+          }
+        ],
+        "text": "Bone immobilization"
+      },
+      "net": {
+        "value": 516.65,
+        "currency": "USD"
+      }
+    },
+    {
+      "sequence": 5,
+      "diagnosisSequence": [
+        2
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "443165006",
+            "display": "Pathological fracture due to osteoporosis (disorder)"
+          }
+        ],
+        "text": "Pathological fracture due to osteoporosis (disorder)"
+      }
+    }
+  ],
+  "total": {
+    "value": 129.16,
+    "currency": "USD"
+  }
+}

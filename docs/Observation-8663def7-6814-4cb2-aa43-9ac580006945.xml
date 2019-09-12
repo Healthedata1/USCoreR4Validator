@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="8663def7-6814-4cb2-aa43-9ac580006945"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 8663def7-6814-4cb2-aa43-9ac580006945</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: laboratory <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory', given as 'laboratory'})</span></p><p><b>code</b>: Estimated Glomerular Filtration Rate <span style="background: LightGoldenRodYellow">(Details : {LOINC code '33914-3' = 'Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)', given as 'Estimated Glomerular Filtration Rate'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-82c612ad-009a-4a9a-8abb-fc122e729501.html">Generated Summary: id: 82c612ad-009a-4a9a-8abb-fc122e729501; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for check up (procedure)</span>; period: Apr 5, 2011, 4:16:44 PM --&gt; Apr 5, 2011, 4:46:44 PM</a></p><p><b>effective</b>: Apr 5, 2011, 4:16:44 PM</p><p><b>issued</b>: Apr 5, 2011, 4:16:44 PM</p><p><b>value</b>: 28.78740066974902 mL/min/{1.73_m2}<span style="background: LightGoldenRodYellow"> (Details: UCUM code mL/min/{1.73_m2} = 'mL/min/{1.73_m2}')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="33914-3"/>
+      <display value="Estimated Glomerular Filtration Rate"/>
+    </coding>
+    <text value="Estimated Glomerular Filtration Rate"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/82c612ad-009a-4a9a-8abb-fc122e729501"/>
+  </encounter>
+  <effectiveDateTime value="2011-04-05T16:16:44-07:00"/>
+  <issued value="2011-04-05T16:16:44.618-07:00"/>
+  <valueQuantity>
+    <value value="28.78740066974902"/>
+    <unit value="mL/min/{1.73_m2}"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mL/min/{1.73_m2}"/>
+  </valueQuantity>
+</Observation>

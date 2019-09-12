@@ -1,0 +1,70 @@
+{
+    "resourceType": "Claim",
+    "id": "bb3a0dc6-8bc0-4f32-b53e-3d33b26fc87b",
+    "status": "active",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                "code": "pharmacy"
+            }
+        ]
+    },
+    "use": "claim",
+    "patient": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "billablePeriod": {
+        "start": "2010-09-07T16:16:44-07:00",
+        "end": "2010-09-07T16:46:44-07:00"
+    },
+    "created": "2010-09-07T16:46:44-07:00",
+    "provider": {
+        "reference": "Organization/18f774ab-db01-37ba-95c4-44c4eab47089",
+        "display": "Quincy Outpatient Clinic"
+    },
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+                "code": "normal"
+            }
+        ]
+    },
+    "prescription": {
+        "reference": "MedicationRequest/f69fe74a-0727-4356-98ee-5895d98fc1c4"
+    },
+    "insurance": [
+        {
+            "sequence": 1,
+            "focal": true,
+            "coverage": {
+                "display": "Medicare"
+            }
+        }
+    ],
+    "item": [
+        {
+            "sequence": 1,
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "185349003",
+                        "display": "Encounter for check up (procedure)"
+                    }
+                ],
+                "text": "Encounter for check up (procedure)"
+            },
+            "encounter": [
+                {
+                    "reference": "Encounter/b8c2cf6a-a35c-408b-84ac-dfa2443fe907"
+                }
+            ]
+        }
+    ],
+    "total": {
+        "value": 29.45,
+        "currency": "USD"
+    }
+}

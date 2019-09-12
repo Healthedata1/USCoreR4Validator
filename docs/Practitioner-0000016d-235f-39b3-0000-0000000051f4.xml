@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="0000016d-235f-39b3-0000-0000000051f4"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 0000016d-235f-39b3-0000-0000000051f4</p><p><b>meta</b>: </p><p><b>identifier</b>: 20980</p><p><b>active</b>: true</p><p><b>name</b>: Marica887 Bode78 </p><p><b>telecom</b>: Marica887.Bode78@example.com(WORK)</p><p><b>address</b>: 145 WASHINGTON ST NORWELL MA 02061-1744 US </p><p><b>gender</b>: female</p></div>
+  </text>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="20980"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Bode78"/>
+    <given value="Marica887"/>
+    <prefix value="Dr."/>
+  </name>
+  <telecom>
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct">
+      <valueBoolean value="true"/>
+    </extension>
+    <system value="email"/>
+    <value value="Marica887.Bode78@example.com"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <line value="145 WASHINGTON ST"/>
+    <city value="NORWELL"/>
+    <state value="MA"/>
+    <postalCode value="02061-1744"/>
+    <country value="US"/>
+  </address>
+  <gender value="female"/>
+</Practitioner>

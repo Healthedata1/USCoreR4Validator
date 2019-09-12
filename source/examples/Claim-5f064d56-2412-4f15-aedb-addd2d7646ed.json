@@ -1,0 +1,176 @@
+{
+    "resourceType": "Claim",
+    "id": "5f064d56-2412-4f15-aedb-addd2d7646ed",
+    "status": "active",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                "code": "institutional"
+            }
+        ]
+    },
+    "use": "claim",
+    "patient": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+        "display": "Jose871 Cruickshank494"
+    },
+    "billablePeriod": {
+        "start": "2012-09-02T16:16:44-07:00",
+        "end": "2012-09-02T17:41:44-07:00"
+    },
+    "created": "2012-09-02T17:41:44-07:00",
+    "provider": {
+        "reference": "Organization/27379046-608b-32f0-9df7-8c833cf5d11d",
+        "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+    },
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+                "code": "normal"
+            }
+        ]
+    },
+    "facility": {
+        "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+        "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+    },
+    "diagnosis": [
+        {
+            "sequence": 1,
+            "diagnosisReference": {
+                "reference": "Condition/26746a47-1ef3-4e72-b437-73efcf9c1586"
+            }
+        }
+    ],
+    "procedure": [
+        {
+            "sequence": 1,
+            "procedureReference": {
+                "reference": "Procedure/90f4b06b-8df2-438e-a819-438b691cdc1f"
+            }
+        },
+        {
+            "sequence": 2,
+            "procedureReference": {
+                "reference": "Procedure/7d53f067-1085-432d-85ba-b423fdae32e6"
+            }
+        },
+        {
+            "sequence": 3,
+            "procedureReference": {
+                "reference": "Procedure/c7fc6c57-5c95-4fb6-81f3-23bdb8ec5721"
+            }
+        }
+    ],
+    "insurance": [
+        {
+            "sequence": 1,
+            "focal": true,
+            "coverage": {
+                "display": "Medicare"
+            }
+        }
+    ],
+    "item": [
+        {
+            "sequence": 1,
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "185349003",
+                        "display": "Encounter for 'check-up'"
+                    }
+                ],
+                "text": "Encounter for 'check-up'"
+            },
+            "encounter": [
+                {
+                    "reference": "Encounter/c04bf692-5517-4c30-81cf-19fd7aa1836b"
+                }
+            ]
+        },
+        {
+            "sequence": 2,
+            "procedureSequence": [
+                1
+            ],
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "73761001",
+                        "display": "Colonoscopy"
+                    }
+                ],
+                "text": "Colonoscopy"
+            },
+            "net": {
+                "value": 17515.3,
+                "currency": "USD"
+            }
+        },
+        {
+            "sequence": 3,
+            "diagnosisSequence": [
+                1
+            ],
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "68496003",
+                        "display": "Polyp of colon"
+                    }
+                ],
+                "text": "Polyp of colon"
+            }
+        },
+        {
+            "sequence": 4,
+            "procedureSequence": [
+                2
+            ],
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "1015401000000102",
+                        "display": "Fecal occult blood test"
+                    }
+                ],
+                "text": "Fecal occult blood test"
+            },
+            "net": {
+                "value": 516.65,
+                "currency": "USD"
+            }
+        },
+        {
+            "sequence": 5,
+            "procedureSequence": [
+                3
+            ],
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "274031008",
+                        "display": "Rectal polypectomy"
+                    }
+                ],
+                "text": "Rectal polypectomy"
+            },
+            "net": {
+                "value": 8167.91,
+                "currency": "USD"
+            }
+        }
+    ],
+    "total": {
+        "value": 129.16,
+        "currency": "USD"
+    }
+}

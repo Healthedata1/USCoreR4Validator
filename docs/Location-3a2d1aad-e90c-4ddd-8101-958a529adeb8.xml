@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="3a2d1aad-e90c-4ddd-8101-958a529adeb8"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3a2d1aad-e90c-4ddd-8101-958a529adeb8</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>name</b>: HANOVER FAMILY HEALTH AND URGENT CARE</p><p><b>telecom</b>: ph: 781-829-1000</p><p><b>address</b>: 1399 WASHINGTON STREET HANOVER MA 2339 US </p><h3>Positions</h3><table class="grid"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-70.844005</td><td>42.144202</td></tr></table><p><b>managingOrganization</b>: <a href="Organization-4e916854-3a59-3f17-bb16-7c406148d822.html">HANOVER FAMILY HEALTH AND URGENT CARE. Generated Summary: id: 4e916854-3a59-3f17-bb16-7c406148d822; 4e916854-3a59-3f17-bb16-7c406148d822; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: HANOVER FAMILY HEALTH AND URGENT CARE; ph: 781-829-1000</a></p></div>
+  </text>
+  <status value="active"/>
+  <name value="HANOVER FAMILY HEALTH AND URGENT CARE"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="781-829-1000"/>
+  </telecom>
+  <address>
+    <line value="1399 WASHINGTON STREET"/>
+    <city value="HANOVER"/>
+    <state value="MA"/>
+    <postalCode value="2339"/>
+    <country value="US"/>
+  </address>
+  <position>
+    <longitude value="-70.844005"/>
+    <latitude value="42.144202"/>
+  </position>
+  <managingOrganization>
+    <reference value="Organization/4e916854-3a59-3f17-bb16-7c406148d822"/>
+    <display value="HANOVER FAMILY HEALTH AND URGENT CARE"/>
+  </managingOrganization>
+</Location>

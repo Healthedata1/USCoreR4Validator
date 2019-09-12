@@ -16700,3 +16700,631 @@ v: {
   "error" : "The display \"Total Cholesterol\" is not a valid display for the code {http://loinc.org}2093-3 - should be one of [\"Cholesterol [Mass/volume] in Serum or Plasma\",\"Cholest SerPl-mCnc\"]"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "33914-3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "14959-1"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Microalbumin/Creatinine [Mass Ratio] in Urine",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "57905-2"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Hemoglobin.gastrointestinal.lower [Presence] in Stool by Immunoassay --1st specimen",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "33756-8"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Polyp size greatest dimension",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "33914-3",
+    "display" : "Estimated Glomerular Filtration Rate"
+  }],
+  "text" : "Estimated Glomerular Filtration Rate"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)",
+  "severity" : "warning",
+  "error" : "The display \"Estimated Glomerular Filtration Rate\" is not a valid display for the code {http://loinc.org}33914-3 - should be one of [\"Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)\",\"GFR/BSA.pred SerPl MDRD-ArVRat\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "6298-4",
+    "display" : "Potassium"
+  }],
+  "text" : "Potassium"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Potassium [Moles/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Potassium\" is not a valid display for the code {http://loinc.org}6298-4 - should be one of [\"Potassium [Moles/volume] in Blood\",\"Potassium Bld-sCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "14959-1",
+    "display" : "Microalbumin Creatinine Ratio"
+  }],
+  "text" : "Microalbumin Creatinine Ratio"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Microalbumin/Creatinine [Mass Ratio] in Urine",
+  "severity" : "warning",
+  "error" : "The display \"Microalbumin Creatinine Ratio\" is not a valid display for the code {http://loinc.org}14959-1 - should be one of [\"Microalbumin/Creatinine [Mass Ratio] in Urine\",\"Microalbumin/Creat Ur\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "4548-4",
+    "display" : "Hemoglobin A1c/Hemoglobin.total in Blood"
+  }],
+  "text" : "Hemoglobin A1c/Hemoglobin.total in Blood"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "785-6",
+    "display" : "MCH [Entitic mass] by Automated count"
+  }],
+  "text" : "MCH [Entitic mass] by Automated count"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "MCH [Entitic mass] by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "2093-3",
+    "display" : "Total Cholesterol"
+  }],
+  "text" : "Total Cholesterol"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Cholesterol [Mass/volume] in Serum or Plasma",
+  "severity" : "warning",
+  "error" : "The display \"Total Cholesterol\" is not a valid display for the code {http://loinc.org}2093-3 - should be one of [\"Cholesterol [Mass/volume] in Serum or Plasma\",\"Cholest SerPl-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "49765-1",
+    "display" : "Calcium"
+  }],
+  "text" : "Calcium"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Calcium [Mass/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Calcium\" is not a valid display for the code {http://loinc.org}49765-1 - should be one of [\"Calcium [Mass/volume] in Blood\",\"Calcium Bld-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "38483-4",
+    "display" : "Creatinine"
+  }],
+  "text" : "Creatinine"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Creatinine [Mass/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Creatinine\" is not a valid display for the code {http://loinc.org}38483-4 - should be one of [\"Creatinine [Mass/volume] in Blood\",\"Creat Bld-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "2085-9",
+    "display" : "High Density Lipoprotein Cholesterol"
+  }],
+  "text" : "High Density Lipoprotein Cholesterol"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Cholesterol in HDL [Mass/volume] in Serum or Plasma",
+  "severity" : "warning",
+  "error" : "The display \"High Density Lipoprotein Cholesterol\" is not a valid display for the code {http://loinc.org}2085-9 - should be one of [\"Cholesterol in HDL [Mass/volume] in Serum or Plasma\",\"HDLc SerPl-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "2339-0",
+    "display" : "Glucose"
+  }],
+  "text" : "Glucose"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Glucose [Mass/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Glucose\" is not a valid display for the code {http://loinc.org}2339-0 - should be one of [\"Glucose [Mass/volume] in Blood\",\"Glucose Bld-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "2571-8",
+    "display" : "Triglycerides"
+  }],
+  "text" : "Triglycerides"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Triglyceride [Mass/volume] in Serum or Plasma",
+  "severity" : "warning",
+  "error" : "The display \"Triglycerides\" is not a valid display for the code {http://loinc.org}2571-8 - should be one of [\"Triglyceride [Mass/volume] in Serum or Plasma\",\"Trigl SerPl-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "20565-8",
+    "display" : "Carbon Dioxide"
+  }],
+  "text" : "Carbon Dioxide"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Carbon dioxide, total [Moles/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Carbon Dioxide\" is not a valid display for the code {http://loinc.org}20565-8 - should be one of [\"Carbon dioxide, total [Moles/volume] in Blood\",\"CO2 Bld-sCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "18262-6",
+    "display" : "Low Density Lipoprotein Cholesterol"
+  }],
+  "text" : "Low Density Lipoprotein Cholesterol"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay",
+  "severity" : "warning",
+  "error" : "The display \"Low Density Lipoprotein Cholesterol\" is not a valid display for the code {http://loinc.org}18262-6 - should be one of [\"Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay\",\"LDLc SerPl Direct Assay-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "2947-0",
+    "display" : "Sodium"
+  }],
+  "text" : "Sodium"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Sodium [Moles/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Sodium\" is not a valid display for the code {http://loinc.org}2947-0 - should be one of [\"Sodium [Moles/volume] in Blood\",\"Sodium Bld-sCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "2069-3",
+    "display" : "Chloride"
+  }],
+  "text" : "Chloride"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Chloride [Moles/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Chloride\" is not a valid display for the code {http://loinc.org}2069-3 - should be one of [\"Chloride [Moles/volume] in Blood\",\"Chloride Bld-sCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "6299-2",
+    "display" : "Urea Nitrogen"
+  }],
+  "text" : "Urea Nitrogen"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Urea nitrogen [Mass/volume] in Blood",
+  "severity" : "warning",
+  "error" : "The display \"Urea Nitrogen\" is not a valid display for the code {http://loinc.org}6299-2 - should be one of [\"Urea nitrogen [Mass/volume] in Blood\",\"BUN Bld-mCnc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "6690-2",
+    "display" : "Leukocytes [#/volume] in Blood by Automated count"
+  }],
+  "text" : "Leukocytes [#/volume] in Blood by Automated count"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Leukocytes [#/volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "4544-3",
+    "display" : "Hematocrit [Volume Fraction] of Blood by Automated count"
+  }],
+  "text" : "Hematocrit [Volume Fraction] of Blood by Automated count"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Hematocrit [Volume Fraction] of Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "57905-2",
+    "display" : "Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method"
+  }],
+  "text" : "Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Hemoglobin.gastrointestinal.lower [Presence] in Stool by Immunoassay --1st specimen",
+  "severity" : "warning",
+  "error" : "The display \"Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method\" is not a valid display for the code {http://loinc.org}57905-2 - should be one of [\"Hemoglobin.gastrointestinal.lower [Presence] in Stool by Immunoassay --1st specimen\",\"Hemoccult sp1 Stl Ql IA\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "33756-8",
+    "display" : "Polyp size greatest dimension by CAP cancer protocols"
+  }],
+  "text" : "Polyp size greatest dimension by CAP cancer protocols"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Polyp size greatest dimension",
+  "severity" : "warning",
+  "error" : "The display \"Polyp size greatest dimension by CAP cancer protocols\" is not a valid display for the code {http://loinc.org}33756-8 - should be one of [\"Polyp size greatest dimension\",\"Polyp size greatest dim\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "786-4",
+    "display" : "MCHC [Mass/volume] by Automated count"
+  }],
+  "text" : "MCHC [Mass/volume] by Automated count"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "MCHC [Mass/volume] by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "21000-5",
+    "display" : "Erythrocyte distribution width [Entitic volume] by Automated count"
+  }],
+  "text" : "Erythrocyte distribution width [Entitic volume] by Automated count"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Erythrocyte distribution width [Entitic volume] by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "718-7",
+    "display" : "Hemoglobin [Mass/volume] in Blood"
+  }],
+  "text" : "Hemoglobin [Mass/volume] in Blood"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Hemoglobin [Mass/volume] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "32207-3",
+    "display" : "Platelet distribution width [Entitic volume] in Blood by Automated count"
+  }],
+  "text" : "Platelet distribution width [Entitic volume] in Blood by Automated count"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Platelet distribution width [Entitic volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "789-8",
+    "display" : "Erythrocytes [#/volume] in Blood by Automated count"
+  }],
+  "text" : "Erythrocytes [#/volume] in Blood by Automated count"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Erythrocytes [#/volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "787-2",
+    "display" : "MCV [Entitic volume] by Automated count"
+  }],
+  "text" : "MCV [Entitic volume] by Automated count"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "MCV [Entitic volume] by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "777-3",
+    "display" : "Platelets [#/volume] in Blood by Automated count"
+  }],
+  "text" : "Platelets [#/volume] in Blood by Automated count"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Platelets [#/volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "32623-1",
+    "display" : "Platelet mean volume [Entitic volume] in Blood by Automated count"
+  }],
+  "text" : "Platelet mean volume [Entitic volume] in Blood by Automated count"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Platelet mean volume [Entitic volume] in Blood by Automated count",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="04d79f8a-a60f-4ad9-9687-d67328515ca7"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 04d79f8a-a60f-4ad9-9687-d67328515ca7</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>code</b>: Colonoscopy <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '73761001' = 'Colonoscopy', given as 'Colonoscopy'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-e703b439-cb26-4cff-afac-928b2bd1fec6.html">Generated Summary: id: e703b439-cb26-4cff-afac-928b2bd1fec6; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for 'check-up'</span>; period: Oct 26, 2018, 4:16:44 PM --&gt; Oct 26, 2018, 5:05:44 PM</a></p><p><b>performed</b>: Oct 26, 2018, 4:16:44 PM --&gt; Oct 26, 2018, 4:50:44 PM</p><p><b>location</b>: <a href="Location-a615098b-6b1a-4437-a7c7-fa2eaa6969f6.html">BRIGHAM AND WOMEN'S HOSPITAL. Generated Summary: id: a615098b-6b1a-4437-a7c7-fa2eaa6969f6; status: active; name: BRIGHAM AND WOMEN'S HOSPITAL; ph: 6177325500</a></p></div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="73761001"/>
+      <display value="Colonoscopy"/>
+    </coding>
+    <text value="Colonoscopy"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/e703b439-cb26-4cff-afac-928b2bd1fec6"/>
+  </encounter>
+  <performedPeriod>
+    <start value="2018-10-26T16:16:44-07:00"/>
+    <end value="2018-10-26T16:50:44-07:00"/>
+  </performedPeriod>
+  <location>
+    <reference value="Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6"/>
+    <display value="BRIGHAM AND WOMEN&#39;S HOSPITAL"/>
+  </location>
+</Procedure>

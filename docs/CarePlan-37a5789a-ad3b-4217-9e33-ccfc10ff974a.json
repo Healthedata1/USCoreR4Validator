@@ -1,0 +1,90 @@
+{
+  "resourceType": "CarePlan",
+  "id": "37a5789a-ad3b-4217-9e33-ccfc10ff974a",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Musculoskeletal care.<br/>Activities: <ul><li>Musculoskeletal care</li><li>Musculoskeletal care</li></ul><br/>Care plan is meant to treat Whiplash injury to neck.</div>"
+  },
+  "status": "completed",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "408869004",
+          "display": "Musculoskeletal care"
+        }
+      ],
+      "text": "Musculoskeletal care"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+  },
+  "encounter": {
+    "reference": "Encounter/797bf06e-328d-44c5-8384-e553ef9ed7a6"
+  },
+  "period": {
+    "start": "1993-05-22T16:16:44-07:00",
+    "end": "1993-06-19T16:16:44-07:00"
+  },
+  "careTeam": [
+    {
+      "reference": "CareTeam/f6211f47-55d5-4b31-a447-e8cfbe288c32"
+    }
+  ],
+  "activity": [
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "266694003",
+              "display": "Heat therapy"
+            }
+          ],
+          "text": "Heat therapy"
+        },
+        "status": "completed",
+        "location": {
+          "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+          "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+        }
+      }
+    },
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "183051005",
+              "display": "Recommendation to rest"
+            }
+          ],
+          "text": "Recommendation to rest"
+        },
+        "status": "completed",
+        "location": {
+          "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+          "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+        }
+      }
+    }
+  ]
+}

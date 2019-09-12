@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="5d194c3f-f5c6-410a-a49c-8fedbb268a3d"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 5d194c3f-f5c6-410a-a49c-8fedbb268a3d</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: Influenza, seasonal, injectable, preservative free <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/sid/cvx code '140' = 'Influenza, seasonal, injectable, preservative free', given as 'Influenza, seasonal, injectable, preservative free'})</span></p><p><b>patient</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-2cdc32e7-931e-480b-aada-fbd4dffb061f.html">Generated Summary: id: 2cdc32e7-931e-480b-aada-fbd4dffb061f; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for check up (procedure)</span>; period: Oct 30, 2018, 4:16:44 PM --&gt; Oct 30, 2018, 4:46:44 PM</a></p><p><b>occurrence</b>: Oct 30, 2018, 4:16:44 PM</p><p><b>primarySource</b>: true</p><p><b>location</b>: <a href="Location-7653e0ab-0566-4083-95d8-c695e4735e53.html">Quincy Outpatient Clinic. Generated Summary: id: 7653e0ab-0566-4083-95d8-c695e4735e53; status: active; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p></div>
+  </text>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <code value="140"/>
+      <display value="Influenza, seasonal, injectable, preservative free"/>
+    </coding>
+    <text value="Influenza, seasonal, injectable, preservative free"/>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </patient>
+  <encounter>
+    <reference value="Encounter/2cdc32e7-931e-480b-aada-fbd4dffb061f"/>
+  </encounter>
+  <occurrenceDateTime value="2018-10-30T16:16:44-07:00"/>
+  <primarySource value="true"/>
+  <location>
+    <reference value="Location/7653e0ab-0566-4083-95d8-c695e4735e53"/>
+    <display value="Quincy Outpatient Clinic"/>
+  </location>
+</Immunization>

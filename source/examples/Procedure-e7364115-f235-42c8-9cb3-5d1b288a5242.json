@@ -1,0 +1,40 @@
+{
+    "resourceType": "Procedure",
+    "id": "e7364115-f235-42c8-9cb3-5d1b288a5242",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+        ]
+    },
+    "status": "completed",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "167995008",
+                "display": "Sputum microscopy (procedure)"
+            }
+        ],
+        "text": "Sputum microscopy (procedure)"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/3dbb35d5-e8df-496d-aed9-79cd9cd89305"
+    },
+    "performedPeriod": {
+        "start": "2016-07-27T16:16:44-07:00",
+        "end": "2016-07-27T16:31:44-07:00"
+    },
+    "location": {
+        "reference": "Location/7653e0ab-0566-4083-95d8-c695e4735e53",
+        "display": "Quincy Outpatient Clinic"
+    },
+    "reasonReference": [
+        {
+            "reference": "Condition/d948a4e9-8e90-4742-9b2f-6eb095a66808",
+            "display": "Suspected lung cancer (situation)"
+        }
+    ]
+}

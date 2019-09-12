@@ -1,0 +1,162 @@
+{
+    "resourceType": "Claim",
+    "id": "5c9279a6-0413-43b6-a26b-5c400f9f0e3b",
+    "status": "active",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                "code": "institutional"
+            }
+        ]
+    },
+    "use": "claim",
+    "patient": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+        "display": "Jose871 Cruickshank494"
+    },
+    "billablePeriod": {
+        "start": "2011-04-05T16:16:44-07:00",
+        "end": "2011-04-05T16:46:44-07:00"
+    },
+    "created": "2011-04-05T16:46:44-07:00",
+    "provider": {
+        "reference": "Organization/18f774ab-db01-37ba-95c4-44c4eab47089",
+        "display": "Quincy Outpatient Clinic"
+    },
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+                "code": "normal"
+            }
+        ]
+    },
+    "facility": {
+        "reference": "Location/7653e0ab-0566-4083-95d8-c695e4735e53",
+        "display": "Quincy Outpatient Clinic"
+    },
+    "supportingInfo": [
+        {
+            "sequence": 1,
+            "category": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+                        "code": "info"
+                    }
+                ]
+            },
+            "valueReference": {
+                "reference": "Immunization/f22f9496-c95f-49bd-9166-595f304cdc9c"
+            }
+        }
+    ],
+    "procedure": [
+        {
+            "sequence": 1,
+            "procedureReference": {
+                "reference": "Procedure/35ed262b-928a-4b54-b42c-b3d50c307515"
+            }
+        },
+        {
+            "sequence": 2,
+            "procedureReference": {
+                "reference": "Procedure/f9b3b47c-a13a-4c7d-9e70-60d84ea8489a"
+            }
+        }
+    ],
+    "insurance": [
+        {
+            "sequence": 1,
+            "focal": true,
+            "coverage": {
+                "display": "Medicare"
+            }
+        }
+    ],
+    "item": [
+        {
+            "sequence": 1,
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "185349003",
+                        "display": "Encounter for check up (procedure)"
+                    }
+                ],
+                "text": "Encounter for check up (procedure)"
+            },
+            "encounter": [
+                {
+                    "reference": "Encounter/82c612ad-009a-4a9a-8abb-fc122e729501"
+                }
+            ]
+        },
+        {
+            "sequence": 2,
+            "procedureSequence": [
+                1
+            ],
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "18286008",
+                        "display": "Catheter ablation of tissue of heart"
+                    }
+                ],
+                "text": "Catheter ablation of tissue of heart"
+            },
+            "net": {
+                "value": 5819.23,
+                "currency": "USD"
+            }
+        },
+        {
+            "sequence": 3,
+            "informationSequence": [
+                1
+            ],
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/sid/cvx",
+                        "code": "113",
+                        "display": "Td (adult) preservative free"
+                    }
+                ],
+                "text": "Td (adult) preservative free"
+            },
+            "net": {
+                "value": 140.52,
+                "currency": "USD"
+            }
+        },
+        {
+            "sequence": 4,
+            "procedureSequence": [
+                2
+            ],
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "430193006",
+                        "display": "Medication Reconciliation (procedure)"
+                    }
+                ],
+                "text": "Medication Reconciliation (procedure)"
+            },
+            "net": {
+                "value": 630.36,
+                "currency": "USD"
+            }
+        }
+    ],
+    "total": {
+        "value": 129.16,
+        "currency": "USD"
+    }
+}

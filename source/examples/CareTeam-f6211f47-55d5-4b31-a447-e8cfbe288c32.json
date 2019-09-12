@@ -1,0 +1,94 @@
+{
+    "resourceType": "CareTeam",
+    "id": "f6211f47-55d5-4b31-a447-e8cfbe288c32",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam"
+        ]
+    },
+    "status": "inactive",
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/797bf06e-328d-44c5-8384-e553ef9ed7a6"
+    },
+    "period": {
+        "start": "1993-05-22T16:16:44-07:00",
+        "end": "1993-06-19T16:16:44-07:00"
+    },
+    "participant": [
+        {
+            "role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "116153009",
+                            "display": "Patient"
+                        }
+                    ],
+                    "text": "Patient"
+                }
+            ],
+            "member": {
+                "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+                "display": "Mr. Jose871 Cruickshank494"
+            }
+        },
+        {
+            "role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "303118004",
+                            "display": "Person in the healthcare environment (person)"
+                        }
+                    ],
+                    "text": "Person in the healthcare environment (person)"
+                }
+            ],
+            "member": {
+                "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2",
+                "display": "Dr. Nelida367 Green467"
+            }
+        },
+        {
+            "role": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "303118004",
+                            "display": "Healthcare related organization (qualifier value)"
+                        }
+                    ],
+                    "text": "Healthcare related organization (qualifier value)"
+                }
+            ],
+            "member": {
+                "reference": "Organization/27379046-608b-32f0-9df7-8c833cf5d11d",
+                "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+            }
+        }
+    ],
+    "reasonCode": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "39848009",
+                    "display": "Whiplash injury to neck"
+                }
+            ],
+            "text": "Whiplash injury to neck"
+        }
+    ],
+    "managingOrganization": [
+        {
+            "reference": "Organization/27379046-608b-32f0-9df7-8c833cf5d11d",
+            "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+        }
+    ]
+}

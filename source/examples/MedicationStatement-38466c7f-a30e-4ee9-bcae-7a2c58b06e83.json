@@ -1,0 +1,26 @@
+{
+    "resourceType": "MedicationStatement",
+    "id": "38466c7f-a30e-4ee9-bcae-7a2c58b06e83",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
+        ]
+    },
+    "status": "active",
+    "medicationReference": {
+        "reference": "Medication/5cdea688-d0d0-4553-b28d-41bb6ff710e5"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "context": {
+        "reference": "Encounter/ddad6975-91c4-4365-a167-7669012f80b5"
+    },
+    "effectiveDateTime": "2000-04-18T16:16:44-07:00",
+    "dateAsserted": "2000-04-18T16:16:44-07:00",
+    "derivedFrom": [
+        {
+            "reference": "MedicationRequest/d3137ee1-109d-488b-8ebd-b9835c98341a"
+        }
+    ]
+}

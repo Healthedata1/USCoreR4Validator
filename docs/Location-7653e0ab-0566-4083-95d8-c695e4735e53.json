@@ -1,0 +1,38 @@
+{
+  "resourceType": "Location",
+  "id": "7653e0ab-0566-4083-95d8-c695e4735e53",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 7653e0ab-0566-4083-95d8-c695e4735e53</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>name</b>: Quincy Outpatient Clinic</p><p><b>telecom</b>: ph: 800-865-3384</p><p><b>address</b>: 110 West Squantum Street Quincy MA 02169 US </p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td>-71.03133</td><td>42.272617</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-18f774ab-db01-37ba-95c4-44c4eab47089.html\">Quincy Outpatient Clinic. Generated Summary: id: 18f774ab-db01-37ba-95c4-44c4eab47089; 18f774ab-db01-37ba-95c4-44c4eab47089; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p></div>"
+  },
+  "status": "active",
+  "name": "Quincy Outpatient Clinic",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "800-865-3384"
+    }
+  ],
+  "address": {
+    "line": [
+      "110 West Squantum Street"
+    ],
+    "city": "Quincy",
+    "state": "MA",
+    "postalCode": "02169",
+    "country": "US"
+  },
+  "position": {
+    "longitude": -71.03133,
+    "latitude": 42.272617
+  },
+  "managingOrganization": {
+    "reference": "Organization/18f774ab-db01-37ba-95c4-44c4eab47089",
+    "display": "Quincy Outpatient Clinic"
+  }
+}

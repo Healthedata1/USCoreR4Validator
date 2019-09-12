@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="286aa05c-1bb6-41f5-87ea-65e24823c234"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 286aa05c-1bb6-41f5-87ea-65e24823c234</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>medication</b>: <a href="Medication-337bc754-318b-48e1-8a50-dad3fb7070a1.html">Generated Summary: id: 337bc754-318b-48e1-8a50-dad3fb7070a1; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 106258}">Hydrocortisone 10 MG/ML Topical Cream</span>; status: active</a></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>context</b>: <a href="Encounter-49726919-64c1-4bbe-bd2d-3f2f286d2233.html">Generated Summary: id: 49726919-64c1-4bbe-bd2d-3f2f286d2233; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185347001}">Encounter for problem</span>; period: Feb 22, 1972, 3:16:44 PM --&gt; Feb 22, 1972, 3:31:44 PM</a></p><p><b>effective</b>: Feb 22, 1972, 3:16:44 PM</p><p><b>dateAsserted</b>: Feb 22, 1972, 3:16:44 PM</p><p><b>derivedFrom</b>: <a href="MedicationRequest-ddfbe83e-19f5-444a-82b5-6f6f132bfbd7.html">Generated Summary: id: ddfbe83e-19f5-444a-82b5-6f6f132bfbd7; status: active; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 106258}">Hydrocortisone 10 MG/ML Topical Cream</span>; authoredOn: Feb 22, 1972, 3:16:44 PM; </a></p><p><b>reasonCode</b>: Contact dermatitis <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '40275004' = 'CD - Contact dermatitis', given as 'Contact dermatitis'})</span></p><p><b>dosage</b>: </p></div>
+  </text>
+  <status value="active"/>
+  <medicationReference>
+    <reference value="Medication/337bc754-318b-48e1-8a50-dad3fb7070a1"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <context>
+    <reference value="Encounter/49726919-64c1-4bbe-bd2d-3f2f286d2233"/>
+  </context>
+  <effectiveDateTime value="1972-02-22T15:16:44-08:00"/>
+  <dateAsserted value="1972-02-22T15:16:44-08:00"/>
+  <derivedFrom>
+    <reference value="MedicationRequest/ddfbe83e-19f5-444a-82b5-6f6f132bfbd7"/>
+  </derivedFrom>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="40275004"/>
+      <display value="Contact dermatitis"/>
+    </coding>
+    <text value="Contact dermatitis"/>
+  </reasonCode>
+  <dosage>
+    <sequence value="1"/>
+    <asNeededBoolean value="true"/>
+  </dosage>
+</MedicationStatement>

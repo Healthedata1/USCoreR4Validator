@@ -1,0 +1,24 @@
+{
+  "resourceType": "Medication",
+  "id": "e2a5fab1-ffbb-45b1-839e-c2d0891413fa",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e2a5fab1-ffbb-45b1-839e-c2d0891413fa</p><p><b>meta</b>: </p><p><b>code</b>: Cisplatin 50 MG Injection <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '1736854' = 'CISplatin 50 MG Injection', given as 'Cisplatin 50 MG Injection'})</span></p><p><b>status</b>: active</p></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "1736854",
+        "display": "Cisplatin 50 MG Injection"
+      }
+    ],
+    "text": "Cisplatin 50 MG Injection"
+  },
+  "status": "active"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="94430a30-f709-4b55-9e0d-3bcbd7bb0544"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 94430a30-f709-4b55-9e0d-3bcbd7bb0544</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v2-0074 code 'LAB' = 'Laboratory', given as 'Laboratory'})</span></p><p><b>code</b>: Basic Metabolic Panel <span style="background: LightGoldenRodYellow">(Details : {LOINC code '51990-0' = 'Basic metabolic panel - Blood', given as 'Basic Metabolic Panel'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-6503a91b-549a-485e-906a-725461cbb2c0.html">Generated Summary: id: 6503a91b-549a-485e-906a-725461cbb2c0; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for check up (procedure)</span>; period: Oct 31, 2017, 4:16:44 PM --&gt; Oct 31, 2017, 4:46:44 PM</a></p><p><b>effective</b>: Oct 31, 2017, 4:16:44 PM</p><p><b>issued</b>: Oct 31, 2017, 4:16:44 PM</p><p><b>result</b>: </p><ul><li><a href="Observation-ee214718-a313-4ae5-a184-e4035e5a7362.html">Glucose. Generated Summary: id: ee214718-a313-4ae5-a184-e4035e5a7362; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 2339-0}">Glucose</span>; effective: Oct 31, 2017, 4:16:44 PM; issued: Oct 31, 2017, 4:16:44 PM; 115.88699149935202 mg/dL</a></li><li><a href="Observation-b9e08960-3103-421b-ae18-42f0fa6a8167.html">Urea Nitrogen. Generated Summary: id: b9e08960-3103-421b-ae18-42f0fa6a8167; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 6299-2}">Urea Nitrogen</span>; effective: Oct 31, 2017, 4:16:44 PM; issued: Oct 31, 2017, 4:16:44 PM; 19.987200679740738 mg/dL</a></li><li><a href="Observation-c8ad5d66-14a7-481b-af21-183d78a39723.html">Creatinine. Generated Summary: id: c8ad5d66-14a7-481b-af21-183d78a39723; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 38483-4}">Creatinine</span>; effective: Oct 31, 2017, 4:16:44 PM; issued: Oct 31, 2017, 4:16:44 PM; 2.7181932058045595 mg/dL</a></li><li><a href="Observation-062f831f-2ab4-4d1a-ba22-90c7a7f16ef2.html">Calcium. Generated Summary: id: 062f831f-2ab4-4d1a-ba22-90c7a7f16ef2; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 49765-1}">Calcium</span>; effective: Oct 31, 2017, 4:16:44 PM; issued: Oct 31, 2017, 4:16:44 PM; 8.704751570233322 mg/dL</a></li><li><a href="Observation-f9a05189-5ab2-4295-8528-130338131bc2.html">Sodium. Generated Summary: id: f9a05189-5ab2-4295-8528-130338131bc2; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 2947-0}">Sodium</span>; effective: Oct 31, 2017, 4:16:44 PM; issued: Oct 31, 2017, 4:16:44 PM; 136.84897900494735 mmol/L</a></li><li><a href="Observation-027855f4-d129-4373-98ef-8c19e4d9b3b4.html">Potassium. Generated Summary: id: 027855f4-d129-4373-98ef-8c19e4d9b3b4; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 6298-4}">Potassium</span>; effective: Oct 31, 2017, 4:16:44 PM; issued: Oct 31, 2017, 4:16:44 PM; 5.186377074883126 mmol/L</a></li><li><a href="Observation-1e15c48b-f522-4fae-a901-5ddeb0ed2464.html">Chloride. Generated Summary: id: 1e15c48b-f522-4fae-a901-5ddeb0ed2464; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 2069-3}">Chloride</span>; effective: Oct 31, 2017, 4:16:44 PM; issued: Oct 31, 2017, 4:16:44 PM; 107.14380918717096 mmol/L</a></li><li><a href="Observation-b68ef2c7-9305-4ff8-8074-17242d1bf56e.html">Carbon Dioxide. Generated Summary: id: b68ef2c7-9305-4ff8-8074-17242d1bf56e; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 20565-8}">Carbon Dioxide</span>; effective: Oct 31, 2017, 4:16:44 PM; issued: Oct 31, 2017, 4:16:44 PM; 27.10258771055357 mmol/L</a></li></ul></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="LAB"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="51990-0"/>
+      <display value="Basic Metabolic Panel"/>
+    </coding>
+    <text value="Basic Metabolic Panel"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/6503a91b-549a-485e-906a-725461cbb2c0"/>
+  </encounter>
+  <effectiveDateTime value="2017-10-31T16:16:44-07:00"/>
+  <issued value="2017-10-31T16:16:44.618-07:00"/>
+  <result>
+    <reference value="Observation/ee214718-a313-4ae5-a184-e4035e5a7362"/>
+    <display value="Glucose"/>
+  </result>
+  <result>
+    <reference value="Observation/b9e08960-3103-421b-ae18-42f0fa6a8167"/>
+    <display value="Urea Nitrogen"/>
+  </result>
+  <result>
+    <reference value="Observation/c8ad5d66-14a7-481b-af21-183d78a39723"/>
+    <display value="Creatinine"/>
+  </result>
+  <result>
+    <reference value="Observation/062f831f-2ab4-4d1a-ba22-90c7a7f16ef2"/>
+    <display value="Calcium"/>
+  </result>
+  <result>
+    <reference value="Observation/f9a05189-5ab2-4295-8528-130338131bc2"/>
+    <display value="Sodium"/>
+  </result>
+  <result>
+    <reference value="Observation/027855f4-d129-4373-98ef-8c19e4d9b3b4"/>
+    <display value="Potassium"/>
+  </result>
+  <result>
+    <reference value="Observation/1e15c48b-f522-4fae-a901-5ddeb0ed2464"/>
+    <display value="Chloride"/>
+  </result>
+  <result>
+    <reference value="Observation/b68ef2c7-9305-4ff8-8074-17242d1bf56e"/>
+    <display value="Carbon Dioxide"/>
+  </result>
+</DiagnosticReport>

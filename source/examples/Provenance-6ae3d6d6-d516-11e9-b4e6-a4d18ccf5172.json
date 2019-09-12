@@ -1,0 +1,43 @@
+{
+    "id": "6ae3d6d6-d516-11e9-b4e6-a4d18ccf5172",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"
+        ]
+    },
+    "agent": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "code": "transmitter",
+                        "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type"
+                    }
+                ]
+            },
+            "who": {
+                "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f"
+            }
+        },
+        {
+            "type": {
+                "coding": [
+                    {
+                        "code": "author",
+                        "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type"
+                    }
+                ]
+            },
+            "who": {
+                "reference": "Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f"
+            }
+        }
+    ],
+    "recorded": "2019-09-12T04:33:07.082346Z",
+    "target": [
+        {
+            "reference": "Observation/a99e8f35-989a-437d-8c79-844d77a71bb2"
+        }
+    ],
+    "resourceType": "Provenance"
+}

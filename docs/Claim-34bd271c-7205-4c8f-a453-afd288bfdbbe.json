@@ -1,0 +1,122 @@
+{
+  "resourceType": "Claim",
+  "id": "34bd271c-7205-4c8f-a453-afd288bfdbbe",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 34bd271c-7205-4c8f-a453-afd288bfdbbe</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Jose871 Cruickshank494. Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>billablePeriod</b>: May 14, 1991, 4:16:44 PM --&gt; May 14, 1991, 4:31:44 PM</p><p><b>created</b>: May 14, 1991, 4:31:44 PM</p><p><b>provider</b>: <a href=\"Organization-18f774ab-db01-37ba-95c4-44c4eab47089.html\">Quincy Outpatient Clinic. Generated Summary: id: 18f774ab-db01-37ba-95c4-44c4eab47089; 18f774ab-db01-37ba-95c4-44c4eab47089; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/processpriority code 'normal' = 'Normal)</span></p><p><b>facility</b>: <a href=\"Location-7653e0ab-0566-4083-95d8-c695e4735e53.html\">Quincy Outpatient Clinic. Generated Summary: id: 7653e0ab-0566-4083-95d8-c695e4735e53; status: active; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 1</p><p><b>diagnosis</b>: <a href=\"Condition-1a56ca45-af7a-440f-81d3-2001922e6d1f.html\">Generated Summary: id: 1a56ca45-af7a-440f-81d3-2001922e6d1f; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span>; <span title=\"Codes: {http://snomed.info/sct 302870006}\">Hypertriglyceridemia (disorder)</span>; onset: May 14, 1991, 4:16:44 PM; recordedDate: May 14, 1991, 4:16:44 PM</a></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 2</p><p><b>diagnosis</b>: <a href=\"Condition-7ad091bc-78d0-49cb-8f9d-e1b097d31323.html\">Generated Summary: id: 7ad091bc-78d0-49cb-8f9d-e1b097d31323; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span>; <span title=\"Codes: {http://snomed.info/sct 271737000}\">Anemia (disorder)</span>; onset: May 14, 1991, 4:16:44 PM; recordedDate: May 14, 1991, 4:16:44 PM</a></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>NO_INSURANCE</td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: Encounter for check up (procedure) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '185349003' = 'Encounter for check up (procedure)', given as 'Encounter for check up (procedure)'})</span></p><p><b>encounter</b>: <a href=\"Encounter-dff48bc5-99c5-4f2f-b4c8-0d1e2f465e2c.html\">Generated Summary: id: dff48bc5-99c5-4f2f-b4c8-0d1e2f465e2c; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://snomed.info/sct 185349003}\">Encounter for check up (procedure)</span>; period: May 14, 1991, 4:16:44 PM --&gt; May 14, 1991, 4:31:44 PM</a></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>diagnosisSequence</b>: 1</p><p><b>productOrService</b>: Hypertriglyceridemia (disorder) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '302870006' = 'Hypertriglyceridemia', given as 'Hypertriglyceridemia (disorder)'})</span></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 3</p><p><b>diagnosisSequence</b>: 2</p><p><b>productOrService</b>: Anemia (disorder) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '271737000' = 'Anemia', given as 'Anemia (disorder)'})</span></p></blockquote><p><b>total</b>: </p></div>"
+  },
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "institutional"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+    "display": "Jose871 Cruickshank494"
+  },
+  "billablePeriod": {
+    "start": "1991-05-14T16:16:44-07:00",
+    "end": "1991-05-14T16:31:44-07:00"
+  },
+  "created": "1991-05-14T16:31:44-07:00",
+  "provider": {
+    "reference": "Organization/18f774ab-db01-37ba-95c4-44c4eab47089",
+    "display": "Quincy Outpatient Clinic"
+  },
+  "priority": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+        "code": "normal"
+      }
+    ]
+  },
+  "facility": {
+    "reference": "Location/7653e0ab-0566-4083-95d8-c695e4735e53",
+    "display": "Quincy Outpatient Clinic"
+  },
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosisReference": {
+        "reference": "Condition/1a56ca45-af7a-440f-81d3-2001922e6d1f"
+      }
+    },
+    {
+      "sequence": 2,
+      "diagnosisReference": {
+        "reference": "Condition/7ad091bc-78d0-49cb-8f9d-e1b097d31323"
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "sequence": 1,
+      "focal": true,
+      "coverage": {
+        "display": "NO_INSURANCE"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Encounter for check up (procedure)"
+          }
+        ],
+        "text": "Encounter for check up (procedure)"
+      },
+      "encounter": [
+        {
+          "reference": "Encounter/dff48bc5-99c5-4f2f-b4c8-0d1e2f465e2c"
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "diagnosisSequence": [
+        1
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "302870006",
+            "display": "Hypertriglyceridemia (disorder)"
+          }
+        ],
+        "text": "Hypertriglyceridemia (disorder)"
+      }
+    },
+    {
+      "sequence": 3,
+      "diagnosisSequence": [
+        2
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "271737000",
+            "display": "Anemia (disorder)"
+          }
+        ],
+        "text": "Anemia (disorder)"
+      }
+    }
+  ],
+  "total": {
+    "value": 129.16,
+    "currency": "USD"
+  }
+}

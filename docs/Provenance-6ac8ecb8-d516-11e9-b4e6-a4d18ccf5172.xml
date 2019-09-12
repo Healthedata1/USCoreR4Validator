@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="6ac8ecb8-d516-11e9-b4e6-a4d18ccf5172"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6ac8ecb8-d516-11e9-b4e6-a4d18ccf5172</p><p><b>meta</b>: </p><p><b>target</b>: <a href="Observation-cc5a2b96-c2dc-4a0c-869e-bd7ecdc87c08.html">Generated Summary: id: cc5a2b96-c2dc-4a0c-869e-bd7ecdc87c08; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 33914-3}">Estimated Glomerular Filtration Rate</span>; effective: Jul 5, 2011, 4:16:44 PM; issued: Jul 5, 2011, 4:16:44 PM; 19.881659130224175 mL/min/{1.73_m2}</a></p><p><b>recorded</b>: Sep 11, 2019, 9:33:06 PM</p><blockquote><p><b>agent</b></p><p><b>type</b>: Transmitter <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type code 'transmitter' = 'Transmitter)</span></p><p><b>who</b>: <a href="Organization-3ffca313-cdd3-37d2-ad04-00dc4adcb86f.html">Generated Summary: id: 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: PCP31369; ph: 781-934-2597</a></p></blockquote><blockquote><p><b>agent</b></p><p><b>type</b>: Author <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/provenance-participant-type code 'author' = 'Author)</span></p><p><b>who</b>: <a href="Organization-3ffca313-cdd3-37d2-ad04-00dc4adcb86f.html">Generated Summary: id: 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; 3ffca313-cdd3-37d2-ad04-00dc4adcb86f; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: PCP31369; ph: 781-934-2597</a></p></blockquote></div>
+  </text>
+  <target>
+    <reference value="Observation/cc5a2b96-c2dc-4a0c-869e-bd7ecdc87c08"/>
+  </target>
+  <recorded value="2019-09-12T04:33:06.905985Z"/>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type"/>
+        <code value="transmitter"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f"/>
+    </who>
+  </agent>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="author"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Organization/3ffca313-cdd3-37d2-ad04-00dc4adcb86f"/>
+    </who>
+  </agent>
+</Provenance>

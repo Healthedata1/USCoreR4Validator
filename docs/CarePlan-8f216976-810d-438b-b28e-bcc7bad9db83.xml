@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="8f216976-810d-438b-b28e-bcc7bad9db83"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Care Plan for Lifestyle education regarding hypertension.<br/>Activities: <ul><li>Lifestyle education regarding hypertension</li><li>Lifestyle education regarding hypertension</li><li>Lifestyle education regarding hypertension</li><li>Lifestyle education regarding hypertension</li></ul><br/>Care plan is meant to treat Hypertension.</div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/core/CodeSystem/careplan-category"/>
+      <code value="assess-plan"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="443402002"/>
+      <display value="Lifestyle education regarding hypertension"/>
+    </coding>
+    <text value="Lifestyle education regarding hypertension"/>
+  </category>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/04d8ab1f-a869-4089-9b32-7224da8b7177"/>
+  </encounter>
+  <period>
+    <start value="1958-04-15T15:16:44-08:00"/>
+  </period>
+  <careTeam>
+    <reference value="CareTeam/1bc1351c-fa04-4e3e-b8be-d7b89ecfd745"/>
+  </careTeam>
+  <addresses>
+    <reference value="Condition/ef170662-f531-4156-b4b3-00ff16f33292"/>
+  </addresses>
+  <goal>
+    <reference value="Goal/c17c79ee-528f-4f6a-bd4c-f9df3564f808"/>
+  </goal>
+  <goal>
+    <reference value="Goal/cbdf97d2-8909-40b1-a5af-1641ba882071"/>
+  </goal>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="386463000"/>
+          <display value="Prescribed activity/exercise education"/>
+        </coding>
+        <text value="Prescribed activity/exercise education"/>
+      </code>
+      <status value="in-progress"/>
+      <location>
+        <reference value="Location/1e84a992-8d6e-41d1-af95-4316a6a139fb"/>
+        <display value="PCP31369"/>
+      </location>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="413473000"/>
+          <display value="Counseling about alcohol consumption"/>
+        </coding>
+        <text value="Counseling about alcohol consumption"/>
+      </code>
+      <status value="in-progress"/>
+      <location>
+        <reference value="Location/1e84a992-8d6e-41d1-af95-4316a6a139fb"/>
+        <display value="PCP31369"/>
+      </location>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="1151000175103"/>
+          <display value="Dietary approaches to stop hypertension diet"/>
+        </coding>
+        <text value="Dietary approaches to stop hypertension diet"/>
+      </code>
+      <status value="in-progress"/>
+      <location>
+        <reference value="Location/1e84a992-8d6e-41d1-af95-4316a6a139fb"/>
+        <display value="PCP31369"/>
+      </location>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="225323000"/>
+          <display value="Smoking cessation education"/>
+        </coding>
+        <text value="Smoking cessation education"/>
+      </code>
+      <status value="in-progress"/>
+      <location>
+        <reference value="Location/1e84a992-8d6e-41d1-af95-4316a6a139fb"/>
+        <display value="PCP31369"/>
+      </location>
+    </detail>
+  </activity>
+</CarePlan>

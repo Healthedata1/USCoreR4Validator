@@ -1,0 +1,44 @@
+{
+    "resourceType": "MedicationStatement",
+    "id": "286aa05c-1bb6-41f5-87ea-65e24823c234",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
+        ]
+    },
+    "status": "active",
+    "medicationReference": {
+        "reference": "Medication/337bc754-318b-48e1-8a50-dad3fb7070a1"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "context": {
+        "reference": "Encounter/49726919-64c1-4bbe-bd2d-3f2f286d2233"
+    },
+    "effectiveDateTime": "1972-02-22T15:16:44-08:00",
+    "dateAsserted": "1972-02-22T15:16:44-08:00",
+    "derivedFrom": [
+        {
+            "reference": "MedicationRequest/ddfbe83e-19f5-444a-82b5-6f6f132bfbd7"
+        }
+    ],
+    "reasonCode": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "40275004",
+                    "display": "Contact dermatitis"
+                }
+            ],
+            "text": "Contact dermatitis"
+        }
+    ],
+    "dosage": [
+        {
+            "sequence": 1,
+            "asNeededBoolean": true
+        }
+    ]
+}

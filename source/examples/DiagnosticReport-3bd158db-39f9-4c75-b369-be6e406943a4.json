@@ -1,0 +1,73 @@
+{
+    "resourceType": "DiagnosticReport",
+    "id": "3bd158db-39f9-4c75-b369-be6e406943a4",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+        ]
+    },
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                    "code": "LAB",
+                    "display": "Laboratory"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "51990-0",
+                "display": "Basic Metabolic Panel"
+            }
+        ],
+        "text": "Basic Metabolic Panel"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/844682e4-00af-4ae3-8ee1-540762d98591"
+    },
+    "effectiveDateTime": "2018-12-25T15:16:44-08:00",
+    "issued": "2018-12-25T15:16:44.618-08:00",
+    "result": [
+        {
+            "reference": "Observation/63a49c32-d098-474d-aa06-34ce13c2f52b",
+            "display": "Glucose"
+        },
+        {
+            "reference": "Observation/b26eeb6f-cebd-44d6-8180-d59aaa6fb905",
+            "display": "Urea Nitrogen"
+        },
+        {
+            "reference": "Observation/b4d76d25-1c97-49f7-98c8-0ab16c981763",
+            "display": "Creatinine"
+        },
+        {
+            "reference": "Observation/5ec49ab1-4db0-430c-bef9-9bc8a359e5b1",
+            "display": "Calcium"
+        },
+        {
+            "reference": "Observation/ef59c08d-751c-4a77-9b91-7a60084dcfd2",
+            "display": "Sodium"
+        },
+        {
+            "reference": "Observation/28e06821-a0a8-45be-bb3c-f0429f539091",
+            "display": "Potassium"
+        },
+        {
+            "reference": "Observation/8cc5eb2e-f16c-4abc-950d-a5ef83dfebdb",
+            "display": "Chloride"
+        },
+        {
+            "reference": "Observation/46f6f847-c2cb-48c5-be07-f2d471abcf59",
+            "display": "Carbon Dioxide"
+        }
+    ]
+}

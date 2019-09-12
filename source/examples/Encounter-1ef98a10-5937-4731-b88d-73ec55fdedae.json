@@ -1,0 +1,54 @@
+{
+    "resourceType": "Encounter",
+    "id": "1ef98a10-5937-4731-b88d-73ec55fdedae",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+        ]
+    },
+    "status": "finished",
+    "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB"
+    },
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "185347001",
+                    "display": "Encounter for problem"
+                }
+            ],
+            "text": "Encounter for problem"
+        }
+    ],
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+        "display": "Mr. Jose871 Cruickshank494"
+    },
+    "participant": [
+        {
+            "individual": {
+                "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2",
+                "display": "Dr. Nelida367 Green467"
+            }
+        }
+    ],
+    "period": {
+        "start": "1972-03-03T15:16:44-08:00",
+        "end": "1972-03-03T15:31:44-08:00"
+    },
+    "location": [
+        {
+            "location": {
+                "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+                "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+            }
+        }
+    ],
+    "serviceProvider": {
+        "reference": "Organization/27379046-608b-32f0-9df7-8c833cf5d11d",
+        "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+    }
+}

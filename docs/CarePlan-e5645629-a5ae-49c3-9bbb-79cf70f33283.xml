@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="e5645629-a5ae-49c3-9bbb-79cf70f33283"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Care Plan for Care Plan.<br/>Activities: <ul><li>Care Plan</li><li>Care Plan</li><li>Care Plan</li></ul></div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/core/CodeSystem/careplan-category"/>
+      <code value="assess-plan"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="734163000"/>
+      <display value="Care Plan"/>
+    </coding>
+    <text value="Care Plan"/>
+  </category>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/25f65164-dcca-4da5-a358-67a707b377a2"/>
+  </encounter>
+  <period>
+    <start value="1974-05-07T16:16:44-07:00"/>
+  </period>
+  <careTeam>
+    <reference value="CareTeam/b62d0bba-79d0-4134-b10f-39026018d4da"/>
+  </careTeam>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="313071005"/>
+          <display value="Counseling for substance abuse (procedure)"/>
+        </coding>
+        <text value="Counseling for substance abuse (procedure)"/>
+      </code>
+      <status value="in-progress"/>
+      <location>
+        <reference value="Location/1e84a992-8d6e-41d1-af95-4316a6a139fb"/>
+        <display value="PCP31369"/>
+      </location>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="408935001"/>
+          <display value="Substance abuse prevention education (procedure)"/>
+        </coding>
+        <text value="Substance abuse prevention education (procedure)"/>
+      </code>
+      <status value="in-progress"/>
+      <location>
+        <reference value="Location/1e84a992-8d6e-41d1-af95-4316a6a139fb"/>
+        <display value="PCP31369"/>
+      </location>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="408936000"/>
+          <display value="Substance abuse prevention management (procedure)"/>
+        </coding>
+        <text value="Substance abuse prevention management (procedure)"/>
+      </code>
+      <status value="in-progress"/>
+      <location>
+        <reference value="Location/1e84a992-8d6e-41d1-af95-4316a6a139fb"/>
+        <display value="PCP31369"/>
+      </location>
+    </detail>
+  </activity>
+</CarePlan>

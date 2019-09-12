@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="27379046-608b-32f0-9df7-8c833cf5d11d"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 27379046-608b-32f0-9df7-8c833cf5d11d</p><p><b>meta</b>: </p><p><b>identifier</b>: 27379046-608b-32f0-9df7-8c833cf5d11d</p><p><b>active</b>: true</p><p><b>type</b>: Healthcare Provider <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: BRIGHAM AND WOMEN'S HOSPITAL</p><p><b>telecom</b>: ph: 6177325500</p><p><b>address</b>: 75 FRANCIS STREET BOSTON MA 02115 US </p></div>
+  </text>
+  <identifier>
+    <system value="https://github.com/synthetichealth/synthea"/>
+    <value value="27379046-608b-32f0-9df7-8c833cf5d11d"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="prov"/>
+      <display value="Healthcare Provider"/>
+    </coding>
+    <text value="Healthcare Provider"/>
+  </type>
+  <name value="BRIGHAM AND WOMEN&#39;S HOSPITAL"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="6177325500"/>
+  </telecom>
+  <address>
+    <line value="75 FRANCIS STREET"/>
+    <city value="BOSTON"/>
+    <state value="MA"/>
+    <postalCode value="02115"/>
+    <country value="US"/>
+  </address>
+</Organization>

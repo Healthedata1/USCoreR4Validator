@@ -1,0 +1,38 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "5b1284ca-110e-44f1-9878-d34c8c348f4f",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+        ]
+    },
+    "status": "stopped",
+    "intent": "order",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "313782",
+                "display": "Acetaminophen 325 MG Oral Tablet"
+            }
+        ],
+        "text": "Acetaminophen 325 MG Oral Tablet"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/a5b4e585-c136-4b77-8ec5-785905b4a3e4"
+    },
+    "authoredOn": "2017-11-10T15:16:44-08:00",
+    "requester": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2",
+        "display": "Dr. Nelida367 Green467"
+    },
+    "dosageInstruction": [
+        {
+            "sequence": 1,
+            "asNeededBoolean": true
+        }
+    ]
+}

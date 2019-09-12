@@ -1,0 +1,113 @@
+{
+  "resourceType": "CarePlan",
+  "id": "985083f3-9bf3-4fd7-9887-7c80726feef4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Terminal care.<br/>Activities: <ul><li>Terminal care</li><li>Terminal care</li><li>Terminal care</li></ul><br/>Care plan is meant to treat Non-small cell carcinoma of lung, TNM stage 1 (disorder).</div>"
+  },
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+          "code": "assess-plan"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "182964004",
+          "display": "Terminal care"
+        }
+      ],
+      "text": "Terminal care"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+  },
+  "encounter": {
+    "reference": "Encounter/060fe62d-9928-46c3-8dbc-b1bff340f95b"
+  },
+  "period": {
+    "start": "2016-07-28T16:16:44-07:00"
+  },
+  "careTeam": [
+    {
+      "reference": "CareTeam/c2da1f96-a5a2-4156-a4a5-99ca14d036dc"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/19d85f45-7128-4af8-ac71-ce2414b5c0fc"
+    }
+  ],
+  "activity": [
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "133918004",
+              "display": "Comfort measures"
+            }
+          ],
+          "text": "Comfort measures"
+        },
+        "status": "in-progress",
+        "location": {
+          "reference": "Location/7653e0ab-0566-4083-95d8-c695e4735e53",
+          "display": "Quincy Outpatient Clinic"
+        }
+      }
+    },
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "408957008",
+              "display": "Chronic pain control management"
+            }
+          ],
+          "text": "Chronic pain control management"
+        },
+        "status": "in-progress",
+        "location": {
+          "reference": "Location/7653e0ab-0566-4083-95d8-c695e4735e53",
+          "display": "Quincy Outpatient Clinic"
+        }
+      }
+    },
+    {
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "243072006",
+              "display": "Cancer education"
+            }
+          ],
+          "text": "Cancer education"
+        },
+        "status": "in-progress",
+        "location": {
+          "reference": "Location/7653e0ab-0566-4083-95d8-c695e4735e53",
+          "display": "Quincy Outpatient Clinic"
+        }
+      }
+    }
+  ]
+}

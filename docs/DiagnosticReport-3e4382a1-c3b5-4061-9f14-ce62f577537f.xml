@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="3e4382a1-c3b5-4061-9f14-ce62f577537f"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3e4382a1-c3b5-4061-9f14-ce62f577537f</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v2-0074 code 'LAB' = 'Laboratory', given as 'Laboratory'})</span></p><p><b>code</b>: Lipid Panel <span style="background: LightGoldenRodYellow">(Details : {LOINC code '57698-3' = 'Lipid panel with direct LDL - Serum or Plasma', given as 'Lipid Panel'})</span></p><p><b>subject</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>encounter</b>: <a href="Encounter-eb439e64-a313-437d-b813-ffdc8ba032ee.html">Generated Summary: id: eb439e64-a313-437d-b813-ffdc8ba032ee; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 185349003}">Encounter for check up (procedure)</span>; period: Feb 17, 2015, 3:16:44 PM --&gt; Feb 17, 2015, 3:46:44 PM</a></p><p><b>effective</b>: Feb 17, 2015, 3:16:44 PM</p><p><b>issued</b>: Feb 17, 2015, 3:16:44 PM</p><p><b>result</b>: </p><ul><li><a href="Observation-51d0ebbc-f22a-4f1c-a88a-0aad54f5a5dd.html">Total Cholesterol. Generated Summary: id: 51d0ebbc-f22a-4f1c-a88a-0aad54f5a5dd; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 2093-3}">Total Cholesterol</span>; effective: Feb 17, 2015, 3:16:44 PM; issued: Feb 17, 2015, 3:16:44 PM; 223.43522300417095 mg/dL</a></li><li><a href="Observation-49cafe0f-2ce6-4c57-b028-59a3a80b0f39.html">Triglycerides. Generated Summary: id: 49cafe0f-2ce6-4c57-b028-59a3a80b0f39; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 2571-8}">Triglycerides</span>; effective: Feb 17, 2015, 3:16:44 PM; issued: Feb 17, 2015, 3:16:44 PM; 178.29001045083197 mg/dL</a></li><li><a href="Observation-8e16ceb2-c277-4254-b93c-092a139a4690.html">Low Density Lipoprotein Cholesterol. Generated Summary: id: 8e16ceb2-c277-4254-b93c-092a139a4690; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 18262-6}">Low Density Lipoprotein Cholesterol</span>; effective: Feb 17, 2015, 3:16:44 PM; issued: Feb 17, 2015, 3:16:44 PM; 128.86420948508854 mg/dL</a></li><li><a href="Observation-a96ed47b-fa5d-423f-9c85-3e4be28d5346.html">High Density Lipoprotein Cholesterol. Generated Summary: id: a96ed47b-fa5d-423f-9c85-3e4be28d5346; <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">laboratory</span>; <span title="Codes: {http://loinc.org 2085-9}">High Density Lipoprotein Cholesterol</span>; effective: Feb 17, 2015, 3:16:44 PM; issued: Feb 17, 2015, 3:16:44 PM; 58.913011428916015 mg/dL</a></li></ul></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="LAB"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="57698-3"/>
+      <display value="Lipid Panel"/>
+    </coding>
+    <text value="Lipid Panel"/>
+  </code>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/eb439e64-a313-437d-b813-ffdc8ba032ee"/>
+  </encounter>
+  <effectiveDateTime value="2015-02-17T15:16:44-08:00"/>
+  <issued value="2015-02-17T15:16:44.618-08:00"/>
+  <result>
+    <reference value="Observation/51d0ebbc-f22a-4f1c-a88a-0aad54f5a5dd"/>
+    <display value="Total Cholesterol"/>
+  </result>
+  <result>
+    <reference value="Observation/49cafe0f-2ce6-4c57-b028-59a3a80b0f39"/>
+    <display value="Triglycerides"/>
+  </result>
+  <result>
+    <reference value="Observation/8e16ceb2-c277-4254-b93c-092a139a4690"/>
+    <display value="Low Density Lipoprotein Cholesterol"/>
+  </result>
+  <result>
+    <reference value="Observation/a96ed47b-fa5d-423f-9c85-3e4be28d5346"/>
+    <display value="High Density Lipoprotein Cholesterol"/>
+  </result>
+</DiagnosticReport>

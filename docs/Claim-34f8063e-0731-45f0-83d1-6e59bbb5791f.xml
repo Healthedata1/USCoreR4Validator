@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="34f8063e-0731-45f0-83d1-6e59bbb5791f"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 34f8063e-0731-45f0-83d1-6e59bbb5791f</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html">Jose871 Cruickshank494. Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">M</span>; </a></p><p><b>billablePeriod</b>: Aug 27, 2013, 4:16:44 PM --&gt; Aug 27, 2013, 4:31:44 PM</p><p><b>created</b>: Aug 27, 2013, 4:31:44 PM</p><p><b>provider</b>: <a href="Organization-4e916854-3a59-3f17-bb16-7c406148d822.html">HANOVER FAMILY HEALTH AND URGENT CARE. Generated Summary: id: 4e916854-3a59-3f17-bb16-7c406148d822; 4e916854-3a59-3f17-bb16-7c406148d822; active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: HANOVER FAMILY HEALTH AND URGENT CARE; ph: 781-829-1000</a></p><p><b>priority</b>: Normal <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/processpriority code 'normal' = 'Normal)</span></p><p><b>facility</b>: <a href="Location-3a2d1aad-e90c-4ddd-8101-958a529adeb8.html">HANOVER FAMILY HEALTH AND URGENT CARE. Generated Summary: id: 3a2d1aad-e90c-4ddd-8101-958a529adeb8; status: active; name: HANOVER FAMILY HEALTH AND URGENT CARE; ph: 781-829-1000</a></p><h3>SupportingInfos</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>1</td><td>Information <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/claiminformationcategory code 'info' = 'Information)</span></td><td><a href="Immunization-e3954b31-8fc0-40cd-93bc-25de39553bca.html">Generated Summary: id: e3954b31-8fc0-40cd-93bc-25de39553bca; status: completed; <span title="Codes: {http://hl7.org/fhir/sid/cvx 140}">Influenza, seasonal, injectable, preservative free</span>; occurrence: Aug 27, 2013, 4:16:44 PM; primarySource</a></td></tr></table><h3>Procedures</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Procedure[x]</b></td></tr><tr><td>*</td><td>1</td><td><a href="Procedure-3c894311-d1a1-4a38-a346-409592a22de8.html">Generated Summary: id: 3c894311-d1a1-4a38-a346-409592a22de8; status: completed; <span title="Codes: {http://snomed.info/sct 18286008}">Catheter ablation of tissue of heart</span>; performed: Aug 27, 2013, 4:16:44 PM --&gt; Aug 27, 2013, 4:31:44 PM</a></td></tr></table><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>Medicare</td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: Urgent care clinic (procedure) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '702927004' = 'Urgent care clinic (environment)', given as 'Urgent care clinic (procedure)'})</span></p><p><b>encounter</b>: <a href="Encounter-8f1adae8-7776-4496-88e0-1fb80acac421.html">Generated Summary: id: 8f1adae8-7776-4496-88e0-1fb80acac421; status: finished; <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span>; <span title="Codes: {http://snomed.info/sct 702927004}">Urgent care clinic (procedure)</span>; period: Aug 27, 2013, 4:16:44 PM --&gt; Aug 27, 2013, 4:31:44 PM</a></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>procedureSequence</b>: 1</p><p><b>productOrService</b>: Catheter ablation of tissue of heart <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '18286008' = 'Catheter ablation of tissue of heart', given as 'Catheter ablation of tissue of heart'})</span></p><p><b>net</b>: </p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 3</p><p><b>informationSequence</b>: 1</p><p><b>productOrService</b>: Influenza, seasonal, injectable, preservative free <span style="background: LightGoldenRodYellow">(Details : {http://hl7.org/fhir/sid/cvx code '140' = 'Influenza, seasonal, injectable, preservative free', given as 'Influenza, seasonal, injectable, preservative free'})</span></p><p><b>net</b>: </p></blockquote><p><b>total</b>: </p></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="institutional"/>
+    </coding>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+    <display value="Jose871 Cruickshank494"/>
+  </patient>
+  <billablePeriod>
+    <start value="2013-08-27T16:16:44-07:00"/>
+    <end value="2013-08-27T16:31:44-07:00"/>
+  </billablePeriod>
+  <created value="2013-08-27T16:31:44-07:00"/>
+  <provider>
+    <reference value="Organization/4e916854-3a59-3f17-bb16-7c406148d822"/>
+    <display value="HANOVER FAMILY HEALTH AND URGENT CARE"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+    </coding>
+  </priority>
+  <facility>
+    <reference value="Location/3a2d1aad-e90c-4ddd-8101-958a529adeb8"/>
+    <display value="HANOVER FAMILY HEALTH AND URGENT CARE"/>
+  </facility>
+  <supportingInfo>
+    <sequence value="1"/>
+    <category>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/claiminformationcategory"/>
+        <code value="info"/>
+      </coding>
+    </category>
+    <valueReference>
+      <reference value="Immunization/e3954b31-8fc0-40cd-93bc-25de39553bca"/>
+    </valueReference>
+  </supportingInfo>
+  <procedure>
+    <sequence value="1"/>
+    <procedureReference>
+      <reference value="Procedure/3c894311-d1a1-4a38-a346-409592a22de8"/>
+    </procedureReference>
+  </procedure>
+  <insurance>
+    <sequence value="1"/>
+    <focal value="true"/>
+    <coverage>
+      <display value="Medicare"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="702927004"/>
+        <display value="Urgent care clinic (procedure)"/>
+      </coding>
+      <text value="Urgent care clinic (procedure)"/>
+    </productOrService>
+    <encounter>
+      <reference value="Encounter/8f1adae8-7776-4496-88e0-1fb80acac421"/>
+    </encounter>
+  </item>
+  <item>
+    <sequence value="2"/>
+    <procedureSequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="18286008"/>
+        <display value="Catheter ablation of tissue of heart"/>
+      </coding>
+      <text value="Catheter ablation of tissue of heart"/>
+    </productOrService>
+    <net>
+      <value value="17774.62"/>
+      <currency value="USD"/>
+    </net>
+  </item>
+  <item>
+    <sequence value="3"/>
+    <informationSequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://hl7.org/fhir/sid/cvx"/>
+        <code value="140"/>
+        <display value="Influenza, seasonal, injectable, preservative free"/>
+      </coding>
+      <text value="Influenza, seasonal, injectable, preservative free"/>
+    </productOrService>
+    <net>
+      <value value="140.52"/>
+      <currency value="USD"/>
+    </net>
+  </item>
+  <total>
+    <value value="129.16"/>
+    <currency value="USD"/>
+  </total>
+</Claim>

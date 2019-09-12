@@ -1,0 +1,232 @@
+{
+    "resourceType": "ExplanationOfBenefit",
+    "id": "ad9ce909-fe25-44b7-8369-d104be90b146",
+    "contained": [
+        {
+            "resourceType": "ServiceRequest",
+            "id": "referral",
+            "status": "completed",
+            "intent": "order",
+            "subject": {
+                "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+            },
+            "requester": {
+                "reference": "Practitioner/0000016d-235f-39b3-0000-0000000051f4"
+            },
+            "performer": [
+                {
+                    "reference": "Practitioner/0000016d-235f-39b3-0000-0000000051f4"
+                }
+            ]
+        },
+        {
+            "resourceType": "Coverage",
+            "id": "coverage",
+            "status": "active",
+            "type": {
+                "text": "Cigna Health"
+            },
+            "beneficiary": {
+                "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+            },
+            "payor": [
+                {
+                    "display": "Cigna Health"
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://bluebutton.cms.gov/resources/variables/clm_id",
+            "value": "414f2bd3-cbf3-4952-bd0f-fb48cf962af2"
+        },
+        {
+            "system": "https://bluebutton.cms.gov/resources/identifier/claim-group",
+            "value": "99999999999"
+        }
+    ],
+    "status": "active",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                "code": "institutional"
+            }
+        ]
+    },
+    "use": "claim",
+    "patient": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "billablePeriod": {
+        "start": "1992-03-03T15:31:44-08:00",
+        "end": "1993-03-03T15:31:44-08:00"
+    },
+    "created": "1992-03-03T15:31:44-08:00",
+    "insurer": {
+        "display": "Cigna Health"
+    },
+    "provider": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-0000000051f4"
+    },
+    "referral": {
+        "reference": "#referral"
+    },
+    "facility": {
+        "reference": "Location/1e84a992-8d6e-41d1-af95-4316a6a139fb",
+        "display": "PCP31369"
+    },
+    "claim": {
+        "reference": "Claim/414f2bd3-cbf3-4952-bd0f-fb48cf962af2"
+    },
+    "outcome": "complete",
+    "careTeam": [
+        {
+            "sequence": 1,
+            "provider": {
+                "reference": "Practitioner/0000016d-235f-39b3-0000-0000000051f4"
+            },
+            "role": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/claimcareteamrole",
+                        "code": "primary",
+                        "display": "Primary Care Practitioner"
+                    }
+                ]
+            }
+        }
+    ],
+    "diagnosis": [
+        {
+            "sequence": 1,
+            "diagnosisReference": {
+                "reference": "Condition/c427b996-7a5b-456e-8911-8d1479853145"
+            },
+            "type": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+                            "code": "principal"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "insurance": [
+        {
+            "focal": true,
+            "coverage": {
+                "reference": "#coverage",
+                "display": "Cigna Health"
+            }
+        }
+    ],
+    "item": [
+        {
+            "sequence": 1,
+            "category": {
+                "coding": [
+                    {
+                        "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+                        "code": "1",
+                        "display": "Medical care"
+                    }
+                ]
+            },
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "162673000",
+                        "display": "General examination of patient (procedure)"
+                    }
+                ],
+                "text": "General examination of patient (procedure)"
+            },
+            "servicedPeriod": {
+                "start": "1992-03-03T15:16:44-08:00",
+                "end": "1992-03-03T15:31:44-08:00"
+            },
+            "locationCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+                        "code": "19",
+                        "display": "Off Campus-Outpatient Hospital"
+                    }
+                ]
+            },
+            "encounter": [
+                {
+                    "reference": "Encounter/812b9437-26c9-4ee8-9c55-2a369be34708"
+                }
+            ]
+        },
+        {
+            "sequence": 2,
+            "diagnosisSequence": [
+                1
+            ],
+            "category": {
+                "coding": [
+                    {
+                        "system": "https://bluebutton.cms.gov/resources/variables/line_cms_type_srvc_cd",
+                        "code": "1",
+                        "display": "Medical care"
+                    }
+                ]
+            },
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "237602007",
+                        "display": "Metabolic syndrome X (disorder)"
+                    }
+                ],
+                "text": "Metabolic syndrome X (disorder)"
+            },
+            "servicedPeriod": {
+                "start": "1992-03-03T15:16:44-08:00",
+                "end": "1992-03-03T15:31:44-08:00"
+            },
+            "locationCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/ex-serviceplace",
+                        "code": "19",
+                        "display": "Off Campus-Outpatient Hospital"
+                    }
+                ]
+            }
+        }
+    ],
+    "total": [
+        {
+            "category": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/adjudication",
+                        "code": "submitted",
+                        "display": "Submitted Amount"
+                    }
+                ],
+                "text": "Submitted Amount"
+            },
+            "amount": {
+                "value": 129.16,
+                "currency": "USD"
+            }
+        }
+    ],
+    "payment": {
+        "amount": {
+            "value": 0.0,
+            "currency": "USD"
+        }
+    }
+}

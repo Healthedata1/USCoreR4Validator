@@ -1,0 +1,140 @@
+{
+  "resourceType": "Claim",
+  "id": "e8c62dc5-7323-4296-b643-c9f2ccc1749b",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e8c62dc5-7323-4296-b643-c9f2ccc1749b</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Jose871 Cruickshank494. Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>billablePeriod</b>: Oct 30, 2018, 4:16:44 PM --&gt; Oct 30, 2018, 4:46:44 PM</p><p><b>created</b>: Oct 30, 2018, 4:46:44 PM</p><p><b>provider</b>: <a href=\"Organization-18f774ab-db01-37ba-95c4-44c4eab47089.html\">Quincy Outpatient Clinic. Generated Summary: id: 18f774ab-db01-37ba-95c4-44c4eab47089; 18f774ab-db01-37ba-95c4-44c4eab47089; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span>; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/processpriority code 'normal' = 'Normal)</span></p><p><b>facility</b>: <a href=\"Location-7653e0ab-0566-4083-95d8-c695e4735e53.html\">Quincy Outpatient Clinic. Generated Summary: id: 7653e0ab-0566-4083-95d8-c695e4735e53; status: active; name: Quincy Outpatient Clinic; ph: 800-865-3384</a></p><h3>SupportingInfos</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>1</td><td>Information <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claiminformationcategory code 'info' = 'Information)</span></td><td><a href=\"Immunization-5d194c3f-f5c6-410a-a49c-8fedbb268a3d.html\">Generated Summary: id: 5d194c3f-f5c6-410a-a49c-8fedbb268a3d; status: completed; <span title=\"Codes: {http://hl7.org/fhir/sid/cvx 140}\">Influenza, seasonal, injectable, preservative free</span>; occurrence: Oct 30, 2018, 4:16:44 PM; primarySource</a></td></tr></table><h3>Procedures</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Procedure[x]</b></td></tr><tr><td>*</td><td>1</td><td><a href=\"Procedure-0cd89299-f457-4585-9d73-f805339a975e.html\">Generated Summary: id: 0cd89299-f457-4585-9d73-f805339a975e; status: completed; <span title=\"Codes: {http://snomed.info/sct 180325003}\">Electrical cardioversion</span>; performed: Oct 30, 2018, 4:16:44 PM --&gt; Oct 30, 2018, 4:31:44 PM</a></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>Medicare</td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: Encounter for check up (procedure) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '185349003' = 'Encounter for check up (procedure)', given as 'Encounter for check up (procedure)'})</span></p><p><b>encounter</b>: <a href=\"Encounter-2cdc32e7-931e-480b-aada-fbd4dffb061f.html\">Generated Summary: id: 2cdc32e7-931e-480b-aada-fbd4dffb061f; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://snomed.info/sct 185349003}\">Encounter for check up (procedure)</span>; period: Oct 30, 2018, 4:16:44 PM --&gt; Oct 30, 2018, 4:46:44 PM</a></p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 2</p><p><b>procedureSequence</b>: 1</p><p><b>productOrService</b>: Electrical cardioversion <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '180325003' = 'Electrical cardioversion', given as 'Electrical cardioversion'})</span></p><p><b>net</b>: </p></blockquote><blockquote><p><b>item</b></p><p><b>sequence</b>: 3</p><p><b>informationSequence</b>: 1</p><p><b>productOrService</b>: Influenza, seasonal, injectable, preservative free <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/sid/cvx code '140' = 'Influenza, seasonal, injectable, preservative free', given as 'Influenza, seasonal, injectable, preservative free'})</span></p><p><b>net</b>: </p></blockquote><p><b>total</b>: </p></div>"
+  },
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+        "code": "institutional"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129",
+    "display": "Jose871 Cruickshank494"
+  },
+  "billablePeriod": {
+    "start": "2018-10-30T16:16:44-07:00",
+    "end": "2018-10-30T16:46:44-07:00"
+  },
+  "created": "2018-10-30T16:46:44-07:00",
+  "provider": {
+    "reference": "Organization/18f774ab-db01-37ba-95c4-44c4eab47089",
+    "display": "Quincy Outpatient Clinic"
+  },
+  "priority": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+        "code": "normal"
+      }
+    ]
+  },
+  "facility": {
+    "reference": "Location/7653e0ab-0566-4083-95d8-c695e4735e53",
+    "display": "Quincy Outpatient Clinic"
+  },
+  "supportingInfo": [
+    {
+      "sequence": 1,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "info"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Immunization/5d194c3f-f5c6-410a-a49c-8fedbb268a3d"
+      }
+    }
+  ],
+  "procedure": [
+    {
+      "sequence": 1,
+      "procedureReference": {
+        "reference": "Procedure/0cd89299-f457-4585-9d73-f805339a975e"
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "sequence": 1,
+      "focal": true,
+      "coverage": {
+        "display": "Medicare"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185349003",
+            "display": "Encounter for check up (procedure)"
+          }
+        ],
+        "text": "Encounter for check up (procedure)"
+      },
+      "encounter": [
+        {
+          "reference": "Encounter/2cdc32e7-931e-480b-aada-fbd4dffb061f"
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "procedureSequence": [
+        1
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "180325003",
+            "display": "Electrical cardioversion"
+          }
+        ],
+        "text": "Electrical cardioversion"
+      },
+      "net": {
+        "value": 24415.93,
+        "currency": "USD"
+      }
+    },
+    {
+      "sequence": 3,
+      "informationSequence": [
+        1
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/cvx",
+            "code": "140",
+            "display": "Influenza, seasonal, injectable, preservative free"
+          }
+        ],
+        "text": "Influenza, seasonal, injectable, preservative free"
+      },
+      "net": {
+        "value": 140.52,
+        "currency": "USD"
+      }
+    }
+  ],
+  "total": {
+    "value": 129.16,
+    "currency": "USD"
+  }
+}

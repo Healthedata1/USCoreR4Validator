@@ -1,0 +1,45 @@
+{
+    "resourceType": "Observation",
+    "id": "69d7adad-0a8d-4b75-806a-412f3a2ac05a",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"
+        ]
+    },
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "laboratory"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose"
+            }
+        ],
+        "text": "Glucose"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/b8c2cf6a-a35c-408b-84ac-dfa2443fe907"
+    },
+    "effectiveDateTime": "2010-09-07T16:16:44-07:00",
+    "issued": "2010-09-07T16:16:44.618-07:00",
+    "valueQuantity": {
+        "value": 124.80469603217597,
+        "unit": "mg/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/dL"
+    }
+}

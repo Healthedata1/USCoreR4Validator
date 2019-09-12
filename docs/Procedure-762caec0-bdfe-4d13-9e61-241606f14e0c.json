@@ -1,0 +1,44 @@
+{
+  "resourceType": "Procedure",
+  "id": "762caec0-bdfe-4d13-9e61-241606f14e0c",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 762caec0-bdfe-4d13-9e61-241606f14e0c</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>code</b>: Electrical cardioversion <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '180325003' = 'Electrical cardioversion', given as 'Electrical cardioversion'})</span></p><p><b>subject</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>encounter</b>: <a href=\"Encounter-87195184-d4db-4089-b755-38ec704c17e3.html\">Generated Summary: id: 87195184-d4db-4089-b755-38ec704c17e3; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span>; <span title=\"Codes: {http://snomed.info/sct 702927004}\">Urgent care clinic (procedure)</span>; period: Apr 14, 2015, 4:16:44 PM --&gt; Apr 14, 2015, 4:31:44 PM</a></p><p><b>performed</b>: Apr 14, 2015, 4:16:44 PM --&gt; Apr 14, 2015, 4:31:44 PM</p><p><b>location</b>: <a href=\"Location-3a2d1aad-e90c-4ddd-8101-958a529adeb8.html\">HANOVER FAMILY HEALTH AND URGENT CARE. Generated Summary: id: 3a2d1aad-e90c-4ddd-8101-958a529adeb8; status: active; name: HANOVER FAMILY HEALTH AND URGENT CARE; ph: 781-829-1000</a></p><p><b>reasonReference</b>: <a href=\"Condition-14561089-c20d-495a-a0b8-5e03fc7b96ec.html\">Atrial Fibrillation. Generated Summary: id: 14561089-c20d-495a-a0b8-5e03fc7b96ec; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span>; <span title=\"Codes: {http://snomed.info/sct 49436004}\">Atrial Fibrillation</span>; onset: Sep 7, 2010, 4:16:44 PM; recordedDate: Sep 7, 2010, 4:16:44 PM</a></p></div>"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "180325003",
+        "display": "Electrical cardioversion"
+      }
+    ],
+    "text": "Electrical cardioversion"
+  },
+  "subject": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+  },
+  "encounter": {
+    "reference": "Encounter/87195184-d4db-4089-b755-38ec704c17e3"
+  },
+  "performedPeriod": {
+    "start": "2015-04-14T16:16:44-07:00",
+    "end": "2015-04-14T16:31:44-07:00"
+  },
+  "location": {
+    "reference": "Location/3a2d1aad-e90c-4ddd-8101-958a529adeb8",
+    "display": "HANOVER FAMILY HEALTH AND URGENT CARE"
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/14561089-c20d-495a-a0b8-5e03fc7b96ec",
+      "display": "Atrial Fibrillation"
+    }
+  ]
+}

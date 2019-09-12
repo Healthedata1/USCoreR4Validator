@@ -1,0 +1,20 @@
+{
+    "resourceType": "Medication",
+    "id": "5fb48c34-531d-40fb-9a9b-d1de69d526d7",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "197604",
+                "display": "Digoxin 0.125 MG Oral Tablet"
+            }
+        ],
+        "text": "Digoxin 0.125 MG Oral Tablet"
+    },
+    "status": "active"
+}

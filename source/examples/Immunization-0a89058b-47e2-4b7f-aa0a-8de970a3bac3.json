@@ -1,0 +1,32 @@
+{
+    "resourceType": "Immunization",
+    "id": "0a89058b-47e2-4b7f-aa0a-8de970a3bac3",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+        ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "140",
+                "display": "Influenza, seasonal, injectable, preservative free"
+            }
+        ],
+        "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/b8c2cf6a-a35c-408b-84ac-dfa2443fe907"
+    },
+    "occurrenceDateTime": "2010-09-07T16:16:44-07:00",
+    "primarySource": true,
+    "location": {
+        "reference": "Location/7653e0ab-0566-4083-95d8-c695e4735e53",
+        "display": "Quincy Outpatient Clinic"
+    }
+}

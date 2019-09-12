@@ -1,0 +1,32 @@
+{
+    "resourceType": "Immunization",
+    "id": "e3954b31-8fc0-40cd-93bc-25de39553bca",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+        ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "140",
+                "display": "Influenza, seasonal, injectable, preservative free"
+            }
+        ],
+        "text": "Influenza, seasonal, injectable, preservative free"
+    },
+    "patient": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/8f1adae8-7776-4496-88e0-1fb80acac421"
+    },
+    "occurrenceDateTime": "2013-08-27T16:16:44-07:00",
+    "primarySource": true,
+    "location": {
+        "reference": "Location/3a2d1aad-e90c-4ddd-8101-958a529adeb8",
+        "display": "HANOVER FAMILY HEALTH AND URGENT CARE"
+    }
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="130fbc2a-617d-4fba-a287-9dcaffdb2d53"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Care Plan for Cancer care plan.<br/>Activities: <ul><li>Cancer care plan</li><li>Cancer care plan</li></ul><br/>Care plan is meant to treat Neoplasm of prostate.</div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/core/CodeSystem/careplan-category"/>
+      <code value="assess-plan"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="736252007"/>
+      <display value="Cancer care plan"/>
+    </coding>
+    <text value="Cancer care plan"/>
+  </category>
+  <subject>
+    <reference value="Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/28d35dc3-d8c3-4b41-85c3-8b552b3501da"/>
+  </encounter>
+  <period>
+    <start value="2008-06-03T16:16:44-07:00"/>
+  </period>
+  <careTeam>
+    <reference value="CareTeam/3ac41544-4ece-4f2c-85d2-1bf02b8e7b40"/>
+  </careTeam>
+  <addresses>
+    <reference value="Condition/4409c5ff-4625-4a96-a118-9e002a1b4165"/>
+  </addresses>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="408580007"/>
+          <display value="Physical activity target light exercise"/>
+        </coding>
+        <text value="Physical activity target light exercise"/>
+      </code>
+      <status value="in-progress"/>
+      <location>
+        <reference value="Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6"/>
+        <display value="BRIGHAM AND WOMEN&#39;S HOSPITAL"/>
+      </location>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="229578001"/>
+          <display value="Ice bath treatment"/>
+        </coding>
+        <text value="Ice bath treatment"/>
+      </code>
+      <status value="in-progress"/>
+      <location>
+        <reference value="Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6"/>
+        <display value="BRIGHAM AND WOMEN&#39;S HOSPITAL"/>
+      </location>
+    </detail>
+  </activity>
+</CarePlan>

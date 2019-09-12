@@ -1,0 +1,34 @@
+{
+    "resourceType": "Location",
+    "id": "7653e0ab-0566-4083-95d8-c695e4735e53",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+        ]
+    },
+    "status": "active",
+    "name": "Quincy Outpatient Clinic",
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "800-865-3384"
+        }
+    ],
+    "address": {
+        "line": [
+            "110 West Squantum Street"
+        ],
+        "city": "Quincy",
+        "state": "MA",
+        "postalCode": "02169",
+        "country": "US"
+    },
+    "position": {
+        "longitude": -71.03133,
+        "latitude": 42.272617
+    },
+    "managingOrganization": {
+        "reference": "Organization/18f774ab-db01-37ba-95c4-44c4eab47089",
+        "display": "Quincy Outpatient Clinic"
+    }
+}

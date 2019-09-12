@@ -1,0 +1,70 @@
+{
+    "resourceType": "Claim",
+    "id": "848de6fb-44f4-41fc-b9a2-534c2df64a63",
+    "status": "active",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                "code": "pharmacy"
+            }
+        ]
+    },
+    "use": "claim",
+    "patient": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "billablePeriod": {
+        "start": "2017-07-07T16:16:44-07:00",
+        "end": "2017-07-08T16:16:44-07:00"
+    },
+    "created": "2017-07-08T16:16:44-07:00",
+    "provider": {
+        "reference": "Organization/18f774ab-db01-37ba-95c4-44c4eab47089",
+        "display": "Quincy Outpatient Clinic"
+    },
+    "priority": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+                "code": "normal"
+            }
+        ]
+    },
+    "prescription": {
+        "reference": "MedicationRequest/cb1f35d8-0b5c-40fa-8108-7fd7c303dcc0"
+    },
+    "insurance": [
+        {
+            "sequence": 1,
+            "focal": true,
+            "coverage": {
+                "display": "Medicare"
+            }
+        }
+    ],
+    "item": [
+        {
+            "sequence": 1,
+            "productOrService": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "185347001",
+                        "display": "Encounter for problem"
+                    }
+                ],
+                "text": "Encounter for problem"
+            },
+            "encounter": [
+                {
+                    "reference": "Encounter/dd283c26-86dc-4bad-85f8-4e771f933bb8"
+                }
+            ]
+        }
+    ],
+    "total": {
+        "value": 443.17,
+        "currency": "USD"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "ace8d6c7-3cda-4af0-a711-5f966d4dde6d",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+        ]
+    },
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "999969",
+                "display": "Amlodipine 5 MG / Hydrochlorothiazide 12.5 MG / Olmesartan medoxomil 20 MG"
+            }
+        ],
+        "text": "Amlodipine 5 MG / Hydrochlorothiazide 12.5 MG / Olmesartan medoxomil 20 MG"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/87f97350-7032-4560-afbf-e9003f4dc9ec"
+    },
+    "authoredOn": "1958-07-14T16:16:44-07:00",
+    "requester": {
+        "reference": "Practitioner/0000016d-235f-39b3-0000-0000000001c2",
+        "display": "Dr. Nelida367 Green467"
+    },
+    "reasonReference": [
+        {
+            "reference": "Condition/ef170662-f531-4156-b4b3-00ff16f33292"
+        }
+    ]
+}

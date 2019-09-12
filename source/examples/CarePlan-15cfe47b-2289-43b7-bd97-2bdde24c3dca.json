@@ -1,0 +1,70 @@
+{
+    "resourceType": "CarePlan",
+    "id": "15cfe47b-2289-43b7-bd97-2bdde24c3dca",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan"
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Self care.<br/>Activities: <ul><li>Self care</li></ul></div>"
+    },
+    "status": "active",
+    "intent": "order",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                    "code": "assess-plan"
+                }
+            ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "326051000000105",
+                    "display": "Self care"
+                }
+            ],
+            "text": "Self care"
+        }
+    ],
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/1ef98a10-5937-4731-b88d-73ec55fdedae"
+    },
+    "period": {
+        "start": "1972-03-03T15:16:44-08:00"
+    },
+    "careTeam": [
+        {
+            "reference": "CareTeam/c31bfacf-5f6d-4544-b897-4721a8923f44"
+        }
+    ],
+    "activity": [
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "58332002",
+                            "display": "Allergy education"
+                        }
+                    ],
+                    "text": "Allergy education"
+                },
+                "status": "in-progress",
+                "location": {
+                    "reference": "Location/a615098b-6b1a-4437-a7c7-fa2eaa6969f6",
+                    "display": "BRIGHAM AND WOMEN'S HOSPITAL"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "resourceType": "Medication",
+    "id": "1268bb07-74aa-4f13-82eb-0d4c57410ec9",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "583214",
+                "display": "PACLitaxel 100 MG Injection"
+            }
+        ],
+        "text": "PACLitaxel 100 MG Injection"
+    },
+    "status": "active"
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "24b9d9c9-a019-4d05-b74d-4e7e4c41c222",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 24b9d9c9-a019-4d05-b74d-4e7e4c41c222</p><p><b>meta</b>: </p><p><b>status</b>: stopped</p><p><b>intent</b>: order</p><p><b>medication</b>: PACLitaxel 100 MG Injection <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '583214' = 'PACLitaxel 100 MG Injection', given as 'PACLitaxel 100 MG Injection'})</span></p><p><b>subject</b>: <a href=\"Patient-3ab28624-a549-4cb9-a32e-99e3c2c41129.html\">Generated Summary: id: 3ab28624-a549-4cb9-a32e-99e3c2c41129; 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Medical Record Number = 52fb90a7-9e4f-4140-8c3c-c8afbbb3fbf9, Social Security Number = 999-96-5270, Driver's License = S99943652, Passport Number = X37948891X; Jose871 Cruickshank494 (OFFICIAL); ph: 555-170-1696(HOME); gender: male; birthDate: Feb 20, 1940; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">M</span>; </a></p><p><b>encounter</b>: <a href=\"Encounter-2ad27a59-1b6f-4e4b-be0f-055d52a486d4.html\">Generated Summary: id: 2ad27a59-1b6f-4e4b-be0f-055d52a486d4; status: finished; <span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode IMP}\">inpatient encounter</span>; <span title=\"Codes: {http://snomed.info/sct 185347001}\">Encounter for problem</span>; period: Oct 8, 2018, 4:16:44 PM --&gt; Oct 9, 2018, 5:16:44 PM</a></p><p><b>authoredOn</b>: Oct 8, 2018, 4:16:44 PM</p><p><b>requester</b>: <a href=\"Practitioner-0000016d-235f-39b3-0000-00000000032a.html\">Dr. Sergio619 Armijo730. Generated Summary: id: 0000016d-235f-39b3-0000-00000000032a; 810; active; Sergio619 Armijo730 ; Sergio619.Armijo730@example.com(WORK); gender: male</a></p><p><b>reasonReference</b>: <a href=\"Condition-19d85f45-7128-4af8-ac71-ce2414b5c0fc.html\">Generated Summary: id: 19d85f45-7128-4af8-ac71-ce2414b5c0fc; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span>; <span title=\"Codes: {http://snomed.info/sct 424132000}\">Non-small cell carcinoma of lung, TNM stage 1 (disorder)</span>; onset: Jul 28, 2016, 4:16:44 PM; recordedDate: Jul 28, 2016, 4:16:44 PM</a></p></div>"
+  },
+  "status": "stopped",
+  "intent": "order",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "583214",
+        "display": "PACLitaxel 100 MG Injection"
+      }
+    ],
+    "text": "PACLitaxel 100 MG Injection"
+  },
+  "subject": {
+    "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+  },
+  "encounter": {
+    "reference": "Encounter/2ad27a59-1b6f-4e4b-be0f-055d52a486d4"
+  },
+  "authoredOn": "2018-10-08T16:16:44-07:00",
+  "requester": {
+    "reference": "Practitioner/0000016d-235f-39b3-0000-00000000032a",
+    "display": "Dr. Sergio619 Armijo730"
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/19d85f45-7128-4af8-ac71-ce2414b5c0fc"
+    }
+  ]
+}

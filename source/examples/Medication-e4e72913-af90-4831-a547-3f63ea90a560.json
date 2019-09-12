@@ -1,0 +1,20 @@
+{
+    "resourceType": "Medication",
+    "id": "e4e72913-af90-4831-a547-3f63ea90a560",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "849574",
+                "display": "Naproxen sodium 220 MG Oral Tablet"
+            }
+        ],
+        "text": "Naproxen sodium 220 MG Oral Tablet"
+    },
+    "status": "active"
+}

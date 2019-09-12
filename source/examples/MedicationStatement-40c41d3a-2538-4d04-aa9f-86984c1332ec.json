@@ -1,0 +1,41 @@
+{
+    "resourceType": "MedicationStatement",
+    "id": "40c41d3a-2538-4d04-aa9f-86984c1332ec",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
+        ]
+    },
+    "status": "stopped",
+    "medicationReference": {
+        "reference": "Medication/88e1d52b-c914-4806-9b71-40aec944c11f"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "context": {
+        "reference": "Encounter/c1f59cbc-3f59-442d-ac7b-fe6ab238e08e"
+    },
+    "effectivePeriod": {
+        "start": "2018-09-09T16:16:44-07:00",
+        "end": "2018-09-09T16:16:44-07:00"
+    },
+    "dateAsserted": "2018-09-09T16:16:44-07:00",
+    "derivedFrom": [
+        {
+            "reference": "MedicationRequest/03b60549-45bc-4730-8554-a0ae3632f9da"
+        }
+    ],
+    "reasonCode": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "424132000",
+                    "display": "Non-small cell carcinoma of lung, TNM stage 1 (disorder)"
+                }
+            ],
+            "text": "Non-small cell carcinoma of lung, TNM stage 1 (disorder)"
+        }
+    ]
+}

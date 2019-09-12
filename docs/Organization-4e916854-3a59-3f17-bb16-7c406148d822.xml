@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="4e916854-3a59-3f17-bb16-7c406148d822"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 4e916854-3a59-3f17-bb16-7c406148d822</p><p><b>meta</b>: </p><p><b>identifier</b>: 4e916854-3a59-3f17-bb16-7c406148d822</p><p><b>active</b>: true</p><p><b>type</b>: Healthcare Provider <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/organization-type code 'prov' = 'Healthcare Provider', given as 'Healthcare Provider'})</span></p><p><b>name</b>: HANOVER FAMILY HEALTH AND URGENT CARE</p><p><b>telecom</b>: ph: 781-829-1000</p><p><b>address</b>: 1399 WASHINGTON STREET HANOVER MA 2339 US </p></div>
+  </text>
+  <identifier>
+    <system value="https://github.com/synthetichealth/synthea"/>
+    <value value="4e916854-3a59-3f17-bb16-7c406148d822"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="prov"/>
+      <display value="Healthcare Provider"/>
+    </coding>
+    <text value="Healthcare Provider"/>
+  </type>
+  <name value="HANOVER FAMILY HEALTH AND URGENT CARE"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="781-829-1000"/>
+  </telecom>
+  <address>
+    <line value="1399 WASHINGTON STREET"/>
+    <city value="HANOVER"/>
+    <state value="MA"/>
+    <postalCode value="2339"/>
+    <country value="US"/>
+  </address>
+</Organization>

@@ -1,0 +1,85 @@
+{
+    "resourceType": "DiagnosticReport",
+    "id": "ad11a8ac-a60e-40e5-8a4b-edfcc9162078",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"
+        ]
+    },
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                    "code": "LAB",
+                    "display": "Laboratory"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "58410-2",
+                "display": "Complete blood count (hemogram) panel - Blood by Automated count"
+            }
+        ],
+        "text": "Complete blood count (hemogram) panel - Blood by Automated count"
+    },
+    "subject": {
+        "reference": "Patient/3ab28624-a549-4cb9-a32e-99e3c2c41129"
+    },
+    "encounter": {
+        "reference": "Encounter/ae77a9de-0a67-4700-99a0-0c85c3df8306"
+    },
+    "effectiveDateTime": "2012-06-26T16:16:44-07:00",
+    "issued": "2012-06-26T16:16:44.618-07:00",
+    "result": [
+        {
+            "reference": "Observation/52bea73a-3981-4d13-bbdc-0f5ab4bc0d80",
+            "display": "Leukocytes [#/volume] in Blood by Automated count"
+        },
+        {
+            "reference": "Observation/6733b85e-054d-4b57-b345-5cc51ab4b8f1",
+            "display": "Erythrocytes [#/volume] in Blood by Automated count"
+        },
+        {
+            "reference": "Observation/341e76de-66cc-48ea-9c34-2fe1308b894f",
+            "display": "Hemoglobin [Mass/volume] in Blood"
+        },
+        {
+            "reference": "Observation/b8915f52-d987-4684-a137-36557b8eb33f",
+            "display": "Hematocrit [Volume Fraction] of Blood by Automated count"
+        },
+        {
+            "reference": "Observation/12a74a4d-57a2-47cb-9cd9-d12c84af3b4d",
+            "display": "MCV [Entitic volume] by Automated count"
+        },
+        {
+            "reference": "Observation/6278f44d-f0b2-4a43-a680-945a3fbd1a36",
+            "display": "MCH [Entitic mass] by Automated count"
+        },
+        {
+            "reference": "Observation/a52ee2b7-7bbc-40e2-9811-4f0ea98409b4",
+            "display": "MCHC [Mass/volume] by Automated count"
+        },
+        {
+            "reference": "Observation/19a7080f-c9ac-45e8-9b41-6fbdfa13faf9",
+            "display": "Erythrocyte distribution width [Entitic volume] by Automated count"
+        },
+        {
+            "reference": "Observation/9e194e09-c8b4-4831-82d5-b916bd5b4b35",
+            "display": "Platelets [#/volume] in Blood by Automated count"
+        },
+        {
+            "reference": "Observation/a800bbe9-d9a4-48ef-b632-b7bf7b88a044",
+            "display": "Platelet distribution width [Entitic volume] in Blood by Automated count"
+        },
+        {
+            "reference": "Observation/6080e545-ebf3-4b02-9830-561f59b6a0ec",
+            "display": "Platelet mean volume [Entitic volume] in Blood by Automated count"
+        }
+    ]
+}

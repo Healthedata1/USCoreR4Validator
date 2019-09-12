@@ -15,6 +15,7 @@ This Guide is divided into several pages which are listed at the top of each pag
 - [Home](index.html): This page  home page provides the introduction and background for this IG: {{site.title}}.
 - [Examples](all-examples.html): List of links to all the examples and Validation results for all example in this IG.
 
+<!--
 -----
 GitHub will automatically trigger a new build whenever you commit changes.
 
@@ -30,3 +31,4 @@ http://build.fhir.org/ig/HL7/USCoreR4Validator
 http://build.fhir.org/ig/HL7/USCoreR4Validator/build.log
 
 ---
+-->
